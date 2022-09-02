@@ -17,7 +17,7 @@
 	\usepackage{hyperref}
 	\usepackage{array}
 	 \usepackage{fancyhdr}
-
+	 \usepackage{float}
 	\pagestyle{fancy}
 	\theoremstyle{plain}
 	\fancyfoot[C]{\thepage} 
@@ -57,9 +57,46 @@ stylos coûte $12$ euros, les prix sont-ils proportionnels ? Lequel est le plus 
 
 Dans les situations suivantes, reconnaître celles qui sont proportionnelles. 
 
-a) \begin{table}[!H]{ll}
-\\
-\end{table} 
+a) \begin{tabular}{|l | c |c | c| c|c| }\hline
+Département & Ain & Gard & Loire & Rhône & Val-de-Marne\\
+\hline
+Nombre d'habitants & 650 000 & 750 000  & 770 000 & 1 880 000 &1 410 000 \\
+Circonscriptions & 5 & 6 & 6 & 14 & 11 \\ \hline
+\end{tabular} 
+
+ \ \\ 
+ 
+b) \begin{tabular}{|l | c | c | c | c | c}
+\hline
+Rayon d'un cercle & 1 & 2,5 &  5 & 10 \\
+\hline
+Périmètre & 3,14 &7,85 & 15,7& 31,4\\ \hline
+
+\end{tabular}
+
+ \ \\ 
+ 
+ 
+c) \begin{tabular}{|l | c | c | c | c | c}
+\hline
+Rayon $r$ & 1 & 2,5 &  5 & 10 \\
+\hline
+Aire d'un disque de rayon $r$ & 3,14 & 19,625 & 78, 5& 314\\ \hline
+
+\end{tabular}
+
+ \ \\ 
+ 
+d) \begin{tabular}{|l | c | c | c | c | c}
+\hline
+Longueur $r$ & 1 & 2 &  5 & 6 \\
+\hline
+Volume d'un cube de côté $r$ & 1 & 8 & 125 & 216 \\ \hline
+Volume d'un cube de côté $r$ & 4,2 & 33, 6 & 525& 907,2\\ \hline
+
+\end{tabular}
+ 
+
 
 
  	\end{document}
