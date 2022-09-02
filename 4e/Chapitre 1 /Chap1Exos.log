@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.7)  2 SEP 2022 08:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.7)  2 SEP 2022 08:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"Chapitre 1- Proportionnalité.tex"
-(./Chapitre 1- Proportionnalité.tex
+**Chap1Exos.tex
+(./Chap1Exos.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/extsizes/extarticle.cls
@@ -1108,8 +1108,8 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \f@ncyO@olf=\skip66
 \f@ncyO@orf=\skip67
 )
-(./Chapitre 1- Proportionnalité.aux)
-\openout1 = `"Chapitre 1- Proportionnalité.aux"'.
+(./Chap1Exos.aux)
+\openout1 = `Chap1Exos.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
@@ -1126,8 +1126,7 @@ LaTeX Font Info:    ... okay on input line 30.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 30.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmr.fd
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Info: Redefining \degres on input line 30.
@@ -1255,9 +1254,9 @@ LaTeX Info: Redefining \ref on input line 30.
 LaTeX Info: Redefining \pageref on input line 30.
 LaTeX Info: Redefining \nameref on input line 30.
 
-(./Chapitre 1- Proportionnalité.out) (./Chapitre 1- Proportionnalité.out)
+(./Chap1Exos.out) (./Chap1Exos.out)
 \@outlinefile=\write5
-\openout5 = `"Chapitre 1- Proportionnalité.out"'.
+\openout5 = `Chap1Exos.out'.
 
 LaTeX Info: Redefining \Ref on input line 30.
 
@@ -1273,26 +1272,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
 
-(./Chapitre 1- Proportionnalité.aux)
+(./Chap1Exos.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 38.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
-Package rerunfilecheck Info: File `"Chapitre 1- Proportionnalité".out' has no
-t changed.
+Package rerunfilecheck Info: File `Chap1Exos.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
  ) 
 Here is how much of TeX's memory you used:
  20969 strings out of 493014
- 365205 string characters out of 6133351
+ 364930 string characters out of 6133351
  477817 words of memory out of 5000000
  24086 multiletter control sequences out of 15000+600000
  25037 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,54p,3263b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,11n,54p,3240b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/
 texlive/2016/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/public/lm/lmr17.pfb>
-Output written on "Chapitre 1- Proportionnalité.pdf" (1 page, 47015 bytes).
+Output written on Chap1Exos.pdf (1 page, 47015 bytes).
 PDF statistics:
  25 PDF objects out of 1000 (max. 8388607)
  19 compressed objects within 1 object stream
