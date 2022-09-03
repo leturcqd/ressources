@@ -1,0 +1,383 @@
+	\documentclass[12 pt]{article}
+
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	 \usepackage{fancyhdr}
+	 \usepackage{float}
+
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{\thepage} 
+	\fancyhead[L]{Arithmétique}
+	\fancyhead[R]{2022-2023}
+	\newcounter{n}
+	\numberwithin{n}{section}
+	\newtheorem{theo}{Théorème}
+	\labelformat{theo}{théorème}
+	\newtheorem*{prop}{Propriété}
+	\labelformat{prop}{propriété}
+	\newtheorem*{cor}{Corollaire}
+	\newtheorem{lm}{Lemme}
+	\labelformat{lm}{lemme~#1}
+	\newtheorem{hyp}[n]{Hypothèse}
+	
+	{\theoremstyle{definition}
+	\newtheorem*{df}{Définition}
+    \newtheorem*{rmq}{Remarque}
+	\newtheorem*{nt}{Notation}
+	\newtheorem*{voc}{Vocabulaire}
+	\newtheorem*{meth}{Méthode}
+	\newtheorem*{ex}{Exemple}
+	\newtheorem*{exs}{Exemples}
+	\newtheorem*{formule}{Formule}
+	\newtheorem*{formules}{Formules}
+	}
+
+	\renewcommand\epsilon{\varepsilon}
+	\renewcommand\phi{\varphi}
+	\newcommand\R{\mathbb{R}}
+	\newcommand\s{\mathbb{S}}
+	
+	
+	
+	\title{Exercices Arithmétique}
+	\date{}
+	\begin{document}
+
+\begin{center}{\Large Exercices d'arithmétique}\\ 
+ \end{center} 
+\section*{Division euclidienne}
+
+\subsection*{Exercice 1}
+
+Effectuer les divisions euclidiennes de : \begin{enumerate}
+\item $45$ par $4$ ; 
+\item $59$ par $7$ ; 
+\item $59$ par $9$ ; 
+\item $63$ par $9$.
+\end{enumerate}
+
+\subsection*{Exercice 2}
+
+Effectuer les divisions euclidiennes de : \begin{enumerate}
+\item $63$ par $3$ ; 
+\item $107$ par $7$ ; 
+\item $1792$ par $8$ ; 
+\item $624$ par $6$.
+\end{enumerate}
+
+\subsection*{Exercice 3}
+
+Effectuer les divisions euclidiennes de : \begin{enumerate}
+\item $747$ par $12$ ; 
+\item $3949$ par $21$ ; 
+\item $10240$ par $16$ ; 
+\item $6399$ par $9$.
+\end{enumerate}
+
+\subsection*{Exercice 4}
+On veut répartir une classe de $29$ élèves en groupes de $4$. \begin{enumerate}
+\item Combien de groupes complets peut-on former ? 
+\item Combien d'élèves resterait-il alors ? 
+\item Donner une répartition possible si l'on autorise à former un groupe de plus de quatre personnes. 
+\item Donner une répartition possible en autorisant seulement des groupes de $3$ ou $4$ personnes. 
+\end{enumerate}
+
+\subsection*{Exercice 5}
+
+On veut trouver tous les nombres $N$ tels que les divisions euclidiennes de $43$ par $N$ et de $55$ par $N$ aient le même reste.
+\begin{enumerate}
+\item On note $R$ ce reste, $Q$ le quotient de la division euclidienne de $43$ par $N$. Écrire une expression littérale reliant
+$Q$, $N$ et $R$.
+\item On note $Q'$ le quotient de le division euclidienne de $55$ par $N$. Écrire une expression littérale reliant
+$Q'$, $N$ et $R$.
+\item En utilisant les deux questions précédentes, montrer que $N$ divise à la fois $55-R$ et $43-R$. 
+\item En déduire que $N$ divise $12$. 
+\item Écrire la liste des diviseurs de $12$. 
+\item Vérifier que les nombres obtenus à la question précédente vérifient tous la propriété voulue au début de l'exercice.
+\end{enumerate}
+
+\subsection*{Exercice 6}
+
+Reprendre l'exercice précédent pour vérifier qu'il existe exactement quatre nombres $N$ pour lesquels les divisions euclidiennes de $10 753$ et $10 768$ par $N$ ont le même reste.
+
+\subsection*{Exercice 7}
+
+Calculer les restes des divisions euclidiennes de \begin{enumerate}
+\item $1 000 000 \ldots 000$ par $3$ ; 
+\item $9 999 999 999 \ldots 999$ par $4$ ;
+\item $1110987654321$ par $5$. 
+\item $98765432109876543210987654321$ par $1000$. 
+\end{enumerate}
+Indication : il n'y a évidemment pas à calculer toute la division. Pour les deux premiers exemples, on peut essayer de regarder ce qui se passe pour les premières valeurs ($10$, $100$, $100$,\ldots, et $9$, $99$, $999$, \ldots) pour deviner ce qui se passera ensuite. 
+
+
+
+\section*{Diviseurs et multiples}
+
+\subsection*{Exercice 1}
+
+Déterminer si : \begin{enumerate}
+\item $72$ est multiple de $8$ ; 
+\item $84$ divise $4$ ; 
+\item $57$ admet $3$ comme diviseur ; 
+\item $91$ est divisible par $13$. 
+\end{enumerate}
+
+\subsection*{Exercice 2}
+
+\begin{enumerate}
+\item Trouver un nombre multiple de $7$, de $9$ et de $21$. 
+\item Quel est le plus petit tel nombre ? 
+\end{enumerate}
+
+
+\subsection*{Exercice 3}
+Peut-on répartir $720$ élèves en classes de $30$ ? de $29$ ? 
+
+\subsection*{Exercice 4}
+
+On veut répartir $420$ livres équitablement sur des étagères. 
+\begin{enumerate}
+\item Le peut-on avec $18$ étagères ? 
+\item Et avec $21$ étagères ? 
+\end{enumerate}
+
+\subsection*{Exercice 5}
+
+Un cafetier doit composer des corbeilles identiques avec $36$ croissants et $24$ pains au chocolat (sans laisser de reste). 
+\begin{enumerate}
+\item Que peut-on dire du nombre $N$ de corbeilles, par rapport à $36$ et $24$ ? (Si ce n'est pas immédiat, noter $c$ le nombre de croissants par corbeille, et $p$ celui de pains au chocolat, et écrire une expression littérale entre $c$ et $N$ et une autre entre $p$ et $N$.)
+\item Faire une liste des nombres à vérifier la propriété trouver à la question précédente. 
+\item Vérifier que tous ces nombres donnent une solution, et donner la composition des corbeilles dans chacun des cas. (Indication : il y a six solutions). 
+\end{enumerate}
+
+\section*{Nombres premiers}
+\subsection*{Exercice 1}
+
+Les nombres suivants sont-ils premiers ? 
+\[ 9 ; 13 ; 15 ; 21 ; 33; 37.\]
+
+\subsection*{Exercice 2}
+
+Examiner si le nombre $2\times 3 \times 5 + 7 x11$ est premier. (Indication : le calculer.)
+
+
+\subsection*{Exercice 3}
+
+Sans le calculer, dire pourquoi le nombre $2\times 3 \times 7 + 3 \times 5 \times 11$ n'est pas premier. 
+
+\subsection*{Exercice 4}
+
+\begin{enumerate}\item Trouver le plus petit nombre premier supérieur à $100$.
+\item Même question avec $200$. 
+\item Même question avec $300$. 
+\end{enumerate}
+\subsection*{Exercice 5}
+
+Trouver le plus grand nombre premier inférieur à $750$. 
+
+\subsection*{Exercice 6}
+
+Faire la liste des nombres premiers inférieurs à $200$.
+
+\subsection*{Exercice 7}
+
+Vérifier qu'il n'y a aucun nombre premier entre $1328$ et $1360$.
+
+\subsection*{Exercice 8}
+
+\begin{enumerate}
+\item Que dire du chiffre des unités d'un nombre premier supérieur à 10 ?
+\item
+Justifier la réponse. \item Est-ce une condition suffisante ? \end{enumerate}
+
+\section*{Décomposition en facteurs premiers}
+\subsection*{Exercice 1}
+
+Décomposer en facteurs premiers les nombres suivants : 
+
+\[ 14 ; 18 ; 23 ; 24 ; 26 ; 30 ; 45 ; 77 ; 735 ; 1 001. \]
+
+\subsection*{Exercice 2}
+
+Même exercice avec les nombres suivants : \[
+14\times 23 ; 1800 ; 26 \times 30 \times 77 ; 14 014.\]
+
+\subsection*{Exercice 3}
+
+\begin{enumerate}
+\item Calculer le produit $1\times 2 \times 3 \times 4 \times 5 \times 6 \times 7$. 
+\item En déduire la décomposition de $5 040$ en facteurs premiers. 
+\item En déduire la décomposition de $40 320$ en facteurs premiers. (Indication : par quoi faut-il multiplier $5 040$ pour trouver $40 320$ ?)
+\end{enumerate}
+
+\subsection*{Exercice 4}
+Décomposer en facteurs premiers, sans les calculer, les produits suivants : 
+\begin{enumerate}
+\item $1\times 3 \times 5 \times 7 \times 9 \times 11 \times 13$ ;
+\item $2 \times 4 \times 6 \times 8 \times 10 \times 12 \times 14$ ; 
+\item $ 1\times 2 \times 3 \times \cdots \times 13 \times 14 \times 15$ ; 
+\item $2 \times 4 \times 6 \times 8 \times \cdots \times 26 \times 28 \times 30$. 
+\end{enumerate}
+
+\subsection*{Exercice 5}
+\begin{enumerate}
+\item Décomposer en produit de nombres premiers les nombres 
+$1 326$, $1 001$ et $31 416$. 
+\item Décomposer en facteur premier le produit $1 326\times 1 001
+\times 31 416$. 
+\item En déduire que $1 326\times 1 001
+\times 31 416$ est le carré d'un nombre entier, dont on donnera la décomposition en facteurs premier. 
+\item Calculer $\sqrt{1 326\times 1 001
+\times 31 416}$. 
+\end{enumerate}
+
+\subsection*{Exercice 6}
+
+\begin{enumerate}
+\item Décomposer en facteurs premiers les nombres $88$, $693$, et 
+$1 617$. 
+\item En déduire que $88 \times 693 \times 1 617$ est le cube d'un entier dont on donnera la décomposition en facteurs premiers. 
+\item Calculer cet entier.
+\end{enumerate}
+
+
+\section*{Liste de diviseurs}
+\subsection*{Exercice 1}
+Établir la liste des diviseurs des nombres suivants : 
+\[ 64 ; 100 ; 360 ; 504 ; 1 001 ; 2 048.\]
+
+\subsection*{Exercice 2}
+
+Même exercice avec les nombres suivants : 
+\[ 131 ; 197 ; 397.\]
+
+\subsection*{Exercice 3}
+
+
+On veut partager une longueur de $168$ mm en longueurs égales, faisant un nombre entiers de millimètres. Combien de morceaux peut-on faire ? 
+
+\subsection*{Exercice 4}
+
+Établir la liste des diviseurs des nombres suivants : 
+\[ 2^2 \times 3 \times 5^3  ; 2 \times 3^3 \times 7 ; 3^4 \times 11.\]
+
+\subsection*{Exercice 5}
+
+On considère un nombre dont la décomposition en facteurs premiers s'écrit $7^a \times 11^b$, où $a$ et $b$ sont des entiers. 
+\begin{enumerate}
+\item Quelle est la forme de la décomposition en facteur premier d'un diviseur de ce nombre ? 
+\item En déduire le nombre de tels diviseurs en fonction de $a$ et de $b$. 
+\end{enumerate}
+
+\subsection*{Exercice 6}
+
+Utiliser l'exercice précédent pour obtenir le nombre de diviseurs de $2^2\times 3^3\times 5$. 
+
+\subsection*{Exercice 7}
+
+Généralisant les exercices 5 et 6, déterminer le nombre de diviseurs de : \begin{enumerate}
+\item $2^a$ (en fonction de $a$) ;
+\item $2^a \times 3^b$ (en fonction de $a$ et de $b$) ;
+\item $10^a$ (en fonction de $a$) ; 
+\item $2^a\times 3^a\times 5^b$ (en fonction de $a$ et de $b$) ;
+\item d'un nombre dont la décomposition en facteurs 
+premiers est $p_1^{a_1}\times p_2^{a_2}\times\cdots\times p_n^{a_n}$. 
+\end{enumerate}
+
+\subsection*{Exercice 8 - pavages réguliers}
+
+On veut paver le plan en utilisant uniquement des polygones réguliers à $N$ côtés de même taille. 
+
+\begin{enumerate}
+\item Rappeler la valeur de la somme des angles d'un triangle. 
+\item En coupant un quadrilatère suivant une diagonale, en déduire la formule de la somme des angles d'un quadrilatère. 
+\item En reliant tous les sommets d'un polygone régulier à $N$ côtés à son centre, combien de triangles forme-t-on ? 
+\item En déduire soigneusement que la somme des angles d'un tel polygone est $(N-2)\times 180^o$. 
+\item En déduire que chaque angle d'un polygone régulier à $N$ côtés mesure $\frac{N-2}N\times 180^o$.
+\item On suppose qu'on a pu paver notre plan en utilisant des polygones à $N$ côtés. On suppose qu'autour de chaque sommet, il y a $M$ polygones. Montrer que $M\times \frac{N-2}N\times 180^o = 360^o$.
+\item En déduire que $\frac{2\times N}{N-2}$ est un entier. 
+\item Démontrer que $\frac{2\times N}{N-2} = 2 + \frac{4}{N-2}$. 
+\item En déduire que $N-2$ doit diviser $4$. 
+\item Quelles sont les valeurs possibles de $N$ ? (Indication : il y en a $3$.)
+\item Tracer les trois pavages possibles. 
+\end{enumerate}
+
+\section*{Plus grand diviseur commun}
+
+\subsection*{Exercice 1}
+
+Calculer le plus grand diviseur commun de $720$ et $216$. 
+
+
+\subsection*{Exercice 2}
+
+Calculer le plus grand diviseur commun de $1 092$ et $228$. 
+
+
+\subsection*{Exercice 3}
+
+Dans un collège, toutes les classes ont la même taille. D'autre part, il y a $174$ élèves en $6^e$ et $145$ élèves en $5^e$. En déduire le nombre d'élèves par classe. 
+
+\subsection*{Exercice 4}
+
+Simplifier au maximum les fractions suivantes  : 
+\[ \frac8{24} ; \frac{720}{216} ; \frac{228}{1092} ; \frac{100}{256}
+; \frac{1 326}{31 416}.\]
+
+\section*{Plus petit multiple commun}
+
+\subsection*{Exercice 1}
+
+
+\begin{enumerate}
+\item Calculer le plus petit multiple commun de $720$ et $216$. 
+
+\item Même question avec $228$ et $1 092$. 
+
+\item En utilisant les exercices $1$ et $2$ de la partie précédente, 
+comparer dans les deux exemples le produit du plus grand diviseur commun 
+et du plus petit multiple commun avec le produit des deux nombres. 
+Constater. 
+\end{enumerate}
+
+\subsection*{Exercice 2}
+
+Donner la liste des multiples communs à $10$ et $12$ jusque $400$. 
+
+\subsection*{Exercice 3}
+
+\begin{enumerate}
+\item Calculer le plus petit nombre à être multiple de tous les entiers de $1$ à $10$ inclus. 
+\item Donner tous les nombres à au plus quatre chiffres à être multiples de tous les entiers de $1$ à $10$. 
+\end{enumerate}
+
+\subsection*{Exercice 4}
+
+Réduire au même dénominateur les fractions suivantes, puis les ranger dans l'ordre croissant et les additionner. Réduire ensuite le résultat en une fraction irréductible.
+\begin{enumerate}
+\item $\frac16$ et $\frac1{15}$ ;
+\item $\frac12$, $\frac13$ et $\frac16$ ;
+\item $\frac14$, $\frac1{11}$ et $\frac5{44}$. 
+\item $\frac57$, $\frac29$, et $\frac4{62}$. 
+\end{enumerate}
+
+	\end{document}
+	
+
+
