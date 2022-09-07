@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.7)  4 SEP 2022 19:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.7)  7 SEP 2022 21:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1217,15 +1217,15 @@ Package xypdf Info: Line width: 0.39998pt on input line 59.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
-* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* h-part:(L,W,R)=(56.9055pt, 483.69684pt, 56.90553pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23582pt, 56.90552pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=418.25368pt
-* \textheight=591.5302pt
-* \oddsidemargin=17.3571pt
-* \evensidemargin=17.3571pt
-* \topmargin=-7.86334pt
+* \textwidth=483.69684pt
+* \textheight=731.23582pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -1273,7 +1273,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-[2] [3] [4] [5] [6] [7] [8] [9]
+[2] [3] [4] [5] [6] [7]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 380.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 380.
  (./Exos_Arithmétique.aux)
@@ -1284,13 +1284,13 @@ Package rerunfilecheck Info: File `Exos_Arithmétique.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 380.
  ) 
 Here is how much of TeX's memory you used:
- 21189 strings out of 493014
- 365123 string characters out of 6133351
- 485336 words of memory out of 5000000
+ 21187 strings out of 493014
+ 365111 string characters out of 6133351
+ 486398 words of memory out of 5000000
  24164 multiletter control sequences out of 15000+600000
  34032 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,12n,54p,3250b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,54p,3250b,486s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/lo
 cal/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/20
 16/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2016/texmf-d
@@ -1304,10 +1304,10 @@ dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/lm/lmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
 lm/lmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy8.p
 fb>
-Output written on Exos_Arithmétique.pdf (9 pages, 157247 bytes).
+Output written on Exos_Arithmétique.pdf (7 pages, 156034 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 235 compressed objects within 3 object streams
- 143 named destinations out of 1000 (max. 500000)
+ 251 PDF objects out of 1000 (max. 8388607)
+ 229 compressed objects within 3 object streams
+ 141 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
