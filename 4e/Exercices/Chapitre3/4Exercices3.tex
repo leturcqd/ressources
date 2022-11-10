@@ -1,0 +1,213 @@
+\documentclass[12 pt]{extarticle}
+
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	 \usepackage{fancyhdr}
+	 \usepackage{float}
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{\thepage} 
+	\fancyhead[L]{Fiche d'exercices}
+	\fancyhead[R]{2022-2023}
+	
+	
+\renewcommand{\theenumi}{\alph{enumi})}
+
+\newlength{\taillecellule}
+\setlength{\taillecellule}{2cm}
+\newcolumntype{C}{@{}>{\centering\arraybackslash}p{\taillecellule}@{}}
+
+\usepackage{pstricks,multido}
+\usepackage{arrayjob}
+\usepackage{calc,xlop}
+
+	\title{Exercices Chapitre 3}
+	\date{}
+	\begin{document}
+
+\begin{center}{\Large Chapitre 3 - Opérations sur les nombres relatifs}\\
+ \end{center} 
+ 
+ \section{Addition, soustraction, opposé}
+\subsection*{Exercice 1}
+
+Remplir les pointillés dans les opérations suivantes. \begin{enumerate}
+\item $ 2+ \ldots = -5 $,
+\item $ 5 - \ldots = 9$ ,
+\item $10,4 - 12, 2 = \ldots$ ,
+\item $ - 14,1 - 7 + 1,2 - 3 = \ldots$ ,
+\item $- 2 + 1 - (\ldots + 4) = 6$,
+\item $ 1 - (  - (2 - 4) - ( -5 + 2) ) = \ldots$,
+\item $ - (3 - (4 - 5) - 2) - (-2) = \ldots $. 
+\end{enumerate}
+
+\subsection*{Exercice 2}
+Remplir les pyramides suivantes pour que chaque case soit la somme des cases sur lesquelles elle repose. 
+
+\begin{figure}[H]
+\center
+\begin{tikzpicture}[scale=.9,every node/.style={draw,minimum width=1.8cm,minimum height=.9cm}]
+\draw (0,0)  node {\phantom{9}};
+\draw(-1,-1) node {\phantom {8}} ++(2,0) node {\phantom {1}};
+\draw(-2,-2) node {\phantom{6,5}} ++(2,0) node {\phantom{1,5}} ++(2,0) node {\phantom{-0,5}};
+\draw(-3,-3) node {\phantom{}{7,5}} ++(2,0) node {\phantom{}{-1}} ++(2,0) node {\phantom{}{2,5}} ++(2,0) node {\phantom{}{-3}};
+\end{tikzpicture}\ 
+\begin{tikzpicture}[scale=.9,every node/.style={draw,minimum width=1.8cm,minimum height=.9cm}]
+\draw (0,0)  node {-28};
+\draw(-1,-1) node {\phantom {-15}} ++(2,0) node {\phantom {-13}};
+\draw(-2,-2) node {\phantom{-4}} ++(2,0) node {-11} ++(2,0) node {\phantom{-2}};
+\draw(-3,-3) node {3} ++(2,0) node {-7} ++(2,0) node {\phantom{-4}} ++(2,0) node {\phantom{2}};
+\end{tikzpicture}
+\ \\ 
+\ \\
+\begin{tikzpicture}[scale=.9,every node/.style={draw,minimum width=1.8cm,minimum height=.9cm}]
+\draw (0,0)  node {\phantom{2,7}};
+\draw(-1,-1) node {\phantom {1,2}} ++(2,0) node {\phantom {}{1,5}};
+\draw(-2,-2) node {\phantom{1,8}} ++(2,0) node {\phantom{}{-0,6}} ++(2,0) node {\phantom{2,1}};
+\draw(-3,-3) node {\phantom{}{4,1}} ++(2,0) node {\phantom{}{-2,3}} ++(2,0) node {\phantom{1,7}} ++(2,0) node {\phantom{0,4}};
+\end{tikzpicture}\ 
+\begin{tikzpicture}[scale=.9,every node/.style={draw,minimum width=1.8cm,minimum height=.9cm}]
+\draw (0,0)  node {\phantom{0}};
+\draw(-1,-1) node {\phantom{} {-5,9}} ++(2,0) node {\phantom {5,9}};
+\draw(-2,-2) node {\phantom{-5,7}} ++(2,0) node {\phantom{}{-0,2}} ++(2,0) node {\phantom{6,1}};
+\draw(-3,-3) node {\phantom{}{2,4}} ++(2,0) node {\phantom{-8,1}} ++(2,0) node {\phantom{7,9}} ++(2,0) node {\phantom{}{-1,8}};
+\end{tikzpicture}
+\end{figure}
+
+\subsection*{Exercice 3}
+
+Dans les opérations suivantes, utilisez les règles de calcul pour vous débarrasser des parenthèses. \textbf{On ne demande a priori pas d'effectuer le calcul.}
+\begin{enumerate}
+\item $ 2 - (-3)$ ,
+\item $ - 2 - (3 + 4)$,
+\item $- (10 - (-5 + 4)+ (-3 - 2))$,
+\item $10 - (4 - ( 5 - 1 - 2 - (-3 +1 ) ) ) - (-2 +45)$,
+\item $x- (y-z)$,
+\item $(x-y) - (z-y)$,
+\item $y - (y-x)$,
+\item $(y + 4) - (x+4)$.
+\end{enumerate}
+
+
+\section{Multiplication et division}
+
+\subsection*{Exercice 4}
+
+Effectuez les calculs suivants. 
+
+\begin{enumerate}
+\item $ 2 \times (-3 ) $,
+\item $ (-5) \times 2$, 
+\item $(-3) \times (-4)$, 
+\item $2 \times (-2) \times (-2) \times 2$, 
+\item $1 \times (-2)\times 3 \times (-4)$, 
+\item $5 \times 3 \times 1 \times (-1) \times (-3) \times (-5)$, 
+\item $7\times (7-3) \times (7-6) \times (7-9)$, 
+\item $1 - (-2) \times (-4) $ 
+\item $( - 12  +1) \times (-12-1)$. 
+\end{enumerate}
+\subsection*{Exercice 5}
+
+Effectuez les calculs suivants. 
+\begin{enumerate}
+\item $(- 4) \div2$, 
+\item $ (-12) \div (-2)$,
+\item $ - (12\div (-2))$, 
+\item $ (-5 + 14) \div (12 - 15)$, 
+\item $2 \times (-5) \div (10-20)$, 
+\item $12 \times (-4 + 9) \div (34- 46)$, 
+\item $ \frac{(-3) \times (-4) \times (-5)}{1 \times 2 \times 3}$, 
+\item $\frac{(-4)\times(-5)\times (-6) \times (-7)}{1\times 2 \times3 \times 4}$.
+\end{enumerate}
+
+\subsection*{Exercice 6}
+Remplir les pyramides suivantes, de telle sorte que chaque case soit le produit 
+des deux cases sur lesquelles elle repose.
+
+
+
+\begin{figure}[H]
+\center
+\begin{tikzpicture}[scale=.9,every node/.style={draw,minimum width=1.8cm,minimum height=.9cm}]
+\draw (0,0)  node {\phantom{}{-48}};
+\draw(-1,-1) node {\phantom {8}} ++(2,0) node {\phantom{}{6}};
+\draw(-2,-2) node {\phantom{4}} ++(2,0) node {\phantom{}{-2}} ++(2,0) node {\phantom{-3}};
+\end{tikzpicture}\ 
+\begin{tikzpicture}[scale=.9,every node/.style={draw,minimum width=1.8cm,minimum height=.9cm}]
+\draw (0,0)  node {\phantom{54}};
+\draw(-1,-1) node {\phantom {3}} ++(2,0) node {\phantom {18}};
+\draw(-2,-2) node {\phantom{-1}} ++(2,0) node {\phantom{-3}} ++(2,0) node {\phantom{-6}};
+\draw(-3,-3) node {1} ++(2,0) node {-1} ++(2,0) node {3} ++(2,0) node {-2};
+\end{tikzpicture}
+\ \\ 
+\ \\
+\begin{tikzpicture}[scale=.9,every node/.style={draw,minimum width=1.8cm,minimum height=.9cm}]
+\draw (0,0)  node {\phantom{-5184}};
+\draw(-1,-1) node {\phantom {}{48}} ++(2,0) node {\phantom {}{-108}};
+\draw(-2,-2) node {\phantom{-8}} ++(2,0) node {\phantom{-6}} ++(2,0) node {\phantom{18}};
+\draw(-3,-3) node {\phantom{}{4}} ++(2,0) node {\phantom{}{-2}} ++(2,0) node {\phantom{3}} ++(2,0) node {\phantom{6}};
+\end{tikzpicture}\ 
+\begin{tikzpicture}[scale=.9,every node/.style={draw,minimum width=1.8cm,minimum height=.9cm}]
+\draw (0,0)  node {-4320};
+\draw(-1,-1) node {\phantom{} {-72}} ++(2,0) node {\phantom {-60}};
+\draw(-2,-2) node {\phantom{-12}} ++(2,0) node {\phantom{}{6}} ++(2,0) node {\phantom{-10}};
+\draw(-3,-3) node {\phantom{}{4}} ++(2,0) node {\phantom{-3}} ++(2,0) node {\phantom{-2}} ++(2,0) node {\phantom{}{5}};
+\end{tikzpicture}
+\end{figure}
+
+\section{Calculs mixtes}
+\subsection*{Exercice 7 }
+
+Numérotez les opérations puis effectuez les calculs. 
+
+\begin{enumerate}
+\item $-2 + 3 \times (-4)$, 
+\item $ (4 + (-3)) \times 5 + (-2)$,
+\item $ 8 \div(-4) + 3 \times (-5)$, 
+\item $ 6 \div 2 \times (-4)$, 
+\item $(12,4 - (-4,6)) \times (-2) + (-2) \times (-7) $, 
+\item $ 0,4 \div (-5)$, 
+\item $ - 3 \div 0,2$, 
+\item $ 5 \div ((-4) \div 8)$,
+\item $ (5 \div (-4) )\div 8$.
+
+
+\end{enumerate}
+
+\subsection*{Exercice 8}
+
+Placez les bonnes opérations dans les pointillés, pour obtenir le résultat voulu. 
+
+\begin{enumerate}
+\item $2 \ldots (-4) = 6$, 
+\item $(3 \ldots (-2) ) \ldots (-4) = -4$, 
+\item $ -4 \ldots 2 \ldots 8 \ldots (-3) = -52$, 
+\item $ (- 3) \ldots (- 5) \ldots (-4) \ldots (-2) = 17$.
+\end{enumerate}
+
+\subsection*{Exercice 9}
+
+Ajoutez des parenthèses pour obtenir le résultat voulu si l'égalité donnée est fausse. 
+\begin{enumerate}
+\item $5 + (-2) \times 3 = 9$ 
+\item $12 - (-4) + 5 = 22$, 
+\item $12 - (-4) + 5 = 11$, 
+\item $8 \times (-3) \div 4 + (-2) = - 8$,
+\item $8 \times (-3) \div 4 - (-2) = -4 $. 
+\end{enumerate}
+
+ 	\end{document}
