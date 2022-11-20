@@ -1,0 +1,102 @@
+\documentclass[14 pt]{extarticle}
+
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{float}
+	\usepackage{hyperref}
+	\usepackage{array}
+	 \usepackage{fancyhdr}
+\renewcommand{\theenumi}{\alph{enumi})}
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{} 
+	\fancyhead[L]{Contrôle}
+	\fancyhead[R]{24 novembre 2022}\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+	
+	
+	\title{Contrôle Chapitre 3}
+	\date{}
+	\begin{document}
+
+\begin{center}{\large Contrôle Chapitre 3}\\ 
+ \end{center}
+ 
+ 
+ \subsection*{Exercice 1 (5 points)}
+ 
+ Donnez le signe des calculs suivants sans calculer le résultat : 
+ \begin{enumerate}
+ \item $ -5323,131 - 9,0132414139$, 
+ \item $ - 324399239 + 13412324312414314$,
+ \item $ (-1224)  \div (-2)$, 
+ \item $ (-132843 ) \times (-124)$, 
+ \item $(1343) \div (-14).$
+ \end{enumerate}
+
+\subsection*{Exercice 2 (7 points)}
+
+Effectuez les calculs suivants : 
+\begin{enumerate}
+\item $ 2 + (-7) + 3$, 
+\item $ 5 - (- 3)  - 5 $, 
+\item $ 4 - (7 - (-2) ) + (-2) - (5 -12)$, 
+\item $ (-3) \times 2 $, 
+\item $ (3 - 6) \times (7- 10)$, 
+\item $ (16-10) \div (-1 - 1)$, 
+\item $( 2 - ( -8) ) \div ( -6 + 8)$. 
+\end{enumerate}
+
+\subsection*{Exercice 3 (6 points)}
+
+Remplissez la pyramide de gauche comme une pyramide additive, et celle de droite comme une pyramide multiplicative. 
+\begin{figure}[H]
+\center
+\begin{tikzpicture}[scale=.9,every node/.style={draw,minimum width=1.8cm,minimum height=.9cm}]
+\draw (0,0)  node {};
+\draw(-1,-1) node {} ++(2,0) node {8};
+\draw(-2,-2) node {} ++(2,0) node {-2} ++(2,0) node {};
+\draw(-3,-3) node {-3} ++(2,0) node {} ++(2,0) node {-1} ++(2,0) node {};
+\end{tikzpicture}
+\begin{tikzpicture}[scale=.9,every node/.style={draw,minimum width=1.8cm,minimum height=.9cm}]
+\draw (0,0)  node {};
+\draw(-1,-1) node {} ++(2,0) node {8};
+\draw(-2,-2) node {} ++(2,0) node {-2} ++(2,0) node {};
+\draw(-3,-3) node {-3} ++(2,0) node {} ++(2,0) node {-1} ++(2,0) node {};
+\end{tikzpicture}\ 
+\end{figure}
+
+
+
+\subsection*{Exercice 4 (2 points)}
+
+
+Effectuez les calculs suivants en détaillant les étapes : 
+\begin{enumerate}
+\item $16 \times (-7) + 4 \times (-5) - 12 \times 2$, 
+\item $ 9 \div (-3) \times (-2)$
+\end{enumerate}
+
+%
+%\subsection*{Exercice 5 (pour vous occuper à la fin)}
+%
+%Trouvez le nombre maximal de régions découpées par deux, puis trois, puis quatre cercles. Essayez de deviner le résultat pour cinq cercles.  Montrez qu'il est faux. 
+
+
+ 	\end{document}
