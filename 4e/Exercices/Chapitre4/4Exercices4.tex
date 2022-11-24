@@ -1,0 +1,74 @@
+\documentclass[12 pt]{extarticle}
+
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	 \usepackage{fancyhdr}
+	 \usepackage{float}
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{\thepage} 
+	\fancyhead[L]{Fiche d'exercices}
+	\fancyhead[R]{2022-2023}
+	
+	
+\renewcommand{\theenumi}{\alph{enumi})}
+
+\newlength{\taillecellule}
+\setlength{\taillecellule}{2cm}
+\newcolumntype{C}{@{}>{\centering\arraybackslash}p{\taillecellule}@{}}
+\usetikzlibrary{calc}
+\usepackage{pstricks,multido}
+\usepackage{arrayjob}
+\usepackage{calc,xlop}
+
+\newcounter{AlphNode}
+\renewcommand*{\theAlphNode}{\Alph{AlphNode}}
+
+	\title{Exercices Chapitre 4}
+	\date{}
+	\begin{document}
+
+\begin{center}{\Large Chapitre 4 - Triangles égaux}\\
+ \end{center} 
+ 
+ \subsection*{Exercice 1}
+ \begin{figure}[H]
+ \center
+ \begin{tikzpicture}[scale=1.5]
+    \foreach \x in {0,1,2,3,4}
+    \foreach \y in {0,1,2,3,4}
+    {
+    \draw (\x,\y) -- ++(0, .1); 
+    \draw (\x,\y) -- ++(0, -.1); 
+    \draw (\x,\y) -- ++(.1,0); 
+    \draw (\x,\y) -- ++(-.1,0); 
+    \def\lettre{(\x+1)+5*(\y)};
+    \pgfmathsetcounter{AlphNode}{Mod(\lettre,26)};
+  \draw (\x, \y) ++ (.12,.2)node {\scriptsize\theAlphNode};
+    }
+  \end{tikzpicture}
+ \end{figure}
+  
+  \begin{enumerate}
+  \item Citer un triangle égal au triangle $AHL$. 
+  \item Citer trois triangles égaux au triangle $AMP$. 
+  \item Donner tous les triangles égaux au triangle $PVL$ ayant $A$ comme sommet.
+   \item Donner tous les triangles égaux au triangle $PVL$ ayant $M$ comme sommet.
+  \item Combien y a-t-il de triangles égaux à $PVI$ ayant $E$ comme sommet ? 
+  \end{enumerate}
+ 
+ 	\end{document}
