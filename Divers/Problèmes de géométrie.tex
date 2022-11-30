@@ -1,0 +1,130 @@
+\documentclass[12 pt]{extarticle}
+
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	 \usepackage{fancyhdr}
+	 \usepackage{float}
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{\thepage} 
+	\fancyhead[L]{Fiche d'exercices}
+	\fancyhead[R]{2022-2023}
+	
+	
+\renewcommand{\theenumi}{\alph{enumi})}
+
+\newlength{\taillecellule}
+\setlength{\taillecellule}{2cm}
+\newcolumntype{C}{@{}>{\centering\arraybackslash}p{\taillecellule}@{}}
+\usetikzlibrary{calc}
+\usepackage{pstricks,multido}
+\usepackage{arrayjob}
+\usepackage{calc,xlop}
+
+\newcounter{AlphNode}
+\renewcommand*{\theAlphNode}{\Alph{AlphNode}}
+
+	\title{Exercices divers}
+	\date{}
+	\begin{document}
+
+\begin{center}{\Large Problèmes variés de géométrie\\}
+ \end{center} 
+ 
+\subsection*{Exercice 1 - Variations sur un même thème (I)}
+ 
+On considère un triangle $ABC$ et on suppose donnés un point $D\in[AB]$ et un point $E\in[AC]$ tels que $(DE)$ et $(BC)$ soient parallèles. 
+
+On suppose ici $ED=DB$. L'objectif est de déterminer comment placer précisément les points $D$ et $E$. 
+
+\begin{enumerate}
+\item Faire une figure à main levée. (Se convaincre au passage qu'il serait
+non immédiat de réussir à faire la figure avec $ED=DB$.)
+
+\item On trace aussi la parallèle à $(AB)$ passant par $E$ et on note $F$
+son intersection avec le côté $[BC]$. Compléter la figure. 
+
+\item Démontrer que $BDEF$ est un parallélogramme. 
+
+\item Sachant que $ED=DB$, montrez que le quadrilatère $BDEF$ est un losange. 
+
+\item En déduire que $(BE)$ est un axe de symétrie du losange $BDEF$. 
+
+\item Que représente $(BE)$ pour l'angle $\widehat{DBF}$ ? 
+
+\item En déduire\footnote{(Indication : puisqu'il est écrit « en déduire », on commencera par tracer la droite $(BE)$ pour trouver le point $E$.)} un protocole de construction précis de la figure complète.
+
+\end{enumerate}
+\subsection*{Exercice 2 - Variations sur un même thème (II)}
+ 
+On considère un triangle $ABC$ et on suppose donnés un point $D\in[AB]$ et un point $E\in[AC]$ tels que $(DE)$ et $(BC)$ soient parallèles. 
+
+On suppose ici $ED=DB+EC$. L'objectif est de déterminer comment placer précisément les points $D$ et $E$. 
+
+\begin{enumerate}
+\item Faire une figure à main levée.
+
+\item On place le point $F$ du segment $[DE]$ pour lequel $DF= DB$. 
+Compléter la figure. 
+
+\item Sachant que $ED=DB+EC$, démontrer que $EF= EC$. 
+
+\item Quelle est la nature des triangles $DBF$ et $FEC$ ? 
+
+\item On note $a = \widehat{DBF}$. Montrer que $\widehat{FDB}= 180^o-a-a$. 
+
+\item En utilisant la propriété des angles alternes-internes et un angle intérmédiaire, montrer que $\widehat{DBC}=180^o-\widehat{FDB}$. 
+
+\item En déduire que $\widehat{DBC}= 2 \times \widehat{DBF}$. 
+
+\item On démontrerait de même que $\widehat{ECB}= 2 \times \widehat{ECF}$. Que représentent les droites $(BF)$ et $(CF)$ pour 
+les angles $\widehat{DBC}$ et $\widehat{ECB}$ ? 
+
+\item En déduire\footnote{(Indication : puisqu'il est écrit « en déduire », on commencera par tracer les deux droites de la question précédente pour trouver le point $F$, puis le reste de la figure.)} un protocole de construction précis de la figure complète.
+
+\end{enumerate}
+
+
+\subsection*{Exercice 3 - Variations sur un même thème (III)}
+
+On considère un triangle $ABC$ et on suppose donnés un point $D\in[AB]$ et un point $E\in[AC]$ tels que $(DE)$ et $(BC)$ soient parallèles. 
+
+On suppose ici $AE = BD$. L'objectif est de déterminer comment placer précisément les points $D$ et $E$. 
+
+\begin{enumerate}
+\item Faire une figure à main levée.
+
+\item On trace la parallèle à $(AB)$ passant par $E$, et on note $F$ son point d'intersection avec le côté $[BC]$. 
+Compléter la figure. 
+
+\item Quelle est la nature du quadrilatère $BDEF$ ? Justifier. 
+
+\item En déduire que $EF=BD$. 
+
+\item On trace maintenant la parallèle à $(AE)$ passant par $F$, et on note $G$ son point d'intersection avec $[AB]$. Compléter la figure.
+
+\item Démontrer que $AEFG$ est un parallélogramme. 
+
+\item Sachant que $AE=BD$, montrer que $EF = AE$, puis que $AEFG$ est un losange. 
+
+\item Que représente donc la droite $(AF)$ pour l'angle $\widehat{CAB}$ ? 
+
+\item En déduire\footnote{(Indication : puisqu'il est écrit « en déduire », on commencera par tracer la droite de la question précédente pour trouver le point $F$, puis le reste de la figure.)} un protocole de construction précis de la figure complète.
+
+\end{enumerate}
+ 
+ 	\end{document}
