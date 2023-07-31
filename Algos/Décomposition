@@ -1,0 +1,33 @@
+def divise(d,n):
+    return( n%d ==0)
+
+def nb_chiffres(n) :
+    r = 0
+    p = 1
+    while p <= n :
+        p *=10
+        r +=1
+    return(r)
+
+def dfp(n):
+    quotient = n
+    taille_init = nb_chiffres(n)
+    while quotient !=1 :
+        diviseur = 2
+        while not divise(diviseur,quotient) :
+            diviseur = diviseur + 1
+        print(quotient," "*(taille_init-nb_chiffres(quotient)),"|", diviseur)
+        quotient = quotient //diviseur
+    print(quotient, " "*(taille_init-nb_chiffres(quotient)))
+	
+    
+def liste_premiers(a, b):
+    n = a
+    while n <= b:
+        quotient = n
+        diviseur = 2
+        while not divise(diviseur,quotient) :
+            diviseur = diviseur + 1
+        if diviseur == quotient :
+            print(n)
+        n=n+1
