@@ -1,20 +1,37 @@
 def position(x):
-    alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-    x = x.upper()
+    alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz '
     i = 0
-    while x != alphabet[i] and i < 26 :
+    while x != alphabet[i] and i < 52 :
         i+=1
-    return(i)
+    if i < 25 :
+        return(i)
+    elif i < 51 :
+        return(i- 26)
+    elif x in "éèêëÉÈÊËÆæŒœ" :
+        return(4)
+    elif x in "àâäÀÂÄ" :
+        return(0)
+    elif x in "îïÎÏ" :
+        return(8)
+    elif x in "ôöÔÖ" :
+        return(14)
+    elif x in "ûüÛÜÙù" :
+        return(20)
+    else :
+        return(26)
+    
     
 def lettre(i):
     alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ'
     return alphabet[i]
+
 
     
 def rotor(x, l):
     # l est le mot de l'alphabet chiffré (la liste des lettres du rotor), et x la lettre à chiffrer
     i = position(x)   # i est la position de la lettre dans l'alphabet usuel (entre 0 et 25)
     return l[i]    # on renvoie la i eme lettre de l'alphabet chiffré
+    
     
 def rotorinverse(x, l):
     # on passe à travers la roue dans le sens inverse cette fois
@@ -23,15 +40,11 @@ def rotorinverse(x, l):
         i = i +1
     return lettre(i)
     
-
-rotora = "XJTLYICMQAOSKWPFEHUGBNDRZV"
-rotorb = "RHQFBEVWSMTDPLXAIGUZYONJCK"
-rotorc = "YHKGAETNCPVBOIWRQMXFLZJUSD"
     
     
-def enigma(i,j,k) :
+def enigma(i,j,k, connexions) : # i j et k sont les numéros de rotors choisis, parmi 0, 1, 2, 3, 4 et connexions est une liste de mots de deux lettres représentant les lettres échangées ce jour-ci
     a = b = c = 0 # a, b et c sont le nombre de mouvements effectués par les trois rotors
-    # liste des cinq rotos, et choix de trois parmi ces cinq en fonction des paramètres du jour
+    # liste des cinq rotors, et choix de trois parmi ces cinq en fonction des paramètres du jour
     rotora = "XJTLYICMQAOSKWPFEHUGBNDRZV"
     rotorb = "RHQFBEVWSMTDPLXAIGUZYONJCK"
     rotorc = "YHKGAETNCPVBOIWRQMXFLZJUSD"
@@ -43,23 +56,40 @@ def enigma(i,j,k) :
     C = rotors[k]
     # Le reflecteur composé de treize transpositions disjointes
     reflecteur = "HDPBIXZAEJUSOWMCQYLVKTNFRG"
+    def filtre(x) : # on code une petite boucle qui échange une lettre suivant les connexions si elle y apparait
+        y=x.upper()
+        for m in connexions :
+            if x == m[0].upper() :
+                y = m[1].upper()
+            if x == m[1].upper() :
+                y = m[0].upper()
+        return y
     # procédure faisant tourner un rotor d'un cran(l sera donc A, B ou C)
     def rotation(l):
-        x = l[0]
-        return(l[1:]+ x)
+        z = l[0]
+        return(l[1:]+ z)
     #demande du message à l'utilisateur
-    message=input("Saisir le message à coder")
+    message=input("Saisir le message à coder :")
+    message_compatible = ""
+    for x in message :
+        if position(x)!= 26 : #on vérifie si x est une lettre
+            message_compatible = message_compatible + x.upper()
     # on fabrique un mot vide que l'on va remplir avec les lettres saisies une par une
     cryptogramme = ""
-    for x in message :  # on passe chaque lettre dans les trois rotors, le réflecteur, puis de nouveau les trois rotos à l'envers
-        x = rotor(x,A)
-        x = rotor(x, B)
-        x = rotor(x, C)
-        x= rotor(x, reflecteur)
-        x = rotorinverse(x,C)
-        x = rotorinverse(x, B)
-        x = rotorinverse(x, A)
-        cryptogramme = cryptogramme + x
+    print(message_compatible)
+    for lettre in message_compatible :  # on passe chaque lettre dans les trois rotors, le réflecteur, puis de nouveau les trois rotors (à l'envers) et les connexions
+        lettre= filtre(lettre)
+        lettre = rotor(lettre,A)
+        lettre = rotor(lettre, B)
+        lettre = rotor(lettre, C)
+        lettre= rotor(lettre, reflecteur)
+        lettre = rotorinverse(lettre,C)
+        lettre = rotorinverse(lettre, B)
+        lettre = rotorinverse(lettre, A)
+        print(lettre)
+        lettre = filtre(lettre)
+        print(lettre)
+        cryptogramme = cryptogramme + lettre
         A = rotation(A) # on fait tourner le premier rotor
         a = a+1
         if a == 26 : # si on a fini un tour complet du premier rotor, le second tourne
