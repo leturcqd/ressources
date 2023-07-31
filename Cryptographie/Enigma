@@ -1,0 +1,75 @@
+def position(x):
+    alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    x = x.upper()
+    i = 0
+    while x != alphabet[i] and i < 26 :
+        i+=1
+    return(i)
+    
+def lettre(i):
+    alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    return alphabet[i]
+
+    
+def rotor(x, l):
+    # l est le mot de l'alphabet chiffré (la liste des lettres du rotor), et x la lettre à chiffrer
+    i = position(x)   # i est la position de la lettre dans l'alphabet usuel (entre 0 et 25)
+    return l[i]    # on renvoie la i eme lettre de l'alphabet chiffré
+    
+def rotorinverse(x, l):
+    # on passe à travers la roue dans le sens inverse cette fois
+    i = 0
+    while l[i] != x :
+        i = i +1
+    return lettre(i)
+    
+
+rotora = "XJTLYICMQAOSKWPFEHUGBNDRZV"
+rotorb = "RHQFBEVWSMTDPLXAIGUZYONJCK"
+rotorc = "YHKGAETNCPVBOIWRQMXFLZJUSD"
+    
+    
+def enigma(i,j,k) :
+    a = b = c = 0 # a, b et c sont le nombre de mouvements effectués par les trois rotors
+    # liste des cinq rotos, et choix de trois parmi ces cinq en fonction des paramètres du jour
+    rotora = "XJTLYICMQAOSKWPFEHUGBNDRZV"
+    rotorb = "RHQFBEVWSMTDPLXAIGUZYONJCK"
+    rotorc = "YHKGAETNCPVBOIWRQMXFLZJUSD"
+    rotord = "YCRFXWSBGQTJPNUOIHLZAMDKEV"
+    rotore = "GXHZBOJCSYFEMRWPITQLDANVKU"
+    rotors = [rotora, rotorb,rotorc,rotord,rotore]
+    A = rotors[i]
+    B = rotors[j]
+    C = rotors[k]
+    # Le reflecteur composé de treize transpositions disjointes
+    reflecteur = "HDPBIXZAEJUSOWMCQYLVKTNFRG"
+    # procédure faisant tourner un rotor d'un cran(l sera donc A, B ou C)
+    def rotation(l):
+        x = l[0]
+        return(l[1:]+ x)
+    #demande du message à l'utilisateur
+    message=input("Saisir le message à coder")
+    # on fabrique un mot vide que l'on va remplir avec les lettres saisies une par une
+    cryptogramme = ""
+    for x in message :  # on passe chaque lettre dans les trois rotors, le réflecteur, puis de nouveau les trois rotos à l'envers
+        x = rotor(x,A)
+        x = rotor(x, B)
+        x = rotor(x, C)
+        x= rotor(x, reflecteur)
+        x = rotorinverse(x,C)
+        x = rotorinverse(x, B)
+        x = rotorinverse(x, A)
+        cryptogramme = cryptogramme + x
+        A = rotation(A) # on fait tourner le premier rotor
+        a = a+1
+        if a == 26 : # si on a fini un tour complet du premier rotor, le second tourne
+            B = rotation(B)
+            b = b+1
+            a = 0
+        if b == 26 : # si cela fait également tourner d'un tour complet le second rotor, on enclenche le troisième
+            C = rotation(C)
+            c = c+1
+            b=0
+    print(cryptogramme)
+    return cryptogramme
+    

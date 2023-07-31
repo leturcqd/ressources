@@ -1,0 +1,94 @@
+def position(x):
+    alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    x = x.upper()
+    i = 0
+    while x != alphabet[i] and i < 26 :
+        i+=1
+    return(i)
+
+
+def decalage(x,n):
+    alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    x = x.upper()
+    i = position(x)
+    if i == 26 :
+        return("")
+# variante : return(x) si vous voulez préserver la ponctuation
+    else :
+        return(alphabet[i+n])
+            
+def Cesar() :
+    cle = int(input("Saisir la clé de décalage (entre 0 et 25)"))
+    message = input("Saisir le message à crypter")
+    code = ""
+    for x in message :
+        code+=decalage(x, cle)
+    return(code)
+        
+    
+def deCesar(code, cle) :
+    message= ""
+    for x in code :
+        message+=decalage(x, 26 - cle)
+    return(message)
+
+
+def attaque_brute_Cesar(code):
+    cle = 1
+    rep=""
+    message=code
+    while cle < 26 and rep != "ok" :
+        message=print(deCesar(code,cle))
+        rep = input("Saisir ok si le message est décodé, entrée sinon.")
+        cle+=1
+    print("Le texte était décalé de ", cle -1)
+    return(message)
+
+
+
+
+def attaque_frequentielle_Cesar(code) :
+ # on construit la liste des occurrences de chaque lettre
+    occurrences = [0]*26
+    for x in code :
+        occurrences[position(x)]+=1
+ # On repère la lettre la plus fréquente
+    i = 0
+    pos_E = 0
+    nb_E = 0
+    while i < 26 :
+        if nb_E < occurrences[i] :
+            pos_E = i
+            nb_E = occurrences[i]
+        i +=1
+ # à ce stade pos_E contient la position de la lettre la plus présente.
+ # On a donc décalé de pos_E - 4.
+    return( deCesar(code, (pos_E-4)%26), (pos_E-4)%26)
+    
+            
+
+
+def Vigenere() :
+    def aux(message, cle) :
+        code = ""
+        i=0
+        c = len(cle)
+        for x in message :
+            code+= decalage(x, position(cle[i%c]))
+            i+=1
+        return(code)
+    cle = input("Saisir le mot clé, sans accent ni ponctuation : ")
+    message = input("Saisir le message à crypter, sans accent ni ponctuation :")
+    return(aux(message, cle))
+            
+def deVigenere(code, cle) :
+        message = ""
+        i=0o
+        c= len(cle)
+        for x in code :
+            message+= decalage(x, (26 - position(cle[i%c]))%26)
+            i+=1
+        return(message)
+
+
+# Faire attaqueVigenere
