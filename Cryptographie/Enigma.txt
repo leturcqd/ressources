@@ -86,9 +86,7 @@ def enigma(i,j,k, connexions) : # i j et k sont les numéros de rotors choisis, 
         lettre = rotorinverse(lettre,C)
         lettre = rotorinverse(lettre, B)
         lettre = rotorinverse(lettre, A)
-        print(lettre)
         lettre = filtre(lettre)
-        print(lettre)
         cryptogramme = cryptogramme + lettre
         A = rotation(A) # on fait tourner le premier rotor
         a = a+1
