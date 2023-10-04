@@ -92,3 +92,18 @@ def deVigenere(code, cle) :
 
 
 # Faire attaqueVigenere
+
+
+
+
+Variante préservant la ponctuation : 
+
+
+def decalage(x,n):
+    alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    x = x.upper()
+    i = position(x)
+    if i == 26 :
+        return(x)
+    else :
+        return(alphabet[i+n])
