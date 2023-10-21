@@ -107,3 +107,21 @@ def decalage(x,n):
         return(x)
     else :
         return(alphabet[i+n])
+
+
+
+
+def melange(x, alph) : 
+	a = alph 
+	i = position(x)
+	return(alph[i])
+
+def Cesar2() :
+    cle = input("Saisir un alphabet")
+    message = input("Saisir le message à crypter")
+    code = ""
+    for x in message :
+        code+=melange(x, cle)
+    return(code)
+        
+
