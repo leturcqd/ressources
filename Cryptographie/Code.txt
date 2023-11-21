@@ -1,0 +1,513 @@
+Last login: Sun Oct 29 12:25:38 on ttys000
+davidleturcq@MacBook-Pro-de-david-3 ~ % python3
+Python 3.11.4 (main, Jun 20 2023, 17:23:00) [Clang 14.0.3 (clang-1403.0.22.14.1)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> def position(x):
+...     alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ'
+...     x = x.upper()
+...     i = 0
+...     while x != alphabet[i] and i < 26 :
+...         i+=1
+...     return(i)
+... 
+>>> def subst(mot, code, clair) : 
+...     for x in mot : 
+...             
+  File "<stdin>", line 3
+    
+IndentationError: expected an indented block after 'for' statement on line 2
+>>> def subst(mot, code, clair) :
+...     res = mot 
+...     i = 0 : 
+  File "<stdin>", line 3
+    i = 0 : 
+          ^
+SyntaxError: invalid syntax
+>>> def subst(mot, code, clair) :
+...     i = 0 :
+  File "<stdin>", line 2
+    i = 0 :
+          ^
+SyntaxError: invalid syntax
+>>> def subst(mot, code, clair) :
+...     res = mot 
+...     i = 0 
+...     for x in mot : 
+...             if x = code : 
+  File "<stdin>", line 5
+    if x = code : 
+       ^^^^^^^^
+SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
+>>> def subst(mot, code, clair) :
+...     res = mot
+...     i = 0
+...     for x in mot :
+...             if x = code :
+  File "<stdin>", line 5
+    if x = code :
+       ^^^^^^^^
+SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
+>>> def subst(mot, code, clair) :
+...             if x = code :
+  File "<stdin>", line 2
+    if x = code :
+       ^^^^^^^^
+SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
+>>> 
+>>> def substitution(m, code, lettre)
+  File "<stdin>", line 1
+    def substitution(m, code, lettre)
+                                     ^
+SyntaxError: expected ':'
+>>>     message = m
+  File "<stdin>", line 1
+    message = m
+IndentationError: unexpected indent
+>>>     i = 0 
+  File "<stdin>", line 1
+    i = 0 
+IndentationError: unexpected indent
+>>>     for x in m :
+  File "<stdin>", line 1
+    for x in m :
+IndentationError: unexpected indent
+>>>             if x == code : 
+  File "<stdin>", line 1
+    if x == code : 
+IndentationError: unexpected indent
+>>>                     message[i] = lettre
+  File "<stdin>", line 1
+    message[i] = lettre
+IndentationError: unexpected indent
+>>>             i+=1
+  File "<stdin>", line 1
+    i+=1
+IndentationError: unexpected indent
+>>>     return message 
+  File "<stdin>", line 1
+    return message 
+IndentationError: unexpected indent
+>>> 
+>>> def substitution(m, code, lettre)
+  File "<stdin>", line 1
+    def substitution(m, code, lettre)
+                                     ^
+SyntaxError: expected ':'
+>>>     message = m
+  File "<stdin>", line 1
+    message = m
+IndentationError: unexpected indent
+>>>     i = 0 
+  File "<stdin>", line 1
+    i = 0 
+IndentationError: unexpected indent
+>>>     for x in m :
+  File "<stdin>", line 1
+    for x in m :
+IndentationError: unexpected indent
+>>>             if x == code : 
+  File "<stdin>", line 1
+    if x == code : 
+IndentationError: unexpected indent
+>>>                     message[i] = lettre
+  File "<stdin>", line 1
+    message[i] = lettre
+IndentationError: unexpected indent
+>>>             i+=1
+  File "<stdin>", line 1
+    i+=1
+IndentationError: unexpected indent
+>>>     return message 
+  File "<stdin>", line 1
+    return message 
+IndentationError: unexpected indent
+>>> 
+>>> 
+>>> 
+>>> def substitution(m, code, lettre) :
+...     message = m
+...     i = 0 
+...     for x in m :
+...             if x == code : 
+...                     message[i] = lettre
+...             i+=1
+...     return message 
+... 
+>>> message = BIDPVGXEIXQKIEWIFCDICBIDDPWPFCDPXDCIEIDPYVIFCIJPBIVIFCOPFDBIXEVXEIDPYDGFBIDLUPCDTXYDDPFCDICOGXQGEJXIYBOIBPVPYDGFRXYLGVVIIXQDGFCKEYBIXQICLGVVIIXQDIOIFCPYEIDPVYDOIBPDLYIFLIICOIBPWGBXTCIYBDLUIELUIFCBIDYBIFLIICBUGEEIXEOIDCIFIMEIDBIEIMIBIDIXCTEYDTGXEDIDLGXEDYIEDKXFIMEIDDYBDTGXWPYIFCPXDIEWPJIYFLBYFIEBIXEKYIECIYBDTEIFFIFCIFDGFJIPFCBIDFGMBIDPCCYCXOIDOIDJEPFODDTUYFQPBBGFJIDPXKGFOOIDDGBYCXOIDRXYDIVMBIFCDIFOGEVYEOPFDXFEIWIDPFDKYFBIXEDEIYFDKILGFODDGFCTBIYFDOICYFLIBBIDVPJYRXIDICOIDTPELIBBIDOGEPYFDYRXXFDPMBIKYFICGYBIFCWPJXIVIFCBIXEDTEXFIBBIDVADCYRXID'
+  File "<stdin>", line 1
+    message = BIDPVGXEIXQKIEWIFCDICBIDDPWPFCDPXDCIEIDPYVIFCIJPBIVIFCOPFDBIXEVXEIDPYDGFBIDLUPCDTXYDDPFCDICOGXQGEJXIYBOIBPVPYDGFRXYLGVVIIXQDGFCKEYBIXQICLGVVIIXQDIOIFCPYEIDPVYDOIBPDLYIFLIICOIBPWGBXTCIYBDLUIELUIFCBIDYBIFLIICBUGEEIXEOIDCIFIMEIDBIEIMIBIDIXCTEYDTGXEDIDLGXEDYIEDKXFIMEIDDYBDTGXWPYIFCPXDIEWPJIYFLBYFIEBIXEKYIECIYBDTEIFFIFCIFDGFJIPFCBIDFGMBIDPCCYCXOIDOIDJEPFODDTUYFQPBBGFJIDPXKGFOOIDDGBYCXOIDRXYDIVMBIFCDIFOGEVYEOPFDXFEIWIDPFDKYFBIXEDEIYFDKILGFODDGFCTBIYFDOICYFLIBBIDVPJYRXIDICOIDTPELIBBIDOGEPYFDYRXXFDPMBIKYFICGYBIFCWPJXIVIFCBIXEDTEXFIBBIDVADCYRXID'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> messsage = "BIDPVGXEIXQKIEWIFCDICBIDDPWPFCDPXDCIEIDPYVIFCIJPBIVIFCOPFDBIXEVXEIDPYDGFBIDLUPCDTXYDDPFCDICOGXQGEJXIYBOIBPVPYDGFRXYLGVVIIXQDGFCKEYBIXQICLGVVIIXQDIOIFCPYEIDPVYDOIBPDLYIFLIICOIBPWGBXTCIYBDLUIELUIFCBIDYBIFLIICBUGEEIXEOIDCIFIMEIDBIEIMIBIDIXCTEYDTGXEDIDLGXEDYIEDKXFIMEIDDYBDTGXWPYIFCPXDIEWPJIYFLBYFIEBIXEKYIECIYBDTEIFFIFCIFDGFJIPFCBIDFGMBIDPCCYCXOIDOIDJEPFODDTUYFQPBBGFJIDPXKGFOOIDDGBYCXOIDRXYDIVMBIFCDIFOGEVYEOPFDXFEIWIDPFDKYFBIXEDEIYFDKILGFODDGFCTBIYFDOICYFLIBBIDVPJYRXIDICOIDTPELIBBIDOGEPYFDYRXXFDPMBIKYFICGYBIFCWPJXIVIFCBIXEDTEXFIBBIDVADCYRXID'
+  File "<stdin>", line 1
+    messsage = "BIDPVGXEIXQKIEWIFCDICBIDDPWPFCDPXDCIEIDPYVIFCIJPBIVIFCOPFDBIXEVXEIDPYDGFBIDLUPCDTXYDDPFCDICOGXQGEJXIYBOIBPVPYDGFRXYLGVVIIXQDGFCKEYBIXQICLGVVIIXQDIOIFCPYEIDPVYDOIBPDLYIFLIICOIBPWGBXTCIYBDLUIELUIFCBIDYBIFLIICBUGEEIXEOIDCIFIMEIDBIEIMIBIDIXCTEYDTGXEDIDLGXEDYIEDKXFIMEIDDYBDTGXWPYIFCPXDIEWPJIYFLBYFIEBIXEKYIECIYBDTEIFFIFCIFDGFJIPFCBIDFGMBIDPCCYCXOIDOIDJEPFODDTUYFQPBBGFJIDPXKGFOOIDDGBYCXOIDRXYDIVMBIFCDIFOGEVYEOPFDXFEIWIDPFDKYFBIXEDEIYFDKILGFODDGFCTBIYFDOICYFLIBBIDVPJYRXIDICOIDTPELIBBIDOGEPYFDYRXXFDPMBIKYFICGYBIFCWPJXIVIFCBIXEDTEXFIBBIDVADCYRXID'
+               ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> message = 'BIDPVGXEIXQKIEWIFCDICBIDDPWPFCDPXDCIEIDPYVIFCIJPBIVIFCOPFDBIXEVXEIDPYDGFBIDLUPCDTXYDDPFCDICOGXQGEJXIYBOIBPVPYDGFRXYLGVVIIXQDGFCKEYBIXQICLGVVIIXQDIOIFCPYEIDPVYDOIBPDLYIFLIICOIBPWGBXTCIYBDLUIELUIFCBIDYBIFLIICBUGEEIXEOIDCIFIMEIDBIEIMIBIDIXCTEYDTGXEDIDLGXEDYIEDKXFIMEIDDYBDTGXWPYIFCPXDIEWPJIYFLBYFIEBIXEKYIECIYBDTEIFFIFCIFDGFJIPFCBIDFGMBIDPCCYCXOIDOIDJEPFODDTUYFQPBBGFJIDPXKGFOOIDDGBYCXOIDRXYDIVMBIFCDIFOGEVYEOPFDXFEIWIDPFDKYFBIXEDEIYFDKILGFODDGFCTBIYFDOICYFLIBBIDVPJYRXIDICOIDTPELIBBIDOGEPYFDYRXXFDPMBIKYFICGYBIFCWPJXIVIFCBIXEDTEXFIBBIDVADCYRXID'
+>>> 
+>>> 
+>>> message
+'BIDPVGXEIXQKIEWIFCDICBIDDPWPFCDPXDCIEIDPYVIFCIJPBIVIFCOPFDBIXEVXEIDPYDGFBIDLUPCDTXYDDPFCDICOGXQGEJXIYBOIBPVPYDGFRXYLGVVIIXQDGFCKEYBIXQICLGVVIIXQDIOIFCPYEIDPVYDOIBPDLYIFLIICOIBPWGBXTCIYBDLUIELUIFCBIDYBIFLIICBUGEEIXEOIDCIFIMEIDBIEIMIBIDIXCTEYDTGXEDIDLGXEDYIEDKXFIMEIDDYBDTGXWPYIFCPXDIEWPJIYFLBYFIEBIXEKYIECIYBDTEIFFIFCIFDGFJIPFCBIDFGMBIDPCCYCXOIDOIDJEPFODDTUYFQPBBGFJIDPXKGFOOIDDGBYCXOIDRXYDIVMBIFCDIFOGEVYEOPFDXFEIWIDPFDKYFBIXEDEIYFDKILGFODDGFCTBIYFDOICYFLIBBIDVPJYRXIDICOIDTPELIBBIDOGEPYFDYRXXFDPMBIKYFICGYBIFCWPJXIVIFCBIXEDTEXFIBBIDVADCYRXID'
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> def freq(m, lettre) : 
+...     n = 0 
+...     i=0
+...     for x in m : 
+...             i+=1
+...             if x = lettre : 
+  File "<stdin>", line 6
+    if x = lettre : 
+       ^^^^^^^^^^
+SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
+>>>                     n+=1
+  File "<stdin>", line 1
+    n+=1
+IndentationError: unexpected indent
+>>>     return 100*n//i
+  File "<stdin>", line 1
+    return 100*n//i
+IndentationError: unexpected indent
+>>> 
+>>> def freq(m, lettre) : 
+...     n = 0 
+...     i=0
+...     for x in m : 
+...             i+=1
+...             if x = lettre : 
+  File "<stdin>", line 6
+    if x = lettre : 
+       ^^^^^^^^^^
+SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
+>>>                     n+=1
+  File "<stdin>", line 1
+    n+=1
+IndentationError: unexpected indent
+>>>     return (100*n//i)
+  File "<stdin>", line 1
+    return (100*n//i)
+IndentationError: unexpected indent
+>>>         
+>>> 
+>>> 
+>>> def freq(m, lettre) : 
+...     n = 0 
+...     i = 0
+...     for x in m : 
+...             i+=1
+...             if x == lettre : 
+...                     n+=1
+...     return (100*n//i)
+... 
+>>> freq(m, A)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'm' is not defined
+>>> freq(message, A)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'A' is not defined
+>>> freq(message, "A")
+0
+>>> freq(message, "B")
+7
+>>> freq(message, "C")
+6
+>>> freq(message, "D")
+12
+>>> freq(message, "E")
+6
+>>> freq(message, "F")
+8
+>>> for x in "ABCDEFGHIJKLMNOPQRSTUVWXYZ" : 
+...     print(x, freq(message, x) )
+... 
+A 0
+B 7
+C 6
+D 12
+E 6
+F 8
+G 4
+H 0
+I 17
+J 1
+K 1
+L 2
+M 1
+N 0
+O 3
+P 5
+Q 1
+R 0
+S 0
+T 1
+U 0
+V 2
+W 1
+X 6
+Y 6
+Z 0
+>>> message
+'BIDPVGXEIXQKIEWIFCDICBIDDPWPFCDPXDCIEIDPYVIFCIJPBIVIFCOPFDBIXEVXEIDPYDGFBIDLUPCDTXYDDPFCDICOGXQGEJXIYBOIBPVPYDGFRXYLGVVIIXQDGFCKEYBIXQICLGVVIIXQDIOIFCPYEIDPVYDOIBPDLYIFLIICOIBPWGBXTCIYBDLUIELUIFCBIDYBIFLIICBUGEEIXEOIDCIFIMEIDBIEIMIBIDIXCTEYDTGXEDIDLGXEDYIEDKXFIMEIDDYBDTGXWPYIFCPXDIEWPJIYFLBYFIEBIXEKYIECIYBDTEIFFIFCIFDGFJIPFCBIDFGMBIDPCCYCXOIDOIDJEPFODDTUYFQPBBGFJIDPXKGFOOIDDGBYCXOIDRXYDIVMBIFCDIFOGEVYEOPFDXFEIWIDPFDKYFBIXEDEIYFDKILGFODDGFCTBIYFDOICYFLIBBIDVPJYRXIDICOIDTPELIBBIDOGEPYFDYRXXFDPMBIKYFICGYBIFCWPJXIVIFCBIXEDTEXFIBBIDVADCYRXID'
+>>> for x in "ABCDEFGHIJKLMNOPQRSTUVWXYZ" :
+...     print(x, freq(message, x) )
+... 
+A 0
+B 7
+C 6
+D 12
+E 6
+F 8
+G 4
+H 0
+I 17
+J 1
+K 1
+L 2
+M 1
+N 0
+O 3
+P 5
+Q 1
+R 0
+S 0
+T 1
+U 0
+V 2
+W 1
+X 6
+Y 6
+Z 0
+>>> 
+>>> def freq2(m, l, l2) : 
+...     n = 0 
+...     i = 0 
+...     while i +1 < len(m) : 
+...             if m[i]== l & m[i+1] == l2 :
+...                     n+=1
+...             i+=1
+...     return(100*n//i)
+... 
+>>> freq2(m, "A", "B")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'm' is not defined
+>>> freq2(message, "A", "B")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 5, in freq2
+TypeError: unsupported operand type(s) for &: 'str' and 'str'
+>>> def freq2(m, l, l2) : 
+...     n = 0 
+...     i = 0 
+...     while i +1 < len(m) : 
+...             if m[i]== l and m[i+1] == l2 :
+...                     n+=1
+...             i+=1
+...     return(100*n//i)
+... 
+>>> freq2(m, "A", "B")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'm' is not defined
+>>> freq2(message, "A", "B")
+0
+>>> freq2(message, "B","B")
+0
+>>> freq2(message, "F","F")
+0
+>>> def freq2(m, l, l2) : 
+...     n = 0 
+...     i = 0 
+...     while i +1 < len(m) : 
+...             if m[i]== l and m[i+1] == l2 :
+...                     n+=1
+...             i+=1
+...     return(1000*n//i)
+... 
+>>> def freq2(m, l, l2) :
+... 
+  File "<stdin>", line 2
+    
+    ^
+IndentationError: expected an indented block after function definition on line 1
+>>> freq2(message, "F","F")
+1
+>>> freq2(message, "B","B")
+7
+>>> for i in "ABCDEFGHIJKLMNOPQRSTUVWXYZ": 
+...     print(i, freq2(message, i, i))
+... 
+A 0
+B 7
+C 1
+D 11
+E 1
+F 1
+G 0
+H 0
+I 7
+J 0
+K 0
+L 0
+M 0
+N 0
+O 1
+P 0
+Q 0
+R 0
+S 0
+T 0
+U 0
+V 3
+W 0
+X 1
+Y 0
+Z 0
+>>> substitution(message, "I", "e")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 6, in substitution
+TypeError: 'str' object does not support item assignment
+>>> def substitution(m, code, lettre) :
+...     message = ""
+...     i = 0 
+...     for x in m :
+...             if x == code : 
+...                     message = message + "lettre"
+...             else : 
+...                     message = message + x
+...             i+=1
+...     return message 
+... 
+>>> 
+>>> substitution(message, "I", "e")
+'BlettreDPVGXElettreXQKlettreEWlettreFCDlettreCBlettreDDPWPFCDPXDClettreElettreDPYVlettreFClettreJPBlettreVlettreFCOPFDBlettreXEVXElettreDPYDGFBlettreDLUPCDTXYDDPFCDlettreCOGXQGEJXlettreYBOlettreBPVPYDGFRXYLGVVlettrelettreXQDGFCKEYBlettreXQlettreCLGVVlettrelettreXQDlettreOlettreFCPYElettreDPVYDOlettreBPDLYlettreFLlettrelettreCOlettreBPWGBXTClettreYBDLUlettreELUlettreFCBlettreDYBlettreFLlettrelettreCBUGEElettreXEOlettreDClettreFlettreMElettreDBlettreElettreMlettreBlettreDlettreXCTEYDTGXEDlettreDLGXEDYlettreEDKXFlettreMElettreDDYBDTGXWPYlettreFCPXDlettreEWPJlettreYFLBYFlettreEBlettreXEKYlettreEClettreYBDTElettreFFlettreFClettreFDGFJlettrePFCBlettreDFGMBlettreDPCCYCXOlettreDOlettreDJEPFODDTUYFQPBBGFJlettreDPXKGFOOlettreDDGBYCXOlettreDRXYDlettreVMBlettreFCDlettreFOGEVYEOPFDXFElettreWlettreDPFDKYFBlettreXEDElettreYFDKlettreLGFODDGFCTBlettreYFDOlettreCYFLlettreBBlettreDVPJYRXlettreDlettreCOlettreDTPELlettreBBlettreDOGEPYFDYRXXFDPMBlettreKYFlettreCGYBlettreFCWPJXlettreVlettreFCBlettreXEDTEXFlettreBBlettreDVADCYRXlettreD'
+>>> def substitution(m, code, lettre) :
+...     message = ""
+...     i = 0 
+...     for x in m :
+...             if x == code : 
+...                     message = message + lettre
+...             else : 
+...                     message = message + x
+...             i+=1
+...     return message 
+... 
+>>> substitution(message, "I", "e")
+'BeDPVGXEeXQKeEWeFCDeCBeDDPWPFCDPXDCeEeDPYVeFCeJPBeVeFCOPFDBeXEVXEeDPYDGFBeDLUPCDTXYDDPFCDeCOGXQGEJXeYBOeBPVPYDGFRXYLGVVeeXQDGFCKEYBeXQeCLGVVeeXQDeOeFCPYEeDPVYDOeBPDLYeFLeeCOeBPWGBXTCeYBDLUeELUeFCBeDYBeFLeeCBUGEEeXEOeDCeFeMEeDBeEeMeBeDeXCTEYDTGXEDeDLGXEDYeEDKXFeMEeDDYBDTGXWPYeFCPXDeEWPJeYFLBYFeEBeXEKYeECeYBDTEeFFeFCeFDGFJePFCBeDFGMBeDPCCYCXOeDOeDJEPFODDTUYFQPBBGFJeDPXKGFOOeDDGBYCXOeDRXYDeVMBeFCDeFOGEVYEOPFDXFEeWeDPFDKYFBeXEDEeYFDKeLGFODDGFCTBeYFDOeCYFLeBBeDVPJYRXeDeCOeDTPELeBBeDOGEPYFDYRXXFDPMBeKYFeCGYBeFCWPJXeVeFCBeXEDTEXFeBBeDVADCYRXeD'
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> message = substitution(message,"I","e")
+>>> message
+'BeDPVGXEeXQKeEWeFCDeCBeDDPWPFCDPXDCeEeDPYVeFCeJPBeVeFCOPFDBeXEVXEeDPYDGFBeDLUPCDTXYDDPFCDeCOGXQGEJXeYBOeBPVPYDGFRXYLGVVeeXQDGFCKEYBeXQeCLGVVeeXQDeOeFCPYEeDPVYDOeBPDLYeFLeeCOeBPWGBXTCeYBDLUeELUeFCBeDYBeFLeeCBUGEEeXEOeDCeFeMEeDBeEeMeBeDeXCTEYDTGXEDeDLGXEDYeEDKXFeMEeDDYBDTGXWPYeFCPXDeEWPJeYFLBYFeEBeXEKYeECeYBDTEeFFeFCeFDGFJePFCBeDFGMBeDPCCYCXOeDOeDJEPFODDTUYFQPBBGFJeDPXKGFOOeDDGBYCXOeDRXYDeVMBeFCDeFOGEVYEOPFDXFEeWeDPFDKYFBeXEDEeYFDKeLGFODDGFCTBeYFDOeCYFLeBBeDVPJYRXeDeCOeDTPELeBBeDOGEPYFDYRXXFDPMBeKYFeCGYBeFCWPJXeVeFCBeXEDTEXFeBBeDVADCYRXeD'
+>>> message = substitution(message,"B","l")
+>>> message = substitution(message,"D","s")
+>>> message
+'lesPVGXEeXQKeEWeFCseClessPWPFCsPXsCeEesPYVeFCeJPleVeFCOPFsleXEVXEesPYsGFlesLUPCsTXYssPFCseCOGXQGEJXeYlOelPVPYsGFRXYLGVVeeXQsGFCKEYleXQeCLGVVeeXQseOeFCPYEesPVYsOelPsLYeFLeeCOelPWGlXTCeYlsLUeELUeFClesYleFLeeClUGEEeXEOesCeFeMEesleEeMeleseXCTEYsTGXEsesLGXEsYeEsKXFeMEessYlsTGXWPYeFCPXseEWPJeYFLlYFeEleXEKYeECeYlsTEeFFeFCeFsGFJePFClesFGMlesPCCYCXOesOesJEPFOssTUYFQPllGFJesPXKGFOOessGlYCXOesRXYseVMleFCseFOGEVYEOPFsXFEeWesPFsKYFleXEsEeYFsKeLGFOssGFCTleYFsOeCYFLellesVPJYRXeseCOesTPELellesOGEPYFsYRXXFsPMleKYFeCGYleFCWPJXeVeFCleXEsTEXFellesVAsCYRXes'
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> substitution(message, "F", "t")
+'lesPVGXEeXQKeEWetCseClessPWPtCsPXsCeEesPYVetCeJPleVetCOPtsleXEVXEesPYsGtlesLUPCsTXYssPtCseCOGXQGEJXeYlOelPVPYsGtRXYLGVVeeXQsGtCKEYleXQeCLGVVeeXQseOetCPYEesPVYsOelPsLYetLeeCOelPWGlXTCeYlsLUeELUetClesYletLeeClUGEEeXEOesCeteMEesleEeMeleseXCTEYsTGXEsesLGXEsYeEsKXteMEessYlsTGXWPYetCPXseEWPJeYtLlYteEleXEKYeECeYlsTEettetCetsGtJePtClestGMlesPCCYCXOesOesJEPtOssTUYtQPllGtJesPXKGtOOessGlYCXOesRXYseVMletCsetOGEVYEOPtsXtEeWesPtsKYtleXEsEeYtsKeLGtOssGtCTleYtsOeCYtLellesVPJYRXeseCOesTPELellesOGEPYtsYRXXtsPMleKYteCGYletCWPJXeVetCleXEsTEXtellesVAsCYRXes'
+>>> substitution(message, "F", "r")
+'lesPVGXEeXQKeEWerCseClessPWPrCsPXsCeEesPYVerCeJPleVerCOPrsleXEVXEesPYsGrlesLUPCsTXYssPrCseCOGXQGEJXeYlOelPVPYsGrRXYLGVVeeXQsGrCKEYleXQeCLGVVeeXQseOerCPYEesPVYsOelPsLYerLeeCOelPWGlXTCeYlsLUeELUerClesYlerLeeClUGEEeXEOesCereMEesleEeMeleseXCTEYsTGXEsesLGXEsYeEsKXreMEessYlsTGXWPYerCPXseEWPJeYrLlYreEleXEKYeECeYlsTEerrerCersGrJePrClesrGMlesPCCYCXOesOesJEPrOssTUYrQPllGrJesPXKGrOOessGlYCXOesRXYseVMlerCserOGEVYEOPrsXrEeWesPrsKYrleXEsEeYrsKeLGrOssGrCTleYrsOeCYrLellesVPJYRXeseCOesTPELellesOGEPYrsYRXXrsPMleKYreCGYlerCWPJXeVerCleXEsTEXrellesVAsCYRXes'
+>>> substitution(message, "P", "a")
+'lesaVGXEeXQKeEWeFCseClessaWaFCsaXsCeEesaYVeFCeJaleVeFCOaFsleXEVXEesaYsGFlesLUaCsTXYssaFCseCOGXQGEJXeYlOelaVaYsGFRXYLGVVeeXQsGFCKEYleXQeCLGVVeeXQseOeFCaYEesaVYsOelasLYeFLeeCOelaWGlXTCeYlsLUeELUeFClesYleFLeeClUGEEeXEOesCeFeMEesleEeMeleseXCTEYsTGXEsesLGXEsYeEsKXFeMEessYlsTGXWaYeFCaXseEWaJeYFLlYFeEleXEKYeECeYlsTEeFFeFCeFsGFJeaFClesFGMlesaCCYCXOesOesJEaFOssTUYFQallGFJesaXKGFOOessGlYCXOesRXYseVMleFCseFOGEVYEOaFsXFEeWesaFsKYFleXEsEeYFsKeLGFOssGFCTleYFsOeCYFLellesVaJYRXeseCOesTaELellesOGEaYFsYRXXFsaMleKYFeCGYleFCWaJXeVeFCleXEsTEXFellesVAsCYRXes'
+>>> )
+  File "<stdin>", line 1
+    )
+    ^
+SyntaxError: unmatched ')'
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> message = substitution(message, "F", "t")
+>>> message = substitution(message, "P", "a")
+>>> message
+'lesaVGXEeXQKeEWetCseClessaWatCsaXsCeEesaYVetCeJaleVetCOatsleXEVXEesaYsGtlesLUaCsTXYssatCseCOGXQGEJXeYlOelaVaYsGtRXYLGVVeeXQsGtCKEYleXQeCLGVVeeXQseOetCaYEesaVYsOelasLYetLeeCOelaWGlXTCeYlsLUeELUetClesYletLeeClUGEEeXEOesCeteMEesleEeMeleseXCTEYsTGXEsesLGXEsYeEsKXteMEessYlsTGXWaYetCaXseEWaJeYtLlYteEleXEKYeECeYlsTEettetCetsGtJeatClestGMlesaCCYCXOesOesJEatOssTUYtQallGtJesaXKGtOOessGlYCXOesRXYseVMletCsetOGEVYEOatsXtEeWesatsKYtleXEsEeYtsKeLGtOssGtCTleYtsOeCYtLellesVaJYRXeseCOesTaELellesOGEaYtsYRXXtsaMleKYteCGYletCWaJXeVetCleXEsTEXtellesVAsCYRXes'
+>>> m = lesaVGXEeXQKeEWeFCseClessaWaFCsaXsCeEesaYVeFCeJaleVeFCOaFsleXEVXEesaYsGFlesLUaCsTXYssaFCseCOGXQGEJXeYlOelaVaYsGFRXYLGVVeeXQsGFCKEYleXQeCLGVVeeXQseOeFCaYEesaVYsOelasLYeFLeeCOelaWGlXTCeYlsLUeELUeFClesYleFLeeClUGEEeXEOesCeFeMEesleEeMeleseXCTEYsTGXEsesLGXEsYeEsKXFeMEessYlsTGXWaYeFCaXseEWaJeYFLlYFeEleXEKYeECeYlsTEeFFeFCeFsGFJeaFClesFGMlesaCCYCXOesOesJEaFOssTUYFQallGFJesaXKGFOOessGlYCXOesRXYseVMleFCseFOGEVYEOaFsXFEeWesaFsKYFleXEsEeYFsKeLGFOssGFCTleYFsOeCYFLellesVaJYRXeseCOesTaELellesOGEaYFsYRXXFsaMleKYFeCGYleFCWaJXeVeFCleXEsTEXFellesVAsCYRXes
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'lesaVGXEeXQKeEWeFCseClessaWaFCsaXsCeEesaYVeFCeJaleVeFCOaFsleXEVXEesaYsGFlesLUaCsTXYssaFCseCOGXQGEJXeYlOelaVaYsGFRXYLGVVeeXQsGFCKEYleXQeCLGVVeeXQseOeFCaYEesaVYsOelasLYeFLeeCOelaWGlXTCeYlsLUeELUeFClesYl' is not defined
+>>> m = "lesaVGXEeXQKeEWeFCseClessaWaFCsaXsCeEesaYVeFCeJaleVeFCOaFsleXEVXEesaYsGFlesLUaCsTXYssaFCseCOGXQGEJXeYlOelaVaYsGFRXYLGVVeeXQsGFCKEYleXQeCLGVVeeXQseOeFCaYEesaVYsOelasLYeFLeeCOelaWGlXTCeYlsLUeELUeFClesYleFLeeClUGEEeXEOesCeFeMEesleEeMeleseXCTEYsTGXEsesLGXEsYeEsKXFeMEessYlsTGXWaYeFCaXseEWaJeYFLlYFeEleXEKYeECeYlsTEeFFeFCeFsGFJeaFClesFGMlesaCCYCXOesOesJEaFOssTUYFQallGFJesaXKGFOOessGlYCXOesRXYseVMleFCseFOGEVYEOaFsXFEeWesaFsKYFleXEsEeYFsKeLGFOssGFCTleYFsOeCYFLellesVaJYRXeseCOesTaELellesOGEaYFsYRXXFsaMleKYFeCGYleFCWaJXeVeFCleXEsTEXFellesVAsCYRXes"
+>>> m= substitution(m, "C", "t")
+>>> m
+'lesaVGXEeXQKeEWeFtsetlessaWaFtsaXsteEesaYVeFteJaleVeFtOaFsleXEVXEesaYsGFlesLUatsTXYssaFtsetOGXQGEJXeYlOelaVaYsGFRXYLGVVeeXQsGFtKEYleXQetLGVVeeXQseOeFtaYEesaVYsOelasLYeFLeetOelaWGlXTteYlsLUeELUeFtlesYleFLeetlUGEEeXEOesteFeMEesleEeMeleseXtTEYsTGXEsesLGXEsYeEsKXFeMEessYlsTGXWaYeFtaXseEWaJeYFLlYFeEleXEKYeEteYlsTEeFFeFteFsGFJeaFtlesFGMlesattYtXOesOesJEaFOssTUYFQallGFJesaXKGFOOessGlYtXOesRXYseVMleFtseFOGEVYEOaFsXFEeWesaFsKYFleXEsEeYFsKeLGFOssGFtTleYFsOetYFLellesVaJYRXesetOesTaELellesOGEaYFsYRXXFsaMleKYFetGYleFtWaJXeVeFtleXEsTEXFellesVAstYRXes'
+>>> m = substitution(m, "W", "v")
+>>> m = substitution(m, "F", "n")
+>>> m
+'lesaVGXEeXQKeEventsetlessavantsaXsteEesaYVenteJaleVentOansleXEVXEesaYsGnlesLUatsTXYssantsetOGXQGEJXeYlOelaVaYsGnRXYLGVVeeXQsGntKEYleXQetLGVVeeXQseOentaYEesaVYsOelasLYenLeetOelavGlXTteYlsLUeELUentlesYlenLeetlUGEEeXEOesteneMEesleEeMeleseXtTEYsTGXEsesLGXEsYeEsKXneMEessYlsTGXvaYentaXseEvaJeYnLlYneEleXEKYeEteYlsTEennentensGnJeantlesnGMlesattYtXOesOesJEanOssTUYnQallGnJesaXKGnOOessGlYtXOesRXYseVMlentsenOGEVYEOansXnEevesansKYnleXEsEeYnsKeLGnOssGntTleYnsOetYnLellesVaJYRXesetOesTaELellesOGEaYnsYRXXnsaMleKYnetGYlentvaJXeVentleXEsTEXnellesVAstYRXes'
+>>> >>> m = substitution(m, "Y", "i")
+>>> m = substitution(m, "X", "u")
+>>> m
+'lesaVGuEeuQKeEventsetlessavantsausteEesaiVenteJaleVentOansleuEVuEesaisGnlesLUatsTuissantsetOGuQGEJueilOelaVaisGnRuiLGVVeeuQsGntKEileuQetLGVVeeuQseOentaiEesaVisOelasLienLeetOelavGluTteilsLUeELUentlesilenLeetlUGEEeuEOesteneMEesleEeMeleseutTEisTGuEsesLGuEsieEsKuneMEessilsTGuvaientauseEvaJeinLlineEleuEKieEteilsTEennentensGnJeantlesnGMlesattituOesOesJEanOssTUinQallGnJesauKGnOOessGlituOesRuiseVMlentsenOGEViEOansunEevesansKinleuEsEeinsKeLGnOssGntTleinsOetinLellesVaJiRuesetOesTaELellesOGEainsiRuunsaMleKinetGilentvaJueVentleuEsTEunellesVAstiRues'
+>>> m = substitution(m, "O", "d")
+>>> 
+>>> m
+'lesaVGuEeuQKeEventsetlessavantsausteEesaiVenteJaleVentdansleuEVuEesaisGnlesLUatsTuissantsetdGuQGEJueildelaVaisGnRuiLGVVeeuQsGntKEileuQetLGVVeeuQsedentaiEesaVisdelasLienLeetdelavGluTteilsLUeELUentlesilenLeetlUGEEeuEdesteneMEesleEeMeleseutTEisTGuEsesLGuEsieEsKuneMEessilsTGuvaientauseEvaJeinLlineEleuEKieEteilsTEennentensGnJeantlesnGMlesattitudesdesJEandssTUinQallGnJesauKGnddessGlitudesRuiseVMlentsendGEViEdansunEevesansKinleuEsEeinsKeLGndssGntTleinsdetinLellesVaJiRuesetdesTaELellesdGEainsiRuunsaMleKinetGilentvaJueVentleuEsTEunellesVAstiRues'
+>>> m = substitution(m, "E", "r")
+>>> m
+'lesaVGureuQKerventsetlessavantsausteresaiVenteJaleVentdansleurVuresaisGnlesLUatsTuissantsetdGuQGrJueildelaVaisGnRuiLGVVeeuQsGntKrileuQetLGVVeeuQsedentairesaVisdelasLienLeetdelavGluTteilsLUerLUentlesilenLeetlUGrreurdesteneMreslereMeleseutTrisTGursesLGursiersKuneMressilsTGuvaientauservaJeinLlinerleurKierteilsTrennentensGnJeantlesnGMlesattitudesdesJrandssTUinQallGnJesauKGnddessGlitudesRuiseVMlentsendGrVirdansunrevesansKinleursreinsKeLGndssGntTleinsdetinLellesVaJiRuesetdesTarLellesdGrainsiRuunsaMleKinetGilentvaJueVentleursTrunellesVAstiRues'
+>>> m = substitution(m, "V", "m")
+>>> m
+'lesamGureuQKerventsetlessavantsausteresaimenteJalementdansleurmuresaisGnlesLUatsTuissantsetdGuQGrJueildelamaisGnRuiLGmmeeuQsGntKrileuQetLGmmeeuQsedentairesamisdelasLienLeetdelavGluTteilsLUerLUentlesilenLeetlUGrreurdesteneMreslereMeleseutTrisTGursesLGursiersKuneMressilsTGuvaientauservaJeinLlinerleurKierteilsTrennentensGnJeantlesnGMlesattitudesdesJrandssTUinQallGnJesauKGnddessGlitudesRuisemMlentsendGrmirdansunrevesansKinleursreinsKeLGndssGntTleinsdetinLellesmaJiRuesetdesTarLellesdGrainsiRuunsaMleKinetGilentvaJuementleursTrunellesmAstiRues'
+>>> m = substitution(m, "G", "o")
+>>> m = substitution(m, "Q", "x")
+>>> m
+'lesamoureuxKerventsetlessavantsausteresaimenteJalementdansleurmuresaisonlesLUatsTuissantsetdouxorJueildelamaisonRuiLommeeuxsontKrileuxetLommeeuxsedentairesamisdelasLienLeetdelavoluTteilsLUerLUentlesilenLeetlUorreurdesteneMreslereMeleseutTrisToursesLoursiersKuneMressilsTouvaientauservaJeinLlinerleurKierteilsTrennentensonJeantlesnoMlesattitudesdesJrandssTUinxallonJesauKonddessolitudesRuisemMlentsendormirdansunrevesansKinleursreinsKeLondssontTleinsdetinLellesmaJiRuesetdesTarLellesdorainsiRuunsaMleKinetoilentvaJuementleursTrunellesmAstiRues'
+>>> m = substitution(m, "K", "f")
+>>> m
+'lesamoureuxferventsetlessavantsausteresaimenteJalementdansleurmuresaisonlesLUatsTuissantsetdouxorJueildelamaisonRuiLommeeuxsontfrileuxetLommeeuxsedentairesamisdelasLienLeetdelavoluTteilsLUerLUentlesilenLeetlUorreurdesteneMreslereMeleseutTrisToursesLoursiersfuneMressilsTouvaientauservaJeinLlinerleurfierteilsTrennentensonJeantlesnoMlesattitudesdesJrandssTUinxallonJesaufonddessolitudesRuisemMlentsendormirdansunrevesansfinleursreinsfeLondssontTleinsdetinLellesmaJiRuesetdesTarLellesdorainsiRuunsaMlefinetoilentvaJuementleursTrunellesmAstiRues'
+>>> m = substitution(m, "J", "g")
+>>> m
+'lesamoureuxferventsetlessavantsausteresaimentegalementdansleurmuresaisonlesLUatsTuissantsetdouxorgueildelamaisonRuiLommeeuxsontfrileuxetLommeeuxsedentairesamisdelasLienLeetdelavoluTteilsLUerLUentlesilenLeetlUorreurdesteneMreslereMeleseutTrisToursesLoursiersfuneMressilsTouvaientauservageinLlinerleurfierteilsTrennentensongeantlesnoMlesattitudesdesgrandssTUinxallongesaufonddessolitudesRuisemMlentsendormirdansunrevesansfinleursreinsfeLondssontTleinsdetinLellesmagiRuesetdesTarLellesdorainsiRuunsaMlefinetoilentvaguementleursTrunellesmAstiRues'
+>>> m = substitution(m, "T", "p")
+>>> m
+'lesamoureuxferventsetlessavantsausteresaimentegalementdansleurmuresaisonlesLUatspuissantsetdouxorgueildelamaisonRuiLommeeuxsontfrileuxetLommeeuxsedentairesamisdelasLienLeetdelavolupteilsLUerLUentlesilenLeetlUorreurdesteneMreslereMeleseutprispoursesLoursiersfuneMressilspouvaientauservageinLlinerleurfierteilsprennentensongeantlesnoMlesattitudesdesgrandsspUinxallongesaufonddessolitudesRuisemMlentsendormirdansunrevesansfinleursreinsfeLondssontpleinsdetinLellesmagiRuesetdesparLellesdorainsiRuunsaMlefinetoilentvaguementleursprunellesmAstiRues'
+>>> m = substitution(m, "L", "c")
+>>> m
+'lesamoureuxferventsetlessavantsausteresaimentegalementdansleurmuresaisonlescUatspuissantsetdouxorgueildelamaisonRuicommeeuxsontfrileuxetcommeeuxsedentairesamisdelascienceetdelavolupteilscUercUentlesilenceetlUorreurdesteneMreslereMeleseutprispoursescoursiersfuneMressilspouvaientauservageinclinerleurfierteilsprennentensongeantlesnoMlesattitudesdesgrandsspUinxallongesaufonddessolitudesRuisemMlentsendormirdansunrevesansfinleursreinsfecondssontpleinsdetincellesmagiRuesetdesparcellesdorainsiRuunsaMlefinetoilentvaguementleursprunellesmAstiRues'
+>>> m = substitution(m, "R", "q")
+>>> m
+'lesamoureuxferventsetlessavantsausteresaimentegalementdansleurmuresaisonlescUatspuissantsetdouxorgueildelamaisonquicommeeuxsontfrileuxetcommeeuxsedentairesamisdelascienceetdelavolupteilscUercUentlesilenceetlUorreurdesteneMreslereMeleseutprispoursescoursiersfuneMressilspouvaientauservageinclinerleurfierteilsprennentensongeantlesnoMlesattitudesdesgrandsspUinxallongesaufonddessolitudesquisemMlentsendormirdansunrevesansfinleursreinsfecondssontpleinsdetincellesmagiquesetdesparcellesdorainsiquunsaMlefinetoilentvaguementleursprunellesmAstiques'
+>>> m = substitution(m, "M", "b")
+>>> m = substitution(m, "U", "h")
+>>> m
+'lesamoureuxferventsetlessavantsausteresaimentegalementdansleurmuresaisonleschatspuissantsetdouxorgueildelamaisonquicommeeuxsontfrileuxetcommeeuxsedentairesamisdelascienceetdelavolupteilscherchentlesilenceetlhorreurdestenebreslerebeleseutprispoursescoursiersfunebressilspouvaientauservageinclinerleurfierteilsprennentensongeantlesnoblesattitudesdesgrandssphinxallongesaufonddessolitudesquisemblentsendormirdansunrevesansfinleursreinsfecondssontpleinsdetincellesmagiquesetdesparcellesdorainsiquunsablefinetoilentvaguementleursprunellesmAstiques'
+>>> m = substitution(m, "A", "y")
+>>> m
+'lesamoureuxferventsetlessavantsausteresaimentegalementdansleurmuresaisonleschatspuissantsetdouxorgueildelamaisonquicommeeuxsontfrileuxetcommeeuxsedentairesamisdelascienceetdelavolupteilscherchentlesilenceetlhorreurdestenebreslerebeleseutprispoursescoursiersfunebressilspouvaientauservageinclinerleurfierteilsprennentensongeantlesnoblesattitudesdesgrandssphinxallongesaufonddessolitudesquisemblentsendormirdansunrevesansfinleursreinsfecondssontpleinsdetincellesmagiquesetdesparcellesdorainsiquunsablefinetoilentvaguementleursprunellesmystiques'
+>>> 

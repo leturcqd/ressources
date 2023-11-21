@@ -36,7 +36,7 @@ def descytale(message, cle) :
         if (j+1) % q == 0 and (j+1)//q > r :
             j+=1
         liste[j%q]+= x
-        j+=1
+        j+=1	
     crypto = ""
     for x in liste :
         crypto += x
@@ -54,3 +54,4 @@ def attaque_scytale(message) :
     print("La clé était ", cle-1)
     return(test)
     
+
