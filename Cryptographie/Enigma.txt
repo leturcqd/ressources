@@ -7,13 +7,13 @@ def position(x):
         return(i)
     elif i < 51 :
         return(i- 26)
-    elif x in "éèêëÉÈÊËÆæŒœ" :
+    elif x in "éèêëÉÈÊË" :
         return(4)
-    elif x in "àâäÀÂÄ" :
+    elif x in "àâäÀÂÄÆæ" :
         return(0)
     elif x in "îïÎÏ" :
         return(8)
-    elif x in "ôöÔÖ" :
+    elif x in "ôöÔÖŒœ" :
         return(14)
     elif x in "ûüÛÜÙù" :
         return(20)
