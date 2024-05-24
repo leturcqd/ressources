@@ -83,7 +83,7 @@ def Vigenere() :
             
 def deVigenere(code, cle) :
         message = ""
-        i=0o
+        i=0
         c= len(cle)
         for x in code :
             message+= decalage(x, (26 - position(cle[i%c]))%26)
