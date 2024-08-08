@@ -1,0 +1,727 @@
+\documentclass[12 pt]{extarticle}
+
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	 \usepackage{fancyhdr}
+	 \usepackage{float}
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{\thepage} 
+	\fancyhead[L]{Fiche d'exercices}
+	\fancyhead[R]{2022-2023}
+	
+	
+	\title{Exercices LH 5e}
+	\date{}
+	\begin{document}
+
+\begin{center}{\Large Exercices de cinquième\footnote{Tirés du manuel de 5e Lebossé, Hémery, possibles fautes de recopie.}}\\
+ \end{center}  
+ 
+ \section{Nombres entiers}
+ \subsection{Numération}
+ 
+ \begin{enumerate}
+ \item Combien faut-il de mots différents pour nommer tous les nombres jusqu'à un million ? 
+ \item On écrit les $237$ premiers nombres. Combien, au total, a-t-on écrit de chiffres ? Même question pour les nombres entre $94$ et $237$. 
+ \item On écrit tous les nombres de deux chiffres. Combien en écrit-on ? 
+ Combien de chiffres écrit-on au total ? Même question pour les nombres de trois chiffres. 
+ \item Pour numéroter les pages d'un livre, on emploie $408$ caractères d'imprimerie. Quel est le nombre de pages de ce livre ?
+ \item On écrit les $467$ premiers nombres. Combien de fois écrit-on le chiffre $3$ ? Combien de fois écrit-on le chiffre $5$ ? Combien de fois écrit-on le chiffre $8$ ? 
+ \item Former tous les nombres de trois chiffres qui s'écrivent avec les chiffres $3$, $5$, $7$. Classer ces nombres dans l'ordre croissant.\\
+ Même question pour les nombres de quatre chiffres qui s'écrivent avec $3$, $5$, $7$, $9$. 
+ \item Combien faut-il de dizaines, de centaines, de mille pour former un million, un milliard, $35$ millions, $17$ milliards ?
+ \item Dans un nombre de deux chiffres, le chiffre des dizaines est $7$, on place un zéro entre les deux chiffres de ce nombre. De combien augmente-t-on ainsi sa valeur ? \\
+ Soit le nombre $672$. On intercale un zéro entre les chiffres $6$ et $7$ et un zéro entre les chiffres $7$ et $2$. De combien augmente-t-il ainsi ? 
+ \item Quels sont les plus petit et le plus grand nombre de $4$ chiffres ? Combien y a-t-il de nombres ayant moins de $4$ chiffres ? moins de $5$ chiffres ? En déduire combien il existe de nombres de $4$ chiffres. Généraliser. 
+ \item Écrire en chiffres romains les nombres suivants : 
+ \[ 349 \ \ \ \ 654 \ \ \ \ 1\ 794 \ \ \ \ 2\ 497. \]
+ Écrire en chiffres indo-arabes les nombres suivants : 
+ \[ \rm CXLIX \ \ \ \ CDLXVII \ \ \ \ MCCXLIV \ \ \ \ MCDXCIV. \]
+ 
+ \item Dans un nombre de deux chiffres, le chiffre des dizaines est le double du chiffre des unités, et la somme de ces deux chiffres est $12$. Trouver ce nombre. 
+ \item Dans un nombre de trois chiffres, le chiffre des unités dépasse de $2$ celui des dizaines et ce dernier est le triple du chiffre des centaines. La somme des trois chiffres est $16$. Trouver ce nombre. 
+ \item Une loterie comprend $5\ 000$ billets numérotés de $1$ à $5\ 000$. Les frais d'organisation s'élèvent à $33,50$ F. Tous les billets ont été vendus $1$ F l'un. Les billets se terminant par $27$ gagnent $10$ F. Tous les billets se terminant par $135$ gagnent $200$ F et le numéro $2\ 791$ gagne le gros lot, soit $1\ 000$ F. Quel est le bénéfice réalisé ? 
+ \item On organise une loterie comprenant $1\ 000$ billets numérotés de $1$ à $1 000$ et qui sont tous vendus $0,50$ F chacun. Les frais d'organisation se montent à $50$ F. Les billets terminés par $7$ gagnent $1$ F, les billets terminés par $35$ gagnent $10$ F et le gros lot est gagné par le numéro $794$.
+ Le bénéfice réalisé est de $150$ F. Quel est le montant du gros lot ? 
+ 
+ \end{enumerate}
+ 
+ \subsection{Sommes de nombres entiers}
+ \begin{enumerate}
+\item Effectuer les additions suivantes : 
+\[ 2\ 437 + 37\ 412 + 707 + 52\ 759 ;\]
+\[ 3~127+ 25~742+790~395 + 42~759~375 ;\]
+\[ 902~812+ 43 + 254 + 4~127 + 512~752.\]
+\item De combien augmente une somme de trois nombres si on augmente le premier de $12$ unités, le deuxième de $3$ dizaines, et le troisième de $4$ centaines ?
+\item De combien augmente une somme de trois nombres si on augmente le premier de $7$ dizaines, le deuxième de $25$ centaines, le troisième de $9$ mille ?
+\item Calculer la somme des dix premiers nombres entiers. 
+Calculer la somme des dix premiers nombres impairs.
+\item Trouver trois nombres entiers consécutifs sachant que leur somme est $45$. 
+\item Trouver quatre nombres entiers consécutifs sachant que leur somme est 498. 
+\item En effectuant une addition de nombres entiers sans faire de retenues, on 
+trouve dans chaque colonne, de droite à gauche, les sommes suivantes : 14, 11, 9. Quel est le résultat de l'addition ? 
+\item Trois personnes se partagent une certaine somme. La première a $5~120$ F, la deuxième a 270 F de plus que la première. La troisième a autant que les deux autres ensemble. Quelle est la part de chacune ? la somme à partager ?
+\item Dans un jeu de dominos, chaque pièce est formée par l'association d'un des chiffres de $0$ à $6$ avec lui-même ou avec un autre. \begin{enumerate}
+\item Calculer le nombre de pièces différentes du jeu. Le comparer avec la somme des 7 premiers nombres entiers.
+\item Combien de fois figure un chiffre donné dans l'ensemble du jeu ? 
+\item Calculer le nombre total de points inscrits sur tous les dominos du jeu.
+\end{enumerate}
+\item \begin{enumerate}
+Le carré ci-contre est dit « magique » car, en additionnant les nombres situés sur une même ligne horizontale, dans une même colonne verticale, ou bien sur une même diagonale, on obtient chaque fois le même résultat. Vérifiez-le. 
+\[\displaystyle\begin{tabular}{|c|c|c|}
+\hline 
+8 & 1 & 6\\
+\hline
+3 & 5 & 7\\
+\hline 
+4 & 9 & 2\\
+\hline
+\end{tabular}
+\]
+\item On ajoute $4$ à chacun des nombres du carré magique. Montrer que l'on obtient encore un carré magique.
+\item Quel nombre faut-il ajouter pour que la somme par ligne, colonne ou diagonale, soit égale à 54 ? Former ce carré.
+\end{enumerate}
+\item On considère les nombres de 1 à 12. \begin{enumerate}
+\item De combien de manières peut-on les associer deux par deux de façon à obtenir une somme égale à 13 ? 
+\item De combien de manières peut-on associer trois de ces nombres, distincts entre eux, de façon à obtenir une somme égale à 15 ? 
+\end{enumerate}
+\item \begin{enumerate}
+\item Dessiner un carré partagé en $100$ petits carreaux disposés suivant 10
+rangées horizontales de 10 carreaux chacune. 
+Puis écrire sur la première rangée les nombres de 0 à 9, sur la deuxième, les nombres de 1 à 10, sur la troisième les nombres de 2 à 11, et ainsi de suite. 
+On obtient une table d'addition. 
+\item Vérifier que le nombre qui se trouve sur la ligne horizontale qui commence par $7$ et dans la colonne verticale qui commence par $5$ est égal
+à 7+5. 
+\item Calculer la somme des nombres situés dans chacune des lignes, puis la somme de tous les nombres inscrits dans la table. 
+\end{enumerate}
+\item Une ménagère achète 4 articles dans un magasin. Le deuxième coûte 25 F de plus que le premier, le troisième 50 F de plus que le second et le quatrième 75 F de plus que le troisième. Elle paie avec deux billets de 500 F
+sur lesquels on lui rend un billet de 50 F, deux billets de 10 F, et un billet de 5 F. Calculer le prix de chaque article. 
+\item 
+\item Un particulier qui dispose de 27~000 F veut faire construire un pavillon. Il compte 7~000 F pour l'achat du terrain, 25~000 F pour la maçonnerie et la couverture, 8~000 F pour la menuiserie, 3~000 F pour l'eau, le gaz et l'électricité, 5~000 F pour le chauffage central, 2~500 F pour la peinture et 1~5000 F de frais accessoires. 
+\begin{enumerate}
+\item Trouver le prix de revient du pavillon.
+\item Le particulier sollicite un emprunt du Crédit foncier pour la somme qui
+lui manque. Il se libère en 5 ans en remboursant 1//5 de cet emprunt à la fin de chaque année. Trouver le montant exact de chacun de ces cinq versements, sachant qu'à la fin de chaque année il devra verser en même temps l'intérêt
+à 8\% de la somme due au Crédit foncier pendant l'année écoulée.
+\end{enumerate}
+\item Effectuer de deux manières différentes les additions suivantes : 
+\[ 37 + ( 43+25+12);\]
+\[ 42 + 17 + (109+12) + (472+38);\]
+\[ 375 + (515 + 127 + 39).\]
+\item Exercices de calcul mental :
+\[\begin{tabular}{cccc}
+70 + 40 & 900 + 600 & 70 + 14 & 18+ 80\\
+242 + 80 & 30 + 712 & 50 + 2~743 & 80 + 537\\
+42 + 67 & 253 + 34 & 419 + 71 & 718 + 62 \\ 
+24 + 35 & 347 + 25 & 525 + 263 & 342 + 675 
+\end{tabular}\]
+\item Découper trois segments dans une feuille de papier de longueurs 
+respectives $a$, $b$ et $c$. Vérifier que : 
+\begin{enumerate}
+\item $a + (b + c) = a + b + c$.
+\item $a + b + c = a + c + b = b + a + c = b + c + a = c + a + b = c + b + a$.
+\end{enumerate}
+ \item Au nombre entier $a$ compris entre $0$ et 10, on ajoute 5, soit b le nombre obtenu : \begin{enumerate}
+ \item Établir le tableau de correspondance entre les nombres $a$ et $b$. 
+ \item Construire le graphique correspondant. 
+ \end{enumerate}
+ \end{enumerate}
+ 
+ \subsection{Différences de nombres entiers}
+ \begin{enumerate}
+ \item Que devient la différence de deux nombres.\begin{itemize}
+ \item Si on augmente le premier terme de 12.
+ \item Si on augmente le second terme de 12. 
+ \item Si on augmente le premier terme de 12 et le second de 10. 
+ \item Si on augmente le premier terme de 10 et le second de 12.
+ \end{itemize}
+ 
+ \item Calculer de deux façons différentes le résultat des opérations suivantes : 
+ \[
+ \begin{tabular}{l c l }
+ 2~315 - (37 + 452 + 17) & \ \ \ \ \ & 3~057 + (539 - 423) \\
+ 2~715 - (377 + 12 + 57 + 425) & \ \ \ \ \ & 70~375 + (2~195 - 492).
+  \end{tabular}
+ \]
+ 
+  \item Calculer de deux façons différentes le résultat des opérations suivantes : 
+ \[
+ \begin{tabular}{l c l }
+ 4~039 - (3~215 - 2~237) & \ \ \ \ \ & 3~429 - (2~615 - 1~732) \\
+ 5~127 - (5~725 - 4~350) & \ \ \ \ \ & 6~847 - (3~240 - 2~428).
+  \end{tabular}
+ \]
+ 
+ \item Supprimer les parenthèses en utilisant les propriétés des sommes et
+ des différences dans les expressions suivantes : 
+  \[
+ \begin{tabular}{l c l }
+ a + (b + c) + (d - e) & \ \ \ \ \ & a + (b + c) - (d - e) \\
+ a - (b + c) + (d - e) & \ \ \ \ \ & a - (b + c) - (d - e).
+  \end{tabular}
+ \]
+ 
+ \item Qu'obtient-on en ajoutant la somme de deux nombres et leur différence ?
+ Qu'obtient-on si, de la somme de deux nombres, on retranche leur différence ?
+ \item Trouver deux nombres, connaissant leur somme 342 et leur différence 88.
+ \item Trouver deux nombres, connaissant leur somme 61~975 et leur différence
+ 2~047.
+ \item Si Pierre donne 16 billes à Jean, ils en ont le même nombre.
+ Combien Jean a-t-il de billes de plus que Pierre ? 
+ \item Dans la soustraction 712 - 84, on oublie de faire les retenues.
+  Trouver l'erreur commise sans faire l'opération.
+ \item Trouver trois nombres dont la somme est 192, sachant que le deuxième
+ surpasse le premier de 17 et que le troisième surpasse le deuxième de 23.
+ \item Deux nombres ont pour différence 18. Si on les augmente tous deux 
+ de 6, le premier devient le double du second. Trouver ces deux nombres. 
+ \item Trouver trois nombres, sachant que la somme des deux premiers est 28,
+ celle des deux derniers est 32, et celle du premier et du troisième est 30.
+ \\
+ \item Remplir les chiffres manquants dans les additions suivantes : \\
+ $ 
+ \begin{tabular}{cccc}
+ . & . & . & 2 \\
+  & 8 & 4 & . \\
+  & 9 & 4 & 3 \\ 
+  \hline 
+  3 & 5 & 8 & 2
+  \end{tabular}
+$  \phantom{meowmeowmeow}
+  $ \begin{tabular}{cccc}
+ . & 7 & 3 & . \\
+  & 7 & . & 2 \\
+  2 & . & 5 & 4 \\ 
+  \hline 
+  7 & 8 & 7 & 7
+  \end{tabular}
+ $\phantom{meowmeowmeow}
+  $ \begin{tabular}{ccccc}
+& 2 & 3 & . & 7 \\
+ &4 & 5 & 6 & . \\
+ &. & . & 9 & 5 \\ 
+  \hline 
+  1&2 & 7 & 0 & 4
+  \end{tabular}
+ $
+ 
+  \item Remplir les chiffres manquants dans les soustractions suivantes : \\
+ $ 
+ \begin{tabular}{ccc}
+ 7 & 9 & . \\
+   . & . & 2 \\
+  \hline 
+  2 &2 & 6
+  \end{tabular}
+$  \phantom{meowmeowmeow}
+  $ \begin{tabular}{cccc}
+  . & 7 & . & . \\ 
+  . & 7 & 9 & 8 \\
+  \hline 
+  3 & 8 & 3 & 5
+  \end{tabular}
+ $\phantom{meowmeowmeow}
+  $ \begin{tabular}{cccc}
+. & 8 & . & . \\
+8 & . & 3 & 5 \\
+  \hline 
+  4 & 8 & 7 & 4
+  \end{tabular}
+ $
+ \item Deux segments de droite ont une longueur totale de 118 cm. Le plus grand 
+ a 12 cm de plus que l'autre. Quelle est la longueur de chaque segment ? 
+ \item On veut partager une pièce d'étoffe de 60 m de long en 3 coupons de façon que le premier ait 5 m de plus que le second et 11 m de moins que le 
+ troisième. Trouver les longueurs des trois coupons.
+ \item Trois camarades font une excursion. Le premier paie le voyage : 
+ 3 billets à 2,25 F l'un. Le second paie les repas du midi : 3 déjeuners à 3
+ F l'un plus 10\% de service. Le troisième paie 7,20 F pour les repas du soir. 
+ Comment règleront-ils leurs comptes pour que les dépenses soient également partagées ?
+ \item Plusieurs enfants se réunissent pour acheter un  ballon de football. Chacun d'eux doit payer 1,30 F. Mais au moment de l'achat trois d'entre eux sont absents, si bien que chacun des présents doit payer 1,60 F.
+ Trouver le nombre total d'enfants, ainsi que le prix du ballon.
+ \item Une ménagère décide d'utiliser ses économies du mois à l'achat 
+ de mouchoirs. Elle pourrait acheter 15 mouchoirs d'ordinaire et il lui 
+ resterait 2 F. Elle préfère dépenser 1 F de plus et faire 
+ l'acquisition d'une douzaine de beaux mouchoirs coûtant 0,70 F de plus chacun. 
+ De quelle somme disposait-elle, et quel prix a-t-elle payé chacun de ses mouchoirs ? 
+ \item Un déjeuner à 8 F par personne réunit un certain nombre de convives.
+ Trois de ces convives sont des invités et ne participent pas à la dépense,
+ si bien que chacun des autres doit payer, y compris 10\% pour le service,
+ 11,20 F. Calculer le nombre total de convives.
+ \item Effectuer mentalement les soustractions suivantes : 
+ \[\begin{tabular}{rrr}
+ 237 - 187 & 871 - 791 & 4~783 - 4~573 \\
+ 217 - 29 & 712 - 89 & 7~813 - 59 \\
+ 701 - 439 & 802 - 547 & 1~003 - 719 \\ 
+ 2~754 - 781 & 3~232 - 2~192 & 7~833 - 5~935
+\end{tabular}\]
+ 
+ \item Découper deux segments $a$ et $b$ dans une feuille de papier.
+ Vérifier que leur différence ne change pas lorsqu'on leur ajoute ou retranche un même segment de longueur c. 
+ 
+ \item Découper trois segments $a$, $b$, et $c$ dans une feuille de papier tels que $b> c$ et $ b + c < a$. Vérifier que : 
+ \[ a - (b+c) = a - b - c;\]
+ \[ a + (b - c) = a + b - c ;\]
+ \[ a - (b - c) = a - b + c.\] 
+ 
+ \item Au nombre 12, on retranche le nombre entier $a$ compris entre 0 et 10. Soient b les nombres obtenus. 
+ \begin{enumerate}
+ \item Établir le tableau de correspondance entre $a$ et $b$. 
+ \item Construire le graphique correspondant.
+ \end{enumerate}
+ 
+ \end{enumerate}
+ 
+ \subsection{Produits de deux nombres}
+ 
+ \begin{enumerate}
+ \item Dans un nombre entier de deux chiffres, on appelle $a$ le chiffre des dizaines, et $b$ celui des unités. Montrer que la valeur de ce nombre est $10a+b$.
+ Même exercice pou un nombre de trois chiffres en désignant par $a$ le chiffre des centaines, $b$ celui des dizaines, et $c$ celui des unités.
+ \item Un libraire achète cinq douzaines de livres à 
+ 24 F la douzaine et les revend 3 F pièce. Trouver le 
+ bénéfice réalisé, sachant que l'éditeur donne 13 livres pour 12 au libraire. 
+ \item La lumière parcourt 300~000 kilomètres par
+ seconde. Évaluer la distance de la Terre au soleil,
+ sachant que la lumière met $8$ min $30$ à parcourir
+ cette distance.
+ \item Trouver un nombre de $2$ chiffres sachant que la somme de ses chiffres est $12$, et qu'en 
+ retranchant de ce nombre le nombre écrit dans l'ordre
+ inverse on trouve 18. 
+ \item Écrire plus simplement les sommes suivantes :
+ \[ (a + b + c) + (a + b + c) + (a + b + c).\]
+ \[(a - b) + (a - b) + (a - b) + (a - b).\]
+ \item Le périmètre d'un rectangle est 386 m ; 
+ la longueur a 23 m de plus que la largeur.
+ Trouver la surface du rectangle.
+ \item Dans la multiplication de 243 par 405, on ne tient pas compte du O au multiplicateur. Trouver, sans faire la multiplication, l'erreur ainsi commise. 
+ \item En multipliant un nombre par 207, on oublie de 
+ tenir compte du zéro du multiplicateur. On fait ainsi
+ une erreur de 64~080. Retrouver le multiplicande\footnote{Dans un produit $a\times b$, $a$ est le \emph{multiplicande} et $b$ le \emph{multiplicateur}.} et le résultat correct de la multiplication.
+ \item On considère le produit $56 \times 43$. On augmente le multiplicateur de $8$. Trouver sans effectuer les multiplications l'augmentation du produit. 
+ \item Une mercière vend une première fois 52 mètres de drap à 36 francs le mètre, et une seconde fois 65 mètres de drap à 42 francs le mètre. Trouver, sans calculer les deux prix de vente, la différence entre ces deux prix. 
+ \item Le produit de deux nombres est 109~450. Trouver ces deux nombres sachant que le multiplicateur a deux chiffres, que le chiffre de ses unités est 5 et que le premier produit partiel\footnote{La première ligne lorsque vous posez le produit.} de l'opération est 21~890. 
+ \item On veut clore un jardin rectangulaire de 42 m de longueur et de 30 m de largeur à l'aide d'un grillage de 2 m de haut soutenu par des poteaux en 
+ ciment distants de 2 m. Le grillage pèse 4 kg au mètre carré et revient à 72 F le quintal. Calculer la dépense sachant qu'un poteau coûte 4,50 F et qu'il faut ajouter une dépense supplémentaire de 25 F pour 
+ le bâti de la porte d'entrée.
+ \item Une école de trois classes brûle par jour et par classez deux seaux de charbon contenant 8 kg de 
+ combustible. Calculer la dépense en une année sachant
+ que l'on a chauffé pendant 25 semaines à raison de 
+ 5 jours par semaine et que le charbon utilisé revient à 180 F la tonne. 
+ \item Une ruche produit en moyenne 10 kg de miel et 15 kg de cire. Le miel vaut 5,20 F le kg et la cire 3,60 F le kg. Calculer le rapport annuel d'un rucher 
+ de 18 ruches sachant que les frais d'entretien s'élèvent au quart du produit total. 
+ \item La toiture d'un hangar est composée de deux 
+ trapèzes isocèles égaux dont les bases mesurent 
+ 10 m et 4 m et de deux triangles isocèles égaux de 6 m de base. La hauteur des trapèzes et des triangles est de 4,50 m. On recouvre la toiture de plaques de 
+ fibrociment qui revient à 8 F le mètre carré. Calculer la dépense.\footnote{La surface d'un trapèze est donnée par la formule $\mathcal A = \text{moyenne des bases}\times \text{hauteur}$.}
+ \item La façade d'un magasin a la forme d'un rectangle de 9 m de long et de 3,50 m de hauteur. Elle
+ comprend trois baies vitrées. Chacune d'elles se compose d'un rectangle de 2 m de large et de 1,60 m de haut surmonté d'un demi-cercle de 2 m de diamètre. 
+ \begin{enumerate}
+ \item Faire le croquis de la façade en prenant 1 cm 
+ pour 1 m, sachant qu'il y a un intervalle de 50 cm
+ entre deux baies vitrées et que celle du milieu occupe le centre de la façade. 
+ \item On fait recouvrir cette façade de plaques de marbre qui reviennent à 4,50 F le mètre carré. Calculer la dépense. 
+ \end{enumerate}
+\item \begin{enumerate}
+\item Soit $a$ l'un des nombres entiers de 0 à 10. 
+Établir les tableaux de correspondance entre $a$ et 
+les nombres $b$, $c$ et $d$ tels que : 
+\[ b= 3 a ; \phantom{meowmeowmeow} c = 3a + 2 ;
+\phantom{meowmeowmeow} d = 3a + 5\]
+\item Construire les graphiques correspondants. 
+\end{enumerate}
+\item \begin{enumerate}
+\item Soit $a$ l'un des nombres entiers de 5 à 15. 
+Établir les tableaux de correspondance entre $a$ et 
+les nombres $b$, $c$ et $d$ tels que : 
+\[ b= 2 a ; \phantom{meowmeowmeow} c = 2a + 4 ;
+\phantom{meowmeowmeow} d = 2a - 5\]
+\item Construire les graphiques correspondants. 
+\end{enumerate}
+\item Compléter les multiplications suivantes : 
+
+  $ \begin{tabular}{cccccc}
+   & & 4 & . & 5 & 3 \\
+   & &   &   & . & 7  \\
+   \hline 
+   & . & . & 2 & . & . \\
+   . & . &. &. & . &\\
+   \hline 
+   . &. &. &. & 1 &. 
+  \end{tabular}
+ $\phantom{meowmeow}
+   $ \begin{tabular}{cccccc}
+   & & & 9 & 7 & .\\
+   & & & . & . &  7 \\
+   \hline
+   & & . & . &. & 2 \\
+   & . & . & . & . & \\
+   . & . & . & . & & \\
+   \hline 
+   . & . & 8 & 4 & 3 & . 
+  \end{tabular}
+ $
+   $ \begin{tabular}{ccccc}
+   & & . & 9 & 6 \\ 
+   & & 2 & . & 8 \\
+   \hline 
+   & 3 & 1 & . & . \\
+   . & . & . & & \\ 
+   \hline 
+   . & . & . & . &.
+  \end{tabular}
+ $
+
+ \end{enumerate}
+ 
+ \subsection{Propriétés des produits de deux nombres}
+ 
+ \begin{enumerate}
+ \item Que devient le produit de deux nombres entiers
+ lorsqu'on augmente l'un des facteurs de 1. Lorsqu'on augmente l'un des facteurs de x ? (Exemple : $43 \times 24$.)
+\item Que devient le produit de deux nombres lorsqu'on augmente chaque facteur de 1 ? On pourra faire une figure rectangulaire. Même question pour une augmentation de x. (Exemple : $92 \times 23$). 
+\item Que devient le produit de deux nombres lorsqu'on
+diminue l'un des facteurs de 1, et lorsqu'on diminue 
+les deux facteurs de 1 ? Même question avec une 
+diminution de x. (Exemple : $247 \times 38$.)
+\item Trouver les dimensions d'un rectangle, sachant qu'en augmentant la longueur et la largeur de 1 m, la
+surface augmente de 170 mètres carré, et sachant d'autre part que la longueur a 84 m de plus que la largeur. 
+\item Le produit de deux nombres est 340. Si l'on ajoute 3 au multiplicateur, le produit devient 400. Quels sont ces deux nombres ? 
+\item Le produit de deux nombres est 575. Si l'on retranche 5 au multiplicateur le produit devient 450.
+Quels sont ces deux nombres ? 
+\item Que devient la surface d'un rectangle lorsqu'on augmente sa longueur de 1 m et qu'on diminue sa largeur de 1 m ? Que devient le produit de deux 
+nombres lorsqu'on augmente l'un des facteurs de 1 
+et que l'on diminue l'autre de 1 ? (Exemple : $537 \times 215$.)
+\item Trouver les dimensions d'un rectangle dont le 
+périmètre est 704 m sachant qu'en augmentant sa longueur de 1 m et en diminuant sa largeur de 1 m sa
+surface diminue de 73 mètres carré. 
+\item Développer : 
+\[
+\begin{tabular}{lll}
+3(x + 7) + 5(x + 1) + 7(x + 2) &\phantom{meowmeow}& 7(x + 5) - 3(x + 2)\\
+12(x + 5) + 4(x - 7) &\phantom{meowmeow}& 17(x - 3) - 16(x - 4)\\
+12(x + y) + 7(x + 1) + 13(y + 2) &\phantom{meowmeow}& 100(x + y) - 36(x - y).
+\end{tabular}
+\]
+\item Calculez de deux façons différentes les sommes ou différences suivantes : 
+ \[
+\begin{tabular}{lll}
+$(15 \times 13) + (15 \times 7) + (15 \times 20)$ &\phantom{meowmeow}& $ (7 \times 17) + (17 \times 13) + (17 \times 5) $ \\
+$(75 \times 21) + (75 \times 19)$ &\phantom{meowmeow}& 
+$(43 \times 104) - (43 \times 100)$\\
+$(43 \times 75) - (75 \times 40)$ &\phantom{meowmeow}& $(52 \times 17) - (52 \times 15)$.
+\end{tabular}
+\]
+\item Mettre $x$ en facteur commun dans les sommes ou différences suivantes : 
+\[ 5x + 12x + 13x\]
+\[19x - 15x\]
+\[ax + bx + cx + dx\]
+\[xy - xz\]
+\item Trouver deux nombres dont la somme est 232 sachant que le premier est le triple du second.
+\item Trouver deux nombres dont la différence est 432
+sachant que le premier est égal au septuple du second.
+\item Partager 125 billes entre 3 enfants de façon que la part du second dépasse de 15 billes le double de 
+la part du premier et que la part du troisième soit inférieure de 10 billes au triple de la part du premier. 
+\item Calculer la somme des nombres contenus dans chacune des lignes de la table de Pythagore suivante : 
+\[\begin{tabular}{| c | c | c | c | c | c | c | c | c |}
+\hline
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\ \hline
+2 & 4 & 6 & 8 & 10 & 12 & 14 & 16 & 18 \\ \hline
+3 & 6 & 9 & 12 & 15 & 18 & 21 & 24 & 27 \\ \hline
+4 & 8 & 12 & 16 & 20 & 24 & 28 & 32 & 36 \\ \hline
+5 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 \\ \hline
+6 & 12 & 18 & 24 & 30 & 36 & 42 & 48 & 54 \\ \hline
+7 & 14 & 21  & 28 & 35 & 42 & 49 & 56 & 63 \\ \hline
+8 & 16 & 24 & 32 & 40 & 48 & 56 & 64 & 72 \\ \hline
+9 & 18 & 27 & 36 & 45 & 54 & 63 & 72 & 81 \\ \hline \end{tabular}\]
+Est-il nécessaire d'effectuer toutes les additions ? 
+Calculer la somme de tous les nombres de la table. 
+\item Trouver un nombre de deux chiffres sachant que la somme de ses chiffres est 11 et que lorsqu'on échange le chiffre des unités et celui des dizaines,
+le nombre augmente de 27. 
+\item Trouver les deux facteurs d'un produit tel que si on multiplie chaque facteur par 3 le produit augmente de 280
+\item On multiplie un nombre de 3 chiffres par 7, le résultat par 11, puis le nouveau résultat par 13. On obtient finalement 843~843. Quel était le nombre initial ? 
+\item Un capitaine fait ranger ses hommes en carré, et il lui reste dix hommes non placés. Sachant d'autre part qu'il lui manque quinze hommes pour placer un homme de plus sur le côté du carré, trouver l'effectif de la compagnie du capitaine. 
+\item Montrer que pour multiplier entre eux deux nombres compris entre 10 et 20, il suffit d'ajouter à l'un les unités de l'autre, de multiplier le résultat par 10 et d'ajouter ensuite le produit des chiffres des unités. Vérifier pour $18 \times 15$. 
+\item Montrer que : 
+\[ 54 \times 26 = (6 \times 4) \text{ unités } + 
+[(6 \times 5) + (2 \times 4) ]\text{ dizaines } + 
+(2 \times 5) \text{ centaines } \]
+Trouver à partir de ce résultat un procédé pour écrire le chiffre des unités, puis celui des dizaines, et le nombre des centaines du produit de deux facteurs de deux chiffres. 
+\item Les murs d'une salle de manipulation de 
+4,80 m de longueur sur 2,10 m de largeur sont recouverts de carreaux de faïence sur une hauteur de 1,35 m. Il y a une porte de 0,90 m de large et les carreaux ont 15 cm de côté. Calculer le nombre de carreaux utilisés et leur prix de revient à raison 
+de 75 F le cent. 
+\item Une personne a pris au cours d'un mois 24 repas
+tantôt dans un restaurant, tantôt dans un autre. Dans 
+le premier, le repas coûte 4,20 F et dans le second
+3,80 F. Sachant que la note dans le second restaurant
+dépasse de 19,20 F la note payée dans le premier, on demande combien cette personne a pris de repas dans chaque restaurant. 
+\item \begin{enumerate}
+\item Un tailleur a acheté 3 coupons de drap de 3,5 m
+chacun à raison de 25 F le mètre pour le premier, 28 F
+pour le deuxième et 32 F pour le troisième. Combien
+a-t-il payé ? 
+\item Le tailleur utilise chacun de ces coupons pour 
+effectuer un costume sur mesures. Pour chacun il 
+dépense 80 F de main-d'œuvre et 30 F de fournitures.
+Les costumes sont facturés 250 F, 270 F, et 300 F. 
+Combien le tailleur a-t-il gagné ? 
+\end{enumerate}
+\item Découper et peser des plaques rectangulaires de dimensions, $a$ et $c$, puis $b$ et $c$, puis 
+$a+b$ et $c$, $a-b$ et $c$. En déduire que 
+\[ ac + bc = (a + b)c\text{    et    } ac - bc = (a - b) c.\]
+\item Construire un rectangle de dimensions $a + b$ 
+et $c + d$. Montrer qu'on peut le découper en quatre
+rectangles de dimensions respectives $a$ et $c$, 
+$b$ et $c$, $a$ et $d$, $b$ et $d$. En déduire que 
+\[ (a + b)(c + d) = ac + bc + ad + bd\]
+\item Construire un rectangle de longueur $a$ et de
+largeur $c$. Augmenter sa longueur de $b$ et 
+diminuer sa largeur de $d$. Évaluer la surface du 
+rectangle de dimensions $a + b$ et $c - d$ ainsi 
+formé par rapport à celle des rectangles de dimensions
+respectives $a$ et $c$; $b$ et $c$; $a$ et $d$ ; $b$
+et $d$. En déduire que 
+\[ (a + b)(c - d) = ac + bc - ad - bd\]
+\item Construire un rectangle de longueur $a$, 
+de largeur $c$. Retrancher $b$ à sa longueur et 
+$d$ à sa largeur. Évaluer la surface du rectangle 
+de dimensions $a - b$ et $c - d$ par rapport à 
+celles des rectangles de dimensions respectives 
+$a$ et $c$ ; $a$ et $d$ ; $b$ et $c$; $b$ et $d$. 
+En déduire que : 
+\[ (a - b)(c - d) = ac - bc - ad + bd\]
+
+ \end{enumerate}
+ \subsection{Produits de plusieurs facteurs}
+ 
+\begin{enumerate}
+\item Que devient le produit de deux nombres lorsqu'on
+multiplie l'un des facteurs par 2 ; et lorsqu'on le multiplie plus généralement par un nombre $x$ ? 
+\item Que devient le produit de deux nombres lorsqu'on
+multiplie les deux facteurs par 2 ; et lorsqu'on les 
+multiplie plus généralement par un nombre $x$ ?
+\item Que devient la surface d'un carré lorsqu'on 
+double son côté ? Même question pour la surface d'un
+disque lorsqu'on double son rayon. 
+\item Que devient le volume d'un cube quand on double
+son arête ? Que devient le volume d'une sphère lorsqu'on double son rayon ? Que devient le volume d'un cylindre quand on double le rayon du disque de base et qu'on triple la hauteur ? 
+\item Effectuer les produits suivants : 
+\[ 712 \times 43 \times 51 \times 19\]
+\[725 \times 41 \times 25 \times 725\]
+\item Effectuer les produits suivants : 
+\[ (4 \times 7 \times 12) \times (7 \times 13) \times 9\]
+\[ 13 \times (43 \times 17)\]
+\[ (25 \times 12 \times 13) \times 4\]
+\item Réduire les opérations suivantes : 
+\begin{enumerate}
+\item $7x \times 5y \times 3z$
+\item $4(3x + 2y)$
+\item $7(5x - 2y)$
+\item $7(2x + 5y) + 12(3x + y) + 4(x + 5y)$
+\item $2a(3b - c) + 3b(c - 2a) + c(2a -3b)$
+\item $5(3a + 2) + 3(5a -2) - 2(a + 2) - 3(a - 1)$
+\end{enumerate}
+\item Effectuer les opérations suivantes : 
+\begin{enumerate}
+\item $10^5\times 10^3$
+\item $10^2\times 10^3 \times 10^4$
+\item $(5^4)^2$
+\item $(7^4 \times 7^2) + (5^4 \times 5^2) + 
+(3^4 \times 3)$
+\item $a^3(a^2 + 3) + 3a^2(a^3 + 5) + 2a^2( 2a^2 - 9)$
+\item $5a^4(a^2 + 4) - 2a^2(2a^4 + 1) - a^3(a^3 - 7)$
+\item $ab(a - b) + a(a^2 + b^2) - a^2$
+\end{enumerate}
+\item \begin{enumerate}
+\item Calculer la somme des 7 premiers nombres impairs.
+Généraliser ce résultat. 
+\item En déduire que tout nombre impair est la 
+différence des carrés de deux nombres consécutifs.
+Décomposer ainsi 37.
+\end{enumerate}
+\item On écrit dans un tableau triangulaire la suite des nombres impairs comme suit : \\
+ \begin{tabular}{ccc}
+1 & & \\
+3 & 5 & \\
+7 & 9 & 11  \\
+\ldots & \ldots & \ldots\\
+
+\end{tabular}\\
+\begin{enumerate}
+\item Écrire les dix premières lignes de ce tableau.
+\item Combien de nombres a-t-on écrit ? Trouver la 
+somme de ces nombres (on utilisera l'exercice précédent). 
+\item Calculer la somme des nombres inscrits dans 
+chaque ligne du tableau et en déduire la somme des 
+cubes des dix premiers nombres entiers.
+\end{enumerate}
+\item Calculer de deux manières la somme 
+$a(a - b) + b(a - b)$ et en déduire que $(a + b)(a 
+- b) = a^2 - b^2$. \\
+Application : La différence des surfaces de deux 
+jardins carrés est de 1~152m${}^2$. Calculer les côtés de 
+ces deux jardins sachant que leur différence 
+est de 16 m. 
+\item Un bloc de pierre taillé a 80 cm de longueur,
+42 cm de largeur et 35 cm de hauteur. Sachant que 
+le poids volumique de la pierre est 2,7, calculer 
+le poids de ce bloc de pierre. 
+\item Une colonne cylindrique en ciment armé a 0,80 m 
+de diamètre et 3,50 m de hauteur. \begin{enumerate}
+\item Calculer la surface latérale de cette colonne 
+et le prix de la peinture nécessaire pour la recouvrir 
+à raison de 2,50 F le m${}^2$. 
+\item Calculer le volume de la colonne et son poids 
+sachant qu'un dm${}^3$ de ciment armé pèse 2,9 kg. 
+\end{enumerate}
+\item Une borne en granit comprend une partie enterrée de 50 cm de largeur, 30 cm d'épaisseur et 60 cm de 
+profondeur. La partie apparente a une épaisseur de 24 cm. Vue de face elle se compose d'un rectangle de 40
+cm de base et 45 cm de hauteur surmonté d'un demi-cercle de 40 cm de diamètre. \begin{enumerate}
+\item Calculer la surface extérieure apparente de 
+la borne. 
+\item Calculer son poids total, sachant que la densité 
+du granit est de 2,7. 
+\end{enumerate}
+\item Un réservoir à mazout qui a la forme d'un cylindre horizontal de 3 m de long et de 1,60 m de 
+diamètre a été fabriqué en tôle de 2 mm d'épaisseur.
+\begin{enumerate}
+\item Calculer le poids de la tôle utilisée sachant que sa densité est 7,8. 
+\item Calculer la capacité en litres de ce réservoir et la dépense lorsqu'on en fait le plein avec du 
+mazout à 0,25 F le litre. 
+\end{enumerate}
+\item Un bassin circulaire a 5 m de diamètre et 0,80 m 
+de profondeur. On le fait cimenter entièrement à raison de 5 F le m${}^2$, et border à raison de 3 F le
+mètre.\begin{enumerate}
+\item Calculer la dépense. 
+\item Un robinet qui débite 20 litres à la minute 
+alimente ce bassin. Combien de temps faudra-t-il pour le remplir jusqu'à 10 cm du bord supérieur ? 
+\end{enumerate}
+\item Calcul mental : \\
+\[\begin{matrix}
+63 \times 11 \phantom{meow}& 75 \times 11\phantom{meow} & 83 \times 21\phantom{meow} & 62 \times
+ 110\phantom{meow} \\
+ 63 \times 19 \phantom{meow}& 75 \times 99 \phantom{meow}& 83 \times 39 \phantom{meow}& 620 \times 190\phantom{meow}\\
+ 24 \times 15 \phantom{meow}& 17 \times 12 \phantom{meow}& 25 \times 35 \phantom{meow}& 43 \times 55 \phantom{meow}
+ \end{matrix}\]
+ \item Soit $x$ un nombre entier de 0 à 10. Établir les tableaux de correspondance entre $x$ et les nombres $y$ suivants. Construire ensuite le graphique 
+ correspondant. \begin{enumerate}
+ \item $y = x^2$
+ \item $y = 2x^2$ 
+ \item $y = 3x^2$ 
+ \item $y = x^3$
+ \item $y = 2x^3$
+ \item $y = 3x^3$
+ \end{enumerate}
+ \item En s'inspirant des derniers exercices du 
+ chapitre précédent, démontrer : 
+ \[ (a + b)^2 = a^2 + 2ab + b^2\]
+ \[ (a + b)(a - b) = a^2 - b^2\]
+ \[ (a - b)^2 = a^2 - 2ab + b^2\]
+\end{enumerate} 
+ 
+ 
+ \subsection{Division des nombres entiers}
+ \begin{enumerate}
+ \item Trouver tous les nombres entiers dont le 
+ produit par 62 est inférieur à 685. 
+ \item Montrer que le nombre des chiffres du quotient
+ dans une division est égal au plus petit nombre de zéros qu'il 
+ faut écrire à la droite du diviseur pour 
+ obtenir un nombre supérieur au dividende.
+ \item Montrer que, dans une division, le dividende est
+ supérieur au double du reste. 
+ \item Dans une division, le diviseur est 9. 
+ Quels sont les restes possibles ? 
+ \item Trouver les nombres qui, divisés par 13, 
+ donnent un quotient et un reste égaux entre eux. 
+ \item Quels sont les nombres qui, divisés par 7, 
+ donnent un quotient égal à la moitié du reste ? 
+ \item Quels sont les nombres qui, divisés par 5, 
+ donnent un quotient égal au triple du reste. 
+ \item Trouver tous les couples de nombres entiers $x$
+ et $y$ qui satisfont à la relation suivante :
+ \[ 287 = 17x + y\]
+ \item Le quotient d'une division est 5 et le reste 32
+ Trouver la plus petite valeur du diviseur et du dividende. Le dividende étant inférieur à 225, quelles 
+ sont les valeurs possibles pour le dividende et le
+ diviseur ? 
+ \item Trouver un nombre terminé par deux zéros qui,
+ divisé par 67, donne pour quotient 129. 
+ \item Trouver deux nombres connaissant leur somme, 
+ 958 et sachant qu'en divisant le premier par le second on trouve 3 comme quotient et 98 comme reste.
+ \item Trouver deux nombres connaissant leur différence, 291, et en sachant qu'en divisant le 
+ premier par le second on trouve 13 pour quotient et 15 pour reste. 
+ \item Effectuer la division de 272 par 57. 
+ De combien peut-on augmenter le dividende sans 
+ changer le quotient ? De combien peut-on diminuer le 
+ dividende sans changer le quotient ? Généraliser lorsque le dividende et le diviseur sont deux nombres
+ donnés $a$ et $b$, et $q$ et $r$ le quotient et le 
+ reste de leur division. 
+ \item Le quotient d'une division est 5, le reste 28. 
+ En additionnant le dividende, le diviseur, le
+ quotient et le reste, on trouve 283. Trouver 
+ le dividende et le diviseur.
+ \item On considère la division de 272 par 57. Montrer que le quotient ne change pas lorsqu'on multiplie le dividende et le diviseur par un même nombre. Que devient le reste ? 
+ \item On considère la division de 236 par 36. Montrer que le quotient ne change pas lorsqu'on divise le dividende et le diviseur par un même nombre. Que devient le reste ? 
+ \item Dans une division, le quotient est 21 et le
+ reste est 8. Si on ajoute 27 au dividende
+ sans changer le diviseur, le quotient est 22 et le
+ reste est nul. Trouver le dividende et le diviseur 
+ initiaux. 
+ \item On augmente le dividende d'une division de 
+ 35 et le diviseur de 5. Il se trouve que ni le 
+ quotient, ni le reste ne change. Quel est le quotient
+ ?
+ \item On dispose d'un certain nombre de billes. 
+ En les rangeant par dizaines, il en reste 8. Mais il manque 5 billes pour pouvoir en ajouter une de plus par groupe. Trouver le nombre de billes. 
+ \item On dispose de 225 g d'argent avec lequel on se propose de faire frapper des médailles au titre\footnote{Cela signifie qu'il y a 0,9 gramme d'argent dans chaque gramme de la médaille.} de 
+ 0,900 et pesant 15 g chacune. Combien pourra-t-on 
+ en fabriquer ? 
+ \item Une pièce de drap de 36 m de long et coûtant 
+ 23 F le mètre a été utilisée pour confectionner
+ des costumes. On compte pour 3,20 m de tissu par 
+ costume et 85 F de frais de main-d'œuvre et de fournitures. Les costumes sont vendus 189 F. Calculer 
+ le bénéfice réalisé par le fabricant. 
+ \item Une tente qui a pour base un rectangle de 6 m sur 2 m est fermée à ses extrémités par deux triangles isocèles verticaux de 2 m de base et de 1,15 m de 
+ hauteur. Latéralement, elle se compose de deux parties inclinées rectangulaires. 
+ \begin{enumerate}
+ \item Faire un dessin à main levée.
+ \item Calculer le volume intérieur de cette tente.  \item Combien d'hommes pourra-t-on
+ y abriter si l'on veut que chacun dispose de 0,7 m${}^3$ ?
+ \end{enumerate}
+ \item Un cultivateur a fait venir en gare un wagon 
+ d'engrais. Ce wagon mesure 6 m de long, 2,50 m de large et est chargé sur une hauteur de 80 cm. 
+ L'engrais pèse 130 kg à l'hectolitre. Le cultivateur dispose d'un tombereau qui peut supporter 2,4 tonnes. 
+ \begin{enumerate}
+ \item Combien de voyages seront nécessaires pour enlever
+ tout l'engrais ?
+ \item  Afin de ménager son attelage, le cultivateur décide de faire un voyage de plus et de répartir la charge également sur les différents voyages. Quel masse charge-t-on à chaque voyage ? 
+ \end{enumerate}
+ \item Deux caisses contiennent chacune 145 oranges. On retire 25 oranges de la première caisse pour les mettre dans la deuxième. 
+ \begin{enumerate}
+ \item Combien la deuxième caisse contient-elle alors d'oranges de plus que la première ? 
+ \item On répartit les oranges de chacune des caisses 
+ dans des caissettes qui en contiennent chacune 25. 
+ Combien de caissettes pourra-t-on remplir avec chaque
+ caisse ? Pourrait-on, en réunissant les oranges restant dans les deux caisses, remplir une caissette
+ de plus ? Y aurait-il encore du reste ? 
+ \item Quel est le plus petit nombre d'oranges qu'il eût suffi d'ajouter à chacune des caisses initiales pour que la répartition en caissettes, effectuée après l'opération du (a), se fasse sans reste ? 
+ \end{enumerate}
+ \item Compléter les divisions suivantes. 
+ 
+ \end{enumerate}
+ 
+ \subsection{Caractères de divisibilité}
+ 	\end{document}
