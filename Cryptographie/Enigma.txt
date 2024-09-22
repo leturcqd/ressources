@@ -65,7 +65,11 @@ def enigma(i,j,k, connexions) : # i j et k sont les numéros de rotors choisis, 
                 y = m[0].upper()
         return y
     # procédure faisant tourner un rotor d'un cran(l sera donc A, B ou C)
-    def rotation(l):
+    
+
+
+
+def rotation(l):
         z = l[0]
         return(l[1:]+ z)
     #demande du message à l'utilisateur
