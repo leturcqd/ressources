@@ -1,0 +1,665 @@
+\documentclass[12 pt]{report}
+	\author{ }
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage{geometry}
+	\geometry{a4paper, head = 15pt}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array} 
+	 \usepackage{float} 
+	\theoremstyle{plain} 
+	\newcounter{n}
+	\setcounter{n}{1}
+	\newcommand\ds\displaystyle
+	\renewcommand{\it}{\item[$\mathbf{\then}.$]\stepcounter{n} }
+	\newenvironment{calcul}{\item[$\mathbf{\then}.$] \stepcounter{n}\hfil $\displaystyle  }{.$\hfil   }
+	\newcommand\syst[4]{
+ \begin{calcul} \left\{ \begin{array}{l} #1 = #2, \\ #3 = #4.\end{array}\right\end{calcul}}
+	\newcommand\intercalc{\end{calcul}\begin{calcul}}
+	
+	\title{\Large Exercices tirés du manuel de 3e de Pierre Chenevier, éd. Hachette\footnote{Vous pouvez me signaler les erreurs par courriel : \href{mailto:leturcq.d@orange.fr}{lien de contact.} 
+	}
+	}
+	\date{1938}
+	\begin{document}
+	\maketitle
+ \part{Algèbre}
+ \chapter{Compléments sur les équations du premier degré}
+ 
+Résoudre les équations suivantes, dans lesquelles l'inconnue est $x$ : 
+ \begin{itemize}
+\begin{calcul}\frac{x-1}m - (x-m) = m  \end{calcul}
+\begin{calcul} \frac{x+m}{x-m} = a \end{calcul}
+\begin{calcul} x - \frac{x}m = 1 - m \end{calcul}
+\begin{calcul} x + \frac{x}m = 1\end{calcul}
+\begin{calcul} x - m = \frac{x-1}m \end{calcul}
+\begin{calcul} \frac1{1-x} = \frac{m}{x-m} \end{calcul}
+\begin{calcul} (m^2- m ) x = m^2 + m \end{calcul}
+\it On donne l'équation : \[ 2x - 3 y + 5 = 0.\]
+Utiliser la solution $x= -1, y= 1$ pour trouver toutes les solutions. 
+\it L'équation précédente admet-elle d'autres solutions que la solution donnée pour lesquelles $x$ et $y$ ont des valeurs entières ? 
+\it L'équation : \[ 2x - 4y + 7 = 0\] admet-elle des solutions pour lesquelles $x$ et $y$ sont des nombres entiers ? 
+ \end{itemize}
+ Résoudre les systèmes suivants :
+ \begin{itemize}
+ \begin{calcul} \left\{\begin{array}{l}\ds\frac{x}3 + \frac{y}2 = 0, \\ 
+ 2x + 3y - 1 = 0. \end{array}\right \end{calcul}
+ 
+ \begin{calcul} \left\{\begin{array}{l}5x - 4y + 3 = 0, \\ 
+7x + 10 y - 8 = 0. \end{array}\right \end{calcul}
+ \begin{calcul} \left\{\begin{array}{l}\frac23 x - \frac54 y + \frac35 = 0, \\ 
+ \ \frac37x + \frac53y - \frac34 = 0. \end{array}\right \end{calcul}
+ \begin{calcul} \left\{\begin{array}{l}12,5x  + 7,3 y - 10,7= 0, \\ 
+5,2x-2,7y+7,3= 0. \end{array}\right \end{calcul}
+ \end{itemize}
+ Résoudre les systèmes suivants aux inconnues $x$ et $y$ : 
+ \begin{itemize} 
+\syst{y}{ax+b}x{ay+b}
+\syst{x+2y}{3}{ax-y}{2b}
+\syst{ax+by+c}{0}{2x+3y-1}{0}
+\syst{ax-9y}{a+3}{4x-ay}a
+\syst{x+y}{\frac3a}{x+ay}{3a}
+\syst{x+ay}{2a}{ax+y}{1+a^2}
+\syst{ax+by+c}{0}{\ds\frac{x}a-\frac{y}b}{0}
+\syst{x+y}{3a}{ax+y}{2+a}
+\syst{y}{2a-ax}{ax}{1+a^2-y}
+\it On donne les deux équations 
+\[ \begin{array}{cc} 2x-y+1=0, \\ x + 5y - 4=0,\end{array}\] qui représentent deux droites $\Delta$ et $\Delta'$ qui se coupent au point $A$. \\ Sans calculer les coordonnées du point $A$, former l'équation de la droite qui joint l'origine des coordonnées au point $A$. 
+\it Une voiture automobile quitte Paris à midi se dirigeant vers Marseille. Sa vitesse moyenne est $v$ kilomètres à l'heure. Sur la même route, une seconde voiture va de Paris à Marseille et sa vitesse moyenne est $w$ kilomètres à l'heure. Elle est passée à Dijon cinq heures après que la première voiture a quitté Paris. On demande à quelle heure et à quelle distance de Paris les deux voitures se rejoindront. La distance Paris-Dijon est 320 kilomètres; la distance Dijon-Marseille est 520 kilomètres. 
+\it Que peut-on dire de la droite représentée par l'équation : \[
+x-2 + m(y-3) = 0\] quand $m$ varie ? 
+\it Marquer les trois points $A(2;3)$, $B(6;2)$ et $C(5;9)$. Trouver les équations des droites $(BC)$, $(CA)$, $(AB)$ et calculer l'aire du triangle $ABC$. 
+\it Peut-on trouver des valeurs de $x$ et de $y$ qui vérifient à la fois les équations :  
+
+\[ \begin{array}{r} x-3y=0,\phantom{b} \\ 2x-5y-1=0,\phantom{b}\\ x+3y-a=0\ ?\end{array}\]
+\end{itemize}
+ 
+ \chapter{Carrés}
+ 
+ \begin{itemize}
+ \it Dresser la table des carrés des nombres, \emph{de dixième en dixième}, compris entre $127$ et $128$. 
+ \it Même question pour les nombres compris entre $263$ et $264$.
+ \it Même question pour les nombres compris entre $925$ et $926$.
+ \it Dresser la table des carrés des nombres, \emph{de centième en centième}, compris entre $21,4$ et $21,5$. 
+ \it Même question pour les nombres compris entre $47,8$ et $47,9$.
+ \it Même question pour les nombres compris entre $87,2$ et $87,3$.
+ \it Dresser la table des carrés des nombres, \emph{de millième en millième}, compris entre $2,77$ et $2,78$. 
+ \it Même question pour les nombres compris entre $4,26$ et $4,27$.
+ \it Même question pour les nombres compris entre $7,36$ et $7,37$.
+ \it Dresser la table des carrés des nombres, \emph{de dix-millième en dix-millième}, compris entre $0,363$ et $0,364$. 
+ \it Même question pour les nombres compris entre $0,810$ et $0,811$.
+ \it Même question pour les nombres compris entre $0,916$ et $0,917$.
+ \end{itemize}
+ \chapter{Étude de la fonction \texorpdfstring{$y=ax^2$}{y=ax2}}
+ \begin{itemize}
+ \it Tracer la courbe représentative de la fonction $y=x^2$ sur du papier quadrillé ordinaire. On supposera que l'unité choisie n'est pas la même pour l'axe des $x$ et celui des $y$. En abscisse, l'unité choisie est le côté du quadrillage. En ordonnée, l'unité choisie est la moitié du côté du quadrillage.
+ \it De quelle fonction la courbe de l'exercice précédent est-elle la représentation : \begin{enumerate}
+ \item si l'unité choisie est, pour les deux axes, le côté du carré du quadrillage,
+ \item si l'unité choisie est, pour les deux axes, la moitié du côté du carré du quadrillage. 
+ \end{enumerate}
+ \it Sur la courbe $y=x^2$, on considère le point $M(m;m^2)$. On joint le point $M$ à un point quelconque $M'$ de la courbe d'abscisse $p$. \begin{enumerate}
+ \item Former l'équation de la droite $(MM')$. 
+ \item On suppose que $p$ varie et vienne se confondre avec $m$. Que devient l'équation de la droite $(MM')$ ? 
+ \item En conclure que la parabole considérée admet une tangente au point $M$. 
+ \item Chercher en quel point cette tangente coupe l'axe $(Ox)$ et en déduire une construction simple de cette droite. 
+ \end{enumerate}
+ \it Construire la parabole représentant la fonction $y=\frac{x^2}{10}.$
+ \it Même question pour la fonction $y=\frac{3x^2}2$. 
+ \it Même question pour la fonction $y=\frac{x^2}5$. 
+ \it Même question pour la fonction $y=2x^2$. 
+ \end{itemize}
+ \chapter{Racine carrée}
+ \begin{itemize}
+ \it Sans utiliser de table, chercher parmi les nombres entiers suivants, ceux qui sont carrés parfaits : 
+ \[ 1~314, 441, 8~281, 14~727, 1~449~616, 17~056, 270~400.\]
+ \it Extraire à une unité près la racine carrée de ceux des nombres de l'exercice précédent qui ne sont pas carrés parfaits. 
+ \it Calculer, à $0,1$ près, les racines carrées des nombres suivants : 
+ \[ 1~782,4; 27~851,93; 12~723,891; 0,0741.\]
+ \it Calculer à $0,00001$ près les racines carrées des nombres $2$ et $3$. 
+ \it Prendre une feuille de papier millimétré ayant la forme d'un carré de $12$ centimètres de côté. Dessiner sur cette feuille la portion de la courbe $y=x^2$ pour les valeurs positives de $x$ inférieures à $1$ en prenant pour unité de longueur $10$ centimètres. On construira pour s'aider les points dont les abscisses sont $0,05$, $0,10$, $0,15$, etc., et on tracera en trait très fin. \\ 
+ Utiliser cette courbe pour déterminer, à un centième près, les racines carrées des nombres $0,06$; $0,27$; $0,45$; $0,68$; $0,84$; $0,97$. \\
+ Comparer avec les résultats obtenus à la calculatrice.\footnote{Éd. originale : de la table de valeurs.} 
+ \it Calculer à $0,01$ près la racine carrée de $35$.
+ \it Calculer à $0,1$ près la racine carrée de $\frac{22}7$ (qui est une approximation classique de $\pi$).
+ \it Calculer à $0,1$ près la racine carrée de $\pi$.
+ \it Calculer à $0,01$ près la racine carrée de $\sqrt2+\sqrt3$(qui est une approximation classique de $\pi$).
+ \it Par quels chiffres se termine un nombre entier carré parfait ? 
+ \it Calculer à $0,001$ près la racine carrée de $2,718281828$ (valeur approchée du nombre d'Euler $e$).
+ \it Trouver deux nombres entiers consécutifs dont la différence des carrés est $71$.
+ \it La différence de deux nombres est $2$. La différences de leurs
+ carrés est $64$. Trouver ces nombres. 
+ \it Comparer les carrés des nombres $n$, $n+1$, $n+2$, $n$ étant 
+ un entier quelconque. Le nombre $n(n+3)$ peut-il être un carré parfait ? 
+ \it Quel est le rayon d'un cercle dont l'aire est $1$ mètre carré ? On  donnera le résultat à $1$ millimètre près. 
+ \it Quel est le rayon d'une sphère dont l'aire est $1$ mètre carré ? 
+ On donnera le résultat à $1$ millimètre près.
+ \it Quelle est la racine carré à une unité près du nombre $n(n+2)$, $n$ étant un nombre entier ? 
+ \it Appliquer le résultat précédent au calcul de $n$ tel que : 
+ \[ n(n+2) = 960.\]
+ \it Quelle est la racine carrée à une unité près du nombre $n(n+3)$, $n$ étant un nombre entier ? 
+ \it Appliquer le résultat précédent au calcul de $n$ tel que : 
+ \[ n(n+3) = 550.\]
+ \it Un nombre comprend $d$ dizaines et $5$ unités. Calculer son carré. Quel est le nombre de centaines de ce carré ? Quelle particularité présente ce nombre ? 
+ \it Combien y a-t-il de nombres entiers inférieurs à $1~000$ qui ne sont pas carrés parfaits ? 
+ \it Même question en remplaçant $1~000$ par $1~000~000$. 
+ \it Que peut-on appeler racine carrée d'un nombre à $\frac13$ près ? 
+ \it Même question en remplaçant $\frac13$ par $\frac17$. 
+ \it Même question en remplaçant $\frac13$ par $\frac1n$. 
+ \it Calculer la racine carrée de $732$ à $\frac15$ près. 
+ \it Quel est le côté d'un champ carré qui a même aire qu'un champ rectangulaire de $360$ mètres de long sur $160$ mètres de large ?
+ \it Un cercle a $2$m$50$ de rayon. Quel est, à un centimètre près, le rayon d'un cercle dont l'aire est double ? 
+ \it Un champ carré a une superficie de $841$ aires. Quel est son côté ? 
+ \it Comparer la demi-somme de deux nombres à la racine carrée de leur produit. Peut-il y avoir égalité ? 
+ \it Trouver deux nombres connaissant leur produit $978~123$ et leur quotient $3$.
+ \end{itemize}
+ \chapter{Fonction \texorpdfstring{$y=\sqrt{x}$}{racine}}
+
+On donne : $\sqrt2 = 1,414\ldots, \sqrt3 = 1,732\ldots, \sqrt5 = 2,236\ldots$, et $\sqrt6 = 2,449\ldots$. Calculer alors : \begin{itemize}
+\begin{calcul} x =\frac{10-\sqrt2}{5+7\sqrt2}\end{calcul}
+\begin{calcul} y = \frac{25-8\sqrt3}{15-2\sqrt3}\end{calcul}
+\begin{calcul} z = \frac{15-\sqrt6}{7-2\sqrt3}\end{calcul}
+\begin{calcul} t = \frac{(3-\sqrt5)(4+\sqrt5)(7-\sqrt5))}{14-4\sqrt5}\end{calcul}
+\begin{calcul} u = \frac{(\sqrt3-1)(6\sqrt12-4)(4-\sqrt3)}{(8-2\sqrt3)(5\sqrt3+1)}\end{calcul}
+\begin{calcul} v = \frac{(\sqrt5-3)(\sqrt5+1)(\sqrt5-4)}{(\sqrt5-2)(5-3\sqrt5)}\end{calcul}
+\begin{calcul} w = \sqrt{375}\sqrt{48}\sqrt{405}\end{calcul}
+\begin{calcul} h = \sqrt{275}\sqrt{135}\sqrt{165}\end{calcul}
+\it Les nombres $\sqrt{14-6\sqrt5}$ et $3- \sqrt5$ sont-ils égaux ? 
+\it Même question pour les nombres $\sqrt{42+10\sqrt{17}}$ et $5+\sqrt{17}$. 
+\it Même question pour les nombres $\sqrt{192-96\sqrt{3}}$ et $4\sqrt{3}-12$. 
+\it Même question pour les nombres $\sqrt{88-18\sqrt{7}}$ et $\sqrt{7}-9$. 
+\it $a^2-b$ étant supposé carré parfait, simplifier \[ \sqrt{\frac{a+\sqrt{b}}{a-\sqrt{b}}}.\]
+\it Calculer : \[\sqrt{\frac{3+\sqrt5}{3-\sqrt5}} + \sqrt{\frac{3-\sqrt{5}}{3+\sqrt5}}.\]
+\it Calculer : \[\sqrt{\frac{5+2\sqrt6}{5-2\sqrt6}} + \sqrt{\frac{5-2\sqrt{6}}{5+2\sqrt6}}.\]
+\it Calculer : \[\sqrt{(\sqrt2-2)^2}  + \sqrt{(\sqrt2+2)^2}.\]
+\it Calculer : \[ \frac{\sqrt{a}+\sqrt{b}}{\sqrt{a}-\sqrt{b}}
++ \frac{\sqrt{a}-\sqrt{b}}{\sqrt{a}+\sqrt{b}}.\]
+\it Calculer : \[\frac1{\sqrt2+\sqrt3+\sqrt5}.\]
+\it Calculer : 
+\[ a\left(x+\frac{b+\sqrt{b^2-4ac}}{2a}\right)\left(x+ \frac{b-\sqrt{b^2-4ac}}{2a}\right).\]
+\it A-t-on toujours : 
+\[ \sqrt{x^2(x+1)} = x\sqrt{x+1} ? \]
+\it Calculer : \[ \frac{a\sqrt{b} + b\sqrt{a}}{\sqrt{a}+\sqrt{b}} \sqrt{\frac{a^3b+b^3a}{a^2+b^2}}.\]
+\it Simplifier : \[\frac{\sqrt{a-b} + \frac1{\sqrt{a+b}}}{1+\frac1{\sqrt{a^2-b^2}}}.\]
+\it Calculer : \[\frac{1+\frac{x}{\sqrt{x^2+1}}}{x+\sqrt{x^2+1}}.\]
+\it Simplifier l'expression : 
+\[ \frac{\sqrt{a+b}+\sqrt{a-b}}{\sqrt{a+b}-\sqrt{a-b}}.\]
+Calculer sa valeur numérique pour $a=17$, $b=15$. 
+\it Simplifier : \[ \frac{1}{\sqrt{x+1}-\sqrt{x}} + \sqrt{x} - \sqrt{x+1} - 4.\]
+\it Vérifier l'identité : 
+\[ \left(x+y+\sqrt{x^2+y^2}\right)^2 = 2\left(x+\sqrt{x^2+y^2}\right)\left(y+\sqrt{x^2+y^2}\right).\]
+\it Simplifier : \[ \frac{\sqrt{a}+\sqrt{b}}{2ab+ (a+b) \sqrt{ab}}.\]
+\it Construire la courbe représentative de la fonction $y= 2\sqrt{x}$.
+Est-ce un morceau de parabole ? 
+\it Sur du papier millimétré, construire la portion de la courbe $y=\sqrt{x}$ qui correspond à $x\leq 1$. On prendra le décimètre pour unité. 
+
+ \end{itemize}
+ \chapter{Équations du second degré}
+ \emph{On résoudra, au début, les équations sans employer la formule de résolution. On pourra, ensuite, vérifier les résultats en appliquant la formule.}
+ \begin{itemize}
+ \begin{calcul} x^2-20x+36 = 0\end{calcul}
+ \begin{calcul} 2x^2 - 5x - 3 = 0 \end{calcul} 
+ \begin{calcul} 4x^2 +10 x - 17 = 0 \end{calcul} 
+ \begin{calcul} x^2 - 10x +26 = 0 \end{calcul} 
+ \begin{calcul} \frac{x^2}{100} - \frac{2x}{15} +1 = 0 \end{calcul} 
+ \begin{calcul} -5x^2 +12x +9 = 0 \end{calcul}
+ \begin{calcul} x(x-5) = 2x-3 \end{calcul}
+ \begin{calcul} x(x-1)(x-2) -x^3 - 1 = 0\end{calcul}
+ \begin{calcul} 1000x^2 +x - 1 = 0.\end{calcul}
+ \begin{calcul} \sqrt2 x^2 -2\sqrt3 x - 4\sqrt5 = 0\end{calcul}
+ \begin{calcul} (\sqrt3 + 1) x^2 + (\sqrt2 - \sqrt3)x - (1+\sqrt2) = 0\end{calcul}
+ \begin{calcul} (\sqrt5+\sqrt2)x^2 - 2\sqrt2 x - 4 \sqrt5 = 0\end{calcul}
+ \begin{calcul} x^2 - 2ax + a^2 - b^2 = 0\end{calcul}
+ \begin{calcul} \frac{x+1}x + \frac{x+1}{x-8} = 1\end{calcul}
+ \begin{calcul} \frac{x+1}{2x+3} = \frac{2x-1}{3x+1} \end{calcul}
+ \begin{calcul} \frac{1+x}{2+x} + \frac{2+x}{1+x} = \frac{10}3\end{calcul}
+ \begin{calcul} \frac{x}{x+1}+\frac{x+1}x = \frac52\end{calcul}
+ \begin{calcul} x - 1 + \frac1{x-1} = \frac{17}4\end{calcul}
+ \begin{calcul} \frac{x}{x+2} + \frac{x+2}x = \frac{37}6\end{calcul}
+ \begin{calcul} \frac{2x-3}{x^2-2x+3} = \frac{4x+1}{2x^2-1}\end{calcul}
+ \begin{calcul} \frac1x+\frac1{x-2} + \frac1{x-4} = 0\intercalc \frac1{x-1} + \frac2{x-2} + \frac{3}{x-3} - \frac{6}{x+6} = 0\end{calcul}
+ \begin{calcul} (\sqrt5+1)x^2 + 2\sqrt5 x +\sqrt5 - 1 = 0\end{calcul}
+ \it Dans le cas où l'équation \[x^2+px+9=0\] a des racines, calculer
+ la somme et le produit de ces racines. 
+ \it Trouver deux nombres connaissant leur somme $140$ et leur produit $3~939$. 
+ \it Former les équations du second degré qui ont pour racines : \\
+$1+ \sqrt2$ et $1 - \sqrt2$, \hfil $\sqrt3-1$ et $\sqrt3 +1$\hfil 
+$\frac12$ et $\frac13$. 
+\it Trouver un nombre qui, ajouté à sa racine carrée, donne pour somme 210. 
+\it Quelles sont les dimensions d'un rectangle dont le périmètre est $140$ mètres et la diagonale $50$ mètres. 
+\end{itemize}
+Résoudre graphiquement les équations : 
+\begin{itemize}
+\begin{calcul} x^2-12x+15=0\intercalc
+2x^2-7x+1=0\intercalc
+5x^2-10x+3=0\intercalc
+1,8x^2-3,6x+1=0\intercalc
+2,7x^2-6,3x+2,5=0\intercalc
+0,01x^2-0,6x+4=0\intercalc
+0,0004x^2-0,12x+2=0
+\end{calcul}
+\end{itemize}
+\begin{itemize}
+\it Le chemin parcouru par un corps qui tombe est donné par la formule :
+\[e=\frac12gt^2,\]
+où $e$ est le chemin exprimé en mètres, $t$ le temps exprimé en secondes, et $g$ une constante qui vaut $9,8$. 
+
+On lâche une pierre dans un puits qui a $100$ mètres de profondeur. Représenter graphiquement l'espace parcouru par la pierre dans sa chute. 
+
+Le son émis par le choc au fond du puits parcourt $340$ mètres par seconde; assimiler les ondes sonores à un mobile qui part du fond du 
+puits et se dirige vers l'observateur qui a lâché la pierre et tracer 
+sur le graphique les variations de l'espace parcouru par le son. Combien de temps après avoir lâché la pierre perçoit-on le son au bord du puits ? 
+\it On lâche une pierre dans un puits de profondeur inconnue. Le son du choc de la pierre au fond du puits est perçu par l'observateur $6$ secondes après le lâcher de la pierre. Quelle est la profondeur du puits ? 
+\it Résoudre le problème précédent par une méthode graphique. 
+\it Tracer sur du papier millimétré la courbe $y=x^3$. On prendra pour unités de longueur, sur l'axe $x$ le centimètre, sur l'axe $y$ le demi-centimètre.\\ Utiliser la courbe précédente et, s'il y a lieu, un agrandissement partiel, pour résoudre graphiquement les équations suivantes : 
+\begin{calcul} x^3 + x -1 = 0 \intercalc
+x^3+2x-4 = 0 \intercalc
+x^3 - x -2 = 0 \intercalc
+10x^3 - 10x+1 = 0 \intercalc 
+x^3 - 3x+ 2 = 0 \end{calcul}
+\it Résoudre algébriquement l'équation : $x^3-3x=0$. 
+\it En remarquant que $x^3 + 3x^2$ est le début du développement du cube de $x+1$, résoudre l'équation \[ x^3 + 3x^2 + 3x - 26 = 0.\]
+
+\end{itemize}
+ 
+ \chapter{Grandeurs inversement proportionnelles}
+ \begin{itemize}
+ \it Sur du papier quadrillé au millimètre, tracer deux axes de coordonnées de manière à pouvoir disposer, dans l'angle $\widehat{xOy}$, d'un carré de $10$ centimètres de côtés. L'unité choisie étant le centimètre, tracer la courbe représentative de la fonction $y=\frac2x$, pour les valeurs positives de $x$ inférieures à $10$. 
+ \it Construire, sur du papier quadrillé ordinaire, les graphiques des fonctions $y_1=\frac1x$ et $y_2=\frac2x$. Tracer les deux courbes sur le même graphique. 
+ \it Sur la courbe $y=\frac1x$, on considère le point $M(m;\frac1m)$. On joint le point $M$ à un point quelconque $M'$ de la courbe déterminé par son abscisse $p$. \begin{enumerate}
+ \item Former l'équation de la droite $(MM')$. 
+ \item On suppose que $p$ varie et vienne se confondre avec $m$. Que devient cette équation ? 
+ \item En conclure que l'hyperbole équilatère considérée admet une tangente au point $M$. 
+ \item Chercher en quel point cette tangente coupe l'axe $(0x)$ et
+ en déduire une construction simple de cette droite. 
+ \end{enumerate}
+ \it On considère la portion de la courbe $y=\frac1x$ qui correspond
+ aux valeurs de $x$ comprises entre $2$ et $3$, l'unité étant le centimètre. \\Sur du papier quadrillé au millimètre, dessiner un agrandissement de cette portion de courbe, l'unité étant le décimètre.
+ \it Sur du papier quadrillé ordinaire, construire la courbe qui représente les variations de la fonction $y=\frac3{2x}$.
+ \it Même question pour la fonction $y = \frac5{4x}$.
+ \it Même question pour la fonction $y= \frac7{2x}$. 
+ \end{itemize}
+ \chapter{Emploi d'un graphique hyperbolique pour la résolution d'une équation du second degré}
+Résoudre le système : 
+\begin{itemize}
+ \syst{xy}{2}{2x+3y-5}{0}
+ \syst{xy}{-4}{5x+3y-1}{0}
+ \syst{xy}{5}{5x-4y+10}{0}
+ \syst{xy}{4}{4x+y-8}{0}
+ On constatera que l'équation du second degré que l'on est amené à résoudre a une racine double et que, par suite, la droite et l'hyperbole équilatère considérées se coupent en un point A dont on calculera les coordonnées. On cherchera l'équation de la tangente en $A$ à l'hyperbole et on comparera cette équation aux données. 
+ \it Quelle particularité présente la droite définie par l'équation \[
+ ux+vy+w = 0,\] quand $u=v$ ?\\Expliquer géométriquement ce qu'il advient alors du système qu'elle forme avec l'hyperbole $xy=a$. 
+ \it Même question avec $u=-v$. 
+ \it Trouver deux nombres connaissant leur somme $s$ et leur produit $p$. 
+\it Trouver deux nombres connaissant leur différence $d$ et leur produit $p$.
+\it Étudier les variations de la fonction $y=\frac1{x^2}$ et construire la courbe représentative. 
+\it Utiliser la courbe $y=\frac1{x^2}$ pour résoudre graphiquement des équations de la forme $ax^3+ bx^2+c$ où $c$ n'est pas nul. 
+\it Appliquer la théorie précédente à la résolution graphique de l'équation $x^3+4x^2-2=0$. 
+  
+
+\end{itemize}
+ \part{Géométrie}
+ \chapter{Lieux géométriques}
+ 
+ \begin{itemize}
+ \it Trouver un point situé à des distances données d'un point et d'une droite donnés. 
+ \it La somme des distances d'un point pris sur la base d'un triangle 
+ isocèle aux deux côtés égaux est constante. En déduire le lieu des points dont la somme des distances à deux droites concourantes données
+ est constante.
+ \it La différence des distances d'un point pris sur les prolongements de la base d'un triangle isocèle aux droites qui portent les côtés égaux est constante. En déduire le lieu des points dont la différence des distances à deux droites concourantes données est constante. 
+ \it Lieu des points dont la somme ou la différence des distances à deux droites parallèles est constante. 
+ \it Construire un triangle $ABC$ dont on donne les côtés $AB$, $AC$ et la hauteur $AH$. 
+ \it Construire un triangle $ABC$ dont on donne les côtés $AB$, $AC$ et la hauteur $BK$. 
+ \it On donne un angle $\widehat{xAy}$. Sur $(Ax)$ on prend un point $B$ et sur $(Ay)$ un point $C$ tel que : 
+ \[ AB + AC = a, \] $a$ étant une longueur donnée. On achève le parallélogramme $BACD$. Lieu du sommet $D$ quand $B$ varie sur $(Ax)$. 
+ \it Même question, en supposant cette fois : \[AB - AC = a.\] Étudier le cas particulier où $a=0$. 
+ \it On considère une droite $(ABA')$. Lieu du point $M$ tel que l'angle $\widehat{A'BM}$ soit le double de l'angle $\widehat{A'AM}$ quand on fait varier ce dernier. 
+ \it Étant données deux droites concourantes $D$ et $D'$, on demande de 
+ construire un cercle de rayon donné, découpant sur $D$ et $D'$ des cordes de longueurs données. 
+ \it Lieu des centres des cercles qui découpent sur deux droites données des cordes égales. 
+ \it Dans un parallélogramme $ABCD$, la diagonale $[AC]$ est fixe. Le sommet $B$ décrit une courbe $L$. Lieu du sommet $D$. Cas où $L$ est une droite ou un cercle. Le lieu cherché peut-il être la courbe $L$ elle-même ? 
+ \end{itemize}
+ 
+\chapter{Problèmes sur les tangentes au cercle} 
+ \begin{itemize}
+ \it Mener dans un cercle donné une corde de longueur donné passant
+ par un point donné. 
+ \it Construire un cercle tangent à trois droites, deux d'entre elles étant parallèles. 
+ \it Construire un triangle connaissant le rayon du cercle inscrit et deux angles. 
+ \it Construire un triangle connaissant le rayon du cercle inscrit, un angle et un côté adjacent. 
+ \it Dans un triangle $ABC$, le cercle inscrit touche les côtés aux points $D$, $E$ et $F$. On pose $a+b+c=2p$. Calculer les segments $AF$, $BD$, $CE$. 
+ \it Le cercle exinscrit dans l'angle $\widehat{A}$ du même triangle touche les côtés de cet angle en $E'$ et en $F'$. Calculer $AE'$, et $AF'$. 
+ \it Calculer le rayon du cercle inscrit et du cercle exinscrit dans 
+ l'angle droit d'un triangle rectangle au moyen des côtés du triangle (Utiliser les résultats précédents).
+ \it Construire un triangle connaissant le périmètre et les angles. 
+ \it Construire un cercle de rayon donné tangent à deux cercles donnés. 
+ \it Construire un cercle passant par un point donné et tangent à deux
+ droites parallèles données. 
+ \it On donne deux cercles $O$ et $O'$ tangents en $A$. Une droite $(D)$ est tangente au cercle $O'$ en $B$. La droite $(AB)$ rencontre encore le cercle $O$ en $C$. Étudier la disposition des rayons $[OC]$, $[O'B]$ par rapport à $D$. 
+ \it Construire un cercle tangent à un cercle donné et à une droite donnée en un point donné de celle-ci 
+ \it Construire un cercle tangent à une droite donnée et à un cercle 
+ donné en un point donné de celui-ci. 
+ \it Dans un triangle, on donne l'angle $\widehat{A}$, le rayon du cercle exinscrit dans cet angle, et le côté $a$. Construire le triangle.
+ \it Étudier les droites telles que les distances de deux points donnés à ces droites soient les mêmes. 
+ \it En convenant, pour écourter le langage, d'appeler aussi bien distance d'une droite à un point la distance de ce point à la droite,
+ mener par un point donné une droite équidistante de deux points donnés. 
+ \it Mener une droite équidistante de trois points donnés. 
+ \it La portion d'une tangente mobile à un cercle comprise entre deux tangentes fixes est vue du centre sous un angle constant. 
+ \it Deux points $A$ et $B$ sont distants de $5$ centimètres. Mener une droite qui soit distante de $A$ de $2$ centimètres, et de $B$ de $1$ centimètre. 
+ \it Deux tangentes menées d'un point à un cercle forment un angle de $60^o$. Quelle est, en fonction du rayon, la distance de ce point au centre ? 
+ \it Mener à un cercle deux tangentes perpendiculaires. 
+ \it Mener à un cercle donné deux tangentes qui font un angle de $45^o$. 
+ \it On donne deux cercles de centre $A$ et $B$. Mener une droite tangente au cercle $A$ et coupée par le cercle $B$ suivant une corde de longueur donnée.
+ \it On donne deux cercles $A$ et $B$. Tracer une droite sur laquelle le cercle $A$ découpe une corde égale à $a$, le cercle $B$ une corde égale à $b$. 
+ \it On donne un cercle et un point $A$. Mener au cercle deux tangentes parallèles équidistantes du point $A$. 
+ \it Construire un triangle rectangle dont les côtés de l'angle droit
+ ont $3$ centimètres et $4$ centimètres. Construire les cercles tangents aux trois côtés et mesurer leurs rayons. 
+ \it Même question pour un triangle équilatéral dont le côté a $4$ centimètres. 
+ \it Étudier la figure formée par trois cercles égaux tangents deux à deux. 
+ \it Peut-on entourer un cercle par des cercles égaux entre eux et égaux au cercle donné, tangents entre eux et au cercle donné ? 
+ \it Peut-on tracer trois cercles ayant leurs centres aux sommets d'un triangle et tangents extérieurement entre eux deux-à-deux ? 
+ \it On trace un quadrilatère convexe circonscrit à un cercle. Étudier les côtés opposés et les bissectrices de ce quadrilatère.
+ \it Les propriétés précédentes caractérisent-elles un quadrilatère convexe circonscriptible à un cercle ?
+ \end{itemize}
+ \chapter{Droites concourantes dans un triangle}
+ 
+ \begin{itemize}
+ \it Construire un triangle $ABC$ connaissant les côtés $AB$, $AC$ et la médiane $Aa$. 
+ \it Construire un triangle $ABC$ connaissant les côtés $AB$, $AC$ et la médiane $Bb$.
+ \it Construire un triangle $ABC$ connaissant le côté $BC$ et les médianes $Bb$ et $Cc$. 
+ \it Construire un triangle $ABC$ connaissant le côté $BC$ et les médianes $Bb$ et $Aa$. 
+ \it Construire un triangle connaissant les trois médianes. 
+ \it Montrer que les hauteurs d'un triangle sont les bissectrices des 
+ angles du triangle qui a pour sommets les pieds des hauteurs considérées. 
+ \it Étudier la disposition de la hauteur, de la médiane, et de la bissectrice intérieure issues d'un même sommet d'un triangle. 
+ Calculer au moyen des angles du triangle, l'angle entre la bissectrice intérieure et la hauteur. 
+ \it Construire un triangle connaissant le côté $a$, la médiane et la hauteur qui tombent sur ce côté. 
+ \it Construire un triangle connaissant la bissectrice, la hauteur et
+ la médiane issues d'un même sommet. (Utiliser le cercle circonscrit). 
+ \it On marque les milieux des côtés d'un quadrilatère. Montrer que ce sont les sommets d'un quadrilatère particulier. Celui-ci peut-il être un rectangle, un losange, un carré ? 
+ \it Les droites qui joignent les milieux des côtés opposés d'un quadrilatère se coupent en leur milieu $I$. La droite qui joint les milieux des diagonales passe par $I$ et est divisée par $I$ en deux parties égales. 
+ \it Les bissectrices des angles d'un parallélogramme forment en général un rectangle. Ce rectangle peut-il être un carré ? 
+ \it On considère un triangle $ABC$ et la hauteur $AH$. On trace les cercles de diamètre $[AB]$ et $[AC]$, puis les bissectrices des angles 
+ $\widehat B$ et $\widehat{C}$. On abaisse enfin du point $A$ les perpendiculaires sur ces droites. Montrer que les quatre pieds sont en ligne droite. 
+ \it  Les hauteurs d'un triangle se coupent en un point $O$. Chaque hauteur coupe le cercle circonscrit en un point autre que le sommet dont elle est issue. Comparer les distances de ces points aux trois côtés à celles du point $O$ aux mêmes côtés. 
+ \it Soit $O$ le centre du cercle circonscrit à un triangle $ABC$, $a$ étant le milieu de $[BC]$, on prolonge $[Oa]$ d'une longueur $aA'$. On obtient de même les points $B'$ et $C'$ à partir des points $B$ et $C$ et des côtés $[AC]$ et $[AB]$. Comparer le triangle $A'B'C'$ au triangle $ABC$. 
+ \it Construire un quadrilatère connaissant les milieux des côtés. 
+ \it Le triangle qui a pour sommets les milieux des côtés d'un triangle donné a même médianes en position [inverse ?] que ce dernier. 
+ \it On considère le triangle qui a pour sommet les milieux des côtés d'un triangle $ABC$. On recommence l'opération sur ce nouveau triangle et ainsi de suite indéfiniment. Que deviennent alors les sommets de ce triangle. 
+ \it Dans un trapèze, la droite qui joint les milieux des côtés non parallèles est parallèle aux bases. 
+ \it Par le point commun aux bissectrices des angles d'un triangle, on mène une parallèle à un côté. Comparer ce segment à ceux des deux autres côtés qui sont compris entre la parallèle et le côté considéré. 
+ \it Soit $O$ le point commun aux médianes d'un triangle $ABC$ et une droite passant par $O$. Montrer que la somme des distances des deux sommets qui sont d'un côté de cette droite à cette droite est égale à la distance de l'autre sommet à la droite. 
+ \it On donne trois droites qui se coupent en $O$ et un point $A$ sur l'une d'elles. Existe-t-il un triangle $ABC$ dont ces droites portent les hauteurs ? Le problème est-il toujours possible ? 
+ \it Même question, les droites données devant porter les médianes d'un triangle $ABC$.
+ \end{itemize}
+ 
+ \chapter{Similitude}
+ 
+ \begin{itemize}
+ \it Que peut-on dire de deux rectangles dont les diagonales forment les mêmes angles ? 
+ \it Que peut-on dire de deux losanges dont le rapport des diagonales est le même ? 
+ \it Deux triangles ont leurs côtés parallèles et de même sens. Montrer qu'ils sont homothétiques par rapport à un point que l'on construira. \footnote{J'ai l'impression qu'ils peuvent simplement être obtenus par translation l'un de l'autre.}
+ \it On donne un triangle $ABC$ et un point $O$. On considère les demi-droites opposées aux demi-droites $[OA)$, $[OB)$ et $[OC)$, et on prend respectivement les points $A'$, $B'$ $C'$ tels que : 
+ \[ \frac{OA'}{OA} = \frac{OB'}{OB} = \frac{OC'}{OC} = K,\]
+ $K$ étant un nombre positif donné. Étudier le triangle $A'B'C'$. 
+ \it Deux triangles $ABC$ et $A'B'C'$ ont leurs côtés parallèles mais de sens contraires. Montrer que les droites $(AA')$, $(BB')$ et $(CC')$ sont concourantes. 
+ \it On dessinera un hexagone quelconque $ABCDEF$. Puis on se donnera un segment $[A'B']$ non égal à $[AB]$. Construire sur le segment $[A'B']$ pris comme homologue de $[AB]$ un hexagone semblable à l'hexagone donné.
+ \it Dessiner deux cercles de rayon $3$ centimètres et $2$ centimètres, la distance des centres étant $6$ centimètres. Dessiner une figure semblable à la première dans le rapport $\frac34$. 
+ \it Inscrire un carré dans un triangle donné. Un côté du carré sera porté par le côté $[BC]$ du triangle. Les deux autres sommets du carré seront respectivement sur les côtés $[AB]$ et $[AC]$ du triangle. 
+ \it Inscrire un carré dans un demi-cercle. Un côté du carré est porté par le diamètre. Les deux autres sommets du carré sont sur le demi-cercle. 
+ \it Que peut-on dire des périmètres de deux polygones semblables ? 
+ \it On considère deux parallélogrammes $ABCD$ et $A'B'C'D'$. S'ils sont semblables, montrer qu'il en est de même des triangles $ABC$ et $A'B'C'$. La réciproque est-elle vraie ? 
+ \it Donner une condition de similitude de deux parallélogrammes. 
+ \it Une figure est constituée par deux segments $[AB]$, $[AC]$ et un arc de cercle $BC$. Une autre figure est constituée par deux segments $[A'B']$, $[A'C']$ et un arc de cercle $B'C'$. À quelles conditions la deuxième est-elle semblable à la première ? 
+ \end{itemize}
+ 
+ \chapter{Applications de la similitude des triangles (puissance d'un point par rapport à un cercle)}
+ \begin{itemize}
+ \it On mène à un cercle une sécante $(OAA')$ et une tangente $(OT)$. 
+ Établir directement l'égalité : \[ OT^2 = OA \times OA'.\]
+ \it $ABC$ sont trois points en ligne droite. On mène par $A$ les tangentes au cercle passant par $B$ et $C$. Trouver le lieu des points de contact. 
+ \it Dans un triangle rectangle $ABC$, $b=15$ mètres, $c= 8$ mètres. Calculer l'hypoténuse et la hauteur correspondante. 
+ \it Dans le même triangle, calculer le rayon du cercle circonscrit et celui du cercle inscrit. 
+ \it Dans le même triangle, calculer les trois médianes.
+ \it Deux cordes rectangulaires $[AB]$ et $[CD]$ d'un cercle se coupent en $I$. Calculer la sommme $IA^2 +IB^2+IC^2+ID^2$. 
+ \it Soit un cercle de cenre $O$ et de rayon $R$ et deux diam§tres rectangulaires $[AB]$ et $[CD]$. On joint $A$ au milieu $I$ de $[OC]$, on désigne par $M$ le point de rencontre de $[AI]$ avec le cercle, enfin on trace $[MD]$ qui rencontre $[AB]$ en $P$. Calculer $MA$, $MB$, $PA$ et $PB$. 
+ 
+ Application avec $R=1$ mètre. 
+ \it Construire la moyenne géométrique entre le côté d'un carré et sa diagonale. Calculer cette longueur au moyen du côté $a$ du carré. 
+ \it [impossible sans le cours]
+ \it Calculer la longueur des tangentes à un cercle de $2$ centimètres de rayon, issues d'un point situé à $5$ centimètres du centre. 
+ \it Sur une droite $(OAB)$, $OA= 3$ centimètres, $AB = 2$ centimètres. On trace le cercle de diamètre $[AB]$. Soit $C$ un point du cercle tel que $OC=4$ centimètres. La droite $(OC)$ coupe le cercle en $D$. Calculer la puissance des points $A$ et $B$ par rapport au cercle de centre $O$ et de rayon $OC$. 
+ \it Les tangentes à un cercle issues d'un point $A$ distant du centre
+ de $5$ centimèttres ont $3$ centimètres de longueur. Calculer le rayon
+ de ce cercle. 
+ \it Sur une demi-droite $[OAB)$, on a $OA= 3$ centimètres, $OB = 12$ centimètres, sur une demi-droite $[OCD)$, on a $OC = 9$ centimètres, $OD = 4 $ centimètres. Les quatre points $A$, $B$, $C$, $D$ sont-ils sur un cercle ? 
+ \it Deux droites $(AOB)$, $(COD)$ se coupent en $O$. On a $OA=3$ centimètres, $OB = 4$ centimètres, $OC = 5$ centimètres, $OD = 2$ centimètres. Les quatre points $A$, $B$, $C$, et $D$ sont-ils sur un même cercle ? 
+ \it Dans un triangle isocèle dont les côtés sont $a$, $b$, $b$, calculer la hauteur correspondant au côté $a$. 
+ \it Soit $M$ un point quelconque de la base d'un triangle isocèle $ABC$. Établir la relation : \[ AB^2 - AM^2 = MB \times MC.\]
+ \it On donne un carré $ABCD$ de $6$ mètres de côté. Sur $BC$, comme diamètre, on construit un cercle $O$. \begin{enumerate}
+ \item Construire un cercle $O'$ tangent en $D$ à $[AD]$ et tangent au cercle $O$. 
+ \item Calculer le rayon de ce cercle.
+ \end{enumerate}
+ \it Une tangente en un point variable $M$ à un cercle coupe deux tangentes parallèles fixes en $P$ et en $Q$. Étudier le produit $MP\times MQ$. 
+ \it Calculer la hauteur d'un triangle équilatéral de côté $a$. Appliquer à $a=6$ centimètres. 
+ \it Calculer les côtés égaux d'un triangle isocèle dont la base a $6$
+ centimètres et la hauteur $8$ centimètres. 
+ \it Calculer le rayon du cercle circonscrit à un triangle équilatéral de côté $a$. Le comparer à la hauteur. 
+ \it Soit $AH$ la hauteur issue de $A$ du triangle $ABC$. On a \[
+ AB^2 = BH \times BC.\] Le triangle est-il rectangle ? 
+ \it Même question si l'on a \[AH^2 = HB\times HC.\]
+ \it Les notations étant celles de l'exercice précédent, et $H$ étant supposé sur $[BC]$, on a : \[ AH^2 = HB\times HC.\] Que peut-on
+ dire de l'angle $A$ du triangle. 
+ \it Même question si l'on a \[ AH^2 < HB.HC.\]
+ \it Le segment $a$ étant donné, construire $x$ tel que $x=a\sqrt5$. 
+ \it Construire deux segments connaissant leur somme et le rapport de 
+ leurs carrés qui est $3$. 
+ \it Construire un segment de mesure $x$ tel que $x^2=a^2+b^2$ connaissant les deux segments de mesure $a$ et $b$. 
+ \it Même question pour le segment $y$ tel que $y^2 = a^2-b^2$. 
+ \end{itemize}
+
+\chapter{Premières notions de trigonométrie} 
+\begin{itemize}
+\it On a $\sin(\alpha) =0,4$. Calculer $\cos(\alpha)$, $\tan(\alpha)$, 
+$\cot(\alpha)$. 
+\it On a $\sin(\alpha) = 0,2$. Mêmes questions. 
+\it On a $\cos(\alpha) =0,7$. Calculer $\sin(\alpha)$, $\tan(\alpha)$, 
+$\cot(\alpha)$. 
+\it On a $\cos(\alpha) = 0,9$. Mêmes questions. 
+\it On a $\tan(\alpha) = 0,5$. Calculer $\sin(\alpha)$, $\cos(\alpha)$, $\cot(\alpha)$. 
+\it On a $\tan(\alpha) = 3$. Mêmes questions. 
+\it On a $\cot(\alpha) = 0,8$. Calculer $\sin(\alpha)$, $\cos(\alpha)$ et $\tan(\alpha)$. 
+\it On a $\cot(\alpha) = 7$. Mêmes questions. 
+\it Calculer $\cos(x)$, $\tan(x)$, et $\cot(x)$ connaissant $\sin(x)$.
+\it Calculer $\sin(x)$, $\tan(x)$, et $\cot(x)$ connaissant $\cos(x)$.
+\it Calculer $\sin(x)$, $\cos(x)$, et $\cot(x)$ connaissant $\tan(x)$.
+\it Calculer $\sin(x)$, $\cos(x)$, et $\tan(x)$ connaissant $\cot(x)$.
+\it Dans un triangle rectangle $b=3$ centimètres, $c=4$ centimètres. Calculer $a$, $\widehat{B}$ et $\widehat{C}$. 
+\it Connaissant la mesure d'un arc en degrés dans un cercle de rayon $R$, calculer la corde correspondante.\\ Appliquer au cas $R=1$ pour des arcs de $60^o$, $45^o$, $36^o$ et $24^o$. 
+\it Un observateur placé sur le sol horizontal est à $50$ mètres du pied d'un mât vertical. Le rayon visuel relatif au sommet du mât et le rayon visuel horizontal font un angle de $28^o$. Quelle est la 
+hauteur du mât, l'œil de l'observateur étant à $1$ mètre $40$ au-dessus du sol. 
+\it Calculer les angles d'un triangle rectangle dont l'hypoténuse vaut $3$ fois un côté de l'angle droit. 
+\it Une pièce d'eau a la forme d'un cercle de centre $O$. On se place en $A$ sur le rayon $[OB)$ et on mesure $AB$ qui vaut $50$ mètres. L'angle $TAT'$ des deux tangentes issues de $A$ est $26^o$. Trouver le rayon de la pièce d'eau. 
+\it Un triangle isocèle a pour hauteur $10$ centimètres et pour angle au sommet $30^o$. Calculer le rayon du cercle inscrit et celui du cercle exinscrit tangent au premier. 
+\it Dans le même triangle calculer le rayon des autres cercles exinscrits. 
+\it Un ingénieur fait le tracé d'une route rectiligne pour laquelle il faudra faire une tranchée dans une butte qui interrompt la ligne droite entre $A$ et $B$. Il marque sur $[BA)$ un point $C$, trace sur le sol horizontal une droite $(CD)$ qui passe à côté de la butte en faisant l'angle $\widehat{ACD}$ égal à $32^o$, prend $CD$ égal à $300$ mètres et , enfin, mène $[DE]$ perpendiculaire à $(CD)$. \\
+Quelle longueur doit-il donner à $[DE]$ pour que le point $E$ appartienne à la droite $(AB)$ et quel angle $\widehat{DEF}$ doit-il construire pour avoir en $EF$ le prolongement de la ligne droite $(AB)$. 
+\it Dans le triangle $ABC$, $a=5$ centimètres, $b=4$ centimètres, et $c=3$ centimètres. Calculer les rayons des cercles inscrits et exinscrits. 
+\it Les deux bases d'un trapèze ont pour longueur $6$ et $9$ centimètres. Les autres côtés $4$ et $5$ centimètres. Le construire. Calculer ses angles et vérifier le résultat au rapporteur. 
+\it Les diagonales d'un rectangle ont $10$ centimètres. Leur angle est $140^o$. Calculer les côtés du rectangle. Le construire et comparer. 
+\it Deux roues circulaires ont pour rayons $1$ mètre et $2$ mètres. LA distance de leurs centres est $4$ mètres. Quelle est la longueur d'une courroie de transmission non croisée unissant les deux roues. 
+\it Même question pour une courroie croisée. 
+\it Montrer que les quotients $\frac{a}{\sin(\widehat{A})}$, $\frac{b}{\sin(\widehat{B})}$ et $\frac{c}{\sin(\widehat{C})}$ ont pour valeur commune le diamètre du cercle circonscrit au triangle. 
+\it Construire un angle de $57^o$ en utilisant son sinus, son cosinus, sa tangente. Mesurer ensuite au rapporteur les divers angles construits. 
+\end{itemize}
+\chapter{Compléments sur les polygones réguliers}
+\begin{itemize}
+\item Dans un cercle dont le rayon est $6$ centimètres, on donne une corde de longueur $5$ centimètres. Calculer la longueur de la corde qui sous-tend l'arc double. 
+\it Avec les mêmes données, calculer la longueur de la corde qui sous-tend l'arc moitié. 
+\it Calculer le côté et l'apothème\footnote{rayon du cercle inscrit} du dodécagone régulier convexe inscrit dans un cercle de rayon $R$. 
+\it Calculer le côté du triangle équilatéral circonscrit à un cercle de rayon $R$. 
+\it Calculer le côté de l'hexagone régulier convexe circonscrit à un cercle de rayon $R$. 
+\it On considère un quadrillage régulier. Un cercle a pour centre un sommet de ce quadrillage et pour rayon le double du côté. Montrer que le quadrillage coupe ce cercle aux sommets d'un dodécagone régulier inscrit. 
+\it Un carré un triangle équilatéral et un hexagone régulier ont pour côté $3$ centimètres. Calculer le rayon de leurs cercles circonscrits. 
+\it Même question avec leurs cercles inscrits.
+\it On donne un carré de $6$ centimètres de côté. En détacher quatre triangles rectangles isocèles pour que la figure qui reste soit un octogone régulier. 
+\it De chaque sommet d'un carré comme centre, on décrit un quart de cercle limité aux côtés et passant par le centre du carré. Les extrémités de ces arcs sont les sommets d'un octogone régulier. 
+\it Calculer le rayon du cercle circonscrit à l'octogone précédent au moyen du côté $a$ du carré. 
+\end{itemize}
+ 
+\chapter{Périmètre du cercle} 
+ \begin{itemize}
+ \it Calculer en degrés l'angle au centre qui intercepte sur un cercle un arc qui a pour longueur le diamètre.
+ \it Trouver le rayon du cercle sur lequel un arc de $18^o15'$ a une longueur de $2$ mètres. 
+ \it Un bassin a la forme d'un rectangle terminé sur ses deux côtés 
+ par un demi-cercle. La longueur totale du bassin est de $70$ mètres. Le pourtour de chaque demi-cercle est $44$ mètres. On établit autour 
+ de ce bassin, à $1$ mètre $50$ du bord une petite grille. Quelle en sera la longueur. On prendra $\pi = \frac{22}7$ pour le calcul.
+ \it De combien augmente le périmètre d'un cercle quand son rayon augmente de $1$ mètre ? 
+ \it De combien augmente le rayon d'un cercle quand son périmètre augmente de $1$ mètre ? 
+ \it On donne un cercle de rayon $5$ centimètres. Construire un segment rectiligne ayant à peu près la longueur du demi-cercle. Quelle erreur commet-on ? 
+ \it On considère un arceau hémi-circulaire. Puis deux autres dont le rayon est moitié, puis quatre autres dont le rayon est la moitié des précédents, etc. Calculer la somme des longueur des arceaux de même rayon connaissant le rayon $R$ du premier.
+ \it La différence entre le périmètre d'un cercle et celui d'un hexagone régulier inscrit dans ce cercle est de $28$ mètres $32$. Quel est le rayon du cercle ? 
+ \it Quelle est la longueur d'un arc de $45^o28'12''$ dans un cercle de
+ $32$ mètres de rayon ? 
+ \it Une roue de locomotive a $1$ mètre $50$ de diamètre. Combien fait-elle de tours quand la locomotive parcourt $1$ kilomètre ? 
+ \end{itemize}
+\chapter{Les aires}
+
+\begin{itemize}
+\it Si, en parcourant le périmètre d'un triangle, on prolonge chaque côté que l'on vient de parcourir d'une longueur égale à ce côté, le triangle qui a pour sommets les extrémités des segments ainsi construits a une aire septuple du triangle initial. 
+\it On considère un triangle rectangle $ABC$ dans lequel l'angle $\widehat{B}$ vaut $60^o$. Sur l'hypoténuse $[BC]$, on construit le carré $BCDE$, sur $[AC]$ et $[AB]$ les triangles équilatéraux $ACF$ et $ABG$. Évaluer l'aire du quadrilatère $EDFG$ en fonction de l'hypoténuse $a$. \\ Appliquer au cas particulier $a=5$ centimètres. 
+\it Comparer l'aire d'un parallélogramme ayant pour sommets les milieux 
+des côtés d'un quadrilatère convexe à l'aire de ce quadrilatère. 
+\it Trouver une relation entre la surface d'un triangle, son périmètre et le rayon du cercle inscrit. 
+\it Que donne la méthode de l'exercice précédent, si l'on considère un cercle exinscrit ? 
+\it On considère un triangle $ABC$ et une parallèle $(DE)$ à la base. Comparer l'aire $ADC$ aux aires $ADE$ et $ABC$. 
+\it On considère un triangle isocèle $OAB$ rectangle en $O$. On construit le carré $ABA'B'$ qui a pour côté $[AB]$ de manière que $O$ soit à l'intérieur du carré. \begin{enumerate}
+\item Montrer que $O$ est le centre du carré. En conclure que l'aire du carré est la somme des aires des carrés construits sur $[OA]$ et sur $[OB]$. 
+\it L'aire du carré étant $31~200$ centimètres carrés, quelle est la 
+longueur commune des côtés $[OA]$ et $[OB]$ ? 
+\end{enumerate}
+\it Un champ a la forme d'un quadrilatère $ABCD$. On a mesuré trois côtés et deux diagonales, et on a trouvé, en mètres : $AB = 224$, $AD = 168$, $DC=490$, $AC= 518$, et $BD = 280$. Montrer que les angles $\widehat{A}$ et $\widehat{D}$ sont droits, et calculer la surface du champ. 
+\it Un triangle isocèle a une hauteur égale à sa base. Il est donc équivalent à un carré de côté donné $a$. Le construire. Application numérique $a=5$ centimètres. 
+\it Un champ triangulaire a une superficie de $1$ hectare. Sa hauteur est les $\frac45$ de sa base. Trouver cette base à $1$ centimètre près. 
+\it Quelle est l'aire d'un triangle équilatéral de hauteur $h=5$ centimètres ? 
+\it L'aire d'un triangle équilatéral est de $730$ centimètres carrés. Calculer son côté et sa hauteur. 
+\it On considère un trapèze $ABCD$ dont les bases sont $[AB]$ et $[CD]$. Par les milieux des côtés $[AD]$ et $[BC]$ on mène des perpendiculaires aux bases. Comparer l'aire du rectangle ainsi constitué à celui du trapèze. 
+\it On fait tourner un trapèze de $180^o$ autour du milieu d'un des côtés non parallèles. Étudier la figure formée par les deux positions du trapèze. Que peut-on en conclure ? 
+\it Vérifier par équivalences d'aires la formule \[ (a+b)^2 = a^2 + 2ab + b^2.\]
+\it Même question pour la formule \[(a-b)^2 = a^2-2ab+b^2.\]
+\it Même question pour la formule \[a^2-b^2 = (a+b)(a-b).\]
+\it On considère un trapèze $ABCD$. Montrer par un découpage convenable que l'aire de ce trapèze est équivalente à celle d'un parallélogramme qui a pour base un des côtés non parallèles, et pour hauteur la distance du milieu de l'autre côté au premier. 
+\it Établir directement l'égalité des mesures des deux aires de l'exercice précédent. 
+\it Marquer sur une diagonale d'un carré un point tel qu'en le joignant à trois sommets, on divise le carré en trois parties équivalentes. 
+\it Deux champs compris entre deux chemins non parallèles $[AB]$ et $[CD]$ sont séparés par la droite $(EF)$. On veut les séparer par une droite issue d'un point $I$ de $(AB)$ sans changer la surface des deux champs. Comment faut-il tracer cette séparation ? 
+\it Deux segments $[AB]$ et $[CD]$ glissent sur deux droites parallèles. Comment varie l'aire du trapèze $ABCD$ ? 
+\it Un trapèze $ABCD$ a les angles $\widehat{A}$ et $\widehat{D}$ droits. Où faut-il prendre un point $E$ sur $[CD]$ pour que la droite
+$(BE)$ partage le trapèze en deux aires équivalentes ? 
+\\ On donne $AB = 30$ mètres, $AD= 20$ mètres et $DC = 55$ mètres. 
+\it La droite qui joint les milieux des bases d'un trapèze partage
+celui-ci en deux aires équivalentes. 
+\it Construire un triangle équilatéral équivalent à un carré donné. 
+\it Construire un carré équivalent à un triangle donné. 
+\it Construire trois cercles égaux tangents entre eux deux à eux. Connaissant leur rayon commun, calculer l'aire du triangle curviligne compris entre ces trois cercles. 
+\it Deux cercles égaux passent chacun par le centre de l'autre. Calculer l'aire commune aux deux cercles. 
+\it Un quart de cercle est limité par deux rayons $[OA]$ et $[OB]$. Sur $[OA]$ et $[OB]$, à l'intérieur du quart de cercle considéré, on décrit deux demi-cercles qui partagent la figure en quatre régions. Évaluer l'aire de chacune de ces quatre régions. 
+\it D'un point quelconque $M'$ d'un demi-cercle de diamètre $[AB]$, on 
+abaisse $[MP]$ perpendiculaire sur ce diamètre et on décrit les demi-cercles de diamètres $[AP]$ et $[PB]$ à l'intérieur du premier. Calculer l'aire compris entre les demi-cercles et la comparer à celle du cercle de diamètre $[MP]$. 
+\it Évaluer l'aire comprise entre un hexagone régulier convexe et le cercle circonscrit.
+\it L'aire comprise entre deux cercles concentriques est celle du cercle qui a pour diamètre la corde du plus grand cercle tangente au plus petit. 
+\it Dans un cercle de $50$ millimètres de diamètre, inscrire un rectangle dont un côté ait $4$ centimètres. Calculer la surface du rectangle en millimètres carrés, ainsi que la surface comprise entre le rectangle et le cercle. On joint les milieux des côtés du rectangle. Quelle figure obtient-on ? En calculer le périmètre. 
+\it Dans un terrain circulaire, on a creusé un bassin circulaire concentrique. Il ne reste plus autour du bassin qu'une bande circulaire de $18,7264$ hectares. Le rayon du terrain étant les $\frac{35}3$ de celui du bassin, on demande de calculer ces deux rayons. On prendra pour le calcul $\pi = \frac{22}7$. 
+\it Un losange de $16$ mètres de côté a un angle de $45^o$. On demande sa surface et celle du cercle inscrit. 
+\it De chaque sommet d'un triangle équilatéral comme centre, on décrit avec le côté $a$ pour rayon un arc de cercle limité aux deux autres sommets. Calculer l'aire du triangle curviligne obtenu. \\ Application numérique avec $a=10$ centimètres.
+\it Évaluer l'aire comprise entre un carré de côté $a$ et le cercle circonscrit. Appliquer au cas $a=5$ centimètres. 
+\it On considère l'aire comprise entre deux cercles concentriques de rayons $3$ centimètres [et $6$ centimètres ?] et à l'intérieur d'un angle au centre de $68^o$. Évaluer cette aire.
+\it On divise un cercle en six arcs égaux par les points $ABCDEF$. De $A$, $C$, et $E$ comme centres, on décrit avec le même rayon des arcs de cercle situés extérieurement au cercle initial et limités aux points $D$, $E$ et $F$. Si $a$ est le rayon des cercles, calculer l'aire ainsi limitée. Application $a=3$ centimètres. 
+\it Les points $ABCDEF$ se suivent dans cet ordre sur un cercle. Les arcs $AB$, $CD$ et $EF$ valent $30^o$. Les arcs $BC$, $DE$, et $FA$ valent $90^o$. Connaissant le rayon $a$ du cercle, calculer l'aire de l'hexagone $ABCDEF$. 
+\it Dans un cercle une corde $[BC]$ est fixe et un point $A$ décrit le cercle. Pour quelle position de $A$ l'aire comprise entre le cercle est le triangle $ABC$ est-elle minimale ? 
+\it Deux cercles concentriques ont pour périmètres $1$ et $2$ mètres. Exprimer l'aire comprise entre eux. 
+\it Deux cercles concentriques comprennent entre eux une aire de $1$ mètre carré. Le rayon du plus petit est $1$ mètre. Quel est le rayon du plus grand ? 
+\it Deux cercles de rayon $2$ centimètres sont tangents extérieurement. 
+On trace les tangentes communes extérieures. Calculer l'aire limitée par les deux cercles et les deux tangentes. 
+\it Partager un triangle en deux aires équivalentes par une parallèle à un côté. 
+\it Montrer que l'aire d'un triangle $ABC$ est donnée par la formule : \[ S = \frac12bc \sin(\widehat{A}.\]
+\it Appliquer le résultat précédent au calcul de l'aire d'un segment de cercle correspondant à un arc de $n^o$ dans un cercle de rayon $R$.
+\it Calculer à un millimètre carré près l'aire d'un segment de cercle correspondant à un angle de un radian, dans un cercle de $10$ centimètres de rayon. 
+\it Calculer à un millimètre carré près l'aire comprise entre un cercle de rayon $5$ centimètres et un pentagone régulier convexe inscrit dans ce cercle. 
+\it Même question avec un octogone. 
+\it Quelle est l'aire comprise entre le cercle inscrit et le cercle circonscrit à un hexagone régulier de côté $a$ ? 
+\it Deux segments $[AB]$ et $[AC]$ de longueurs fixes données forment un triangle $BAC$ qui croit de $0^o$ à $180^o$. Comment varie l'aire du triangle $BAC$ ?
+\it Calculer l'aire d'un triangle $ABC$ dans lequel on a : \[BC = 8\text{ cm,} \widehat{B} = 48^o, \widehat{C}= 75^o.\]
+\it Calculer l'aire d'un triangle $ABC$ dans lequel on a : \[BC = 8\text{ cm,} CA = 6 \text{ cm,} \widehat{A}= 108^o.\]
+\it Construire un triangle équilatéral dont l'aire est $12$ centimètres carrés. Calculer son côté. 
+\it Construire un carré équivalent à un triangle équilatéral de côté $a$.
+\it Construire un triangle équilatéral équivalent à un carré de côté $a$. 
+\end{itemize} 
+\chapter*{Exercices de récapitulation}
+\begin{itemize}
+\it Dans un triangle $ABC$, on mène par $B$ une droite qui coupe $[AC]$ en $E$ et la médiane $[AD]$ en $F$. Montrer que $\frac{AE}{AC} = \frac{EF}{FB}$. Calculer la valeur de ses rapports si $F$ est le milieu de $[AD]$. 
+\it Deux cercles se coupent en $A$ et $B$. On mène par $A$ une sécante qui coupe les cercles en $C$ et $D$. Montrer que le triangle $BCD$ reste semblable à lui-même lorsque la sécante $(CD)$ tourne autour de $A$. 
+\it Deux triangles $ABC$ et $ABD$ ont pour même base $[AB]$. Leurs sommets $C$ et $D$ sont sur une parallèle à $(AB)$. Par le point $E$ commun à $[AD]$ et $[BC]$ on mène une parallèle à $(AB)$ qui coupe en $F$ et $G$ les côtés $[AC]$ et $[BD]$. Comparer $EF$ et $EG$. 
+\it Tracer une droite telle que le rapport des distances de deux points donnés à cette droite soit donné. 
+\it Tracer une droite telle que les distances de trois points donnés à cette droite soient en rapport 3:4:5. 
+\it $ABC$ étant un triangle isocèle de base $[BC]$, on prend sur le côté $[AB]$ une longueur $BD=\ell$ et sur le prolongement de $[AC]$ une longueur $CE = m$. Soit $F$ le point commun à $(BC)$ et $(DE)$. Calculer le rapport $\frac{FD}{FE}$. 
+\it Dans un trapèze le point commun aux diagonales et le point commun aux côtés non parallèles sont conjugués harmoniques par rapport au milieux des bases.
+\it Inscrire dans un triangle donné un triangle ayant ses côtés parallèles à ceux d'un autre triangle donné. 
+\it Par le point de contact de deux cercles tangents, on mène une sécante quelconque et les tangentes aux points où cette sécante rencontre les deux cercles. Étudier la disposition de ces tangentes.
+\it Construire un triangle connaissant les angles et la distance du point commun aux hauteurs au centre du cercle circonscrit. 
+\it Construire un triangle connaissant les angles et la distance du centre du cercle inscrit au centre du cercle circonscrit. 
+\it Par le point $I$ commun aux médianes $[BM]$ et $[CN]$ du triangle $ABC$, on mène la parallèle à $(BC)$. Elle rencontre $[AB]$ en $P$, $[AC]$ en $Q$. Démontrer que le point $I$ est le milieu de $[PQ]$ et que la droite $(AI)$ passe par les milieux de $[MN]$ et $[BC]$. 
+\it Soit un triangle $ABC$. Montrer qu'on peut construire un triangle $A'B'C'$ dont les côtés sont égaux aux médianes de $ABC$. On construit de même le triangle $A''B''C''$ dont les côtés sont égaux aux médianes de $A'B'C'$; Montrer que $ABC$ et $A''B''C''$ sont semblables, et trouver le rapport de similitude. 
+\it Par le sommet $A$ d'un triangle isocèle $ABC$ inscrit dans un cercle $O$, on mène une droite rencontrant la base $[BC]$ en $D$ et le cercle en $E$. Démontrer que $AB$ est moyenne géométrique entre $AD$ et $AE$. 
+\it On dit que deux cercles sont orthogonaux si les tangentes en leurs points communs sont rectangulaires\footnote{perpendiculaires}. Quelle relation y a-t-il entre la distance des centres de deux tels cercles et leurs rayons ? 
+\it Montrer que les cercles orthogonaux à un cercle donné et qui passent par un point donné passent par un autre point donné. 
+\it Construire un cercle passant par deux points et orthogonal à un cercle donné. 
+\it Mener par un point un cercle orthogonal à un cercle donné et ayant son centre sur une droite donnée. Peut-il y avoir une infinité de solutions ? 
+\it On donne un cercle et deux points $A$ et $B$. Par $A$ on mène une sécante mobile qui coupe le cercle en $M$ et en $N$. Montrer que le cercle qui passe par $M$, $N$ et $B$ passe par un autre point fixe.
+\it D'un point $M$ extérieur à un cercle on mène les deux tangentes $(MA)$ et $(MB)$ et une sécante quelconque qui croise le cercle en $C$ et $D$. Montrer que l'on a : \[AC\times BD = AD\times BC.\]
+\it Deux cercles sont tangents extérieurement. Calculer la portion de 
+tangente commune extérieure comprise entre les points de contact au moyen des rayons des deux cercles. 
+\it Deux cercles ont pour rayons $30$ et $50$ millimètres. La distance de leurs centres est $100$ millimètres. Calculer la longueur d'une tangente commune extérieure et celle d'une tangente commune intérieure. 
+\it L'inverse du carré de la hauteur d'un triangle rectangle est égal à la somme des inverses des carrés des côtés de l'angle droit. 
+\it Par un point $O$ on mène deux sécantes perpendiculaires à un cercle, le rencontrant respectivement en $A$ et $A'$ ou en $B$ et $B'$. Étudier l'expression $(AA')^2 + (BB')^2$ quand les sécantes varient.
+\it Montrer que les cercles qui passent par un point donné et qui divisent un cercle donné en deux arcs égaux passent par un deuxième point fixe. 
+\it Mener par deux points un cercle qui coupe un cercle donné en deux arcs égaux. 
+\it Mener par un point un cercle qui coupe en deux arcs égaux deux cercles donné. 
+\it Trouver sur une droite $(AB)$ un point $C$ tel que $CA^2-CB^2 = K^2$, $K$ étant une longueur donnée.
+\it On donne deux cercles concentriques de rayons $10$ et $12$ mètres. Calculer la longueur de la corde du grand cercle tangente au petit. 
+\it Si $[BC]$ est la base d'un triangle isocèle $ABC$, $[BD]$ une hauteur, montrer que l'on a : \[ BC^2=2AC\times DC.\]
+\it Un quadrilatère inscriptible $ABCD$ est circonscrit à un cercle de centre $O$ et de rayon $R$. L'une de ses diagonales $AC$ passe par $O$ et $AO=2R$. Calculer les angles, les côtés, et les diagonales du quadrilatère. 
+\it On donne un demi-cercle de diamètre $[AB]$. On décrit sur les rayons $[OA]$ et $[OB]$ comme diamètres deux demi-cercles et on trace le cercle $C$ tangent aux trois demi-cercles. Calculer son rayon et les côtés du triangle formé par les trois points de contact. 
+\it Dans un triangle, le produit de deux côtés est égal au produit du diamètre du cercle circonscrit par la hauteur correspondant au dernier côté. 
+\it Le triangle équilatéral $ABC$ étant inscrit dans un cercle, on joint le milieu $D$ de l'arc $AC$ au point $H$, milieu de $[BC]$ et on prolonge $[DH]$ jusqu'au cercle en $M$. \\ Calculer $DM$, $DH$, $HM$ en
+fonction du rayon $R$ du cercle. 
+\it Sur le rayon $[OA]$ d'un cercle comme diamètre on décrit un second
+cercle. Si $B$ et $C$ ont les points où un rayon issu de $O$ coupe ces deux cercles, montrer que les arcs $AB$ et $AC$ ont même longueur. Dira-t-on qu'ils sont égaux ? 
+\it On donne un segment $[AB]$. Construire sur la droite $(AB)$ un point $M$ tel que $MA^2=AB\times MB$. 
+\it Les hauteurs d'un triangle sont inversement proportionnelles aux côtés. 
+\it On joint un sommet d'un carré au milieu de l'un des côtés qui ne le contiennent pas. Puis on complète la figure pour conserver le centre de répétition d'ordre 4.\footnote{Phrase obscure ?} Montrer qu'on détache ainsi un petit carré qui est le cinquième du grand. 
+\it Construire un rectangle connaissant son périmètre et sa surface. 
+\it Inscrire dans un cercle un rectangle d'aire donnée. 
+\it Les droites qui joignent le point de rencontre des médianes aux trois sommets d'un triangle partagent celui-ci en trois triangles équivalents. 
+\it Calculer la portion de surface d'un cercle de rayon $R$ limitée par 
+deux cordes égales et parallèles de distance $R$. 
+\it Diviser un triangle en cinq parties équivalentes par des parallèles à un côté.
+\it L'aire d'un triangle rectangle est égale au produit des segments déterminés sur l'hypoténuse par le point de contact du cercle inscrit.
+\it Partager un triangle en deux aires proportionnelles à deux nombres donnés, par une droite issue d'un sommet. 
+\it Calculer la portion de surface d'un demi-cercle comprise entre deux cordes parallèles égales : l'une au côté de l'hexagone régulier, l'autre au côté du triangle équilatéral inscrit. 
+\it Un triangle équilatéral a $6$ centimètres de côté. Construire un triangle équilatéral dont l'aire soit moitié moindre de la première. Calculer son côté et comparer. 
+\it Le cercle inscrit dans un triangle rectangle est équivalent à la somme des cercles inscrits dans les deux triangles rectangles déterminés par la hauteur issue de l'angle droit. 
+\it Dans un triangle $ABC$, la hauteur $[AH]$ coupe $[BC]$ entre $B$ et $C$. On a $BH=AH= 4$ centimètres, $HC= 3$ centimètres. Partager le triangle en deux parties équivalentes par une parallèle à $(AH)$. 
+\it L'aire du triangle construit avec pour longueurs les médianes d'un triangle donné est les $\frac34$ de l'aire du triangle initial.
+\end{itemize}
+
+\part{[À faire un jour ] : Géométrie dans l'espace}
+ 	\end{document}
