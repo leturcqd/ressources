@@ -1,0 +1,256 @@
+	\documentclass[12 pt]{article}
+
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage{geometry}
+	\geometry{a4paper, head=15pt}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	 \usepackage{fancyhdr}
+	 \usepackage{float}
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{\thepage} 
+	\fancyhead[L]{Angles}
+	\fancyhead[R]{Cinquième}
+	\newcounter{n}
+	\numberwithin{n}{section}
+	\newtheorem{theo}{Théorème}
+	\labelformat{theo}{théorème}
+	\newtheorem*{prop}{Propriété}
+	\labelformat{prop}{propriété}
+	\newtheorem*{cor}{Corollaire}
+	\newtheorem{lm}{Lemme}
+	\labelformat{lm}{lemme~#1}
+	\newtheorem{hyp}[n]{Hypothèse}
+	
+	{\theoremstyle{definition}
+	\newtheorem*{df}{Définition}
+	\newtheorem{exo}{Exercice}
+	\labelformat{exo}{exercice~#1}
+    \newtheorem*{rmq}{Remarque}
+	\newtheorem*{nt}{Notation}
+	\newtheorem*{voc}{Vocabulaire}
+	\newtheorem*{ex}{Exemple}
+	\newtheorem*{exs}{Exemples}
+	\newtheorem*{formule}{Formule}
+	\newtheorem*{formules}{Formules}
+	}
+
+	\renewcommand\epsilon{\varepsilon}
+	\renewcommand\phi{\varphi}
+	\newcommand\R{\mathbb{R}}
+	\newcommand\s{\mathbb{S}}
+	
+	
+	
+	\title{Exercices Chapitre 6}
+	\date{}
+	\begin{document}
+
+
+\section{Rappels }
+\begin{df}On rappelle que la \emph{bissectrice} d'un angle est la demi-droite issue de son sommet et le partageant en deux angles égaux. \end{df}
+
+\begin{exo}
+Construire un angle $\widehat{AOB}$ de mesure $103^o$ et un angle $\widehat{AOC}$ de mesure $69^o$ à l'intérieur de celui-ci. 
+
+Construire un angle $\widehat{AOD}$ adjacent à $\widehat{AOB}$ de mesure $34^o$. 
+
+Comparer la différence entre $\widehat{DOB}$ et $\widehat{DOC}$ et celle entre $\widehat{AOB}$ et $\widehat{AOC}$. Ce résultat dépend-il des mesures choisies ?
+
+\end{exo}
+\begin{exo}
+Construire deux angles adjacents $\widehat{AOB}$ et $\widehat{BOC}$ mesurant respectivement $68^o$ et $42^o$.
+
+Construire leurs bissectrices $[OM)$ et $[ON)$. 
+
+Mesurer l'angle $\widehat{MON}$ et le comparer à l'angle $\widehat{AOC}$. 
+\end{exo}
+
+\begin{exo}Deux angles $\widehat{AOB}$ et $\widehat{BOC}$ sont adjacents 
+et $[OM)$ est la bissectrice de l'angle $\widehat{BOC}$. \begin{enumerate}
+\item Construire la figure sachant que $\widehat{AOB}=60^o$ et $\widehat{AOC}= 110^o$. Calculer la mesure de l'angle $\widehat{AOM}$. 
+\item Si $\widehat{AOB}= \alpha$ et $\widehat{AOC}= \beta$, montrer que $\widehat{AOM}= \frac12(\alpha + \beta)$. 
+\end{enumerate}
+\end{exo}
+
+\begin{exo}Les angles $\widehat{AOB}$ et $\widehat{AOC}$ sont adjacents et 
+$[OM)$ est la bissectrice de l'angle $\widehat{BOC}$. 
+\begin{enumerate}
+\item Effectuer la construction de ces angles en prenant $\widehat{AOB}= 52^o$ et $\widehat{AOC}=108^o$. Mener $[OM)$ et calculer la mesure 
+de l'angle $\widehat{AOM}$. 
+\item On suppose $\widehat{AOB}= \alpha$ et $\widehat{AOC}= \beta$ avec $\beta>\alpha$. Montrer que $\widehat{AOM}= \frac12(\beta-\alpha)$. 
+\end{enumerate}
+\end{exo}
+\begin{exo}
+Soient $[OM)$ et $[ON)$ les bissectrices des angles adjacents $\widehat{AOB}$ et $\widehat{AOC}$. 
+\begin{enumerate}
+\item Construire la figure pour $\widehat{AOB}= 72^o$ et $\widehat{AOC}= 48^o$. Calculer les mesures des angles $\widehat{BOC}$ et $\widehat{MON}$. Comparer ces mesures. 
+\item Si $\widehat{AOB}= \alpha$ et $\widehat{AOC}= \beta$, montrer 
+que $\widehat{BOC}= \alpha + \beta$ et $\widehat{MON}= \frac12(\alpha+\beta)$. 
+\end{enumerate}
+\end{exo}
+
+\begin{exo}On considère deux angles adjacents $\widehat{AOB}$ et $\widehat{BOC}$. Soient $[OM)$ et $[ON)$ les bissectrices des angles $\widehat{AOB}$ et $\widehat{AOC}$.
+\begin{enumerate}
+\item On donne $\widehat{AOB}= 60^o$ et $\widehat{AOC}= 108^o$. Construire la figure et calculer les mesures des angles $\widehat{BOC}$ et $\widehat{MON}$. Comparer ces deux mesures. 
+\item On suppose $\widehat{AOB}= \alpha$ et $\widehat{AOC}= \beta$, montrer que $\widehat{MON}= \frac12\widehat{BOC}= \frac12(\beta-\alpha)$. 
+\end{enumerate}\end{exo}
+
+\begin{exo} Les bissectrices $[OM)$ et $[ON)$ des angles non-adjacents $\widehat{AOB}$ et $\widehat{AOC}$ font un angle de $36^o$ et l'angle $\widehat{AOB}$ mesure $64^o$. \begin{enumerate}
+\item Construire la figure et calculer les angles $\widehat{AOM}$, $\widehat{AON}$ et $\widehat{AOC}$.
+\item Comparer les angles $\widehat{BOC}$ et $\widehat{MON}$. En est-il toujours ainsi ? 
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+On considère deux angles adjacents $\widehat{AOB}$ et $\widehat{AOC}$ dont les bissectrices $[OM)$ et $[ON)$ font un angle de $84^o$. \begin{enumerate}
+\item Sachant que l'angle $\widehat{AOC}$ vaut $118^o$, construire la figure et calculer les mesures des angles $\widehat{AON}$, $\widehat{AOM}$ et $\widehat{AOB}$. 
+\item Comparer les angles $\widehat{MON}$ et $\widehat{BOC}$. Généraliser.
+\end{enumerate}
+\end{exo}
+
+\begin{exo}\begin{enumerate}
+\item Construire trois angles successivement adjacents : $\widehat{AOB}= 32^o$, $\widehat{BOC}= 72^o$, et $\widehat{COD}= 48^o$, puis les bissectrices $[OM)$, $[ON)$, $[OP)$ et $[OQ)$ des angles $\widehat{AOB}$, $\widehat{AOC}$, $\widehat{BOD}$ et $\widehat{COD}$. 
+\item Calculer les angles $\widehat{MON}$ et $\widehat{POQ}$. Comparer
+ces angles à l'angle $\widehat{BOC}$. 
+\item Montrer que les angles $\widehat{MOQ}$ et $\widehat{NOP}$ ont la même bissectrice. 
+\end{enumerate}\end{exo}
+
+\begin{exo}\begin{enumerate}
+\item Construire un angle $\widehat{AOB}$ de $60^o$, sa bissectrice $[Ox)$, puis les angles droits $\widehat{AOC}$ et $\widehat{BOD}$ adjacents à l'angle $\widehat{AOB}$ et enfin les bissectrices $[Oy)$, $[Oz)$ et $[Ou)$ des angles $\widehat{AOC}$, $\widehat{BOD}$, et $\widehat{COD}$. 
+\item Calculer la valeur des angles $\widehat{COD}$, $\widehat{xOy}$, et $\widehat{xOz}$. Montrer que $[Ox)$ est la bissectrice de l'angle $\widehat{yOz}$. 
+\item Calculer les mesures des angles $\widehat{yOu}$, $\widehat{zOu}$, et $\widehat{xOu}$. Que peut-on dire des demi-droites $[Ox)$ et $[Ou]$ ? 
+\end{enumerate}
+\end{exo}
+
+\section{Angles opposés par le sommet }
+
+\begin{exo}
+On considère dans cet ordre $4$ demi-droites $[OA)$, $[OB)$, $[OC)$ et $[OD)$. 
+\begin{enumerate}
+\item Sachant que $\widehat{AOB}= \widehat{COD} = 35^o$ et $\widehat{BOC}=48^o$, construire les quatre demi-droites. Calculer et comparer les angles $\widehat{AOC}$ et $\widehat{BOD}$. 
+\item Soit $[OM)$ la bissectrice de l'angle $\widehat{BOC}$. Montrer que $[OM)$ est également la bissectrice de l'angle $\widehat{AOD}$. 
+\end{enumerate}
+\end{exo}
+
+\begin{exo}Autour d'un point $O$ sont construits cinq angles successivement adjacents $\widehat{AOB}$, $\widehat{BOC}$, $\widehat{COD}$, $\widehat{DOE}$, et $\widehat{EOA}$ recouvrant tout le plan. Ces angles
+vérifient les relations : 
+\[ \widehat{BOC}= 2\widehat{AOB}; \phantom{}\widehat{COD}= \widehat{AOB}+ \widehat{BOC}; \phantom{m} \widehat{DOE}= 2\widehat{BOC}; \phantom{m} \widehat{EOA}= \widehat{BOC}+\widehat{COD}.\]
+\begin{enumerate}
+\item Calculer la mesure en degrés de chacun de ces angles. 
+\item Calculer l'angle des bissectrices des angles $\widehat{AOB}$ et $\widehat{DOE}$. 
+\end{enumerate}
+\end{exo}
+\section{Angles alternes-internes}
+\begin{df}
+Étant données deux droites $(d_1)$ et $(d_2)$ coupées par une troisième droite $(\Delta)$, on dit que deux angles sont \emph{correspondants} si : \begin{itemize}
+\item Ils sont situés du même côté de la droite $(\Delta)$
+\item Ils ont pour sommet chacun un des deux points d'intersection de $(\Delta)$ avec $(d_1)$ et $(d_2)$. 
+\item Exactement un des deux angles est entre $(d_1)$ et $(d_2)$.
+\end{itemize}
+\end{df}
+\begin{exo}
+Faire une figure illustrant la définition précédente. 
+
+Montrer que si deux angles sont correspondants, alors le premier angle est alterne-interne avec l'angle opposé par le sommet au second angle.
+
+En déduire que deux angles correspondants sont de même mesure si,
+et seulement si, les droites $(d_1)$ et $(d_2)$ sont parallèles. 
+\end{exo}
+
+\begin{exo}
+On considère un quadrilatère $ABCD$ tel que les angles de deux sommets consécutifs soient toujours supplémentaires. 
+\begin{enumerate}
+\item Faire une figure avec $\widehat{ABC}= \widehat{ADC}=60^o$, $\widehat{BAD}=\widehat{BCD}=120^o$, $AB = 4$ cm, et $AC= 5$ cm. Que constate-t-on ? 
+\item En utilisant l'exercice précédent, montrer que les droites $(AB)$ et $(CD)$ sont parallèles.
+\item Montrer que $ABCD$ est un parallélogramme.
+\end{enumerate}
+\end{exo}
+\begin{exo}
+On considère un quadrilatère $ABCD$ dont on trace la diagonale $[AC]$. On suppose que cette diagonale forme des angles $\widehat{BAC}$ et $\widehat{DCA}$ égaux. Que peut-on dire des droites $(AB)$ et $(CD)$ ?
+\end{exo}
+\section{Angles du triangle}
+
+\begin{exo}
+On considère un triangle $ABC$ isocèle en $A$ avec $\widehat{BAC}= 124^o$. 
+\begin{enumerate}
+\item Faire une figure
+\item Calculer les trois angles du triangle.
+\item Vérifier sur la figure.
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+On considère un triangle $ABC$ isocèle en $B$ avec $\widehat{BAC}= 124^o$. 
+\begin{enumerate}
+\item Faire une figure
+\item Calculer les trois angles du triangle.
+\item Vérifier sur la figure.
+\end{enumerate}
+\end{exo}
+\begin{exo}
+On considère un triangle $ABC$ rectangle en $A$ avec $\widehat{ABC}=37^o$. 
+\begin{enumerate}
+\item Faire une figure
+\item Calculer les trois angles du triangle.
+\item Vérifier sur la figure.
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+On considère un quadrilatère $ABCD$ avec $\widehat{ABD}=37^o$,$\widehat{BDC}=57^o$ $\widehat{DAB}= 50^o$ et $\widehat{ABC}= 80^o$. 
+\begin{enumerate}
+\item Faire une figure.
+\item Calculer les trois angles du triangle $ABD$, puis du triangle $CBD$.
+\item Vérifier sur la figure. Que peut-on dire des quatre angles du quadrilatère $ABCD$ ?
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+On considère un quadrilatère $ABCD$ avec $\widehat{ABD}=\widehat{BDC}=40^o$, $\widehat{DAB}= 90^o$ et $\widehat{ABC}= 90^o$. 
+\begin{enumerate}
+\item Faire une figure.
+\item Calculer les trois angles du triangle $ABD$, puis du triangle $CBD$.
+\item Vérifier sur la figure. Que peut-on dire du quadrilatère $ABCD$ ?
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+On considère un pentagone régulier $ABCDE$. 
+On admet qu'il existe un point $O$ situé à la même distance de tous les sommets de cet hexagone. 
+\begin{enumerate}
+\item Que dire des angles $\widehat{AOB}$,$\widehat{BOC}$, $\widehat{COD}$, $\widehat{DOE}$, et $\widehat{EOA}$ ?
+\item En déduire la valeur de l'angle $\widehat{AOB}$. 
+\item En déduire la valeur des autres angles du triangle $AOB$. 
+\item Compléter : « Les angles d'un pentagone régulier mesurent tous $\ldots^o$. »
+\end{enumerate}
+\end{exo}
+
+\begin{exo}
+On considère un hexagone régulier $ABCDEF$. 
+On admet qu'il existe un point $O$ situé à la même distance de tous les sommets de cet hexagone. 
+\begin{enumerate}
+\item Que dire des angles $\widehat{AOB}$,$\widehat{BOC}$, $\widehat{COD}$, $\widehat{DOE}$, $\widehat{EOF}$ et $\widehat{FOA}$ ?
+\item En déduire la valeur de l'angle $\widehat{AOB}$. 
+\item En déduire la valeur des autres angles du triangle $AOB$.
+\item Compléter : « Les angles d'un hexagone régulier mesurent tous $\ldots^o$. »
+\item Que dire des six triangles $AOB$, $BOC$, $COD$, $DOE$, $EOF$ et $FOA$ ? En déduire une construction facile de l'hexagone régulier à la règle et au compas.
+\end{enumerate}
+\end{exo}
+
+	\end{document}
+	
+
+
