@@ -1,0 +1,173 @@
+	\documentclass[12 pt]{article}
+
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	 \usepackage{fancyhdr}
+
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{\thepage} 
+	\fancyhead[L]{Fiche d'exercices}
+	\fancyhead[R]{2021-2022}
+	\newcounter{n}
+	\numberwithin{n}{section}
+	\newtheorem{df}[n]{Définition}
+	\newtheorem{theo}{Théorème}
+	\labelformat{theo}{théorème}
+    \newtheorem{rmq}[n]{Remarque}
+	\labelformat{rmq}{remarque~#1}
+	\newtheorem{cor}[n]{Corollaire}
+	\newtheorem{lm}{Lemme}
+	\labelformat{lm}{lemme~#1}
+	\newtheorem{hyp}[n]{Hypothèse}
+	\newtheorem{nt}[n]{Notation}
+
+	\renewcommand\epsilon{\varepsilon}
+	\renewcommand\phi{\varphi}
+	\newcommand\R{\mathbb{R}}
+	\newcommand\s{\mathbb{S}}
+	
+	
+	
+	\title{Exercices Chapitre 4}
+	\date{}
+	\begin{document}
+
+\begin{center}{\Large Chapitre 4 - Géométrie au compas : cercles, triangles, périmètres}\\ 
+ \end{center}
+
+
+\textbf{Exercice 1}
+
+1) Tracer un segment $[OA]$ de longueur $3$ cm, et tracer le cercle $(\mathcal C)$ de centre $O$ passant par $A$.
+
+2) Quel est le rayon de $({\mathcal C})$ ? Justifier\footnote{En géométrie, \emph{justifier} est distinct de \emph{mesurer} et d'\emph{observer} (ou \emph{constater}) : 
+on \emph{observe} un résultat sur une figure, on \emph{mesure} une longueur ou un angle, 
+mais on \emph{justifie} un résultat en utilisant des hypothèses de l'énoncé et des propriétés du cours. En particulier, une justification peut s'aider d'une figure, mais n'a jamais \textbf{besoin} de celle-ci.} la réponse. 
+
+3) Soit\footnote{« être », au subjonctif : « soit » est équivalent à dire « on se donne ». Ainsi, la phrase « Soit $B$ un point de $(\mathcal C)$ » a deux effets : elle introduit un nouveau point $B$ dans les données de l'exercice 
+et ajoute aux hypothèses que celui-ci appartient au cercle $(\mathcal C)$.} $B$ un point de $(\mathcal C)$. 
+Quel est la nature du triangle $AOB$ ? Justifier la réponse. 
+
+\textbf{Exercice 2}
+
+1) Tracer un segment $[AB]$ de longueur $4$ cm et tracer le cercle $(\mathcal C)$ de diamètre $[AB]$. 
+
+2) Soit $O$ le centre de $(\mathcal C)$. Justifier que $O$ est le milieu de $[AB]$. 
+
+3) a. Placer un point $C$ sur le cercle $(\mathcal C)$ et tracer le triangle $ABC$.
+ 
+b. Que remarque-t-on sur la figure à propos des droites $(AC)$ et $(BC)$ ? 
+
+c. Quelle est donc la nature du triangle $ABC$ ? 
+
+4) Recommencer la question $3$ deux fois en remplaçant le point $C$ par d'autres points ($D$ puis $E$) du cercle. 
+
+5) Compléter la conjecture\footnote{Une conjecture est une propriété dont l'on prédit qu'elle est vraie par 
+l'observation mais que l'on ne démontre (=justifie) pas.} suivante : « Si $M$ est un point du cercle de diamètre $[AB]$,
+le triangle $AMB$ est $\ldots$. »
+
+\textbf{Exercice 3}
+
+1) Tracer un segment $[AB]$ de longueur $4$ cm, et les cercles $(\mathcal C_1)$ de centre $A$ passant par $B$ 
+et $(\mathcal C_2)$ de centre $B$ passant par $A$. 
+
+2) Placer les points d'intersection $C$ et $D$ de $(\mathcal C_1)$ et $(\mathcal C_2)$. 
+
+3) Que dire des triangles $ABC$ et $ABD$ ? Justifier la réponse. 
+
+4) Que dire du quadrilatère $ABCD$ ? Justifier la réponse. 
+
+\textbf{Exercice 4}
+
+1) Tracer un segment $[AB]$ de longueur $4$ cm, et le cercle $\mathcal C$ de diamètre $[AB]$. 
+
+2) Tracer un autre diamètre $[CD]$ du cercle $\mathcal C$. 
+
+3) Qu'observe-t-on à propos du quadrilatère $ACBD$ ? 
+
+\textbf{Exercice 5}
+
+1) Tracer un segment $[AB]$ de longueur $4$ cm, et le cercle $(\mathcal C)$ de diamètre $[AB]$. 
+
+2) Tracer la droite $(\Delta)$ perpendiculaire à $(AB)$ passant par son milieu. 
+
+3) Placer les points d'intersection $C$ et $D$ de la droite $(\Delta)$ et du cercle $(\mathcal C)$.
+
+4) Qu'observe-t-on à propos du quadrilatère $ACBD$ ? 
+
+
+\textbf{Exercice 6 - Médiatrice}
+
+1) Tracer un segment $[AB]$ de longueur $4$ cm. 
+
+2) Avec le compas, tracer deux cercles de même rayon respectivement centrés en $A$ et en $B$. 
+Placer leurs points d'intersection $C$ et $D$, et tracer la droite $(CD)$. 
+
+3) Que dire des droites $(CD)$ et $(AB)$ ? Que représente leur point d'intersection pour $[AB]$ ?
+
+4) Pour un point quelconque $M$ de cette droite, mesurer les distances $AM$ et $BM$. 
+
+\textbf{Remarque} : On observe donc que tout point équidistant de $A$ et $B$ est sur la droite perpendiculaire à
+$[AB]$ passant par son milieu. Réciproquement, tout point de cette droite est équidistant de $A$ et $B$. 
+Cette droite est appelée la \emph{médiatrice} du segment $[AB]$. 
+
+\textbf{Exercice 7 - Cercle circonscrit à un triangle}
+
+1) Tracer un triangle $ABC$. 
+
+2) Tracer les médiatrices (voir remarque précédente) $(d_1)$, $(d_2)$ et $(d_3)$. des segments $[AB]$, $[BC]$ et $[AC]$. 
+
+3) On observe que ces trois droites sont concourantes\footnote{Trois droites sont \emph{concourantes} si elles se rencontrent en un unique point commun.}. On va le démontrer. 
+
+4)[Difficile] On montre d'abord que $(d_1)$ et $(d_2)$ sont sécantes. Si elles étaient parallèles, montrer que $(d_1)$ serait perpendiculaire à $(BC)$. En déduire que $(AB)$ et $(BC)$ seraient parallèles. Ceci étant faux, on en déduit bien que les droites $(d_1)$ et $(d_2)$ sont sécantes. 
+
+5) Soit $O$ le point d'intersection de $(d_1)$ et $(d_2)$. Justifier (revoir la remarque précédente) que $O$ est à la même distance de $A$, $B$ et $C$. 
+
+6) En déduire que $O$ appartient à $(d_3)$. On a donc montré que les trois médiatrices d'un triangle sont concourantes. 
+
+7) a. Justifier que $A$, $B$ et $C$ sont sur le même cercle de centre $O$. 
+
+b. Si $O'$ est un point tel que $A$, $B$ et $C$ soient sur un même cercle centré en $O'$, montrer que $O'$ est le point $O$. (On pourra démontrer qu'il appartient à chacune des trois médiatrices précédentes.)
+
+\textbf{Conclusion} : On a démontré que tout triangle est inscrit\footnote{Un polygone est \emph{inscrit} dans un cercle lorsque tous ses sommets sont sur le cercle. On dit alors que le cercle est \emph{circonscrit} au polygone.} dans un unique cercle, dont le centre est le point d'intersection des médiatrices des trois sommets. Ce cercle est appelé le \emph{cercle circonscrit au triangle $ABC$}.
+\newpage
+
+\textbf{Exercice 8 - Non-existence d'un cercle circonscrit pour les quadrilatères}
+
+Dans cet exercice, on vérifie que certains quadrilatères ne sont inscrits dans aucun cercle. 
+
+1) Tracer un triangle $ABC$ tel que $AB=BC= 5$ cm et $AC= 3$ cm. 
+
+2) Placer le point $D$ de telle sorte que $ABCD$ soit un losange.  
+
+3) Tracer les diagonales $[AC]$ et $[BD]$ et vérifier que $(AC)$ est la médiatrice de $[BD]$, et $(BD)$ 
+celle de $[AC]$. 
+
+4) Supposons qu'il existe un cercle contenant $A$, $B$, $C$, et $D$, et notons $O$ son centre. 
+
+a. Justifier que $O$ appartient à la médiatrice de tout segment dont les extrémités sont choisies parmi les quatre
+points $A$, $B$, $C$ et $D$. 
+
+b. En déduire que $O$ est l'intersection des deux diagonales. (Utiliser 3.)
+
+c. Mesurer $OA$ et $OB$, et en déduire que $A$ et $B$ ne peuvent donc pas être sur le même cercle de centre $O$. 
+
+\textbf{Conclusion} : On a donc vérifié que si un cercle contenait les quatre sommets de notre losange, il ne pouvait pas contenir $A$ et $B$ à la fois, ce qui est contradictoire. La seule possibilité est donc qu'aucun tel cercle n'existe : le losange $ABCD$ ne peut être inscrit dans aucun cercle. Généralement, un parallélogramme ne s'inscrit dans un cercle que si c'est un rectangle. Pour un losange, la seule possibilité est donc d'être un carré. 
+
+
+	\end{document}

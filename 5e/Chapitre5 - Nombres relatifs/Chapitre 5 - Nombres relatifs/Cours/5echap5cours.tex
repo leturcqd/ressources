@@ -1,0 +1,485 @@
+  	\documentclass[12 pt]{article}
+
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{float}
+	\usepackage{hyperref}
+	\usepackage{array}
+	 \usepackage{fancyhdr}
+
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{\thepage} 
+	\fancyhead[L]{Nombres relatifs}
+	\fancyhead[R]{2021-2022}
+	\newcounter{n}
+	\numberwithin{n}{section}
+	\newtheorem{theo}{Théorème}
+	\labelformat{theo}{théorème}
+	\newtheorem*{cor}{Corollaire}
+	\newtheorem*{prop}{Propriété}
+	\newtheorem{lm}{Lemme}
+	\labelformat{lm}{lemme~#1}
+	\newtheorem{hyp}[n]{Hypothèse}
+	
+	{\theoremstyle{definition}
+	\newtheorem*{df}{Définition}
+    \newtheorem*{rmq}{Remarque}
+	\newtheorem*{nt}{Notation}
+	\newtheorem*{voc}{Vocabulaire}
+	\newtheorem*{ex}{Exemple}
+	\newtheorem*{exs}{Exemples}
+	\newtheorem*{formule}{Formule}
+	\newtheorem*{formules}{Formules}
+	}
+
+	\renewcommand\epsilon{\varepsilon}
+	\renewcommand\phi{\varphi}
+	\newcommand\R{\mathbb{R}}
+	\newcommand\s{\mathbb{S}}
+	
+	
+	
+	\title{Cours Chapitre 5}
+	\date{}
+	\begin{document}
+
+\begin{center}{\Large Chapitre 5 - Nombres relatifs}\\ 
+ \end{center}
+
+\section{Définition}
+\begin{df}
+Les \emph{entiers positifs} sont les entiers obtenus en comptant à partir de $1$ : $1$, $2$, $3$, $\ldots$. 
+On peut les faire précéder d'un signe $+$ ou non sans que cela ne change rien. 
+
+Les \emph{entiers négatifs} sont les entiers obtenus en faisant précéder les entiers positifs (non signés) d'un signe $-$. Ce sont donc $-1$, $-2$, $-3$, $\ldots$. 
+
+Les \emph{entiers relatifs} sont $0$, les entiers positifs, et les entiers négatifs. 
+
+Plus généralement, un nombre relatif est obtenu en plaçant un signe $+$ ou $-$ devant un nombre. Un tel nombre est 
+positif si le signe est un $+$ (auquel cas on peut choisir de ne pas le mettre) et négatif si le signe est un $-$.
+
+Attention, $0 = -0 = + 0$. 
+\end{df}
+\begin{exs}
+Les nombres suivants sont des entiers relatifs : $2,34$; $\frac{3}4$; $-4$; $+4,3$; $-\frac45$; $- 2,3$. Dans la liste, $-4$, $-\frac45$ et $-2,3$ sont négatifs, et les autres nombres sont positifs. $-4$ est un entier relatif, mais 
+$-2,3$ n'est pas un entier relatif (car $2,3$ n'est pas un entier). 
+\end{exs}
+
+\begin{df}
+L'\emph{opposé} d'un nombre relatif est le nombre relatif obtenu en changeant son signe ($+$ ou $-$) en le signe 
+contraire. 
+\end{df}
+\begin{ex}
+L'opposé de $-4,5$ est $+4,5$. L'opposé de $3$ est $-3$. L'opposé de $O$ est $O$.
+\end{ex}
+\begin{prop}
+\begin{enumerate}
+\item L'opposé d'un nombre positif est un nombre négatif. 
+\item L'opposé d'un nombre négatif est un nombre positif. 
+\item Le nombre nul $0$ est le seul nombre à être son propre opposé. 
+\item L'opposé de l'opposé d'un nombre est lui-même. (En changeant deux fois le signe, on revient au nombre 
+d'origine).
+\end{enumerate}
+\end{prop}
+
+
+
+\section{Opérations}
+
+\subsection{Soustraction de nombres positifs}
+
+Pour soustraire deux nombres positifs, on peut se retrouver face à deux cas : 
+\begin{itemize}
+\item Si le premier est plus grand, on sait déjà faire la soustraction, et le résultat est un nombre positif. 
+\item Si le second est plus grand, on ne pouvait pas faire la soustraction jusqu'ici. On pourra désormais la calculer
+en calculant la différence du second terme par le premier, et en mettant un signe $-$ devant. Le résultat est alors négatif. 
+\end{itemize}
+
+\begin{exs}
+$4 - 5 = - (5-4) = -1$
+
+$\frac14 - \frac34 = - (\frac34 - \frac14) = - \frac24 = -\frac12$. 
+
+
+\end{exs}
+
+\begin{formule}
+On peut résumer ce qui précède ainsi, en notant $a$ et $b$ deux nombres positifs : 
+
+\[  a - b = \begin{cases}
++ (a-b) & \text{si $a >b$}\\
+- (b-a) & \text{si $a <b$}
+\end{cases}\]
+\end{formule}
+
+\subsection{Addition de nombres relatifs}
+
+On cherche maintenant à additionner des nombres relatifs entre eux, donc à donner un sens à des calculs comme 
+$(+2) +  (-3)$, $-1+ (-\frac12)$ ou $(-4) + 5,3$. 
+\subsubsection{Addition de deux nombres relatifs}
+
+On veut additionner deux nombres relatifs $a$ et $b$. Il y a trois cas possibles : 
+
+\begin{itemize}
+\item Si les deux nombres sont positifs, on se contente de les additionner sans les signes, et le résultat est positif. 
+
+\item Si les deux nombres sont négatifs, on les additionne sans les signes, puis on fait précéder le résultat du signe $-$. On obtient un nombre négatif. 
+
+\item Si l'un des nombres est positif et l'autre négatif, on fait la différence entre le nombre positif et le nombre
+négatif sans son signe. On peut alors obtenir un nombre positif ou négatif suivant le signe de la différence. 
+
+\end{itemize}
+\begin{exs}
+\[(+ 2) + (+3, 5) = +(2+3,5) = + 5,5 = 5,5\]
+\[ (- 4 )+ (-3) = - (4+3) = -7\]
+\[ (+ 5) + (-2, 4) = 5 - 2,4 = 2,6\]
+\[ (-2,4) + 5 =  5 - 2,4 = 2,6\]
+\[ (-4,5) + 1 = 1 - 4,5 = - 3,5\]
+
+\end{exs}
+
+On peut résumer ce qui précède avec les formules suivantes, où $a$ et $b$ sont des nombres positifs : 
+\begin{formules}
+\[ (+ a) + (+b) = + (a+b)\]
+\[ (- a) + (-b) = - (a+b) \]
+\[ (+a) + (-b) = a-b\]
+\[ (-a) + (+b) = b-a\]
+
+\end{formules}
+
+\subsubsection{Addition de plusieurs nombres relatifs}
+L'addition ne dépend pas de l'ordre des termes. 
+\begin{formule}
+\[a+b = b+a\]
+\end{formule}
+
+Pour additionner plusieurs nombres relatifs, il suffit de faire la somme de toutes les valeurs 
+positives, et de retrancher la somme de toutes les valeurs négatives.
+\begin{ex} \[ (+2) +  (-4) + (+5) + (-7) + 3 = (2 + 5 + 3) - (4+ 7) = 10 - 11 = -1.\]
+\end{ex}
+
+\subsection{Soustraction de nombres relatifs}
+
+
+
+\subsection{Soustraction de deux nombres relatifs}
+
+
+
+\begin{df}Si $a$ et $b$ sont deux nombres relatifs,
+la \emph{différence} entre $a$ et $b$ est la somme de $a$ et de l'opposé de $b$. 
+On la note $a - b$. L'opération qui tranforme les deux nombres $a$ et $b$ en
+leur différence $a - b$ est la \emph{soustraction}.
+\end{df}
+
+\begin{ex}
+La différence entre $3$ et $5$ est la somme de $3$ et $-5$, donc $3- 5 = 3 + (-5)$, ce qui est rassurant, 
+puisque c'est ce que l'on avait vu dans la partie sur la soustraction des nombres positifs. 
+
+La différence entre $3$ et $-4$ est la somme de $3$ et de $+4$ donc $ 3 - (- 4) = 3 + 4 = 7$. 
+
+La différence entre $-5$ et $2$ est la somme de $-5$ et de $-2$ donc $ - 5 - 2 = -5 + (-2) = - 7$. 
+
+La différence entre $-2$ et $-6$ est la somme de $-2$ et de $+6$ donc $-2 - (-6) = -2+6 = 4$. 
+\end{ex}
+
+\begin{formule}
+On peut résumer les règles ci-dessus en un certain nombre de formules : 
+\[ (+a) - (+b) = a - b \]
+\[ (+a) - (-b) = a + b \]
+\[ (-a) - (+b) = - a - b = - (a + b) \]
+\[ (-a) - (-b) =  - a + b = b - a \]
+Celles-ci se résument aux deux principes suivants : 
+\[ - (+b) = + (-b) = - b\]
+\[ - ( - b) = + b\]
+\end{formule}
+\begin{rmq}
+Lorsque deux signes ($-$ ou $+$) se touchent immédiatement, on peut les simplifier en un seul signe, positif si les deux signes étaient égaux, négatif s'il y avait un $+$ et un $-$. 
+\end{rmq}
+
+\subsection{Soustractions (et additions) multiples}
+
+\begin{df}
+Une \emph{somme algébrique} est une suite d'additions et de soustractions de nombres relatifs, avec 
+éventuellement des parenthèses. 
+\end{df}
+
+\begin{exs}Voici deux exemples de sommes algébriques : 
+\[ 2 + (-3 ) - (4 + (-5) + 3) + (4 - (-6) ) \]
+
+\[ 3 + 4 - (-5) + (3 + (-4) ) - (4 - ((-3) + 5))\]
+\end{exs}
+
+Pour calculer une telle somme, on peut se débarrasser des parenthèses en utilisant les deux règles suivantes : 
+\begin{itemize}
+\item si une parenthèse est précédée d'un signe $+$ on peut l'oublier.
+\item si une parenthèse est précédée d'un signe $-$, on peut la retirer, mais après avoir changé le signe de tous 
+les termes à l'intérieur de la parenthèse. 
+\end{itemize}
+\begin{exs}
+\begin{eqnarray*}
+ 2 + (-3 ) - (4 + (-5) + 3) + (4 - (-6) )  &=& 2 - 3 - (4 - 5 + 3) + (4 + 6) \\
+ &=& 2 - 3 - 4 + 5 + 3 + 4 + 6
+\end{eqnarray*}
+
+\begin{eqnarray*}
+  3 + 4 - (-5) + (3 + (-4) ) - (4 - ((-3) + 5))  &=& 3 + 4 + 5 + (3 - 4) - ( 4 - (-3+5) ) \\
+ &=& 3 + 4 + 5 + 3 - 4 - ( 4 + 3  - 5)   \\
+  &=& 3 + 4 + 5 + 3 - 4 -  4 - 3 + 5 
+\end{eqnarray*}
+\end{exs}
+
+
+Une fois arrivé à cette expression, on a simplement des additions et soustractions de nombres positifs, 
+et on peut regrouper tous les termes qui sont additionnés et leur retirer la somme de tous les nombres qui sont 
+soustraits. Pour reprendre les mêmes exemples:
+
+\begin{eqnarray*}
+ 2 + (-3 ) - (4 + (-5) + 3) + (4 - (-6) ) 
+ &=& 2 - 3 - 4 + 5 + 3 + 4 + 6\\
+ &=& \underbrace{(2+ 5 + 3 + 4  +6)}_{=20} - \underbrace{(3+4)}_{=7} = 13.
+\end{eqnarray*}
+\begin{eqnarray*}
+  3 + 4 - (-5) + (3 + (-4) ) - (4 - ((-3) + 5)) &= & 3 + 4 + 5 + 3 - 4 -  4 - 3 + 5 \\ 
+  &=&\underbrace{(3+4+5+3+5)}_{=20}-\underbrace{(4+4+3)}_{=11}= 9
+\end{eqnarray*}
+
+
+\section{Comparaison et repérage}
+
+\subsection{Comparaison de nombres relatifs}
+
+\begin{df}
+Pour comparer deux nombres relatifs, on utilise les règles suivantes : 
+\begin{itemize}
+\item pour deux nombres positifs, on sait déjà les comparer (cf. comparaison de nombres décimaux en $6^e$)
+\item pour deux nombres négatifs, le plus grand est celui qui serait le plus petit sans les signes ($-2$ est plus grand 
+que $-4$)
+\item pour deux nombres de signes contraires, le nombre positif est toujours plus grand que le nombre négatif.
+\end{itemize}
+\end{df}
+
+Par conséquent, pour ranger une série de nombres relatifs dans l'ordre croissant, on classe les 
+nombres négatifs dans l'ordre décroissant des nombres non signés, puis on classe les 
+nombres positifs
+dans l'ordre croissant. Si on doit aussi ranger $0$, il est entre les nombres négatifs et les nombres positifs. 
+
+\begin{ex}
+On veut les nombres suivants dans l'ordre croissant :  $3$ ; $-2,1$ ; $4,2$  ; $-1$ ; $0$ ; $2,41$.
+
+\begin{itemize}
+\item on range les nombres positifs ($3$ ; $4,2$ ; $2,41$) dans l'ordre croissant : $2,41  < 3 < 4,2$. 
+\item on range les nombres négatifs ($-2,1$; $-1$) dans l'ordre décroissant de leurs valeurs non signées :$ -2,1 < 
+-1$.
+\item on écrit les nombres négatifs ainsi triés, puis $0$ puisqu'il était à classer, puis les 
+nombres positifs : \[ -2,1 < -1  < 0 < 2,41 < 3 < 4,2.\]
+\end{itemize}
+\end{ex}
+
+\subsection{Repérage sur une droite graduée orientée}
+
+Une des manières les plus naturelles de se représenter les nombres relatifs est d'utiliser une droite graduée. 
+\begin{df}
+Une droite graduée est une droite munie d'une origine (un point $O$), d'une orientation (soit de la droite vers la gauche, soit de la gauche vers la droite) et d'une graduation (une longueur 
+de référence $\ell$). 
+
+\begin{figure}[H]\center
+\begin{tikzpicture}
+\draw [->, >= latex] (-6, 0) -- (6, 0);
+\draw (-5, -.2) -- (-5, .2);
+\draw (-4, -.2) -- (-4, .2);
+\draw(-3, -.2) -- (-3, .2);
+\draw(-2, -.2) -- (-2, .2);
+\draw (-1, -.2) -- (-1, .2);
+\draw (5, -.2) -- (5, .2);
+\draw (4, -.2) -- (4, .2);
+\draw(3, -.2) -- (3, .2);
+\draw(2, -.2) -- (2, .2);
+\draw (1, -.2) -- (1, .2);
+\draw (0, -.2) -- (0, .2);
+\draw (0, .5) node {$O$};
+\end{tikzpicture}
+\caption{Une droite graduée orientée vers la droite.}
+\end{figure}
+
+Sur une telle droite, on associe à chaque point $M$ un nombre relatif appelé son \emph{abscisse} de la manière suivante :
+\begin{itemize}
+\item on mesure la longueur $OM$ entre l'origine et le point,
+\item on regarde à combien de graduations correspond cette longueur, ce qui revient à calculer la division 
+$OM\div \ell$. (Par exemple, $OM=1,4$ cm correspond à $10$ graduations si une graduation mesure $1,4$ mm, mais à $7$
+graduations si une graduation mesure $2$ mm.)
+\item on détermine le signe de l'abscisse en fonction de l'orientation de la droite : si $M$ est après l'origine (à droite si la droite va de gauche à droite comme c'est le plus courant, à gauche si elle va de droite à gauche), on 
+met un signe $+$, si $M$ est avant l'origine, on met un signe $-$. 
+\end{itemize}
+\end{df}
+
+\begin{figure}[H]\center
+\begin{tikzpicture}
+\draw [->, >= latex] (-6, 0) -- (6, 0);
+\draw (-5, -.2) -- (-5, .2);
+\draw (-4, -.2) -- (-4, .2);
+\draw(-3, -.2) -- (-3, .2);
+\draw(-2, -.2) -- (-2, .2);
+\draw (-1, -.2) -- (-1, .2);
+\draw (5, -.2) -- (5, .2);
+\draw (4, -.2) -- (4, .2);
+\draw(3, -.2) -- (3, .2);
+\draw(2, -.2) -- (2, .2);
+\draw (1, -.2) -- (1, .2);
+\draw (0, -.2) -- (0, .2);
+\draw (0, .5) node {$O$};
+\fill (2.4, 0) circle (0.05); 
+\draw (2.4, .5) node {$A$}; 
+\draw (2.4, -.5) node {$+2,4$}; 
+\fill (-4.6, 0) circle (0.05); 
+\draw (-4.6, .5) node {$B$}; 
+\draw (-4.6, -.5) node {$-4,6$};
+\fill (5.5, 0) circle (0.05);  
+\draw (5.5, .5) node {$C$}; 
+\draw (5.5, -.5) node {$+5,5$};
+\fill (4, 0) circle (0.05);  
+\draw (4, .5) node {$D$}; 
+\draw (4, -.5) node {$+4$}; 
+\fill (-1.3333, 0) circle (0.05);  
+\draw (-1.33333, .5) node {$E$}; 
+\draw (-1.3333333, -.5) node {$-\frac43$}; 
+\end{tikzpicture}
+\caption{Cinq points d'une droite graduée orientée, dont les abscisses sont indiquées en-dessous.}
+\end{figure}
+Notons la propriété immédiate suivante : 
+\begin{prop}
+Étant donnés des points d'une droite graduée orientée, leur ordre sur la droite est l'ordre 
+de leurs abscisses. 
+\end{prop}
+\begin{ex}
+Sur la figure précédente, on voit que l'ordre des points $A$ à $E$ est $B$, $E$, $A$, $D$, $C$. 
+Cela nous dit que les abscisses sont dans le même ordre, donc 
+\[ - 4, 6 < -\frac43 < 2,4 < 4 < 5,5\]
+\end{ex}
+
+
+\subsection{Repérage dans le plan muni d'un repère}
+
+\begin{df}
+Un \emph{repère} du plan est donné par deux droites orientées de même origine. 
+En pratique, on travaillera au collège dans des repères \emph{orthogonaux}, 
+c'est-à-dire où les deux droites sont perpendiculaires. 
+
+Habituellement\footnote{Comprendre : sans doute toujours dans votre expérience et vos exercices à venir.}, la première 
+droite est horizontale et orientée de gauche à droite, et la seconde droite est verticale et orientée de bas en haut.
+Ce qui changera plus couramment en revanche est la longueur des graduations. 
+\end{df}
+\begin{figure}[H]
+\center
+\begin{tikzpicture}
+\draw[->] (-2, 0) -- (2, 0); 
+\draw[->] (0,-2) -- (0, 2); 
+\draw (-1.75, -.08) -- (-1.75, .08);
+\draw (-1.5, -.08) -- (-1.5, .08);
+\draw(-1.25, -.08) -- (-1.25, .08);
+\draw(-1, -.08) -- (-1, .08);
+\draw (-.75, -.08) -- (-.75, .08);
+\draw (-.5, -.08) -- (-.5, .08);
+\draw (-.25, -.08) -- (-.25, .08);
+\draw (1.75, -.08) -- (1.75, .08);
+\draw (1.5, -.08) -- (1.5, .08);
+\draw(1.25, -.08) -- (1.25, .08);
+\draw(1, -.08) -- (1, .08);
+\draw (.75, -.08) -- (.75, .08);
+\draw (.5, -.08) -- (.5, .08);
+\draw (.25,-.08) -- (.25 , .08);
+
+\draw (-.08, -1.75) -- (.08, -1.75);
+\draw (-.08, -1.5) -- (.08, -1.5);
+\draw(-.08, -1.25) -- (.08, -1.25);
+\draw(-.08, -1) -- (.08, -1);
+\draw (-.08, -.75) -- (.08, -.75);
+\draw (-.08, -.5) -- (.08, -.5);
+\draw (-.08, -.25) -- (.08, -.25);
+\draw (-.08, 1.75) -- (.08, 1.75);
+\draw (-.08, 1.5) -- (.08, 1.5);
+\draw(-.08, 1.25) -- (.08, 1.25);
+\draw(-.08, 1) -- (.08, 1);
+\draw (-.08, .75) -- (.08, .75);
+\draw (-.08, .5) -- (.08, .5);
+\draw (-.08, .25) -- (.08, .25);
+\end{tikzpicture}
+\caption{Un repère orthogonal du plan}
+\end{figure}  
+
+\begin{df}
+Étant donné un repère formé de deux droites $(d)$ et $(d')$ et un point $M$ du plan, on peut 
+associer au point deux nombres relatifs appelés \emph{abscisse} de $M$ et \emph{ordonnée} de $M$ de la manière suivante : 
+\begin{itemize}
+\item on trace la parallèle à $(d')$ passant par $M$, et l'on note $A$ son intersection avec $(d)$, 
+\item on trace la parallèle à $(d)$ passant par $M$ , et l'on note $B$ son intersection avec $(d')$, 
+\item l'abscisse de $M$ est l'abscisse $x$ de $A$ sur la droite orientée $(d)$,
+\item l'ordonnée de $M$ est l'abscisse $y$ de $B$ sur la droite orientée $(d')$.
+\end{itemize}
+On note alors $(x;y)$ les coordonnées du point $M$ dans le repère.
+\end{df}
+
+\begin{figure}[H]
+\center
+\begin{tikzpicture}
+\draw[->,>= latex] (-4, 0) -- (4, 0); 
+\draw[->, >= latex] (0,-4) -- (0, 4);
+\draw(-3, -.2) -- (-3, .2);
+\draw(-2, -.2) -- (-2, .2);
+\draw (-1, -.2) -- (-1, .2);
+\draw(3, -.2) -- (3, .2);
+\draw(2, -.2) -- (2, .2);
+\draw (1, -.2) -- (1, .2);
+\draw( -.2, -3) -- ( .2, -3);
+\draw( -.2, -2) -- ( .2,-2);
+\draw ( -.2, -1) -- ( .2, -1);
+\draw( -.2, 3) -- ( .2,3);
+\draw( -.2, 2) -- ( .2,2);
+\draw ( -.2,1) -- ( .2,1);
+\fill (3.5, -1.4) circle (0.06);  
+\draw[dashed] (3.5, -1.4) -- (3.5, 0) (3.5, -1.4) -- (0,-1.4);
+\fill (3.5, 0) circle (0.06) (0, -1.4) circle (0.06); 
+\draw (3.5, 0.5) node {$A$} (-.5, -1.4) node {$B$} (3.75, -1.8) node {$M$};
+\draw (3.85,- 0.35) node {$3,5$} (.5, -1.65) node {$-1,4$} ;
+\fill (-2, 3) circle (0.06); \draw (-2.2, 3.2) node {$N$};
+\fill (-4, -1.5) circle (0.06); \draw (-4.2, -1.7) node {$P$};
+\end{tikzpicture}
+\caption{Exemple de repérage d'un point du plan. Le point $M$ a pour abscisse $3,5$ et pour ordonnée $-1,4$.
+On note donc ses coordonnées $(3,5; -1,4)$. On a placé aussi pour l'exemple un point $N$ de coordonnées $(-2; 3)$ et un point $P$ de coordonnées $(-4; -1,5)$}
+\end{figure}  
+\subsection{Applications ultérieures}
+
+Le repérage dans le plan aura dans la suite un certain nombre d'applications pour vous : \begin{itemize}
+\item Tracer la courbe d'une fonction (fin de collège). 
+\item Faire une correspondance entre les constructions géométriques et les calculs sur les coordonnées. Par exemple : 
+\begin{itemize}
+\item  si on prend deux points $M$ et $N$ du plan de coordonnées respectives $(x; y)$ et $(x'; y')$, leur milieu est le point $I$ de coordonnées $((x+x')\div 2; 
+(y+y')\div 2)$. 
+\item si on prend trois points $A$, $B$ et $C$ de coordonnées respectives $(x;y)$, $(x'; y')$ et $(x''; y'')$, on peut
+démontrer que le centre de gravité du triangle est le point de coordonnées $(\frac{x+x'+x''}3; \frac{y+y'+y''}3)$. 
+\item En $4^e$, le théorème de Pythagore permet de calculer la distance entre deux points en fonction de leurs 
+coordonnées dans un repère orthogonal. 
+\end{itemize}
+\item À terme, les calculs sur les coordonnées permettent de remplacer un long raisonnement géométrique à base de 
+propriétés élémentaires en une suite de calculs sur des nombres relatifs (les coordonnées des points). Cela permet de 
+faire des démonstrations plus facilement (une fois que la technique est maîtrisée), mais on perd parfois un peu en 
+clarté et visibilité. 
+\end{itemize}
+
+
+
+	\end{document}
+	

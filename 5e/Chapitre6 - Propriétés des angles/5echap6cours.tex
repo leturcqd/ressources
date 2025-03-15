@@ -1,0 +1,684 @@
+	\documentclass[12 pt]{article}
+
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	 \usepackage{fancyhdr}
+	 \usepackage{float}
+
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{\thepage} 
+	\fancyhead[L]{Angles}
+	\fancyhead[R]{2021-2022}
+	\newcounter{n}
+	\numberwithin{n}{section}
+	\newtheorem{theo}{Théorème}
+	\labelformat{theo}{théorème}
+	\newtheorem*{prop}{Propriété}
+	\labelformat{prop}{propriété}
+	\newtheorem*{cor}{Corollaire}
+	\newtheorem{lm}{Lemme}
+	\labelformat{lm}{lemme~#1}
+	\newtheorem{hyp}[n]{Hypothèse}
+	
+	{\theoremstyle{definition}
+	\newtheorem*{df}{Définition}
+    \newtheorem*{rmq}{Remarque}
+	\newtheorem*{nt}{Notation}
+	\newtheorem*{voc}{Vocabulaire}
+	\newtheorem*{ex}{Exemple}
+	\newtheorem*{exs}{Exemples}
+	\newtheorem*{formule}{Formule}
+	\newtheorem*{formules}{Formules}
+	}
+
+	\renewcommand\epsilon{\varepsilon}
+	\renewcommand\phi{\varphi}
+	\newcommand\R{\mathbb{R}}
+	\newcommand\s{\mathbb{S}}
+	
+	
+	
+	\title{Cours Chapitre 6}
+	\date{}
+	\begin{document}
+
+\begin{center}{\Large Chapitre 6 - Angles}\\ 
+ \end{center}
+\section{Rappel sur les angles et les symétries}
+\subsection{Définition des angles}
+\begin{df}
+On appelle \emph{angle} la zone du plan délimitée par deux demi-droites de même origine. 
+Cette origine est appelé \emph{sommet} de l'angle. 
+On donne un nom à un tel angle en utilisant celui des demi-droites qui le délimitent : \begin{itemize}
+\item L'angle entre les demi-droites $[Ox)$ et $[Oy)$ est noté $\widehat{xOy}$.
+\item L'angle entre les demi-droites $[Ox)$ et $[OB)$ est noté $\widehat{xOB}$.
+\item L'angle entre les demi-droites $[OA)$ et $[OB)$ est noté $\widehat{AOB}$.
+\end{itemize}
+\end{df}
+
+\begin{df}
+La \emph{mesure} d'un angle de sommet $O$ est définie ainsi : on trace le cercle de centre $O$ 
+et de rayon $1$. On rappelle que ce cercle a pour périmètre $2\times \pi\approx 6,28\ldots$. L'angle 
+délimite un certain arc de ce cercle, dont on note la longueur $\ell$. Alors la mesure de l'angle est 
+définie commme le nombre $\frac{\ell}{2\times \pi} \times 360^o$.
+\end{df}
+
+\begin{rmq}
+La définition ci-dessus correspond exactement à ce que l'on obtient en mesurant les angles avec le 
+rapporteur. Elle revient en fait à considérer comme vraies les quelques propriétés intuitives suivantes. 
+\end{rmq}
+\begin{prop}
+\begin{enumerate}
+\item La mesure d'un angle faisant un tour complet est de $360^o$.
+\item La mesure d'un angle plat est de $180^o$.
+\item La mesure d'un angle droit est de $90^o$.
+\item La longueur $\ell$ d'un arc de cercle d'angle au centre $a$ et de rayon $R$ est proportionnelle à l'angle $a$. Autrement dit, on a \[\ell = 2 \times \pi \times R
+\times \frac{a}{360^o}. \]
+\end{enumerate}
+\end{prop}
+\begin{figure}[H]\center
+\begin{tikzpicture}
+\fill[red!50] (0.3, 0) arc (0: 360:0.3);
+\fill (0,0) circle (0.05);
+\draw (0,1) node {$360^o$};
+\draw (0,0)-- (1,0); 
+\end{tikzpicture}\ \ \ \ \ \ \ \ \ \ \ \ 
+\begin{tikzpicture}
+\fill[red!50] (0.3, 0) arc (0: 180:0.3);
+\fill (0,0) circle (0.05);
+\draw (-1,0)-- (1,0); 
+\draw (0,1) node {$180^o$};
+\end{tikzpicture}\ \ \ \ \ \ \ \ \ \ \ \ \ 
+\begin{tikzpicture}
+\fill[red!50] (0.3, 0) arc (0: 90:0.3)--(0,0);
+\fill (0,0) circle (0.05);
+\draw (0,1)-- (0,0)--(1,0); 
+\draw (0,1.4) node {$90^o$};
+\end{tikzpicture}   
+\caption{Un angle plein, un angle plat, et un angle droit.}
+\end{figure}
+\begin{figure}[H]\center
+\begin{tikzpicture}
+\draw (2,0) arc (0:360:2) ; 
+\fill[red!60] (0.5,0) arc (0:120:0.5) -- (0,0);
+\draw[red, very thick] (2,0) arc (0:120:2);
+\draw[red] (3,0) --(0,0) -- (120:3) ;
+\draw[red] (0,.8) node{$a$};
+\draw[red] (1, -.3) node {$R$};
+\draw[red] (1.6,1.6) node {$\ell$};
+\draw (6,0) node{
+$\ell = \underbrace{2\times \pi \times R}_{\text{circonférence du cercle entier}} \times \frac{a}{360}$};
+\end{tikzpicture}
+\caption{Longueur d'un arc de cercle}
+\end{figure}
+
+\begin{rmq}
+On admet aussi que la surface d'un secteur angulaire est proportionnelle à la mesure de l'angle, comme 
+résumé sur la figure ci-dessous. \begin{figure}[H]\center
+\begin{tikzpicture}
+\draw (2,0) arc (0:360:2) ; 
+\fill[black!30] (2,0) arc (0:120:2) -- (0,0);
+\fill[red!70] (0.5,0) arc (0:120:0.5) -- (0,0);
+\draw[red] (3,0) --(0,0) -- (120:3) ;
+\draw[red] (0,.8) node{$a$};
+\draw[red] (1, -.3) node {$R$};
+\draw (6,0) node{
+$\mathcal A = \underbrace{\pi \times R}_{\text{aire du disque entier}} \times \frac{a}{360}$};
+\end{tikzpicture}
+\caption{Aire d'un secteur circulaire (en gris sur la figure)}
+\end{figure}
+\end{rmq}
+
+\subsection{Vocabulaire}
+
+\begin{df}
+On dit que deux angles sont \emph{complémentaires} si la somme de leurs mesures est de $90^o$. 
+
+On dit que deux angles sont \emph{supplémentaires} si la somme de leurs mesures est de $180^o$. 
+
+On dit que deux angles sont \emph{adjacents} s'ils ont le même sommet, et sont de part et d'autre d'un côté commun.
+L'angle obtenu en mettant deux angles adjacents côte à côte et en oubliant leur côté commun s'appelle leur réunion.
+\end{df}
+\begin{figure}[H]\center
+\begin{tikzpicture}
+\draw[red] (0,0) -- (50: 3);
+\fill[red!50] (50:.75) arc (50:90:.75)--(0,0);
+\fill[blue!50] (0:.75) arc (0:50:.75)--(0,0);
+\draw (0,0) -- (0: 3);
+\draw (0,0) -- (90: 2.5);
+\end{tikzpicture}\ \ \ \ \ 
+\begin{tikzpicture}
+\draw[red] (0,0) -- (70: 2.5);
+\fill[red!50] (70:.75) arc (70:180:.75)--(0,0);
+\fill[blue!50] (0:.75) arc (0:70:.75)--(0,0);
+\draw (0,0) -- (0: 3);
+\draw (0,0) -- (180: 3);
+\end{tikzpicture}
+\caption{À gauche : deux angles complémentaires; à droite : deux angles supplémentaires. Dans les deux exemples, les angles bleu et rouge sont adjacents.}
+\end{figure}
+
+Étant donné deux angles adjacents, on a la propriété immédiate suivante. 
+\begin{prop}
+La mesure de la réunion de deux angles adjacents est la somme de leurs mesures respectives. 
+
+\begin{figure}[H]\center
+\begin{tikzpicture}
+\draw (0,0) -- (10 : 2.5);
+\draw[dashed] (0,0) -- (50 : 2);
+\draw (0,0) -- (120 : 2.5);
+\draw[red] (50:.7) arc (50: 10:.7);
+\draw[blue] (50:.6) arc (50: 120:.6);
+\draw (30:1) node{$40^o$} (85 : 1) node {$70^o$};
+\draw[purple] (10:1.5) arc (10: 120:1.5);
+\draw (65:1.9) node{$40+70=110^o$};
+\end{tikzpicture}\caption{Deux angles adjacents de $40^o$ et $70^o$ et leur réunion, qui mesure $110^o$.}
+\end{figure}
+\end{prop}
+
+\subsection{Rappel sur les symétries}
+La propriété fondamentale des angles est celle énoncée au chapitre 2 sur les symétries, et que l'on rappelle ici sommairement. 
+
+\begin{theo}[Axiome de conservation des angles]
+Les symétries axiales et centrales conservent les mesures des angles. 
+\end{theo}
+
+De manière plus détaillée, celle-ci s'utilise ainsi : 
+
+\begin{prop}
+Si $A'$, $B'$, et $C'$ sont les symétriques respectifs des points $A$, $B$, et $C$ par rapport à 
+une même droite/à un même point, alors les angles $\widehat{ABC}$ et $\widehat{A'B'C'}$ ont la même mesure. 
+\end{prop}
+
+\begin{figure}[H]\center
+\begin{tikzpicture}
+\fill[red!50] (20:.6) arc (20: 80:0.6)--(0,0);
+\draw (20:2)-- (0,0)--(80:2); 
+\draw (-1, 2) -- (-1, -1);
+\draw (-0.6, -1) node {$(\Delta)$};
+\draw (-2,0) -- ++(160:2);
+\draw (-2,0) -- ++(100:2);
+\fill[red!50] (-2,0) -- ++(160:.6) arc (160: 100: 0.6);
+\end{tikzpicture}  \ \ \ \ \ \ \ \ \ \ \
+\begin{tikzpicture}
+\fill[red!50] (-10:.6) arc (-10: -60:0.6)--(0,0);
+\draw (-10:2)-- (0,0)--(-60:2); 
+\draw (-1,0) ++(.1, .1)--++(-.2, -.2) ++(.2, 0) -- ++(-.2,.2);
+\draw (-1, 0.4) node {$O$};
+\draw (-2,0) -- ++(170:2);
+\draw (-2,0) -- ++(120:2);
+\fill[red!50] (-2,0) -- ++(120:.6) arc (120: 170: 0.6);
+\end{tikzpicture} 
+\caption{Deux angles symétriques par rapport à une droite (à gauche) ou à un point (à droite) sont donc de même mesure.}
+\end{figure}
+\section{Angles alternes-internes}
+Dans cette partie, on étudie une première application des propriétés de la symétrie centrale pour identifier 
+des angles égaux ou caractériser des droites parallèles. 
+\subsection{Définition}
+
+On se donne trois droites $(d)$,$(d')$ et $(\Delta)$, et on suppose que $(\Delta)$ rencontre $(d)$ en un point $A$,
+et $(d')$ en un point $B$, comme sur la figure suivante : 
+\begin{figure}[H]\center
+\begin{tikzpicture}
+\draw (-1, 1) -- ++(10: 3)-- ++(10: -6); 
+\draw (1, -1) -- ++(40: 3)-- ++(40:-6);
+\draw (-2,2) -- (2,-2); 
+\draw (1,1.8) node {$(d)$}; 
+\draw (3.5,1.3) node {$(d')$};
+\draw (1.5,-2.3) node {$(\Delta)$};
+\fill[red!50] (-1,1) ++ (10:.5) arc (10:-45:.5)-- (-1,1);
+\fill[blue!50] (1,-1) ++ (135:.5) arc (135:220:.5)-- (1,-1);
+\draw (1,-1) ++(.1, .1)--++(-.2, -.2) ++(.2, 0) -- ++(-.2,.2); \draw (-1,1) ++(.1, .1)--++(-.2, -.2) ++(.2, 0) -- ++(-.2,.2);
+\draw (1,-1) ++ (0,.5) node {$B$};
+\draw (-1,1) ++ (0,.5) node {$A$};
+\end{tikzpicture}
+
+ \caption{Figure pour cette partie. Un exemple de paire d'angles alternes-internes est indiquée en rouge et bleu.}
+\end{figure}
+\begin{df}Sur une telle figure, il y a quatre angles de sommet $A$, et quatre angles de sommet $B$. 
+On dit qu'un angle de sommet $A$ et un angle de sommet $B$ de cette figure sont \emph{alternes-internes} s'ils 
+vérifient les deux propriétés suivantes : 
+\begin{itemize}
+\item Les deux angles sont de part et d'autre de $(\Delta)$.
+\item Les deux angles sont tous les deux à l'intérieur de la zone située entre $(d)$ et $(d')$. 
+\end{itemize}
+\end{df}
+\begin{rmq}
+On aurait pu aussi s'intéresser aux angles \emph{alternes-externes} qui sont définis comme ci-dessus mais en 
+remplaçant la seconde propriété par « Les deux angles sont tous les deux à l'extérieur de la zone située entre $(d)$ et $(d')$. ».
+
+
+
+\begin{figure}[H]\center
+\begin{tikzpicture}
+\draw (-1, 1) -- ++(10: 3)-- ++(10: -6); 
+\draw (1, -1) -- ++(40: 3)-- ++(40:-6);
+\draw (-2,2) -- (2,-2); 
+\draw (1,1.8) node {$(d)$}; 
+\draw (3.5,1.3) node {$(d')$};
+\draw (1.5,-2.3) node {$(\Delta)$};
+\fill[red!50] (-1,1) ++ (10:-.5) arc (10:-45:-.5)-- (-1,1);
+\fill[blue!50] (1,-1) ++ (135:-.5) arc (135:220:-.5)-- (1,-1);
+\draw (1,-1) ++(.1, .1)--++(-.2, -.2) ++(.2, 0) -- ++(-.2,.2); \draw (-1,1) ++(.1, .1)--++(-.2, -.2) ++(.2, 0) -- ++(-.2,.2);
+\draw (1,-1) ++ (0,.5) node {$B$};
+\draw (-1,1) ++ (0,.5) node {$A$};
+\end{tikzpicture}
+\caption{ Un exemple de paire d'angles alternes-externes est indiquée en rouge et bleu.}
+\end{figure}
+
+\end{rmq}
+
+\subsection{Propriété des angles alternes-internes}
+
+Dans la sous-partie précédente, nous avons défini les angles alternes-internes, ceux-ci sont reliés 
+fortement à la notion de parallélisme. 
+On a le 
+théorème suivant. 
+
+\begin{theo}
+On reprend les notations de la sous-partie précédente. Alors : 
+\begin{enumerate}
+\item Si les deux droites $(d)$ et $(d')$ sont parallèles, alors deux angles alternes-internes ont la même mesure.
+\item Si deux angles alternes-internes ont la même mesure, alors les droites $(d)$ et $(d')$ sont parallèles.  
+\end{enumerate}
+\end{theo}
+\begin{rmq}
+La propriété ci-dessus est également vraie avec les angles alternes-externes à la place des angles alternes-internes. 
+\end{rmq}
+
+
+\begin{figure}[H]\center
+\begin{tikzpicture}
+\draw (-1, 1) -- ++(10: 3)-- ++(10: -6); 
+\draw (1, -1) -- ++(10: 3)-- ++(10:-6);
+\draw (-2,2) -- (2,-2); 
+\draw (1,1.8) node {$(d)$}; 
+\draw (3.5,-1) node {$(d')$};
+\draw (1.5,-2.3) node {$(\Delta)$};
+\fill[red!50] (-1,1) ++ (10:.5) arc (10:-45:.5)-- (-1,1);
+\fill[red!50] (1,-1) ++ (135:.5) arc (135:190:.5)-- (1,-1);
+\draw (1,-1) ++(.1, .1)--++(-.2, -.2) ++(.2, 0) -- ++(-.2,.2);
+\draw (-1,1)++(.1, .1)--++(-.2, -.2) ++(.2, 0) -- ++(-.2,.2);
+\draw (1,-1) ++ (0,.5) node {$B$};
+\draw (-1,1) ++ (0,.5) node {$A$};
+\end{tikzpicture}
+
+ \caption{Quand les droites $(d)$ et $(d')$ sont parallèles, les deux angles alternes-internes indiqués en rouge ont la même mesure. Réciproquement, si les deux angles rouges ont la même mesure, les droites sont parallèles.}
+\end{figure}
+\subsection{Démonstration}
+Dans cette sous-partie, on démontre le résultat précédent à partir de propriétés déjà connues du cours (c'est 
+le cœur de la géométrie). On va utiliser les propriétés suivantes : \begin{enumerate}
+\item Si $I$ est le milieu de $[AB]$, $A$ et $B$ sont symétriques par rapport à $I$. 
+\item Le symétrique d'une droite $(d)$ par rapport à un point est une droite parallèle à $(d)$ . 
+\item Par un point, il ne passe qu'une seule parallèle à une droite donnée. 
+\end{enumerate}
+\begin{figure}[H]\center
+\begin{tikzpicture}
+\draw (-1, 1) -- ++(10: 3)-- ++(10: -6); 
+\draw (1, -1) -- ++(10: 3)-- ++(10:-6);
+\draw (-2,2) -- (2,-2); 
+\draw (1,1.8) node {$(d)$}; 
+\draw (3.5,-1) node {$(d')$};
+\draw (1.5,-2.3) node {$(\Delta)$};
+\fill[red!50] (-1,1) ++ (10:.5) arc (10:-45:.5)-- (-1,1);
+\fill[red!50] (1,-1) ++ (135:.5) arc (135:190:.5)-- (1,-1);
+\draw (1,-1) ++(.1, .1)--++(-.2, -.2) ++(.2, 0) -- ++(-.2,.2); \draw (-1,1) ++(.1, .1)--++(-.2, -.2) ++(.2, 0) -- ++(-.2,.2); 
+\draw (0,0) ++(.1, .1)--++(-.2, -.2) ++(.2, 0) -- ++(-.2,.2);
+\draw (1,-1) ++ (0,.5) node {$B$};
+\draw (-1,1) ++ (0,.5) node {$A$};
+\draw (0,0) ++ (0,.5) node {$I$};
+
+\end{tikzpicture}
+
+ \caption{Figure pour la démonstration. $I$ est le milieu de $[AB]$, on montre que c'est un centre
+ de symétrie de la figure.}
+\end{figure}
+Commençons par démontrer le premier point du théorème. On suppose donc les droites $(d)$ et $(d')$ parallèles. 
+On note $I$ le milieu de $[AB]$, ce qui, d'après les rappels ci-dessus, entraîne que $B$ est le symétrique de $A$
+par rapport à $I$. En utilisant maintenant le second rappel, on sait que le symétrique de $(d)$ par rapport à 
+$I$ est une droite parallèle à $(d)$. Comme $(d)$ passe par $A$, son symétrique passe par $B$ (qui est le symétrique
+de $A$). Le symétrique de $(d)$ par rapport à $A$ est donc une droite parallèle à $(d)$ qui passe par $B$. D'après le 
+troisième rappel, il n'y a qu'une seule droite vérifiant cela, c'est la droite $(d')$. 
+De plus, $I$ appartient à $(\Delta)$, donc $(\Delta)$ est son propre symétrique par rapport à $I$. 
+À ce stade, on a démontré : 
+\begin{center}
+\emph{Le point $I$ est un centre de symétrie de la figure formée par $(d)$, $(d')$ et $(\Delta)$.}
+\end{center}
+On peut alors conclure que les deux angles alternes-internes en rouge sur la figure sont symétriques l'un de
+l'autre par rapport à $I$. Ils ont donc la même mesure. C'est le premier point du théorème. 
+
+\textbf{Plus difficile à comprendre : } Une fois le premier point du théorème établi, le second point en est une conséquence directe car la valeur 
+de l'angle rouge en $B$ détermine une unique droite $(d')$ (et d'après le premier point du théorème, cette droite est
+la parallèle à $(d)$ passant par $B$.)
+
+
+\section{Angles d'un triangle}
+\subsection{Somme des angles d'un triangle}
+Dans cette partie, on énonce une propriété majeure des triangles, que l'on avait déjà constatée en 6e avec la plupart des triangles particuliers. 
+\begin{theo}
+La somme des trois angles d'un triangle est égale à un angle plat (c'est-à-dire à $180^o$). 
+
+\begin{figure}[H]\center
+\begin{tikzpicture}
+\draw (0,0) -- (4,3) -- (1, 5)--(0,0); 
+\draw (0, -.25) node {$A$} (4.25, 3) node {$B$} (1, 5.25) node {$C$};
+\end{tikzpicture} \caption{On a $\widehat{CAB}+\widehat{ABC}+\widehat{BCA}= 180^o$.}
+\end{figure}
+\end{theo}
+
+Énonçons un corollaire (conséquence immédiate) de ce résultat. 
+\begin{cor}
+Un triangle ne peut pas avoir plus d'un angle droit ou obtus.\footnote{
+O cara piota mia che sì t'insusi\\ 
+che, come veggion le terrene menti \\
+non capere in trïangol due ottusi, \\ 
+così vedi (...)\\
+
+« Chère souche de mon lignage, qui vas si haut \\ 
+que, de même que voient les esprits terrestres\\
+que deux 
+obtus ne tiennent pas dans un triangle, \\ 
+de même tu vois (...) »\flushright Dante, La Commedia, LXXXIV, v.13-15
+}
+\end{cor}
+\begin{proof}
+La somme de deux angles droits ou obtus dépasse déjà $90^o+90^o=180^o.$ Donc la somme des trois angles 
+du triangle serait alors plus grande que $180^o$, ce qui contredirait le résultat précédent.  
+\end{proof}
+
+\subsection{Démonstration}
+
+On obtient la propriété de la somme des angles du triangle à partir de celle des angles alternes-internes. 
+\begin{figure}[H]\center
+\begin{tikzpicture}
+\draw[dashed] (-4, -2) -- (4, -2); 
+\draw[dashed] (-4, 2) -- (4, 2); 
+\draw (-3, -2) -- (2, -2); 
+\draw (0,2) -- (-3,-2);
+\draw (0,2) -- (2,-2);
+\draw (-3, -2.3) node {$B$} (2, -2.3) node {$C$} (0, 2.3) node {$A$};
+\fill[red!60] (0,2) -- (-.7,2) arc (180: 232:.7);
+\fill[red!60] (-3,-2) -- (-2.3,-2) arc (0: 52:.7);
+\fill[blue!60] (0,2) -- (.7,2) arc (0: -63:.7);
+\fill[green!60] (0,2) -- ++(-63:.7) arc (-63: -128:.7);
+\fill[blue!60] (2,-2) -- (1.3,-2) arc (180:117:.7);
+\draw (-4, 2.3) node {$x$} (4, 2.3) node {$y$};
+\end{tikzpicture}\caption{Figure pour la démonstration : on montre d'abord l'égalité des deux angles rouges, puis celle des deux angles bleus. Les trois angles bleu, rouge, et vert font alors un angle plat.}
+\end{figure}
+
+On trace la droite $(d)$ parallèle à $(BC)$ passant par $A$, comme sur la figure. 
+Les angles $\widehat{xAB}$ et $\widehat{ABC}$ sont alternes-internes et les droites $(d)$ et $(BC)$ sont 
+parallèles, donc, d'après la propriété des angles alternes-internes, $\widehat{xAB}$ et $\widehat{ABC}$
+ont la même mesure. 
+
+De la même manière, les angles $\widehat{yAC}$ et $\widehat{ACB}$ sont alternes-internes (entre les droites parallèles 
+$(d)$ et $(BC)$) donc ont la même 
+mesure. 
+
+Enfin, l'angle $\widehat{xAB}$, l'angle $\widehat{BAC}$ et l'angle $\widehat{yAC}$ forment un angle plat, donc on a
+
+\[180^o = \widehat{xAB} + \widehat{BAC}+ \widehat{yAC}, \]
+et, comme $\widehat{xAB}= \widehat{ABC}$ et $\widehat{yAC}=\widehat{ACB}$, on a bien 
+ \[180^o=\widehat{ABC} + \widehat{BAC}+ \widehat{ACB}.\]
+
+\subsection{Triangles particuliers}
+
+\subsubsection{Triangle isocèle}
+\begin{prop}
+On considère un triangle $ABC$ isocèle en $B$. Alors, les angles de la base ont la même mesure : 
+\[ \widehat{BAC}= \widehat{BCA}.\]
+\end{prop}
+\begin{figure}[H]\center
+\begin{tikzpicture}
+\fill[red!50] (-2,0) -- (-1.2,0) arc (0: 69:.8);
+\fill[red!50] (2,0) -- (1.2,0) arc (180:111:.8);
+\draw (-2,0) -- (2,0) -- (0,5) -- (-2,0);
+\draw (-2.25, -.25) node {$A$} (2.25, -.25) node {$C$} (0.25, 5.25) node {$B$};
+\draw[dashed] (0,-1) --(0,6);
+\end{tikzpicture}\caption{Les deux angles à la base d'un triangle isocèle ont la même mesure. }
+\end{figure}
+\begin{proof}
+On considère la droite $(d)$ médiatrice du segment $[AC]$. Comme le point $B$ est à la même distance de $A$ et 
+de $C$, il appartient à la médiatrice, donc $(d)$ passe par le point $B$. Les points $A$ et $C$ sont symétriques l'un
+de l'autre par rapport à $(d)$, et le point $B$ appartient à $(d)$ donc est son propre symétrique. Le triangle $ABC$ 
+admet donc $(d)$ comme axe de symétrie. Les deux angles de la base sont alors symétriques par rapport à $(d)$, 
+donc ont la même mesure. 
+\end{proof}
+\subsubsection{Triangle équilatéral}
+
+\begin{prop}
+Les trois angles d'un triangle équilatéral mesurent $60^o$. 
+\end{prop}
+\begin{figure}[H]\center
+\begin{tikzpicture}
+\fill[red!50] (90:1.5) -- ++(-60:0.7) arc (-60: -120:.7);
+\fill[red!50] (210:1.5) -- ++(0:0.7) arc (0: 60:.7);
+\fill[red!50] (-30:1.5) -- ++(180:0.7) arc (180: 120:.7);
+\draw (90:1.5) -- (210:1.5) -- (-30:1.5) -- (90:1.5);
+\end{tikzpicture}\caption{Les trois angles de $60^o$ d'un triangle équilatéral}
+\end{figure}
+\begin{proof}
+Comme un triangle équilatéral est isocèle en chacun de ses sommets, 
+on peut utiliser la propriété précédente, et les trois angles sont donc égaux. 
+Comme la somme des trois angles d'un triangle est de $180^o$, et que ces trois angles sont égaux, 
+chaque angle mesure $\frac{180^o}3 = 60^o$. 
+\end{proof}
+
+\subsubsection{Triangle rectangle}
+
+\begin{prop}
+Dans un triangle $ABC$ rectangle en $B$, les deux angles non-droits sont complémentaires (leur somme fait un angle droit). 
+\end{prop}\begin{figure}[H]\center
+\begin{tikzpicture}
+\draw (0,0) -- (3,0) -- (0,4)--(0,0);
+\fill[blue!60] (0,4) -- ++(270:.7) arc (270 : 307:.7);
+\fill[red!60] (3,0) -- ++(180:.7) arc (180 : 127:.7);
+\end{tikzpicture}
+\caption{Les angles bleu et rouge sont complémentaires.}
+\end{figure}
+
+
+\begin{proof}
+La somme des trois angles d'un triangle fait $180^o$, et il y a un angle de $90^o$. Les deux angles restants 
+ont donc pour somme $180^o - 90^o= 90^o$.
+\end{proof}
+
+\subsubsection{Triangle rectangle isocèle}
+\begin{prop}
+Dans un triangle $ABC$ rectangle en $B$, les deux angles non-droits mesurent $45^o$. 
+\end{prop}\begin{figure}[H]\center
+\begin{tikzpicture}
+\draw (0,0) -- (3,0) -- (0,3)--(0,0);
+\fill[red!60] (0,3) -- ++(270:.7) arc (270 : 315:.7);
+\fill[red!60] (3,0) -- ++(180:.7) arc (180 : 135:.7);
+\end{tikzpicture}
+\caption{Les deux angles rouges mesurent $45^o$.}
+\end{figure}
+\begin{proof} 
+Comme le triangle est rectangle, ces deux angles sont complémentaires, donc la somme de leurs mesures est $90^o$. 
+Comme le triangle est isocèle, ces deux angles ont la 
+même mesure. Ils mesurent donc chacun $90^o\div 2 = 45^o$. 
+\end{proof}
+
+
+
+\section{Angles opposés par le sommet}
+On considère deux droites sécantes en un point $O$ comme sur la figure suivante. 
+On appelle angle opposés par le sommet, deux angles (parmi les quatre formés par les deux droites), qui sont symétriques l'un de l'autre par rapport au point $O$. 
+\begin{figure}[H]\center
+\begin{tikzpicture}
+\fill[color=red!50](30:.7) arc (30:80:.7)--(0,0);
+\fill[color=red!50](30:-.7) arc (30:80:-.7)--(0,0);
+\draw (30:3) -- (30:-3);
+\draw (80:3) -- (80:-3);
+\draw (.25, -.25) node {$O$};
+\draw (30:3.25) node{$x$};
+\draw (30:-3.25) node{$x'$};
+\draw (80:3.25) node{$y$};
+\draw (80:-3.25) node{$y'$};
+\end{tikzpicture}
+\caption{Deux angles opposés par le sommet, donc de même mesure}
+\end{figure}
+Comme deux angles opposés par le sommet sont symétriques l'un de l'autre par rapport au sommet, on a la 
+propriété suivante. 
+\begin{prop}
+Deux angles opposés par le sommet ont la même mesure.
+\end{prop}
+
+\section{Angle au centre d'un cercle}
+\subsection{Énoncé}
+On donne ici une application intéressante de la somme des angles d'un triangle. 
+
+\begin{figure}[H]
+\center
+\begin{tikzpicture}
+\draw (0,0) circle(2); 
+\fill[red!50] (140:.5) arc (140:270:.5) -- (0,0);
+\fill [blue!50] (30:2) -- ++ (175:.5) arc(175:240:.5);
+\draw (30: 2) -- (140:2) -- (0,0) -- (270:2)-- (30:2);
+\draw (0,0) ++ (0.25,.25) node {$O$};
+\draw (30:2) ++ (.25,0.25) node {$A$};
+\draw (140:2) ++ (-0.25,.25) node {$B$};
+\draw (270:2) ++ (0,-.25) node {$C$};
+\end{tikzpicture}
+\caption{L'angle rouge est égal au double de l'angle bleu}
+\end{figure}
+
+\begin{theo}
+Soient $A$,$B$ et $C$ trois points d'un même cercle de centre $O$. Alors l'angle au centre\footnote{Attention : il faut choisir de mesurer l'angle $\widehat{BOC}$ de telle sorte qu'il intercepte le même arc de cercle de $B$ à $C$ que l'angle $\widehat{BAC}$.} $\widehat{BOC}$
+est deux fois plus grand que l'angle $\widehat{BAC}$ : \[ \widehat{BOC} = 2\times \widehat{BAC}.\]
+\end{theo}
+\subsection{Démonstration}
+
+On reprend les notations de la figure précédente. Comme $A$, $B$ et $C$ sont sur le même cercle de centre $O$, 
+ils sont à la même distance de $O$, donc les triangles $AOB$ et $AOC$ sont isocèles en $O$. 
+
+
+\begin{figure}[H]
+\center
+\begin{tikzpicture}
+\draw (0,0) circle(2); 
+\fill[green!50] (140:2)-- ++(-6:.5) arc (-6:-40:.5) -- (140:2);
+\fill[green!50] (30:2)-- ++(176:.5) arc (176:210:.5) -- (30:2);
+\fill[purple!50] (30:2)-- ++(210:.5) arc (210:240:.5) -- (30:2);
+\fill[purple!50] (270:2)-- ++(60:.5) arc (60:90:.5) -- (270:2);
+\draw (30: 2) -- (140:2) -- (0,0) -- (270:2)-- (30:2);
+\draw (0,0) -- (30:2);
+\draw (0,0) ++ (-0.25,-.25) node {$O$};
+\draw (30:2) ++ (.25,0.25) node {$A$};
+\draw (140:2) ++ (-0.25,.25) node {$B$};
+\draw (270:2) ++ (0,-.25) node {$C$};
+\end{tikzpicture}
+\caption{Les deux triangles isocèles considérés dans la démonstration. Les angles de mesure $b$ sont en vert, ceux de mesure $c$ sont en violet.}
+\end{figure}
+
+Notons $b$ la mesure de l'angle $\widehat{OBA}$ et $c$ la mesure de l'angle $\widehat{OCA}$. \begin{itemize}
+\item Comme $AOB$ est isocèle en $O$, les deux angles à sa base sont égaux, donc $\widehat{OAB}=b$. 
+Comme la somme des angles du triangle $AOB$ est égale à $180^o$, on a $b + b + \widehat{AOB} =180^o $, donc 
+\[\widehat{AOB} =180^o - 2\times b.\]
+\item De même, comme $AOC$ est isocèle en $O$, les deux angles à sa base sont égaux, donc $\widehat{OAC}=c$.
+Comme la somme des angles du triangle $AOC$ est égale  à $180^o$, on a $c + c + \widehat{AOC} =180^o $, donc 
+\[\widehat{AOC} =180^o - 2\times c.\]
+\item L'angle $\widehat{BAC}$ est la somme des angles $\widehat{BAO}$ et $\widehat{OAC}$, donc, d'après les deux points précédents, $\widehat{BAC}= b+c$.
+\item Enfin, la somme des angles $\widehat{AOB}$, $\widehat{AOC}$ et $\widehat{BOC}$ correspond à un tour complet, donc à $360^o$. On a donc \[360^o = \underbrace{(180^o - 2\times b)}_{\widehat{AOB}} + 
+\underbrace{(180^o - 2\times c)}_{\widehat{AOC}} + \widehat{BOC},\] 
+c'est-à-dire \[ 360^o = 360^o + \widehat{BOC} - 2 \times b - 2 \times c.\]
+On en déduit enfin \[\widehat{BOC} = 2 \times b + 2 \times c = 2\times \underbrace{(b + c)}_{\widehat{BAC}}.\]
+\end{itemize}
+
+
+
+\subsection{Corollaires importants : lien entre cercles et triangles rectangles}
+On énonce deux corollaires (conséquences directes) du théorème précédent. \footnote{« (ni) si du demi-cercle on peut faire un triangle qui n'a pas d'angle droit »/ \\
+"o se del mezzo cerchio far si puote\\ trïangol sì ch'un retto non avesse."\\ 
+(Dante, Commedia, LXXX, v101-102) }
+
+\begin{cor}
+Étant donné un cercle de centre $O$ et de diamètre $[BC]$, n'importe quel point $A$ du cercle 
+forme avec $B$ et $C$ un triangle rectangle en $A$. 
+\end{cor}
+
+\begin{figure}[H]\center
+\begin{tikzpicture}
+\draw (0,0) circle(2);
+\draw (30: 2)--(210:2) -- (100:2)--(30:2);  
+\draw (30:2.25) node{$B$} (210:2.25) node {$C$} (100:2.25) node {$A$};
+\fill[red!50] (30:.5) arc (30 : -150:.5);
+\fill[blue!50] (100:2) -- ++(-26:.5)arc (-26:-116:.5);
+\draw[red] (-70:.8) node {$180^o$};
+\end{tikzpicture}\caption{L'angle rouge est plat, donc le bleu mesure la moitié d'un angle plat, donc est droit.}
+\end{figure}
+\begin{proof}
+En effet, on est dans les mêmes conditions que dans le théorème précédent, mais avec $B$, $O$ et $C$ alignés, donc 
+$\widehat{BOC}= 180^o$. On a alors $\widehat{BAC}= 180^o\div2 = 90^o$, ce qui montre bien que le triangle 
+$ABC$ est rectangle en $A$. 
+\end{proof}
+On peut même dire un tout petit peu plus.
+\begin{cor}
+Le cercle circonscrit à un triangle rectangle a son centre au milieu de l'hypoténuse. 
+
+Par conséquent, le segment qui relie le milieu de l'hypoténuse à l'angle droit sépare un triangle rectangle en deux triangles isocèles.
+\end{cor}\begin{figure}[H]\center
+\begin{tikzpicture}
+\draw (0,0) -- (4,0) -- (0,2)--(0,0);
+\draw[red](0,0)-- (2,1);
+\end{tikzpicture}\caption{Un triangle rectangle, et le segment qui le sépare en deux triangles isocèles.}
+\end{figure}
+
+
+\begin{proof}
+Notons $O$ le centre du cercle circonscrit d'un triangle rectangle $ABC$ en $A$.
+Toujours d'après le théorème sur l'angle au centre, l'angle $\widehat{BOC}$ est plat, donc $O$ appartient à $[BC]$. 
+De plus, comme $B$ et $C$ sont sur un cercle de centre $O$, $OB=OC$, donc $O$ est le milieu de l'hypoténuse $[BC]$. 
+\end{proof}
+\subsection{Un dernier résultat annexe : droite d'Euler et points particuliers du triangle rectangle}
+
+\begin{figure}[H]\center
+\begin{tikzpicture}
+\draw (0,0) -- (3,0) -- (0,4)--(0,0);
+\draw[red](-0.225,-0.3)-- (2.25,3);
+\draw (1.5,2) ++(.1, .1)--++(-.2, -.2) ++(.2, 0) -- ++(-.2,.2); \draw (0,0) ++(.1, .1)--++(-.2, -.2) ++(.2, 0) -- ++(-.2,.2) ;
+\draw(1, 1.333333333) ++(.1, .1)--++(-.2, -.2) ++(.2, 0) -- ++(-.2,.2);
+\draw (1.75, 2) node {$O$} (0,4.25) node {$B$} (-0.25, .25) node {$A$} (1.25, 1.1) node {$G$} (3.25, 0) node {$C$};
+\end{tikzpicture}
+\caption{L'orthocentre du triangle rectangle est en $A$, et le centre de son cercle circonscrit en $O$, milieu de l'hypoténuse. Le centre de gravité est donc bien sur la droite $(AO)$, médiane issue de $A$. }
+\end{figure}
+Étant donné un triangle $ABC$  rectangle en $A$, le centre du cercle circonscrit est donc le milieu 
+$O$ de $[BC]$. 
+
+Les hauteurs issues de $B$ et de $C$ sont respectivement les droites $(BA)$ et $(CA)$, donc l'orthocentre est en fait 
+le sommet de l'angle droit $A$. 
+
+La droite $(AO)$ passe donc par l'orthocentre du triangle et par le centre de son cercle circonscrit, et 
+c'est une médiane du triangle (elle joint le sommet $A$ au milieu de son côté opposé). 
+Le centre de gravité est situé sur cette droite (il est à l'intersection des trois médianes). On retrouve ici 
+le résultat évoqué (mais non démontré) en chapitre $3$ : le centre de gravité, le centre du cercle circonscrit 
+et l'orthocentre sont sur la même droite. Plus précisément, on a démontré le résultat suivant : 
+\begin{prop}
+La droite d'Euler d'un triangle rectangle est la médiane issue de son angle droit.
+\end{prop}
+
+
+
+
+
+
+
+	\end{document}
+	
+
+

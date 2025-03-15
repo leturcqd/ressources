@@ -1,0 +1,171 @@
+	\documentclass[14pt]{extreport}
+\usepackage{extsizes}
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage[ margin=1in]{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	\usepackage{float}
+	\usepackage{easytable}
+	 \usepackage{fancyhdr}\usepackage{longtable}
+	 \usetikzlibrary{shapes.misc}
+\newlength{\taillecellule}
+\setlength{\taillecellule}{2cm}
+\newcolumntype{C}{@{}>{\centering\arraybackslash}p{\taillecellule}@{}}
+
+\usepackage{pstricks,multido}
+\usepackage{arrayjob}
+\usepackage{calc,xlop}
+\tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
+%default radius will be 1pt. 
+cross/.default={1pt}}
+
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{\empty} 
+	\fancyhead[L]{Interrogation chapitre 5}
+	\fancyhead[R]{27 février 2024}
+	
+	
+	\title{Interrogation chapitre 5}
+	\date{}
+	\begin{document}
+
+
+
+\subsection*{Exercice 1}  % 4 points
+
+Recopiez et remplissez les pointillés :
+
+\[ a)\ 8 + (-3) =  {\color{red} 5  } \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+ b)\ 9 - (-5) = {\color{red} 9+5  14  } \]
+\[ c)\ -1 + {\color{red}  5 } = 4  \ \ \ \ \ \ \ \ \ \ \ \ \ \  
+d)\ -1 - {\color{red} (-8 ) } = 7\]
+
+\subsection*{Exercice 2} % 1 / 1.5 / 1.5  -> 4 points
+
+Calculez les sommes suivantes en détaillant vos étapes. 
+
+\[ -1  + 3 + 2 + (-4) + (-5) + 6  =  {\color{red} (3+2+6) - (1+4+5) = 11-10=1  }\]
+\[ (-1  + 3 + 4) - ((-4) + (-7) + 6 ) ={\color{red}   6 - (-5) = 11} \]
+\[ -1  - ( 3 + 2 + (-4) ) - ((-5) + 6)=
+{\color{red} - 1 - 1 - 1 = -3  }
+ \]
+\[ 1,03  + 3,4 + 6 + (-4,13)   + (-5,4) + 2,1 ={\color{red}    12,53-9,53 = 3 }\]
+
+\subsection*{Exercice 3}
+
+Remplissez les pyramides additives suivantes (chaque nombre est la somme des deux nombres en-dessous de lui.)
+
+\begin{figure}[H]
+\center
+\begin{tikzpicture}[scale=.9,every node/.style={draw,minimum width=1.8cm,minimum height=.9cm}]
+\draw (0,0)  node {{\color{red}  9 }};
+\draw(-1,-1) node {{\color{red}  8 }} ++(2,0) node {{\color{red}  1 }};
+\draw(-2,-2) node {{\color{red}  6,5 }} ++(2,0) node {{\color{red}  1,5 }} ++(2,0) node {{\color{red} -0,5  }};
+\draw(-3,-3) node {\phantom{}{7,5}} ++(2,0) node {\phantom{}{-1}} ++(2,0) node {\phantom{}{2,5}} ++(2,0) node {\phantom{}{-3}};
+\end{tikzpicture}
+\
+\begin{tikzpicture}[scale=.9,every node/.style={draw,minimum width=1.8cm,minimum height=.9cm}]
+\draw (0,0)  node {{\color{red}  2,7 }};
+\draw(-1,-1) node {{\color{red} 1,2  }} ++(2,0) node {\phantom {}{1,5}};
+\draw(-2,-2) node {{\color{red}  1,8 }} ++(2,0) node {\phantom{}{-0,6}} ++(2,0) node {{\color{red} 2,1  }};
+\draw(-3,-3) node {\phantom{}{4,1}} ++(2,0) node {\phantom{}{-2,3}} ++(2,0) node {{\color{red}  1,7 }} ++(2,0) node {{\color{red}0,4}};
+\end{tikzpicture}
+\end{figure}
+
+
+\subsection*{Exercice 4} % 6 points
+Complétez le carré magique suivant avec des entiers relatifs pour que les quatre lignes, les quatre colonnes, 
+et les deux diagonales aient une somme égale à $6$. 
+\[
+\begin{TAB}(e,1cm){|c|c|c|c|}{|c|c|c|c|}
+    1 & {\color{red}  4 } & {\color{red} -1  }& {\color{red} 2  } \\
+    1 & {\color{red} 7  } & -3 & {\color{red} 1  } \\
+    {\color{red} -1  }  & 2 & 0 &{\color{red} 5  } \\
+    5  & -7 & {\color{red} 10  } & -2
+\end{TAB}
+\]
+
+
+ 
+\newpage
+\subsection*{Exercice 1}  % 4 points
+
+Recopiez et remplissez les pointillés :
+
+\[ a)\ 7 + (-3) ={\color{red}  4 } \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+ b)\ 9 - (-4) = {\color{red} 9+4=13  } \]
+\[ c)\ -3 + {\color{red} 7  } = 4  \ \ \ \ \ \ \ \ \ \ \ \ \ \  
+d)\ -1 - {\color{red} (-4)  } = 3\]
+\subsection*{Exercice 2} % 1 / 1.5 / 1.5  -> 4 points
+
+Calculez les sommes suivantes en détaillant vos étapes. 
+
+\[ -1  + 4 + 2 + (-3) + (-5) + 6 = 
+{\color{red} (4+2+6) - (1+3+5) = 12-9 = 3  }\]
+\[ (-1  + 5 + 4) - ((-2) + (-7) + 6 ) =
+{\color{red}  8 - (-3) = 11 }\]
+\[ -1  - ( 6 + 2 + (-4) ) - ((-5) + 6) =
+{\color{red} -1 - 4 - 1 = -6  }\]
+\[ 1,03  + 3,3 + 7 + (-4,03)   + (-5,4) + 2,1 = 
+{\color{red}  13,43-9,43 =4} \]
+
+
+
+\subsection*{Exercice 3}
+
+Remplissez les pyramides additives suivantes (chaque nombre est la somme des deux nombres en-dessous de lui.)
+
+\begin{figure}[H]
+\center
+\begin{tikzpicture}[scale=.9,every node/.style={draw,minimum width=1.8cm,minimum height=.9cm}]
+\draw (0,0)  node {{\color{red} 9}};
+\draw(-1,-1) node {{\color{red}  8 }} ++(2,0) node {{\color{red}  1 }};
+\draw(-2,-2) node {{\color{red}  6,5 }} ++(2,0) node {{\color{red}  1,5 }} ++(2,0) node {{\color{red}   -0,5}};
+\draw(-3,-3) node {\phantom{}{7,5}} ++(2,0) node {\phantom{}{-1}} ++(2,0) node {\phantom{}{2,5}} ++(2,0) node {\phantom{}{-3}};
+\end{tikzpicture}
+\ 
+\begin{tikzpicture}[scale=.9,every node/.style={draw,minimum width=1.8cm,minimum height=.9cm}]
+\draw (0,0)  node {{\color{red}  0 }};
+\draw(-1,-1) node {-5,9} ++(2,0) node {{\color{red}   5,9}};
+\draw(-2,-2) node {{\color{red} -5,7}} ++(2,0) node {-0,2} ++(2,0) node {{\color{red}6,1}};
+\draw(-3,-3) node {2,4} ++(2,0) node {{\color{red} -8,1}} ++(2,0) node {{\color{red}7,9}} ++(2,0) node {-1,8};
+\end{tikzpicture}
+\end{figure}
+
+\subsection*{Exercice 4} % 6 points
+
+Complétez le carré magique suivant avec des entiers relatifs pour que les quatre lignes, les quatre colonnes, 
+et les deux diagonales aient une somme égale à $6$. 
+%\[
+%\begin{TAB}(e,1cm){|c|c|c|c|}{|c|c|c|c|}
+%    1 & & & 2 \\
+%    1 &  & -3 &  \\
+%      & 2 & 0 & \\
+%      & -7 &  & -2
+%\end{TAB}
+%\]
+%
+%%
+\[
+\begin{TAB}(e,1cm){|c|c|c|c|}{|c|c|c|c|}
+    -2 & {\color{red} 10  }&{\color{red} -7  } & 5 \\
+	5 & {\color{red} 0  } & {\color{red} 2  } & {\color{red}  -1 } \\
+      {\color{red} 1  }& -3 & 7 & {\color{red} 1  }\\
+     2 & -1 &  {\color{red}  4 }& 1
+\end{TAB}
+\]
+ 
+\end{document}

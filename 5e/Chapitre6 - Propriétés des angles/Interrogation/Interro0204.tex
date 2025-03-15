@@ -1,0 +1,135 @@
+	\documentclass[14pt]{extreport}
+\usepackage{extsizes}
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage[ margin=1in]{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	\usepackage{float}
+	\usepackage{easytable}
+	 \usepackage{fancyhdr}\usepackage{longtable}
+	 \usetikzlibrary{shapes.misc}
+	 \newcommand\ang[1]{$#1{}^o$}
+\newlength{\taillecellule}
+\setlength{\taillecellule}{2cm}
+\newcolumntype{C}{@{}>{\centering\arraybackslash}p{\taillecellule}@{}}
+
+\usepackage{pstricks,multido}
+\usepackage{arrayjob}
+\usepackage{calc,xlop}
+\tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
+%default radius will be 1pt. 
+cross/.default={1pt}}
+
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{\empty} 
+	\fancyhead[L]{Interrogation chapitre 6}
+	\fancyhead[R]{2 avril 2024}
+	
+	
+	\title{Interrogation chapitre 6}
+	\date{}
+	\begin{document}
+
+
+
+\subsection*{Exercice 1}  % 4 points
+
+Recopiez et remplissez les pointillés :
+
+\[ a)\ 8 + (-3) =\ldots \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+ b)\ 9 - (-5) = \ldots \]
+\[ c)\ -1 + \ldots = 4  \ \ \ \ \ \ \ \ \ \ \ \ \ \  
+d)\ -1 - \ldots = 7\]
+
+\subsection*{Exercice 2} % 1 / 1.5 / 1.5  -> 4 points
+
+Calculez les sommes suivantes en détaillant vos étapes. 
+
+\[ -1  + 3 + 2 + (-4) + (-5) + 6  = \]
+\[ (-1  + 3 + 4) - ((-4) + (-7) + 6 ) = \]
+\[ -1  - ( 3 + 2 + (-4) ) - ((-5) + 6)= \]
+ 
+
+
+
+
+
+\subsection*{Exercice 3}
+ La figure ci-dessous n'est pas en vraie grandeur. Toutes les réponses devront être justifiées.\\
+	\begin{tikzpicture}[baseline]
+    \tikzset{
+      point/.style={thick, draw, cross out, inner sep=0pt, minimum width=5pt, minimum height=5pt,
+      },
+    }
+    \clip (-1,-6.859954267158308) rectangle (9.893937016745921,3.298368333044762);
+    	\draw[color={black}] (-49.337106354662005,-8.114802081529762)--(57.23104337140793,9.413170414574523);
+	\draw[color={black}] (-43.01051039562473,25.49698162099757)--(50.800045009202414,-30.114681319318713);
+	\draw[color={black}] (-32.54430446732648,-36.5053743530274)--(44.41902981165249,35.443898873669596);
+	\draw[color={black}] (-49.10034384830023,-13.974751650033367)--(57.12663771366797,3.4970976845539177);
+	\draw  [color={black},line width = 2,preaction={fill,color = {black},opacity = 0.2}] (0.9866000147758149,0.1631570570445111) -- (0,0) -- (0.8602101149709134,-0.5099395773234235) arc (-30.73:9.319999999999997:1) ;
+	\draw [color={black}] (1.57,-0.3) node[anchor = center,scale=1, rotate = 0] {\ang{40}};
+	\draw  [color={red},line width = 2,preaction={fill,color = {red},opacity = 0.2}] (4.841010222109848,-2.869763566876294) -- (3.980788327580091,-2.359843812402566) -- (4.711290183478223,-1.676933201590069) arc (42.82:-30.910000000000004:1) ;
+	\draw [color={red}] (5.57,-2.19) node[anchor = center,scale=1, rotate = 0] {\ang{74}};
+	\draw  [color={black},line width = 2,preaction={fill,color = {blue},opacity = 0.2}] (1.2237233194994683,-5.699013376196127) -- (0.23675925179005297,-5.859954267158308) -- (0.9672611725210718,-5.177043595736702) arc (42.82:9.009999999999998:1) ;
+	\draw [color={black}] (1.67,-5.15) node[anchor = center,scale=1, rotate = 0] {\ang{34}}; 
+	\draw [color={black}] (-0.5,0.5) node[anchor = center,scale=1, rotate = 0] {J};
+	\draw [color={black}] (8.29,-4.62) node[anchor = center,scale=1, rotate = 0] {D};
+	\draw [color={black}] (7.39,1.8) node[anchor = center,scale=1, rotate = 0] {W};
+	\draw [color={black}] (3.98,-2.86) node[anchor = center,scale=1, rotate = 0] {U};
+	\draw [color={black}] (0.74,-6.36) node[anchor = center,scale=1, rotate = 0] {I};
+
+\end{tikzpicture}\\
+\begin{enumerate}
+\item  Déterminer la mesure de l'angle $\widehat{JUW}$.\item  En déduire la mesure de l'angle $\widehat{UWJ}$.\item  Déterminer si les droites $(JW)$ et $(ID)$ sont parallèles. \end{enumerate}
+	
+	
+	\subsection*{Exercice 4} Dans la figure ci-dessous,  les droites $(RS)$ et $(CX)$ sont parallèles.\\La figure n'est pas en vraie grandeur.\\On veut déterminer la mesure des angles du quadrilatère $RCXS$ (toutes les réponses doivent être justifiées).\\\begin{tikzpicture}[baseline,scale = 0.7]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-8,-1) rectangle (10.787960095761212,10.606742803667318);
+    	\draw[color={black}] (-14.618585236136838,-47.81523779815176)--(17.249930578641468,56.42198060181908);
+	\draw[color={black}] (-28.15172842377828,48.00728048400342)--(39.571033862044125,-38.673902412736);
+	\draw[color={rgb,255:red,241;green,89;blue,41}] (-49.82994968082838,-4.120205192817482)--(58.61790977658959,4.846840460417581);
+	\draw[color={rgb,255:red,241;green,89;blue,41}] (-48.952834566660165,-1.2512909249283766)--(59.495024890757804,7.7157547283066865);
+	\draw  [color={black},line width = 2,preaction={fill,color = {black},opacity = 0.1}] (0.29259256002325273,0.9562372008183759) -- (0,0) -- (0.9965989936165677,0.08240410385634966) arc (4.58:72.84:1) ;
+	\draw [color={black}] (1.25,1) node[anchor = center,scale=1, rotate = 0] {\ang{68}};
+	\draw  [color={black},line width = 2,preaction={fill,color = {black},opacity = 0.1}] (3.2471443422744457,7.818839515260361) -- (2.631345342504631,8.606742803667318) -- (2.338973637781894,7.650438047704283) arc (-107.22:-52.21:1) ;
+	\draw [color={black}] (2.92,7.03) node[anchor = center,scale=1, rotate = 0] {\ang{55}};  
+	\draw [color={black}] (-0.5,0.5) node[anchor = center,scale=1, rotate = 0] {R};
+	\draw [color={black}] (0.38,3.37) node[anchor = center,scale=1, rotate = 0] {C};
+	\draw [color={black}] (2.13,8.61) node[anchor = center,scale=1, rotate = 0] {Z};
+	\draw [color={black}] (7.24,3.85) node[anchor = center,scale=1, rotate = 0] {X};
+	\draw [color={black}] (9.29,1.23) node[anchor = center,scale=1, rotate = 0] {S};
+
+\end{tikzpicture}\begin{enumerate}
+\item  Déterminer la mesure de l'angle $\widehat{XCZ}$.
+\item  En déduire la mesure de l'angle $\widehat{RCX}$.
+\item  Déterminer la mesure de l'angle $\widehat{CXZ}$.
+\item  En déduire la mesure de l'angle $\widehat{CXS}$.
+\item Déterminer la mesure de l'angle $\widehat{XSR}$.
+\item  Calculez la somme des angles de $CRSX$. \end{enumerate}
+    
+ 
+\end{document}

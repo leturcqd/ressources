@@ -1,0 +1,219 @@
+	\documentclass[12 pt]{article}
+
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	 \usepackage{fancyhdr}
+
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{\thepage} 
+	\fancyhead[L]{Fiche d'exercices}
+	\fancyhead[R]{2021-2022}
+	\newcounter{n}
+	\numberwithin{n}{section}
+	\newtheorem{theo}{Théorème}
+	\labelformat{theo}{théorème}
+	\newtheorem{cor}[n]{Corollaire}
+	\newtheorem{lm}{Lemme}
+	\labelformat{lm}{lemme~#1}
+	\newtheorem{hyp}[n]{Hypothèse}
+	
+	{\theoremstyle{definition}
+	\newtheorem{df}[n]{Définition}
+    \newtheorem{rmq}[n]{Remarque}
+	\newtheorem{nt}[n]{Notation}
+	}
+
+	\renewcommand\epsilon{\varepsilon}
+	\renewcommand\phi{\varphi}
+	\newcommand\R{\mathbb{R}}
+	\newcommand\s{\mathbb{S}}
+	
+	
+	
+	\title{Exercices Chapitre 4}
+	\date{}
+	\begin{document}
+
+\begin{center}{\Large Chapitre 4 - Géométrie du triangle}\\ 
+ \end{center}
+
+\section{Inégalité triangulaire, triangles constructibles}
+
+\begin{theo}[Inégalité triangulaire]
+Si $ABC$ est un triangle non aplati\footnote{Un triangle est \emph{plat} ou \emph{aplati} si ses trois sommets sont alignés}, 
+on a les trois inégalités suivantes : \[AB < AC + CB \] \[AC < AB + BC \] \[BC < BA + AB \]
+\end{theo}
+
+\begin{df}
+Un triplet de longueurs $(a,b,c)$ est \emph{constructible} s'il est possible de construire un triangle avec $AB= c$, 
+$BC=a$, et $AC=b$. 
+
+Par exemple, $(3,4,5)$ est constructible car il existe un triangle de côtés $3$ cm, $4$ cm, et $5$ cm, mais $(1,1, 100000)$ ne l'est pas (il n'y a aucun triangle avec deux côtés de $1$ cm et un côté de $1$ km. 
+\end{df}
+
+\begin{theo}[Critère de constructibilité]
+Le triplet de longueurs $(a,b,c)$ est constructible s'il vérifie les trois inégalités $a < b+c$, $b < a+c$, et $c<a+b$. 
+En pratique, il suffit pour cela de vérifier que la plus grande des trois longueurs est plus petite que la somme des deux plus petites. 
+\end{theo}
+Par exemple, il existe un triangle avec des côtés de longueurs respectives $3$ cm, $4$ cm, et $5$ cm car la plus grande longueur ($5$ cm) est plus petite que la somme des deux autres ($4+3=7$ cm).
+
+En revanche, il n'existe pas de triangle avec comme longueurs de côtés $3$ cm, $5$ cm et $9$ cm car $9 > 3+5$. 
+
+\begin{rmq}
+Ces inégalités traduisent la propriété suivante : « \emph{le chemin le plus court d'un point à un autre est toujours
+le segment de droite} ». En effet, $AB <AC+CB$ signifie que l'on va plus vite de $A$ à $B$ en passant par le segment 
+$[AB]$ qu'en faisant un détour par le point $C$. 
+\end{rmq} 
+
+\section{Droites particulières du triangle}
+Dans cette partie, on étudie quatre familles de droites particulières du triangle, 
+conduisant à quatre points particuliers de celui-ci. Tous les triangles considérés ici sont non aplatis, je ne le repréciserai pas à chaque énoncé. 
+\subsection{Médiatrices (et cercle circonscrit)}
+
+\begin{df}
+La \emph{médiatrice} du segment $[AB]$ est la droite perpendiculaire à $(AB)$ passant par le milieu de $[AB]$.
+\end{df}
+
+\begin{theo}[Propriété des points de la médiatrice]\begin{itemize}
+\item Si $M$ est un point de la médiatrice de $[AB]$, $AM = BM$. 
+\item Si $AM=BM$, $M$ appartient à la médiatrice de $[AB]$.
+\end{itemize}Autrement dit : \emph{les points de la médiatrice de'un segment sont exactement les points qui sont 
+équidistants de ses deux extrémités}. 
+\end{theo}
+
+\begin{theo}
+Dans un triangle $ABC$, les médiatrices des trois côtés du triangle sont concourantes\footnote{elles se rencontrent en un seul point}. 
+Leur point de concours (d'intersection) $O$ est équidistant de $A$, $B$ et $C$. 
+C'est donc le centre du seul cercle contenant les points $A$, $B$
+et $C$. Ce cercle est appelé \emph{cercle circonscrit}\footnote{circum + scribere : écrit autour} du triangle $ABC$, et le point $O$ est donc 
+\emph{le centre du cercle circonscrit}. 
+\end{theo}
+
+\begin{rmq}
+Pour trouver le centre du cercle circonscrit, il suffit donc de tracer deux des médiatrices, et de regarder leur 
+point d'intersection $O$. On obtient le cercle circonscrit en traçant le cercle de centre $O$ passant par n'importe lequel 
+des sommets, qui passera automatiquement par les deux autres sommets. 
+\end{rmq}
+
+J'énonce aux passages deux corollaires de cette propriété du cercle circonscrit (un corollaire est un résultat qui se 
+déduit d'un résultat plus important). 
+\begin{cor}
+\begin{enumerate}
+\item Par trois points non alignés, il passe toujours un unique cercle.
+\item Étant donné un cercle, on peut trouver son centre en traçant deux cordes et en cherchant le point d'intersection de leurs médiatrices.
+\end{enumerate}
+\end{cor}
+
+
+
+\subsection{Hauteurs (et orthocentre)}
+
+\begin{df}
+Dans un triangle $ABC$, la \emph{hauteur issue du sommet $A$} (on dit parfois relative à $[BC]$)
+est la droite passant par $A$ perpendiculaire à la droite $(BC)$.\footnote{J'insiste ici sur le fait qu'il faut 
+bien ici parler de la droite $(BC)$ et non du segment $[BC]$, car si le triangle a un angle obtus, 
+il a deux hauteurs qui ne rencontrent pas le côté auquel elles sont perpendiculaires, 
+mais uniquement la droite le prolongeant.}
+
+Le point d'intersection de cette hauteur et de la droite $(BC)$\footnote{même remarque} est appelé \emph{pied 
+de la hauteur issue de $A$}. (C'est un point de la droite $(BC)$, mais pas nécessairement du côté $[BC]$. C'est le point où la hauteur forme son angle droit avec la droite $(BC)$.)
+\end{df}
+
+\begin{theo}
+Avec les notations de la définition précédente, si on note $H$ le pied de la hauteur issue de $A$, l'aire du triangle 
+$ABC$ est donnée par la formule \[\mathcal A = \frac{AH \times BC}2. \]\end{theo}
+
+\begin{rmq}\begin{enumerate}
+\item Souvent, cette formule est résumée par « base fois hauteur divisé par deux ». Évidemment, on obtient deux autres formules en considérant les hauteurs issues des deux autres sommets, qui donnent toutes trois le même résultat.
+\item La formule ci-dessus entraîne le principe suivant : \emph{quand on déplace un sommet d'un triangle parallèlement
+au côté qui lui est opposé, on ne change pas sa surface}. Ce principe est central pour démontrer la plupart des 
+théorèmes de géométrie (Pythagore, Thalès, etc.) \end{enumerate}
+\end{rmq}
+
+\begin{theo}
+Dans un triangle $ABC$, les hauteurs issues des trois sommets sont concourantes. Leur point de concours est appelé 
+l'\emph{orthocentre} du triangle $ABC$. 
+\end{theo}
+
+\subsection{Médianes et centre de gravité}
+
+
+\begin{df}
+Dans un triangle $ABC$, la \emph{médiane issue du sommet $A$} (on dit parfois relative à $[BC]$)
+est la droite passant par $A$ et le milieu du segment $[BC]$.
+\end{df}
+
+\begin{theo}
+Dans un triangle $ABC$, les médianes issues des trois sommets sont concourantes. Leur point de concours est appelé 
+le \emph{centre de gravité} du triangle $ABC$. 
+\end{theo}
+
+\begin{rmq}
+Le centre de gravité du triangle est le point sur l'on peut faire reposer en équilibre un triangle solide (dont la 
+masse est répartie de manière homogène). On parle pour cette raison parfois aussi de centre de masse/barycentre.
+\end{rmq}
+
+
+\subsection{Bissectrice et cercle inscrit}
+
+\begin{df}
+La \emph{bissectrice} d'un angle est la droite passant par son sommet et le séparant en deux angles adjacents égaux. 
+\end{df}
+
+\begin{rmq}
+Pour tracer une bissectrice, on fixe l'écartement du compas, on le plante au sommet de l'angle, et on obtient ainsi deux points $A$ et $B$, un sur chaque côté de l'angle. Depuis ces deux points, on réutilise le compas, pour obtenir un 
+point $C$, tel que $OA=OB=AB=AC$ (autrement dit $OACB$ est un losange). La bissectrice est alors obtenue en traçant la droite $(OC)$. 
+\end{rmq}
+
+\begin{theo}
+
+Les bissectrices des trois angles d'un triangle sont concourantes. Leur point de concours est le centre du seul cercle 
+tangent\footnote{Un cercle est \emph{tangent} à une droite quand il ne la touche qu'en un point.} aux trois côtés du triangle. Ce cercle est appelé \emph{cercle inscrit} du triangle $ABC$, et le point de concours est donc le \emph{centre du cercle inscrit}. 
+\end{theo}
+
+\begin{rmq}Si l'on veut tracer le cercle inscrit, il suffit donc de tracer deux bissectrices pour trouver 
+son centre $I$. 
+On doit cependant ensuite encore fixer le rayon. Pour ce faire, on trouve le point $K$ sur $[AB]$ tel que $(IK)$ et
+$(AB)$ soient perpendiculaires. Le cercle inscrit est alors le cercle de centre $I$ passant par $K$.  
+\end{rmq}
+
+
+\subsection{[Culture générale/clairement hors programme] : Droite et cercle d'Euler}
+
+On termine le chapitre avec deux théorèmes importants de géométrie du triangle mettant en jeu les notions précédentes. 
+
+\begin{theo}[Droite d'Euler]
+Dans tout triangle, le centre de gravité, le centre du cercle circonscrit, et l'orthocentre sont alignés. 
+
+Dans un triangle équilatéral, ces trois points sont confondus (ils sont au même endroit).
+
+Dans un triangle non équilatéral, ces points sont distincts, et la droite qui passe par eux est appelée \emph{droite
+d'Euler} du triangle. 
+
+En général, elle ne contient pas le centre du cercle inscrit.
+\end{theo}
+
+
+\begin{theo}[Cercle d'Euler]
+
+Dans tout triangle, les milieux des trois côtés, et les pieds des trois hauteurs appartiennent tous les six à un 
+même cercle. Ce cercle est appelé \emph{cercle d'Euler} du triangle. 
+
+\end{theo}
+	\end{document}
+	
