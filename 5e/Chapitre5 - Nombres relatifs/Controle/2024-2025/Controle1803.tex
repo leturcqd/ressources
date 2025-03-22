@@ -1,0 +1,240 @@
+	\documentclass[14pt]{extreport}
+\usepackage{extsizes}
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage[ margin=1in]{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	\usepackage{float}
+	\usepackage{easytable}
+\renewcommand{\theenumi}{\alph{enumi})}
+	 \usepackage{fancyhdr}\usepackage{longtable}
+	 \usetikzlibrary{shapes.misc}
+
+\tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
+%default radius will be 1pt. 
+cross/.default={1pt}}
+
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{\empty} 
+	\fancyhead[L]{Interrogation}
+	\fancyhead[R]{18 mars 2024}
+	
+	
+	\title{Interrogation chapitre 5}
+	\date{}
+	\begin{document}
+
+\begin{center}{\Large Interrogation chapitre 5}\end{center}
+
+
+
+\subsection*{Exercice 1 (4 points)}
+ 
+ Rangez dans l'ordre décroissant les nombres suivants. 
+ 
+
+\[ 2,12 ; \ \ 2,1 ; \ \ -2,4 ; \ \ -2,3 ; \ \ 2 ; \ \ 0 ; \ \ -1,23 \]
+ 
+ 
+ 
+\subsection*{Exercice 2 (2 points)}
+ 
+ Calculez : \begin{enumerate}
+ \item $12 - 5 - (-4) $
+ \item $ 5 - 2 - (14 + 12 + ( -7) - 4) $
+ \end{enumerate}
+ 
+\subsection*{Exercice 3 (4 points)}
+Tracer une droite graduée de $18$ carreaux, avec l'origine $O$ au neuvième carreau. 
+
+On place $1$ au douzième carreau (le troisième après $O$). 
+
+Placer sur la règle les nombres suivants :
+\[ 3 ; \ \ -2 ; \ \ \frac43 ; \ \ -\frac{14}{21}\]
+
+
+
+\subsection*{Exercice 4 (4 points)} 
+ 
+1) Indiquer les abscisses des points $B$, $C$, $D$ et $E$.
+ 
+2) Placer sur la droite graduée le point $F$ d'abscisse $-1$. 
+
+3) Quel point a une abscisse opposée de celle de $D$ ? 
+ \begin{figure}[H]\center
+\begin{tikzpicture}
+\draw [->, >= latex] (-8, 0) -- (6, 0);
+\draw (-7, -.2) -- (-7, .2);
+\draw (-6, -.2) -- (-6, .2);
+\draw (-5, -.2) -- (-5, .2);
+\draw (-4, -.2) -- (-4, .2);
+\draw(-3, -.2) -- (-3, .2);
+\draw(-2, -.2) -- (-2, .2);
+\draw (-1, -.2) -- (-1, .2);
+\draw (5, -.2) -- (5, .2);
+\draw (4, -.2) -- (4, .2);
+\draw(3, -.2) -- (3, .2);
+\draw(2, -.2) -- (2, .2);
+\draw (1, -.2) -- (1, .2);
+\draw (0, -.2) -- (0, .2);
+\draw (0, .5) node {$O$};
+\draw (0, -.5) node {$0$};
+\draw (2, 0) node[cross=5pt, rotate = 0] {}; 
+\draw (2, .5) node {$A$}; 
+\draw (2, -.5) node {$1$}; 
+\fill (-6, 0) node[cross=5pt, rotate = 0] {}; 
+\draw (-6, .5) node {$B$}; 
+\fill (5, 0) node[cross=5pt, rotate = 0] {};  
+\draw (5, .5) node {$C$}; 
+\fill (4, 0) node[cross=5pt, rotate = 0] {};  
+\draw (4, .5) node {$D$}; 
+\fill (-4, 0) node[cross=5pt, rotate = 0] {};  
+\draw (-4, .5) node {$E$}; 
+\end{tikzpicture}
+\end{figure}
+
+\subsection*{Exercice 5 (6 points)}
+
+\begin{figure}[H]\center
+\begin{tikzpicture}
+\draw[dotted](-5.5,-4.5) grid (7.5,6.5);
+\draw[very thick, ->] (-5.5, 0)--(7.5,0);
+\draw[very thick, ->] (0,-4.5)--(0,6.5);
+\fill (2,-3) node[cross=5pt, rotate = 0] {};
+\draw (2,-3) ++ (.25, .25) node {$A$};
+\fill (-5,2) node[cross=5pt, rotate = 0] {};
+\draw (-5,2) ++ (.25, .25) node {$B$};
+\fill (3,4) node[cross=5pt, rotate = 0] {};
+\draw (3,4) ++ (.25, .25) node {$C$};
+\draw (1,.3) node {$1$};
+\draw (.3,1) node {$1$};
+\end{tikzpicture}
+\end{figure}
+1) Indiquer les coordonnées des points $A$, $B$ et $C$. 
+
+2) Placer le point $D$ de coordonnées $(2; 5)$ et le point $E$ de coordonnées $(-3; 2)$. 
+
+3) Placer le point $F$ qui a la même abscisse que $A$ et la même 
+ordonnée que $B$. 
+
+
+
+4) Placer le point $G$ dont l'abscisse est le tiers de la somme des 
+abscisses de $A$, $B$ et $C$, et dont l'ordonnée est le tiers de la 
+somme des ordonnées de $A$, $B$ et $C$. 
+
+5) Tracer les droites $(AG)$, $(BG)$ et $(CG)$, et le triangle $ABC$. 
+
+6) Que représentent les droites ainsi tracées pour le triangle $ABC$ ?
+\newpage 
+
+\begin{center}{\Large Interrogation chapitre 5}\end{center}
+
+\subsection*{Exercice 1 ( 4 points)}
+ 
+ Ranger dans l'ordre décroissant les nombres suivants. 
+ 
+
+\[ 2,31 ; \ \ 2,1 ; \ \ -2,2 ; \ \ -2,3 ; \ \ 1 ; \ \ 0 ; \ \ -1,23 \]
+ \subsection*{Exercice 2 (2 points)}
+ 
+ Calculez : \begin{enumerate}
+ \item $12 - 5 - (-6) $
+ \item $ 5 - 2 - (15 + 12 + ( -7) - 4) $
+ \end{enumerate}
+ 
+\subsection*{Exercice 3 (4 points)}
+Tracer une droite graduée de $18$ carreaux, avec l'origine $O$ au neuvième carreau. 
+
+On place $1$ au douzième carreau (le troisième après $O$). 
+
+Placer sur la règle les nombres suivants :
+\[ 2 ; \ \ -1 ; \ \ -\frac73 ; \ \ \frac{14}{21}\]
+
+
+\subsection*{Exercice 4 (4 points)} 
+ 
+1) Indiquer les abscisses des points $B$, $C$, $D$ et $E$.
+ 
+2) Placer sur la droite graduée le point $F$ d'abscisse $-2$. 
+
+3) Quel point a une abscisse opposée de celle de $D$ ? 
+ \begin{figure}[H]\center
+\begin{tikzpicture}
+\draw [->, >= latex] (-8, 0) -- (6, 0);
+\draw (-7, -.2) -- (-7, .2);
+\draw (-6, -.2) -- (-6, .2);
+\draw (-5, -.2) -- (-5, .2);
+\draw (-4, -.2) -- (-4, .2);
+\draw(-3, -.2) -- (-3, .2);
+\draw(-2, -.2) -- (-2, .2);
+\draw (-1, -.2) -- (-1, .2);
+\draw (5, -.2) -- (5, .2);
+\draw (4, -.2) -- (4, .2);
+\draw(3, -.2) -- (3, .2);
+\draw(2, -.2) -- (2, .2);
+\draw (1, -.2) -- (1, .2);
+\draw (0, -.2) -- (0, .2);
+\draw (0, .5) node {$O$};
+\draw (0, -.5) node {$0$};
+\draw (2, 0) node[cross=5pt, rotate = 0] {}; 
+\draw (2, .5) node {$A$}; 
+\draw (2, -.5) node {$1$}; 
+\fill (-6, 0) node[cross=5pt, rotate = 0] {}; 
+\draw (-6, .5) node {$B$}; 
+\fill (5, 0) node[cross=5pt, rotate = 0] {};  
+\draw (5, .5) node {$C$}; 
+\fill (4, 0) node[cross=5pt, rotate = 0] {};  
+\draw (4, .5) node {$D$}; 
+\fill (-3, 0) node[cross=5pt, rotate = 0] {};  
+\draw (-3, .5) node {$E$}; 
+\end{tikzpicture}
+\end{figure}
+
+\subsection*{Exercice 5 (6 points)} 
+
+\begin{figure}[H]\center
+\begin{tikzpicture}
+\draw[dotted](-5.5,-4.5) grid (7.5,6.5);
+\draw[very thick, ->] (-5.5, 0)--(7.5,0);
+\draw[very thick, ->] (0,-4.5)--(0,6.5);
+\fill (2,-3) node[cross=5pt, rotate = 0] {};
+\draw (2,-3) ++ (.25, .25) node {$A$};
+\fill (-2,2) node[cross=5pt, rotate = 0] {};
+\draw (-2,2) ++ (.25, .25) node {$B$};
+\fill (6,4) node[cross=5pt, rotate = 0] {};
+\draw (6,4) ++ (.25, .25) node {$C$};
+\draw (1,.3) node {$1$};
+\draw (.3,1) node {$1$};
+\end{tikzpicture}
+\end{figure}
+1) Indiquer les coordonnées des points $A$, $B$ et $C$. 
+
+2) Placer le point $D$ de coordonnées $(2; 5)$ et le point $E$ de coordonnées $(-3; 2)$. 
+
+3) Placer le point $F$ qui a la même abscisse que $A$ et la même 
+ordonnée que $C$. 
+
+
+
+4) Placer le point $G$ dont l'abscisse est le tiers de la somme des 
+abscisses de $A$, $B$ et $C$, et dont l'ordonnée est le tiers de la 
+somme des ordonnées de $A$, $B$ et $C$. 
+
+5) Tracer les droites $(AG)$, $(BG)$ et $(CG)$, et le triangle $ABC$. 
+
+6) Que représentent les droites ainsi tracées pour le triangle $ABC$ ?
+\end{document}
