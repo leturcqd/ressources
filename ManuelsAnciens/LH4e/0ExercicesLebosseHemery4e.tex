@@ -1,0 +1,100 @@
+\documentclass[12 pt]{report}
+	\author{ }
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+\DeclareSymbolFont{yhlargesymbols}{OMX}{yhex}{m}{n}
+\DeclareMathAccent{\arc}{\mathord}{yhlargesymbols}{"F3}
+	\usepackage{geometry}
+	\geometry{a4paper, head = 15pt, left = 1 cm, right = 1cm}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array} 
+	 \usepackage{float} 
+	\theoremstyle{plain} 
+	\newcounter{n}
+	\setcounter{n}{1} 
+	\newcommand{\cm}{\textbf{ cm}}
+	\newcommand\ds\displaystyle
+	\renewcommand{\it}{\item[$ \mathbf{\bullet\ \then}.$]\stepcounter{n} }
+	\newenvironment{calcul}{\item[$\mathbf{\then}.$] \stepcounter{n}\hfil $\displaystyle  }{.$\hfil   }
+	\newcommand\syst[4]{
+ \begin{calcul} \left\{ \begin{array}{l} #1 = #2, \\ #3 = #4.\end{array}\right\end{calcul}}
+	\newcommand\intercalc{\end{calcul}\begin{calcul}}
+	
+	\title{\Large Exercices tirés du manuel de 4e de C. Lebossé et C. Hémery, éd. Hachette\footnote{Vous pouvez me signaler les erreurs par courriel : \href{mailto:leturcq.d@orange.fr}{lien de contact.} 
+	}
+	}
+	\date{1963}
+	\begin{document}
+	\maketitle 
+	
+	
+	
+\part{Arithmétique}
+ \input{1Puissances.tex}
+ \input{2Nombres_premiers.tex}
+ \input{3PGCD-PPCM.tex}
+ \input{4Application_aux_fractions}
+ \part{Algèbre}
+ \input{5Nombres_relatifs}
+ \input{6Addition}
+% \input{7Soustraction}
+% \input{8Produit}
+% \input{9Division}
+% \input{10Relation_de_Chasles}
+% \input{11Puissances(2)}
+% \input{12Inegalites}
+
+ \input{13Expressions_algebriques}
+ \input{14Polynomes}
+ \input{15Multiplication_polynomes}
+ \input{16Identites_remarquables}
+ \input{17Division_polynomes} 
+ \input{18Equation_de_degre_1}
+ \input{19Equations_se_ramenant_au_degre_1}
+% \input{20Problemes}
+% \input{21Revision}
+
+
+%\part{Géométrie}
+% \input{22Rappels}
+% \input{23Triangles_isoceles}
+% \input{24Triangles_egaux}
+% \input{25Inegalites_du_triangle}
+% \input{26Perpendiculaires_et_obliques}
+% \input{27Paralleles}
+% \input{28Proprietes_angulaires_des_paralleles}
+% \input{29Somme_des_angles_d'un_triangle}
+% \input{30Parallelogramme}
+% \input{31Rectangle-losange-carre}
+% \input{32Trapeze-paralleles_equidistantes}
+% \input{33Droites_concourantes_du_triangle}
+% \input{34Cercle}
+% \input{35Position_de_deux_cercles}
+% \input{36Cordes}
+% \input{37Angle_inscrit}
+% \input{38Quadrilatere_inscriptible}
+% \input{39Constructions_geometriques}
+% \input{40Constructions_de_triangles}
+% \input{41Tangentes_et_cercles_tangents}
+% \input{42_Polygones_reguliers}
+% \input{43Problemes}
+
+
+
+%\part{Travaux pratiques et astronomiques}
+% \input{44Travaux_pratiques}
+% \input{45Coordonnees_equatoriales}
+% \input{46Le_systeme_solaire}
+% \input{47Eclipses}
+ 
+ 	\end{document}
