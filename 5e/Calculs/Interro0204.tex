@@ -1,0 +1,81 @@
+	\documentclass[14pt]{extreport}
+\usepackage{extsizes}
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage[ margin=1in]{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	\usepackage{float}
+	\usepackage{easytable}
+	 \usepackage{fancyhdr}\usepackage{longtable}
+	 \usetikzlibrary{shapes.misc}
+\newlength{\taillecellule}
+\setlength{\taillecellule}{2cm}
+\newcolumntype{C}{@{}>{\centering\arraybackslash}p{\taillecellule}@{}}
+
+\usepackage{pstricks,multido}
+\usepackage{arrayjob}
+\usepackage{calc,xlop}
+\tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
+%default radius will be 1pt. 
+cross/.default={1pt}}
+
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{\empty} 
+	\fancyhead[L]{Calculs}
+	\fancyhead[R]{2 avril 2025}
+	
+	
+	\title{Calculs}
+	\date{}
+	\begin{document}
+
+Nom, Prénom : \rule{5 cm}{0.4pt}
+\begin{enumerate}
+\item[a)] $ -1 + 4$
+\item[b)] $ 10 - (- 5)$
+\item[c)] $ - 10 - 3$
+\item[d)] $ 2 + 3\times 4$
+\item[e)] $ 5- 1 \times 2 +1$
+
+\item[f)] $ -2 + 12 - (-2) + 7 - 3$
+\item[g)] $ 3  - (-5 - 4)$
+\item[h)] $ 12 - 5 - [3 - (8-9)] $
+\item[i)] $ 	(2 \times 4- 13) + (6-  (-1))$
+\item[j)] $ - 1 - 1 - (5 - 6)$
+\end{enumerate}
+ 
+
+
+\par\noindent\rule{\textwidth}{0.4pt}
+
+Nom, Prénom : \rule{5 cm}{0.4pt}
+ 
+\begin{enumerate}
+\item[a)] $ -5 + 4$
+\item[b)] $ 11 - (- 5)$
+\item[c)] $ - 7 - 3$
+\item[d)] $ 2 + 5\times 4$
+\item[e)] $ 5- 2 \times 2 +1$
+
+\item[f)] $ -2 + 11 - (-2) + 7 - 3$
+\item[g)] $ 3  - (-6 - 4)$
+\item[h)] $ 12 - 5 - [3 - (8-9)] $
+\item[i)] $ 	(2 \times 4- 13) + (6-  (-1))$
+\item[j)] $ - 1 - 1 - (5 - 6)$
+\end{enumerate}
+ 
+ 
+\end{document}
