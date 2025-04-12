@@ -1,0 +1,160 @@
+	\documentclass[12 pt]{article}
+
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{float}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	 \usepackage{fancyhdr}
+
+\usepackage{easytable}
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{ } 
+	\fancyhead[L]{Défis échiquier}
+	\fancyhead[R]{2021-2022}
+	\newcounter{n}
+	\numberwithin{n}{section}
+	\newtheorem{df}[n]{Définition}
+	\newtheorem{theo}{Théorème}
+	\labelformat{theo}{théorème}
+    \newtheorem{rmq}[n]{Remarque}
+	\labelformat{rmq}{remarque~#1}
+	\newtheorem{cor}[n]{Corollaire}
+	\newtheorem{lm}{Lemme}
+	\labelformat{lm}{lemme~#1}
+	\newtheorem{hyp}[n]{Hypothèse}
+	\newtheorem{nt}[n]{Notation}
+
+	\renewcommand\epsilon{\varepsilon}
+	\renewcommand\phi{\varphi}
+	\newcommand\R{\mathbb{R}}
+	\newcommand\s{\mathbb{S}}
+	
+	
+	
+	\title{Défis échiquier}
+	\date{}
+	\begin{document}
+
+\begin{center}{\Large Quelques défis facultatifs pour vous occuper}\\ 
+ \end{center}
+ 
+Je vous laisse ici quelques défis pour ceux qui sont motivés. Le document comporte trois parties : 
+un bref rappel de quelques règles sur les échecs pour ceux qui ne les connaissent pas ; une première partie de 
+problèmes où l'on veut placer le plus grand nombre de pièces d'un certain type sans qu'elles puissent s'attaquer les unes
+les autres ; enfin, une suite de défis dont l'objectif est de déplacer un seul cavalier sur toutes les 
+cases du plateau sans jamais visiter deux fois la même case. Les questions de cette partie peuvent être 
+très difficiles, l'objectif est que ceux qui ont envie de défis un peu stimulants puissent chercher cela quand ils 
+ont du temps à y consacrer, et venir me poser des questions ou me présenter des pistes quand ils le souhaiteront 
+entre deux cours. Si le temps le permet, je prendrai une séance en fin d'année (ou avant les vacances de Pâques suivant la demande), pour vous donner des solutions et voir comment on les trouve plus ou moins naturellement. 
+
+\section{Rappels sur les échecs}
+\begin{itemize}
+\item Un échiquier classique est un carré formé de huit colonnes de huit cases (donc 64) au total. 
+\item Une tour peut se déplacer d'autant de cases qu'elle le souhaite sur sa ligne ou sur sa colonne (mais pas en diagonale). 
+\item Un fou peut se déplacer d'autant de cases qu'il le souhaite en diagonale (mais pas horizontalement ou verticalement). 
+\item Une reine peut se déplacer comme un fou ou une tour : donc elle peut bouger d'autant de cases qu'elle le souhaite en diagonale, ou horizontalement, ou verticalement. 
+\begin{figure}[H]
+\center
+\includegraphics[scale=.6]{Fig4}
+\end{figure}
+\item Un cavalier se déplace en faisant deux pas dans une direction, puis un pas dans une direction perpendiculaire à la première (son déplacement forme donc un L). \begin{figure}[H]\center 
+\includegraphics[scale=.4]{Fig1}
+\caption{Les croix indiquent les déplacements possibles des deux cavaliers.}
+\end{figure}
+\end{itemize}
+
+
+\section{Première famille de problèmes}
+
+1. Quel est le plus grand nombre de tours que l'on peut placer sur un échiquier sans qu'aucune d'elles ne puisse
+en atteindre une autre ? 
+
+2. Même question avec les fous. 
+
+3. Même question avec les dames. 
+
+4. Même question avec les cavaliers. 
+
+5. De combien de dames a-t-on besoin pour que chaque case du plateau puisse être atteinte par au moins une des dames ?
+
+\section{Problème du cavalier}
+
+Objectif : on pose le cavalier sur une case de l'échiquier et le déplacer de telle manière qu'il passe sur 
+chaque case une fois \emph{exactement}. 
+
+Pour tous ses problèmes, le plus simple pour réfléchir sur papier et de dessiner le plateau, de mettre un $1$ là où
+le cavalier est placé au début, et de placer le nombre suivant à chaque fois qu'on le déplace. 
+
+Par exemple, voici ce qui se passe si l'on essaie de se déplacer un peu au hasard sur un échiquier de $4$ sur $4$. 
+
+\begin{figure}[H]
+\begin{TAB}(e,.75cm){|c|c|c|c|}{|c|c|c|c|}
+    1 & &  &  \\
+     &  & \textcolor{red}{\textbf{2}} &  \\
+      &  &  & \\
+      & &  & 
+\end{TAB}
+\begin{TAB}(e,.75cm){|c|c|c|c|}{|c|c|c|c|}
+    1 & &  &  \\
+     &  & 2 &  \\
+      &  &  & \\
+      & &  & \textcolor{red}{\textbf{3}}
+\end{TAB}
+\begin{TAB}(e,.75cm){|c|c|c|c|}{|c|c|c|c|}
+    1 & &  &  \\
+     &  & 2 &  \\
+      & \textcolor{red}{\textbf{4}} &  & \\
+      & &  & 3
+\end{TAB} . . . . . . .
+\begin{TAB}(e,.75cm){|c|c|c|c|}{|c|c|c|c|}
+    1 & & 5 & 8 \\
+    6 & 9 & 2 &  \\
+      & 4 & 7 & 10 \\
+      & \textcolor{red}{\textbf{11}} &  & 3
+\end{TAB}
+\caption{Un exemple de déplacements du cavalier : après onze cases, le cavalier est bloqué car il ne peut plus aller qu'aux cases où il est passé aux étapes $2$, $6$ ou $10$. }
+\end{figure}
+
+
+
+
+1. On commence à se poser la question pour un échiquier de $3$ cases sur $3$ (donc neuf cases). 
+Se convaincre qu'on ne peut pas déplacer le cavalier sur un tel échiquier en passant par chaque case une seule fois. 
+
+2. En démarrant dans un coin d'un échiquier de quatre cases sur quatre, trouver un chemin qui passe par au 
+moins quinze cases sans jamais passer deux fois par la même case. 
+
+3. En commençant où vous le souhaitez sur un échiquier de cinq cases sur cinq, trouvez une manière de passer par 
+toutes les vingt-cinq cases une seule fois. 
+
+4.[Difficile] Pouvez-vous trouver une solution à la question précédente de telle manière que l'on puisse retourner directement 
+de la dernière case à la première ? 
+
+5.[Encore plus difficile] Reprendre les questions 3 et 4 avec des échiquiers carrés de $6$ cases sur $6$, puis de $7$ cases sur $7$ et enfin avec le vrai échiquier, celui de $8$ cases sur $8$.
+
+6. [Plus facile sans doute] : Reprendre les questions 3 et 4 avec les trois échiquiers suivants. 
+
+\begin{figure}[H]
+\center 
+\includegraphics[scale=.4]{Fig2}
+\end{figure}
+\begin{figure}[H]
+\center
+\includegraphics[scale=.4]{Fig3}
+\end{figure}
+
+	\end{document}

@@ -1,0 +1,81 @@
+	\documentclass[14pt]{extreport}
+\usepackage{extsizes}
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage[ margin=1in]{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	\usepackage{float}
+	\usepackage{easytable}
+	 \usepackage{fancyhdr}\usepackage{longtable}
+	 \usetikzlibrary{shapes.misc}
+\newlength{\taillecellule}
+\setlength{\taillecellule}{2cm}
+\newcolumntype{C}{@{}>{\centering\arraybackslash}p{\taillecellule}@{}}
+
+\usepackage{pstricks,multido}
+\usepackage{arrayjob}
+\usepackage{calc,xlop}
+\tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
+%default radius will be 1pt. 
+cross/.default={1pt}}
+
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{\empty} 
+	\fancyhead[L]{Calculs}
+	\fancyhead[R]{2 avril 2025}
+	
+	
+	\title{Calculs}
+	\date{}
+	\begin{document}
+
+Nom, Prénom : \rule{5 cm}{0.4pt}
+\begin{enumerate}
+\item[a)] $ -1 + 4 = (-1)+4 = 3$
+\item[b)] $ 10 - (- 5) = 10 + 5 = 15$
+\item[c)] $ - 10 - 3 = (-10) + (-3) = -13$
+\item[d)] $ 2 + 3\times 4 = 2  + 12 = 14$
+\item[e)] $ 5- 1 \times 2 +1 = 5 - 2 + 1 = 4$
+
+\item[f)] $ -2 + 12 - (-2) + 7 - 3 = (-2) + 12 + 2 + 7 + (-3) = 21 - 5 = 16$
+\item[g)] $ 3  - (-5 - 4) = 3 - (-9) = 3 + 9 = 12$
+\item[h)] $ 12 - 5 - [3 - (8-9)]  = 7 - [3 - (-1)] = 7 - 4 = 3$
+\item[i)] $ 	(2 \times 4- 13) + (6-  (-1)) = (8-13)+ 7 = (-5) +7=2$
+\item[j)] $ - 1 - 1 - (5 - 6) = (-1) + (-1) - (-1) = -2 + 1 = -1$
+\end{enumerate}
+ 
+
+
+\par\noindent\rule{\textwidth}{0.4pt}
+
+Nom, Prénom : \rule{5 cm}{0.4pt}
+ 
+\begin{enumerate}
+\item[a)] $ -5 + 4= (-5) + 4 = -1$
+\item[b)] $ 11 - (- 5) = 11 + 5 = 16$
+\item[c)] $ - 7 - 3 = (-7) + (-3) = -10$
+\item[d)] $ 2 + 5\times 4 = 2 + 20 = 22$
+\item[e)] $ 5- 2 \times 2 +1 = 5 - 4 + 1 = 2$
+
+\item[f)] $ -2 + 11 - (-2) + 7 - 3 = (-2) + 11 + 2 + 7 + (-3) = 20 -5 = 15$
+\item[g)] $ 3  - (-6 - 4) = 3 - (-10) = 3 + 10 = 13$
+\item[h)] $ 12 - 5 - [3 - (8-9)] = 7 - [3 - (-1)] = 7 - 4 = 3$
+\item[i)] $ 	(2 \times 4- 13) + (6-  (-1))= (8-13)+ 7 = (-5) +7=2$
+\item[j)] $ - 1 - 1 - (5 - 6)= (-1) + (-1) - (-1) = -2 + 1 = -1$
+\end{enumerate}
+ 
+ 
+\end{document}
