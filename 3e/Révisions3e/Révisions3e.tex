@@ -1,0 +1,283 @@
+	\documentclass[14pt]{extreport}
+\usepackage{extsizes}
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage[ margin=1in]{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	\usepackage{float}
+	\usepackage{easytable}
+	 \usepackage{fancyhdr}\usepackage{longtable}
+	 \usetikzlibrary{shapes.misc}
+	 \newcommand\ang[1]{$#1{}^o$}
+\newlength{\taillecellule}
+\setlength{\taillecellule}{2cm}
+\newcolumntype{C}{@{}>{\centering\arraybackslash}p{\taillecellule}@{}}
+
+\renewcommand{\theenumi}{\alph{enumi})}
+\usepackage{pstricks,multido}
+\usepackage{arrayjob}
+\usepackage{calc,xlop}
+\tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
+%default radius will be 1pt. 
+cross/.default={1pt}}
+
+	\newcounter{n}
+	\setcounter{n}{1} 
+	\newcommand{\cm}{\textbf{ cm}}
+	\newcommand\ds\displaystyle
+	\renewcommand{\it}{\item[$ \mathbf{\bullet\ \then}.$]\stepcounter{n} }
+	\newenvironment{calcul}{\item[$\mathbf{\then}.$] \stepcounter{n}\hfil $\displaystyle  }{.$\hfil   }
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{\empty} 
+	\fancyhead[L]{Bilan}
+	\fancyhead[R]{Année de 3e}
+	
+	
+	
+	\title{Bilan année de 3e}
+	\date{}
+	\begin{document}
+
+
+
+\subsection*{Révision de calcul}  \noindent
+Effectuer les additions suivantes : 
+\begin{itemize}
+\it $\left(-\frac14\right)+\left(-\frac32\right)+\left(+\frac52\right)$.
+\it $\left(-\frac56\right)+\left(+\frac49\right)+\left(-\frac73\right)$.
+\it $(-0,75) + (+4) + \left(-\frac45\right)$.
+\it $\left(+\frac47\right)+\left(-\frac{13}{21}\right)+\left(+\frac56\right)$.
+\it $(-12)+(-11,57)+(+9,87)$. 
+\it $ (-4,51)+\left(-\frac45\right)+\left(+\frac7{20}\right)$.
+\end{itemize}
+Calculer la valeur des sommes algébriques suivantes : 
+\begin{itemize}
+\it $(-10)+(-15)-(-30)+(+7)-(+12)$.
+\it $(-7)-(-9)-(+17)+(-41)+(+1)$.
+\it $(+49)-(-63)+(-3)-(+4)$.
+\end{itemize}
+Calculer la valeur des sommes algébriques suivantes : 
+\begin{itemize}
+\it $(-0,7)-(-0,9)+(-13,5)-(+4)$
+\it $\left(-\frac12\right)+\left(-\frac34\right) - \left(+\frac25\right)-(-1)$.
+\it $\left(-\frac5{11}\right)+\left(-\frac7{22}\right)
+-\left(-\frac4{33}\right) + (-1) -(+0,5)$.
+\end{itemize}
+Calculer la valeur des sommes algébriques suivantes : 
+\begin{itemize}
+\it $7-10+14-13-21+3$.
+\it $0,75+4,7-0,7-0,5-1$.
+\it $\frac23-\frac34+\frac5{12}-\frac56 - 3$. 
+\end{itemize}
+Effectuer les opérations suivantes : 
+\begin{itemize}
+\it $[(5-9)+(3-5)] - [(7+3-5) - (7-10)]$.
+\it $[12-(14-5+0,75)] + [-15 + (3,25-2)]$.
+\it $\left[1 - \left(\frac25-\frac43\right)\right] - 
+\left[ \left(\frac45-1\right) - \left(\frac75+2\right)\right]$. 
+\end{itemize}
+Supprimer les parenthèses et les crochets dans les expressions suivantes : 
+\begin{itemize}
+\it $(a-b+c) - (d- e - f) + (b-a)$. 
+\it $[(a-b)-(a-5)] + [b-7-(a-3)]$. 
+\it $[12-(a-b)+6] - [15+ (b-a-13)]$. 
+\end{itemize}
+
+Effectuer les produits suivants : 
+\begin{itemize}
+\it $(-3)(+7)(-5)(-4)$.
+\it $(+1,7)(-2,5)(-3)(-1,9)$.
+\it $(-1)(+1)(-1)(+1)(-1)(-1)$.
+\it $\left(-\frac35\right)(+3)\left(-\frac53\right)$.
+\it $\left(+\frac12\right)\left(-\frac14\right)\left(-\frac48\right)$.
+\it $\left(+\frac12\right)\left(-\frac6{11}\right)\left(-\frac78\right)\left(-\frac{11}{15}\right)$.
+\end{itemize}
+Effectuer les divisions suivantes : 
+\begin{itemize}
+\it $\displaystyle(+15):\left(-\frac23\right)$.
+\it $\displaystyle(-7,5):\left(-\frac45\right)$.
+\it $\displaystyle(-1):\left(+\frac34\right)$.
+\it $\displaystyle\left(-\frac45\right):(+1,4)$.
+\it $\displaystyle\left(+\frac34\right):\left(-\frac{15}8\right)$.
+\it $\displaystyle\left(-\frac73\right):\left(+\frac53\right)$.
+\it $\displaystyle(+1):\left(+\frac23\right)$.
+\it $\displaystyle\left(-\frac{8}{25}\right):\left(-\frac{14}5\right)$.
+\it $\displaystyle\left(+\frac13\right):\left(-\frac14\right)$.
+\end{itemize}
+Effectuer les opérations suivantes : 
+\begin{itemize}
+\it $\displaystyle\frac{-3+5-6}{2+7-1}\times\frac{4-3+1}{2-3-1}\times \frac{-5-7}{10}$.
+\it $\displaystyle\frac{\frac12-\frac23}{\frac34-1}\times \frac{\frac56+\frac13}{1-\frac45}\times \frac{-\frac78+1}{\frac32}.$
+\it Calculer : \[ (-11)^3; \phantom{miou}(+9)^2; \phantom{miou}(-10)^5; \phantom{miou}(+7)^4; \phantom{miou}(-13)^4.\]
+\it Calculer : \[ \left(-\frac12\right)^5; \phantom{miou}\left(+\frac23\right)^2; \phantom{miou}\left(-\frac34\right)^3; \phantom{miou}(+1,4)^2; \phantom{miou}(-0,25)^2.\]
+\it Calculer : \[ 5^3\times 5^2; \phantom{miou}(-7)\times(-7)^2; \phantom{miou}\left(\frac23\right)\times \left(\frac23\right)^3; \phantom{miou}
+\left[\left(-\frac14\right)^2\right]^2\left[(-2)^2\right]^3\]
+\end{itemize}
+Réduire les expressions suivantes: 
+\begin{itemize}
+\it $-\frac32 x + \frac54 x-3x^2+\frac{x}6-\frac52 x^2+5+4x^2$.
+\it $\frac32 x^2+xy+y^2-2xy+\frac{x^2}3-\frac32x^2$.
+\it $4a^2-\frac23a-\frac35a^2+\frac13a-5a-\frac2{15}a^2$.
+\it $3x^2+\frac45 - \frac53x - 2x^2 -\frac35x^3 + 4 - 2 x^2 + 7x$. 
+\it $4x^2 - \frac72 + \frac35x - \frac52x^2 + \frac43 x^3 - 5 + \frac32 x^3 + 7 - 2x$. 
+\it $\frac25 a^2b + 3a^3 -4ab^2 + \frac52 a^2b + \frac72b^3 - b^3 + 2ab^2$. 
+\end{itemize}
+Réduire : \begin{itemize}
+\it $(3x-5)+[2x-5 - (3x-2y+4) - (4x-3y-9)]$.
+\it $(2x-5y+7) - [(3x+2y-3)-(4x+4y-2)]-[2x-(3y+4)]$. 
+\it $[(x-2y+5) - (3x+2y+7)]-[(2x+3)-(4y-2)]$. 
+\end{itemize}
+Effectuer les produits suivants : 
+\begin{itemize}
+\it $(3a^2b^3)\left(\frac23ab^5\right)$.
+\it $\left(\frac45a^3b^2c\right)\left(-\frac34abc^4\right)$. 
+\it $\left(\frac47a^2xy^3\right)\left(-\frac52a^3y^4\right)$.
+\it $\left(-\frac34x^2y\right)\left(+\frac35a^3y^5\right)$.
+\it $\left(\frac94a^4x^2y^3\right)\left(-\frac43ax^2\right)$. 
+\it $\left(\frac{14}3a^2b^3x\right)\left(-\frac67a^2b^5\right)$. 
+\it $\left(-\frac72ax^2y\right)\left(-\frac8{15}b^3xy^2\right)\left(\frac5{21}abx^3\right)$.
+\it $\left(-\frac23xy^2\right)^2(-4x^2y)$.
+\it $\left(\frac5{12}a^4b^2x\right)\left(-\frac27ax^2y^3\right)\left(-\frac{14}5b^2xy^4\right)$.
+\it $\left(\frac35x^2y\right)^3\left(-\frac54xy\right)$.
+\end{itemize}
+Effectuer les produits suivants.
+\begin{itemize}
+\it $(2x-7)(-3x+2)$.
+\it $(4x^5+7-2x^3)(x^3-2x)$.
+\it $(5x^3-2x)(3x-4x^2)$
+\it $(2x-7x^2+5x^3)(3x-5x^2+8)$.
+\it $\left(-2x+\frac32\right)(4x+3)$.
+\it $\left(\frac83x-\frac32x^2+5\right)(4x^3-5x^2+7)$.
+\it $(7x^4-2x^3+4x^2)(3x^2-5)$.
+\it $(2x^2-4x^3)(x^3-2x)$.
+\it $(2x^2-4+2x)(x^2+5-2x)$.
+\it $\left(\frac54x^3-2x+\frac12\right)\left(\frac72x^3-\frac23x+x^2\right)$.
+\end{itemize}
+ Calculer les produits suivants : 
+\begin{itemize}
+\it $(2x+3)(3x+2)(x-4)$.
+\it $(5x-1)(2x+3)(7+4x)$.
+\it $(3x^2-1)(x+1)(x-1)$. \end{itemize}
+Développer et réduire : 
+\begin{itemize}
+\it $5(3a^2-4b^3)-[9(2a^2-b^3)-2(a^2-5b^3)]$.
+\it $3a^2(2b-1)-[2a^2(5b-3)-2b(3a^2+1)]$.
+\it $(2a+5b)(3a-2b)-(2a-1)(3a+2b)-(a-2b)(5b-1)$.
+\it $(2x-3y)(5x-2y)-(3x-2y)(2x+1)-(5x-y)(3y+1)$.
+\it $(ax^2-b)(ax^2-2b)+3b(ax^2-b)+b(b-1)$.\end{itemize}
+Résoudre les équations suivantes : 
+\begin{itemize}
+\it $5(2x-3) - 4(5x-7)=19-2(x+11)$. 
+\it $4(x+3)-7x+17 = 8(5x-1)+166$. 
+\it $17-14(x+1)= 13-4(x+1)-5(x-3)$. 
+\it $5x+3,5+(3x-4) = 7x-3(x-0,5)$. 
+\it $7(4x+3)-4(x-1)=15(x+0,75)+7$. 
+\it $17x+15(x-1)=-1-14(3x+1)$. 
+\end{itemize}
+Résoudre les équations suivantes (après développement, les termes en $x^2$ ou $x^3$ se simplifient) : 
+\begin{itemize}
+\it $(x-1)^2+(x+3)^2= 2(x-2)(x+1)+38$.
+\it $5(x^2-2x-1)+2(3x-2)=5(x+1)^2$.
+\it $(9x+1)(x-2)=(3x+4)(3x-5)$.\end{itemize}
+Résoudre les équations suivantes (on se ramènera au cas entier en multipliant par un nombre opportun).
+\begin{itemize}
+\it $\frac{x+5}4 - \frac{x-3}6 = \frac{x}3$. 
+\it $\frac{3x-7}2 + \frac{x+1}3 = -16$. 
+\it $x-\frac{x+1}3 = \frac{2x+1}5$. 
+\it $\frac{7-3x}{12} + \frac34 = 2(x-2) + \frac{5(5-2x)}6$. 
+\it $\frac{x}5 - \frac{3x-1}6 + \frac{3-x}4 = 0$.
+\it $\frac{3(x+3)}4 + \frac12 = \frac{5x+9}3 - \frac{7x-9}4$. 
+\it $\frac{2x-7}5 + \frac{x+11}2 = -4$. 
+\it $\frac{2x-3}3 - \frac{x-3}6 = \frac{4x+3}4 - 17$. 
+\it $\frac{5x-3}4 - \frac{7x-5}9 = \frac{x+19}6$. 
+\it $\frac{5x+1}8-\frac{x-1}3 = \frac{4(2x-3)}9$. 
+\it $\frac{2x-1}3 - \frac{5x+2}7 = x +13$. 
+\it $\frac{8x+2}5 - \frac{x-11}7 = \frac{5x-3}2 - \frac{3x-1}4$.\end{itemize}
+Résoudre les équations :
+\begin{itemize}
+\it $(x-1)(x+2)(x-3)=0$. 
+\it $(x-3)(x-4)(x-5)=0$. 
+\it $(2x+1)(x+1)(4x-3) = 0$.
+\it $(2x+1)(x+4)(3x+1)=0$. 
+\it $x(5x+1)(4x-3)(3x-4)=0$. 
+\it $5x(3x-7)=0$.   
+\it $x^2-3x=0$. 
+\it $5x^2+8x=0$. 
+\it $4x^2-\frac{7x}3=0$. 
+\end{itemize}
+	
+    \subsection*{Problèmes de réflexion plus avancés}
+\begin{enumerate}
+\item Quel nombre faut-il ajouter aux deux termes de la fraction $\frac7{13}$ pour qu'elle devienne égale à $\frac23$ ? 
+ \item Quel nombre faut-il retrancher aux deux termes de la fraction $\frac{17}{23}$ pour obtenir une fraction égale à $\frac58$ ? 
+ \item Quel nombre faut-il ajouter aux deux termes de la fraction $\frac58$ et retrancher aux deux termes de la fraction $\frac34$ pour obtenir deux fractions égales ? 
+ \item Une personne dispose de deux heures pour effectuer une promenade. Elle part en tramway à la vitesse moyenne de $12$ km à l'heure et revient à pied, à la vitesse moyenne de $4$ km à l'heure. À quelle distance du point de départ devra-t-elle quitter le tramway ? 
+ \item Un épicier achète un certain nombre de bouteilles de vin pour $225$ euros. En vendant la bouteille $1,65$ euros, il gagnerait autant que ce qu'il perdrait s'il la vendait $1,35$ euros. Quel est le nombre des bouteilles de vins ? 
+ 
+ \item On considère un polygone régulier à $6$ côtés.
+ \begin{enumerate}
+ \item Réaliser une figure.
+ \item Relier tous les sommets au centre $O$. 
+ \item Montrer que tous les triangles ainsi formés ont leurs angles tous égaux à $60^o$. 
+ \item En déduire que les angles d'un hexagone régulier mesurent $120$ degrés.
+\end{enumerate}   
+
+ \item On considère un polygone régulier à $5$ côtés.
+ \begin{enumerate}
+ \item Réaliser une figure.
+ \item Relier tous les sommets au centre $O$. 
+ \item Montrer que tous les triangles isocèles ainsi formés ont leurs angles à la base tous égaux à $54^o$. 
+ \item En déduire que les angles d'un pentagone régulier mesurent $108^o$ degrés.
+\end{enumerate}   
+\item Utiliser les deux exercices précédents pour généraliser à un polygone régulier avec un nombre quelconque $N$ de côtés. On montrera ainsi que les angles d'une telle figure valent tous $\frac{N-2}N\times 180^o$.
+\item On trace deux points $A$ et $B$ et une droite $(d)$ sur une feuille. Expliquer comment construire le cercle passant par $A$ et $B$ dont le centre appartient à $(d)$. Existe-t-il toujours ? Y en a-t-il toujours un seul ?
+\item On place trois points $A$, $B$, $C$ sur une feuille. À quelle condition passe-t-il un cercle par ces trois points ? Comment le construire ? 
+\item On considère un quadrilatère convexe $ABCD$ dans lequel la médiatrice de 
+$[AB]$ est également la médiatrice de $[CD]$. Soit $O$ le point où cette médiatrice coupe la médiatrice de $[BC]$. \begin{enumerate}
+\item Montrer que les quatre points $A$, $B$, $C$ et $D$ sont situés sur un même cercle de centre $O$. 
+\item Démontrer que les médiatrices de $[AD]$, $[AC]$ et $[BD]$ passent également par $O$. 
+\end{enumerate}
+\item Tracer un parallélogramme $ABCD$, et les bissectrices de ses quatre angles. Elles se croisent intérieurement au parallélogramme en quatre points $E$, $F$, $G$ et $H$. Que dire du quadrilatère $EFGH$ formé ? Le démontrer. 
+\item On trace un triangle $ABC$ et on place les milieux $D$, $E$, $F$ de ses trois côtés. Montrer que le triangle $DEF$ est une réduction du triangle $ABC$ dont on déterminera le coefficient. 
+\item Dans le même contexte que l'exercice précédent, on relie chaque milieu au sommet opposé, et on note $G$ le point d'intersection des trois segments ainsi formés. Montrer que l'homothétie de centre $G$ et de rapport $-2$ envoie chaque sommet du triangle $DEF$ sur un sommet du triangle $ABC$. 
+\item Dans un triangle $ABC$, on trace la hauteur issue de $A$ qui rencontre $(BC)$ en $H$. On suppose $AB^2 = BH \times BC$. Montrer que $ABC$ est rectangle en $A$. 
+\item On considère un quadrilatère $ABCD$. Montrer que les milieux des côtés forment un  parallélogramme.
+ \item Trouver trois nombres entiers consécutifs (consécutifs : qui se suivent) dont la somme est égale à $57$. 
+ \item La somme de cinq nombres impairs consécutifs est 85. Quels sont ces nombres ? 
+ \item Un père a 29 ans ; son fils a 5 ans ; dans combien d'années l'âge du père sera-t-il le triple de l'âge du fils ? 
+ \item Un père a 41 ans ; ses trois enfants sont âgés de 7, 9 et 13 ans. Dans combien d'années l'âge du père sera-t-il égal à la somme des âges de ses enfants ? 
+ \item Trouver un nombre dont la somme des quotients par 5, 7 et 9 soit égale à 429. 
+ \item Développer les produits suivants : 
+ \[ (x-1)(x+1)\]
+ \[(x-1)(x^2+x+1)\]
+ \[(x-1)(x^3+x^2+x+1)\]
+ En déduire une formule générale. En déduire que 
+ \[ x^n+ x^{n-1}+\ldots + x^2 + x + 1 = \frac{x^{n+1}-1}{x-1}\]
+ \item \  [Utiliser l'exercice précédent] Conte classique : un sage demande à un roi de le payer en mettant une pièce sur la première case d'un échiquier, puis deux pièces sur la seconde, puis quatre pièces, et ainsi de suite sur les soixante-quatre cases en doublant à chaque nouvelle case le montant. Déterminer la somme reçue. En utilisant l'approximation $2^{10} \sim 1000$, en donner un ordre de grandeur. 
+ \item Un cercle délimite deux régions du plan : l'intérieur et l'extérieur. Deux cercles peuvent en déterminer quatre. S'en convaincre par un dessin. Que dire du nombre maximal de régions délimitées par trois cercles ? Que se passe-t-il pour quatre ? Trouver une formule générale.
+ \item Si on coupe un disque par une corde, on délimite deux régions. Une deuxième corde délimite alors quatre régions. Généraliser. 
+ \item Un nombre entier $N$ est dit \emph{pratique} si chaque entier entre $1$ et $N$ peut être écrit comme une somme de diviseurs de $N$ (sans répétition). Par exemple, $6$ est pratique car ses diviseurs sont $1$, $2$, $3$ et $6$ et que : 
+ \[ 1 = 1\] 
+ \[ 2 = 2 \]
+ \[ 3 = 1 + 2 \]
+ \[ 4 = 1+3 \text{ (mais 2+2 ne serait pas autorisé)}\]
+ \[ 5 = 2 + 3 \]
+ \[ 6 = 6\]
+ Déterminer les nombres pratiques jusqu'à $30$. \\
+ Montrer que toute puissance de $2$ est pratique (Penser à l'écriture en base $2$). 
+\end{enumerate} 
+ 
+\end{document}

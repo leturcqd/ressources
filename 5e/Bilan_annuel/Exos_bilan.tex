@@ -1,0 +1,248 @@
+	\documentclass[14pt]{extreport}
+\usepackage{extsizes}
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage[ margin=1in]{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	\usepackage{float}
+	\usepackage{easytable}
+	 \usepackage{fancyhdr}\usepackage{longtable}
+	 \usetikzlibrary{shapes.misc}
+	 \newcommand\ang[1]{$#1{}^o$}
+\newlength{\taillecellule}
+\setlength{\taillecellule}{2cm}
+\newcolumntype{C}{@{}>{\centering\arraybackslash}p{\taillecellule}@{}}
+
+\renewcommand{\theenumi}{\alph{enumi})}
+\usepackage{pstricks,multido}
+\usepackage{arrayjob}
+\usepackage{calc,xlop}
+\tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
+%default radius will be 1pt. 
+cross/.default={1pt}}
+
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{\empty} 
+	\fancyhead[L]{Bilan}
+	\fancyhead[R]{Année de 5e}
+	
+	
+	
+	\title{Bilan année de 5e}
+	\date{}
+	\begin{document}
+
+
+
+\subsection*{Exercice 1 : Calculs}  % 4 points
+Recopiez et effectuez les calculs suivants : 
+
+\begin{enumerate}
+\item $2+3\times4\div2$
+\item $5 - 2 + 3$
+\item $ 3+2\times 4$
+\item $ 5 + (-3) + 7 +  4 +  (-2) $
+\item $ 3 - (-3) + 4 - 5 - (-2) + (-8)$
+\item $(5-(-2) + 4) - (3- 2 + (-4))$
+\end{enumerate}
+
+\subsection*{Exercice 2 : Calculs aussi}
+
+Effectuer : 
+\begin{enumerate}
+\item[a)] $ -5 + 4$
+\item[b)] $ 11 - (- 5)$
+\item[c)] $ - 7 - 3$
+\item[d)] $ 2 + 5\times 4$
+\item[e)] $ 5- 2 \times 2 +1$
+
+\item[f)] $ -2 + 11 - (-2) + 7 - 3$
+\item[g)] $ 3  - (-6 - 4)$
+\item[h)] $ 12 - 5 - [3 - (8-9)] $
+\item[i)] $ 	(2 \times 4- 13) + (6-  (-1))$
+\item[j)] $ - 1 - 1 - (5 - 6)$
+\end{enumerate}
+
+\subsection*{Exercice 3 : Fractions}
+
+\begin{enumerate}
+\item Parmi la liste suivante, identifiez les fractions qui sont égales. Justifier les égalités \textbf{et} le fait que les groupes ainsi formés sont bien différents.
+\[ \frac46;  \frac79; \frac34;  \frac{14}{21}; \frac12 \frac23; \frac{49}{63}; \frac{34}{68}\]
+\item Trouver une fraction égale à $\frac34$ dont le dénominateur est $20$. 
+\item Trouver une fraction égale à $\frac53$ dont le numérateur est $95$.
+\item Trouver une fraction égale à $\frac69$ dont le numérateur est $10$.
+\item Trouver une fraction égale à $\frac8{12}$ dont le dénominateur est $15$.
+\item Trouver une fraction égale à $\frac59$ dont la somme du numérateur et du dénominateur est $70$. 
+\item Trouver une fraction égale à $\frac73$ dont la différence entre le numérateur et le dénominateur est $48$. 
+\item Trouver une fraction égale à $\frac{49}{37}$ dont le dénominateur soit compris entre $450$ et $490$.
+\item Simplifier les fractions suivantes : 
+\[ \frac5{10}; \frac9{15} ; \frac{35}{21} ; \frac{33}{88} ; \frac{52}{117} ; \frac{143}{187}\]
+
+\item Simplifier les fractions 
+\[ \frac{77}{121}; \phantom{meow}
+\frac{156}{208};\phantom{meow}
+\frac{225}{375};\phantom{meow}
+\frac{125}{1~000};\phantom{meow}
+\frac{130}{273}; \phantom{meow}
+\frac{2~352}{5~376}; \phantom{meow}
+\frac{30~752}{37~800}.\]
+\item Réduire au même dénominateur les fractions : 
+\[ \frac{17}{25}\text{  et  }\frac{19}{45};\phantom{meow}
+\frac{5}{26}\text{  et  }\frac{7}{39};\phantom{meow}
+\frac1{350}\text{  et  }\frac1{420};\phantom{meow}
+\frac{13}{77}\text{  et  }\frac{9}{66}.\]
+\item 
+Réduisez les fractions suivantes au même dénominateur : $\frac23$, $\frac59$, $\frac56$, $\frac{11}{18}$. 
+
+\item Trouver toutes les fractions égales à $\frac{60}{72}$ et dont les termes soient plus petits que ceux
+de cette fraction. 
+
+\item Calculer $\frac14+\frac12$ et $\frac12-\frac14$.
+\item Calculer $\frac19+\frac13$ et $\frac13-\frac19$.
+\item Calculer $\frac34 + \frac7{10}$ et $\frac34-\frac7{10}$.
+\item Calculer $\frac5{24}+\frac38 - \frac3{10} + \frac1{20}$. 
+ \item Calculer : 
+ \[\frac13 + \frac23;  \phantom{meow}
+ \frac34+\frac25; \phantom{meow}
+ \frac23-\frac12;  \phantom{meow}
+ \frac45-\frac23.\]
+ \item Calculer : \[\left(4+\frac23\right) + \left(2+ \frac56\right);  \phantom{meow}
+ \left(7 + \frac34\right) + \left(5 + \frac23\right)
+ + \left(\frac13+\frac14\right).\]
+ \item Calculer :\[ 17 - \left(\frac43 + \frac35\right) ;  \phantom{meow}
+ \frac{15}4 + \left(\frac{17}9-\frac85\right); 
+  \phantom{meow}
+  \frac{13}{11} - \left(\frac79 - \frac23\right)\]
+  \item Calculer : $\frac{31}{15} + \left(\frac{26}{35} - \frac{8}{21}\right)$.
+\item Calculer : $\frac{91}{30} + \left(\frac{29}{42} - \frac{2}{35}\right)$.
+\end{enumerate}
+
+
+
+
+\subsection*{Exercice 4 - Conditions de constructibilité}
+
+Parmi les données suivantes, lesquelles permettent de tracer un triangle ? Justifiez vos réponses. 
+
+\begin{enumerate}
+\item $AB = 3$ cm, $BC = 2$ cm, $AC = 6$ cm. 
+\item $\widehat{ABC} =$ \ang{40}, $\widehat{BCA} =$ \ang{90}, $\widehat{CAB} =$ \ang{50}.
+\item $AB = 5$ cm, $BC = 3$ cm, $AC = 7$ cm.
+\item $\widehat{ABC} =$ \ang{30}, $\widehat{BCA} =$ \ang{50}, $\widehat{CAB} =$ \ang{90}.
+\end{enumerate}
+
+\subsection*{Exercice 5 - Tracé}
+
+Parmi les consignes suivantes, est-il possible de construire un triangle ? Justifier vos réponses.
+Quand la construction et possible, construire celui-ci à la règle, au compas et au rapporteur.
+\begin{enumerate}
+\item $AB= 3$ cm, $BC = 5$ cm, $AC = 1$ cm. 
+\item $AB= 5$ cm, $BC = 6$ cm, et $AC = 8$ cm. 
+\item $AB = 6$ cm, $AC = 13$ cm, $BC = 6$ cm.
+\end{enumerate}
+Construire le triangle ainsi choisi à la règle et au compas, puis construire : 
+\begin{enumerate}
+\item la médiatrice de $[AB]$
+\item la hauteur issue de $C$
+\item le symétrique du triangle $ABC$ par rapport à $(AB)$
+\item le symétrique du triangle $ABC$ par rapport à $B$.
+\end{enumerate} 
+\subsection*{Exercice 6 - Angles}
+
+\begin{enumerate}
+\item Construire trois angles successivement adjacents : $\widehat{AOB}= 32^o$, $\widehat{BOC}= 72^o$, et $\widehat{COD}= 48^o$, puis les bissectrices $[OM)$, $[ON)$, $[OP)$ et $[OQ)$ des angles $\widehat{AOB}$, $\widehat{AOC}$, $\widehat{BOD}$ et $\widehat{COD}$. 
+\item Calculer les angles $\widehat{MON}$ et $\widehat{POQ}$. Comparer
+ces angles à l'angle $\widehat{BOC}$. 
+\item Montrer que les angles $\widehat{MOQ}$ et $\widehat{NOP}$ ont la même bissectrice. 
+\end{enumerate}
+
+\subsection*{Exercice 7 - Propriété des angles}
+	\begin{tikzpicture}[baseline]
+    \tikzset{
+      point/.style={thick, draw, cross out, inner sep=0pt, minimum width=5pt, minimum height=5pt,
+      },
+    }
+    \clip (-1,-6.859954267158308) rectangle (9.893937016745921,3.298368333044762);
+    	\draw[color={black}] (-49.337106354662005,-8.114802081529762)--(57.23104337140793,9.413170414574523);
+	\draw[color={black}] (-43.01051039562473,25.49698162099757)--(50.800045009202414,-30.114681319318713);
+	\draw[color={black}] (-32.54430446732648,-36.5053743530274)--(44.41902981165249,35.443898873669596);
+	\draw[color={black}] (-49.10034384830023,-13.974751650033367)--(57.12663771366797,3.4970976845539177);
+	\draw  [color={black},line width = 2,preaction={fill,color = {black},opacity = 0.2}] (0.9866000147758149,0.1631570570445111) -- (0,0) -- (0.8602101149709134,-0.5099395773234235) arc (-30.73:9.319999999999997:1) ;
+	\draw [color={black}] (1.57,-0.3) node[anchor = center,scale=1, rotate = 0] {\ang{40}};
+	\draw  [color={red},line width = 2,preaction={fill,color = {red},opacity = 0.2}] (4.841010222109848,-2.869763566876294) -- (3.980788327580091,-2.359843812402566) -- (4.711290183478223,-1.676933201590069) arc (42.82:-30.910000000000004:1) ;
+	\draw [color={red}] (5.57,-2.19) node[anchor = center,scale=1, rotate = 0] {\ang{74}};
+	\draw  [color={black},line width = 2,preaction={fill,color = {blue},opacity = 0.2}] (1.2237233194994683,-5.699013376196127) -- (0.23675925179005297,-5.859954267158308) -- (0.9672611725210718,-5.177043595736702) arc (42.82:9.009999999999998:1) ;
+	\draw [color={black}] (1.67,-5.15) node[anchor = center,scale=1, rotate = 0] {\ang{34}}; 
+	\draw [color={black}] (-0.5,0.5) node[anchor = center,scale=1, rotate = 0] {J};
+	\draw [color={black}] (8.29,-4.62) node[anchor = center,scale=1, rotate = 0] {D};
+	\draw [color={black}] (7.39,1.8) node[anchor = center,scale=1, rotate = 0] {W};
+	\draw [color={black}] (3.98,-2.86) node[anchor = center,scale=1, rotate = 0] {U};
+	\draw [color={black}] (0.74,-6.36) node[anchor = center,scale=1, rotate = 0] {I};
+
+\end{tikzpicture}\\
+\begin{enumerate}
+\item  Déterminer la mesure de l'angle $\widehat{JUW}$. Justifiez.
+\item  En déduire la mesure de l'angle $\widehat{UWJ}$.Justifiez.
+\item  Déterminer si les droites $(JW)$ et $(ID)$ sont parallèles. Justifiez. 
+\item En déduire la valeur de l'angle $\widehat{UDI}$.\end{enumerate}
+\subsection*{Exercice 8 - Calcul littéral}
+	Réduire les sommes suivantes : 
+ \[ (x + 13) + (x - 9) - (x - 6); \phantom{meowmeow} 
+ (a + 10) - (a - 5) + (a - 9). \]
+ \[ x - (x - 7)  + (x - 9); \phantom{meowmeow} 
+ a + (a - b + 7) - (a + b). \]
+ \[ x + 13 - (x + y + 10) + (x - y); \phantom{meowmeow} 
+ m - n - (7 - m) + (n - 9).\]
+	
+    \subsection*{Problèmes de réflexion plus avancés}
+\begin{enumerate}
+\item Quel nombre faut-il ajouter aux deux termes de la fraction $\frac7{13}$ pour qu'elle devienne égale à $\frac23$ ? 
+ \item Quel nombre faut-il retrancher aux deux termes de la fraction $\frac{17}{23}$ pour obtenir une fraction égale à $\frac58$ ? 
+ \item Quel nombre faut-il ajouter aux deux termes de la fraction $\frac58$ et retrancher aux deux termes de la fraction $\frac34$ pour obtenir deux fractions égales ? 
+ \item Une personne dispose de deux heures pour effectuer une promenade. Elle part en tramway à la vitesse moyenne de $12$ km à l'heure et revient à pied, à la vitesse moyenne de $4$ km à l'heure. À quelle distance du point de départ devra-t-elle quitter le tramway ? 
+ \item Un épicier achète un certain nombre de bouteilles de vin pour $225$ euros. En vendant la bouteille $1,65$ euros, il gagnerait autant que ce qu'il perdrait s'il la vendait $1,35$ euros. Quel est le nombre des bouteilles de vins ? 
+ 
+ \item On considère un polygone régulier à $6$ côtés.
+ \begin{enumerate}
+ \item Réaliser une figure.
+ \item Relier tous les sommets au centre $O$. 
+ \item Montrer que tous les triangles ainsi formés ont leurs angles tous égaux à $60^o$. 
+ \item En déduire que les angles d'un hexagone régulier mesurent $120$ degrés.
+\end{enumerate}   
+
+ \item On considère un polygone régulier à $5$ côtés.
+ \begin{enumerate}
+ \item Réaliser une figure.
+ \item Relier tous les sommets au centre $O$. 
+ \item Montrer que tous les triangles isocèles ainsi formés ont leurs angles à la base tous égaux à $54^o$. 
+ \item En déduire que les angles d'un pentagone régulier mesurent $108^o$ degrés.
+\end{enumerate}   
+\item Utiliser les deux exercices précédents pour généraliser à un polygone régulier avec un nombre quelconque $N$ de côtés. On montrera ainsi que les angles d'une telle figure valent tous $\frac{N-2}N\times 180^o$.
+\item On trace deux points $A$ et $B$ et une droite $(d)$ sur une feuille. Expliquer comment construire le cercle passant par $A$ et $B$ dont le centre appartient à $(d)$. Existe-t-il toujours ? Y en a-t-il toujours un seul ?
+\item On considère un quadrilatère convexe $ABCD$ dans lequel la médiatrice de 
+$[AB]$ est également la médiatrice de $[CD]$. Soit $O$ le point où cette médiatrice coupe la médiatrice de $[BC]$. \begin{enumerate}
+\item Montrer que les quatre points $A$, $B$, $C$ et $D$ sont situés sur un même cercle de centre $O$. 
+\item Démontrer que les médiatrices de $[AD]$, $[AC]$ et $[BD]$ passent également par $O$. 
+\end{enumerate}
+ \item Trouver trois nombres entiers consécutifs (consécutifs : qui se suivent) dont la somme est égale à $57$. 
+ \item La somme de cinq nombres impairs consécutifs est 85. Quels sont ces nombres ? 
+ \item Un père a 29 ans ; son fils a 5 ans ; dans combien d'années l'âge du père sera-t-il le triple de l'âge du fils ? 
+ \item Un père a 41 ans ; ses trois enfants sont âgés de 7, 9 et 13 ans. Dans combien d'années l'âge du père sera-t-il égal à la somme des âges de ses enfants ? 
+ \item Trouver un nombre dont la somme des quotients par 5, 7 et 9 soit égale à 429. 
+ 
+\end{enumerate} 
+ 
+\end{document}

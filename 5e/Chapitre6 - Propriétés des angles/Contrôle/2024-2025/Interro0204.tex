@@ -1,0 +1,313 @@
+	\documentclass[14pt]{extreport}
+\usepackage{extsizes}
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage[ margin=1in]{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	\usepackage{float}
+	\usepackage{easytable}
+	 \usepackage{fancyhdr}\usepackage{longtable}
+	 \usetikzlibrary{shapes.misc}
+	 \newcommand\ang[1]{$#1{}^o$}
+\newlength{\taillecellule}
+\setlength{\taillecellule}{2cm}
+\newcolumntype{C}{@{}>{\centering\arraybackslash}p{\taillecellule}@{}}
+
+\usepackage{pstricks,multido}
+\usepackage{arrayjob}
+\usepackage{calc,xlop}
+\tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
+%default radius will be 1pt. 
+cross/.default={1pt}}
+
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{\empty} 
+	\fancyhead[L]{Contrôle chapitre 6}
+	\fancyhead[R]{13 mai 2025}
+	
+	
+	\title{Contrôle chapitre 6}
+	\date{}
+	\begin{document}
+
+
+
+\subsection*{Exercice 1 : Calcul (8 points) }  % 4 points
+ 
+
+Effectuer sur votre copie, en détaillant les étapes les calculs suivants : 
+\begin{enumerate}
+\item $ 10 - 11 = $ 
+\item $-7 + 4= $
+\item $ -3 - (-4)= $ 
+\item $ -9 - 1 = $
+\item $7 - 2 + 1 = $
+
+\item $ 14 - 3 \times 5 = $
+\item $ 12 - (8 - 5) + ( 2 - 1) = $ 
+
+\item $-1 - (-5) + 3 - 5 + (-1) =$
+\end{enumerate}
+
+\subsection*{Exercice 2 : Angles d'un triangle (6 points)}
+Sur les triangles suivants, déterminer la valeur des angles manquants. (Répondez sur votre copie en donnant vos calculs, mais pas besoin de rédiger plus.).\\
+\begin{tikzpicture}[baseline,scale = 0.5]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-2,-2) rectangle (7,11);
+    	\draw[color={black}] (0,0)--(5,9)--(0.07,6.5)--cycle;
+	\draw [color={black}] (-0.16,-0.48) node[anchor = center,scale=1, rotate = 0] {A};
+	\draw [color={black}] (5.33,9.38) node[anchor = center,scale=1, rotate = 0] {Z};
+	\draw [color={black}] (-0.32,6.82) node[anchor = center,scale=1, rotate = 0] {D};
+	\draw[color={blue},line width = 2] (0.49,0.87) arc (60.61:89.61:1) ;
+	\draw (0.62,1.95) node[anchor = center, rotate=0] {\normalsize \color{blue}{$29^\circ$}};
+	\draw[color={blue},line width = 2] (4.51,8.13) arc (-119.39:-153.39:1) ;
+	\draw (3.6,7.4) node[anchor = center, rotate=0] {\normalsize \color{blue}{$34^\circ$}};
+	\draw [color={black}] (-0.16,-0.48) node[anchor = center,scale=1, rotate = 0] {A};
+	\draw [color={black}] (5.33,9.38) node[anchor = center,scale=1, rotate = 0] {Z};
+	\draw [color={black}] (-0.32,6.82) node[anchor = center,scale=1, rotate = 0] {D};
+
+
+\end{tikzpicture}
+\begin{tikzpicture}[scale=.5]
+ \clip (-2.76,-2) rectangle (5,10.46);
+    	\draw[color={black}] (2,0)--(3,8)--(-0.76,8.46)--cycle;
+	\draw [color={black}] (2.05,-0.5) node[anchor = center,scale=1, rotate = 0] {S};
+	\draw [color={black}] (3.27,8.42) node[anchor = center,scale=1, rotate = 0] {Z};
+	\draw [color={black}] (-1.05,8.86) node[anchor = center,scale=1, rotate = 0] {G};
+	\draw[color={blue},line width = 2] (2.12,0.99) arc (83.09:108.28:1) ;
+	\draw (2.04,2.38) node[anchor = center, rotate=0] {\normalsize \color{blue}{$25^\circ$}};
+	\draw[color={blue},line width = 1.5] (3,8)--(2.88,7.01)--(1.89,7.13)--(2.01,8.12)--cycle;
+	\draw [color={black}] (2.05,-0.5) node[anchor = center,scale=1, rotate = 0] {S};
+	\draw [color={black}] (3.27,8.42) node[anchor = center,scale=1, rotate = 0] {Z};
+	\draw [color={black}] (-1.05,8.86) node[anchor = center,scale=1, rotate = 0] {G};
+	
+\end{tikzpicture}
+\begin{tikzpicture}[scale=.4]
+\clip (-6.91,-2) rectangle (5,12);
+    	\draw[color={black}] (1,0)--(3,10)--(-4.91,6.43)--cycle;
+	\draw [color={black}] (1.12,-0.49) node[anchor = center,scale=1, rotate = 0] {X};
+	\draw [color={black}] (3.29,10.4) node[anchor = center,scale=1, rotate = 0] {L};
+	\draw [color={black}] (-5.4,6.53) node[anchor = center,scale=1, rotate = 0] {K};
+	\draw [color={blue}] (-0.96,8.22) node[anchor = center,scale=0.5, rotate = -336] {\Big|\Big|};
+\draw [color={blue}] (-1.96,3.22) node[anchor = center,scale=0.5, rotate = -47] {\Big|\Big|};
+
+	\draw[color={blue},line width = 2] (2.8,9.02) arc (-101.53:-155.53:1) ;
+	\draw (2,8.55) node[anchor = center, rotate=0] {\normalsize \color{blue}{$54^\circ$}};
+	\draw [color={black}] (1.12,-0.49) node[anchor = center,scale=1, rotate = 0] {X};
+	\draw [color={black}] (3.29,10.4) node[anchor = center,scale=1, rotate = 0] {L};
+	\draw [color={black}] (-5.4,6.53) node[anchor = center,scale=1, rotate = 0] {K};
+\end{tikzpicture}\\
+\begin{tikzpicture}[scale=.4]
+ \clip (-7.04,-2) rectangle (7,14.25);
+    	\draw[color={black}] (2,0)--(5,10)--(-5.04,12.25)--cycle;
+	\draw [color={black}] (2.09,-0.49) node[anchor = center,scale=1, rotate = 0] {F};
+	\draw [color={black}] (5.43,10.25) node[anchor = center,scale=1, rotate = 0] {M};
+	\draw [color={black}] (-5.42,12.57) node[anchor = center,scale=1, rotate = 0] {I};
+	\draw [color={blue}] (-0.02,11.13) node[anchor = center,scale=0.5, rotate = -13] {\Big|\Big|};
+\draw [color={blue}] (3.5,5) node[anchor = center,scale=0.5, rotate = -287] {\Big|\Big|};
+
+	\draw[color={blue},line width = 2] (4.71,9.04) arc (-106.81:-192.81:1) ;
+	\draw (3.41,8.7) node[anchor = center, rotate=0] {\normalsize \color{blue}{$86^\circ$}};
+	\draw [color={black}] (2.09,-0.49) node[anchor = center,scale=1, rotate = 0] {F};
+	\draw [color={black}] (5.43,10.25) node[anchor = center,scale=1, rotate = 0] {M};
+	\draw [color={black}] (-5.42,12.57) node[anchor = center,scale=1, rotate = 0] {I};
+	\end{tikzpicture}
+\newpage
+
+\subsection*{Exercice 3 : Problème à rédiger (6 points)}
+
+
+ La figure ci-dessous n'est pas en vraie grandeur. Toutes les réponses devront être justifiées.\\\begin{tikzpicture}[baseline]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-1,-5.56) rectangle (11.63,9.76);
+    	\draw[color={black}] (-12.36,-48.44)--(14.34,56.2);
+	\draw[color={black}] (-47.91,-14.38)--(57.54,17.27);
+	\draw[color={black}] (-19.13,53.08)--(26.02,-43.85);
+	\draw[color={black}] (-4.7,-53)--(22.05,51.33);
+	\draw  [color={black},line width = 2,preaction={fill,color = {black},opacity = 0.2}] (0.25,0.97) -- (0,0) -- (0.96,0.29) arc (16.81:75.83:1) ;
+	\draw (1.3,1.17) node[anchor = center, rotate=0] {\normalsize \color{black}{$59^\circ$}};
+	\draw  [color={red},line width = 2,preaction={fill,color = {red},opacity = 0.2}] (5.87,1.76) -- (4.91,1.47) -- (4.49,2.38) arc (114.78:16.549999999999997:1) ;
+	\draw (5.7700000000000005,2.93) node[anchor = center, rotate=0] {\normalsize \color{red}{$98^\circ$}};
+	\draw  [color={blue},line width = 2,preaction={fill,color = {blue},opacity = 0.2}] (7.97,-3.59) -- (7.72,-4.56) -- (7.3,-3.65) arc (114.78:75.41:1) ;
+	\draw (7.78,-2.96) node[anchor = center, rotate=0] {\normalsize \color{blue}{$39^\circ$}}; 
+	\draw [color={black}] (-0.5,0.5) node[anchor = center,scale=1, rotate = 0] {N};
+	\draw [color={black}] (10.13,2.89) node[anchor = center,scale=1, rotate = 0] {B};
+	\draw [color={black}] (1.48,8.26) node[anchor = center,scale=1, rotate = 0] {O};
+	\draw [color={black}] (4.91,0.97) node[anchor = center,scale=1, rotate = 0] {H};
+	\draw [color={black}] (8.22,-5.06) node[anchor = center,scale=1, rotate = 0] {G};
+
+\end{tikzpicture}\\
+\textbf {a.}  Montrer que $\widehat{NHO}$ mesure $82^\circ$.\\\textbf {b.}  En déduire la mesure de l'angle $\widehat{HON}$.\\\textbf {c.}  Déterminer si les droites $(NO)$ et $(GB)$ sont parallèles. 
+\\\textbf {d.}(Bonus) En déduire la mesure de l'angle $\widehat{HBG}$.
+
+\newpage 
+
+
+\subsection*{Exercice 1 : Calcul (8 points) }  % 4 points
+ 
+
+Effectuer sur votre copie, en détaillant les étapes les calculs suivants : 
+\begin{enumerate}
+\item $ 10 - 14 = $ 
+\item $ -5 - (-4)= $ 
+\item $-5 + 3= $
+\item $ -3 - 1 = $
+\item $5 - 2 + 1 = $
+
+\item $ 14 - 3 \times 6 = $
+\item $ 8 - (4 - 3) + ( 2 - 1) = $ 
+
+\item $-1 - (-3) + 3 - 5 + (-1) =$
+\end{enumerate}
+
+\subsection*{Exercice 2 : Angles d'un triangle (6 points)}
+Sur les triangles suivants, déterminer la valeur des angles manquants. (Répondez sur votre copie en donnant vos calculs, mais pas besoin de rédiger plus.).\\
+\begin{tikzpicture}[baseline,scale = 0.5]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-2,-2) rectangle (7,11);
+    	\draw[color={black}] (0,0)--(5,9)--(0.07,6.5)--cycle;
+	\draw [color={black}] (-0.16,-0.48) node[anchor = center,scale=1, rotate = 0] {A};
+	\draw [color={black}] (5.33,9.38) node[anchor = center,scale=1, rotate = 0] {Z};
+	\draw [color={black}] (-0.32,6.82) node[anchor = center,scale=1, rotate = 0] {D};
+	\draw[color={blue},line width = 2] (0.49,0.87) arc (60.61:89.61:1) ;
+	\draw (0.62,1.95) node[anchor = center, rotate=0] {\normalsize \color{blue}{$28^\circ$}};
+	\draw[color={blue},line width = 2] (4.51,8.13) arc (-119.39:-153.39:1) ;
+	\draw (3.6,7.4) node[anchor = center, rotate=0] {\normalsize \color{blue}{$33^\circ$}};
+	\draw [color={black}] (-0.16,-0.48) node[anchor = center,scale=1, rotate = 0] {A};
+	\draw [color={black}] (5.33,9.38) node[anchor = center,scale=1, rotate = 0] {Z};
+	\draw [color={black}] (-0.32,6.82) node[anchor = center,scale=1, rotate = 0] {D};
+
+
+\end{tikzpicture}
+\begin{tikzpicture}[scale=.5]
+ \clip (-2.76,-2) rectangle (5,10.46);
+    	\draw[color={black}] (2,0)--(3,8)--(-0.76,8.46)--cycle;
+	\draw [color={black}] (2.05,-0.5) node[anchor = center,scale=1, rotate = 0] {S};
+	\draw [color={black}] (3.27,8.42) node[anchor = center,scale=1, rotate = 0] {Z};
+	\draw [color={black}] (-1.05,8.86) node[anchor = center,scale=1, rotate = 0] {G};
+	\draw[color={blue},line width = 2] (2.12,0.99) arc (83.09:108.28:1) ;
+	\draw (2.04,2.38) node[anchor = center, rotate=0] {\normalsize \color{blue}{$23^\circ$}};
+	\draw[color={blue},line width = 1.5] (3,8)--(2.88,7.01)--(1.89,7.13)--(2.01,8.12)--cycle;
+	\draw [color={black}] (2.05,-0.5) node[anchor = center,scale=1, rotate = 0] {S};
+	\draw [color={black}] (3.27,8.42) node[anchor = center,scale=1, rotate = 0] {Z};
+	\draw [color={black}] (-1.05,8.86) node[anchor = center,scale=1, rotate = 0] {G};
+	
+\end{tikzpicture}
+\begin{tikzpicture}[scale=.4]
+\clip (-6.91,-2) rectangle (5,12);
+    	\draw[color={black}] (1,0)--(3,10)--(-4.91,6.43)--cycle;
+	\draw [color={black}] (1.12,-0.49) node[anchor = center,scale=1, rotate = 0] {X};
+	\draw [color={black}] (3.29,10.4) node[anchor = center,scale=1, rotate = 0] {L};
+	\draw [color={black}] (-5.4,6.53) node[anchor = center,scale=1, rotate = 0] {K};
+	\draw [color={blue}] (-0.96,8.22) node[anchor = center,scale=0.5, rotate = -336] {\Big|\Big|};
+\draw [color={blue}] (-1.96,3.22) node[anchor = center,scale=0.5, rotate = -47] {\Big|\Big|};
+
+	\draw[color={blue},line width = 2] (2.8,9.02) arc (-101.53:-155.53:1) ;
+	\draw (2,8.55) node[anchor = center, rotate=0] {\normalsize \color{blue}{$52^\circ$}};
+	\draw [color={black}] (1.12,-0.49) node[anchor = center,scale=1, rotate = 0] {X};
+	\draw [color={black}] (3.29,10.4) node[anchor = center,scale=1, rotate = 0] {L};
+	\draw [color={black}] (-5.4,6.53) node[anchor = center,scale=1, rotate = 0] {K};
+\end{tikzpicture}\\
+\begin{tikzpicture}[scale=.4]
+ \clip (-7.04,-2) rectangle (7,14.25);
+    	\draw[color={black}] (2,0)--(5,10)--(-5.04,12.25)--cycle;
+	\draw [color={black}] (2.09,-0.49) node[anchor = center,scale=1, rotate = 0] {F};
+	\draw [color={black}] (5.43,10.25) node[anchor = center,scale=1, rotate = 0] {M};
+	\draw [color={black}] (-5.42,12.57) node[anchor = center,scale=1, rotate = 0] {I};
+	\draw [color={blue}] (-0.02,11.13) node[anchor = center,scale=0.5, rotate = -13] {\Big|\Big|};
+\draw [color={blue}] (3.5,5) node[anchor = center,scale=0.5, rotate = -287] {\Big|\Big|};
+
+	\draw[color={blue},line width = 2] (4.71,9.04) arc (-106.81:-192.81:1) ;
+	\draw (3.41,8.7) node[anchor = center, rotate=0] {\normalsize \color{blue}{$84^\circ$}};
+	\draw [color={black}] (2.09,-0.49) node[anchor = center,scale=1, rotate = 0] {F};
+	\draw [color={black}] (5.43,10.25) node[anchor = center,scale=1, rotate = 0] {M};
+	\draw [color={black}] (-5.42,12.57) node[anchor = center,scale=1, rotate = 0] {I};
+	\end{tikzpicture}
+\newpage
+
+\subsection*{Exercice 3 : Problème à rédiger (6 points)}
+
+
+ La figure ci-dessous n'est pas en vraie grandeur. Toutes les réponses devront être justifiées.\\\begin{tikzpicture}[baseline]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-1,-5.56) rectangle (11.63,9.76);
+    	\draw[color={black}] (-12.36,-48.44)--(14.34,56.2);
+	\draw[color={black}] (-47.91,-14.38)--(57.54,17.27);
+	\draw[color={black}] (-19.13,53.08)--(26.02,-43.85);
+	\draw[color={black}] (-4.7,-53)--(22.05,51.33);
+	\draw  [color={black},line width = 2,preaction={fill,color = {black},opacity = 0.2}] (0.25,0.97) -- (0,0) -- (0.96,0.29) arc (16.81:75.83:1) ;
+	\draw (1.3,1.17) node[anchor = center, rotate=0] {\normalsize \color{black}{$59^\circ$}};
+	\draw  [color={red},line width = 2,preaction={fill,color = {red},opacity = 0.2}] (5.87,1.76) -- (4.91,1.47) -- (4.49,2.38) arc (114.78:16.549999999999997:1) ;
+	\draw (5.7700000000000005,2.93) node[anchor = center, rotate=0] {\normalsize \color{red}{$102^\circ$}};
+	\draw  [color={blue},line width = 2,preaction={fill,color = {blue},opacity = 0.2}] (7.97,-3.59) -- (7.72,-4.56) -- (7.3,-3.65) arc (114.78:75.41:1) ;
+	\draw (7.78,-2.96) node[anchor = center, rotate=0] {\normalsize \color{blue}{$43^\circ$}}; 
+	\draw [color={black}] (-0.5,0.5) node[anchor = center,scale=1, rotate = 0] {N};
+	\draw [color={black}] (10.13,2.89) node[anchor = center,scale=1, rotate = 0] {B};
+	\draw [color={black}] (1.48,8.26) node[anchor = center,scale=1, rotate = 0] {O};
+	\draw [color={black}] (4.91,0.97) node[anchor = center,scale=1, rotate = 0] {H};
+	\draw [color={black}] (8.22,-5.06) node[anchor = center,scale=1, rotate = 0] {G};
+
+\end{tikzpicture}\\
+\textbf {a.}  Montrer que $\widehat{NHO}$ mesure $78^o$.\\\textbf {b.}  En déduire la mesure de l'angle $\widehat{HON}$.\\\textbf {c.}  Déterminer si les droites $(NO)$ et $(GB)$ sont parallèles. 
+\\\textbf {d.}(Bonus) En déduire la mesure de l'angle $\widehat{HBG}$.
+
+
+ 
+
+	 
+    
+ 
+\end{document}
