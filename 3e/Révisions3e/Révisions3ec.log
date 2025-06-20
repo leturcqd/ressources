@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.7)  20 JUN 2025 12:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.7)  20 JUN 2025 13:23
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**Révisions3e.tex
-(./Révisions3e.tex
+**Révisions3ec.tex
+(./Révisions3ec.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/extsizes/extreport.cls
@@ -1432,8 +1432,9 @@ Package: xlop 2009/12/02 package wrapper for xlop.tex
 \op@stackb=\count270
 ))
 \c@n=\count271
- (./Révisions3e.aux)
-\openout1 = `Révisions3e.aux'.
+
+No file Révisions3ec.aux.
+\openout1 = `Révisions3ec.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
 LaTeX Font Info:    ... okay on input line 52.
@@ -1450,7 +1451,6 @@ LaTeX Font Info:    ... okay on input line 52.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
 LaTeX Font Info:    ... okay on input line 52.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 52.
-
 (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1578,12 +1578,25 @@ LaTeX Info: Redefining \Ref on input line 513.
 LaTeX Info: Redefining \ref on input line 52.
 LaTeX Info: Redefining \pageref on input line 52.
 LaTeX Info: Redefining \nameref on input line 52.
-
-(./Révisions3e.out) (./Révisions3e.out)
 \@outlinefile=\write5
-\openout5 = `Révisions3e.out'.
+\openout5 = `Révisions3ec.out'.
 
 LaTeX Info: Redefining \Ref on input line 52.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 55.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Overfull \hbox (43.48451pt too wide) in paragraph at lines 55--57
+\T1/lmtt/m/n/14.4 leturcqd . github . io / ressources / 3e / R % C3 % A9visions
+3e / R % C3 % A9visions3e .
+ []
+
+
+Overfull \hbox (13.85297pt too wide) in paragraph at lines 55--57
+[]$\T1/lmtt/m/n/14.4 http : / / www . leturcqd . github . io / ressources / 3e 
+/ R % C3 % A9visions3e / R %
+ []
 
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1602,7 +1615,7 @@ map/pdftex.map}
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!]
-Overfull \hbox (2.89835pt too wide) detected at line 127
+Overfull \hbox (2.89835pt too wide) detected at line 128
 \OT1/lmr/m/n/14.4 5[] \OMS/lmsy/m/n/14.4 ^^B \OT1/lmr/m/n/14.4 5[]; [](\OMS/lms
 y/m/n/14.4 ^^@\OT1/lmr/m/n/14.4 7) \OMS/lmsy/m/n/14.4 ^^B \OT1/lmr/m/n/14.4 (\O
 MS/lmsy/m/n/14.4 ^^@\OT1/lmr/m/n/14.4 7)[]; [] [] \OMS/lmsy/m/n/14.4 ^^B [][] \
@@ -1630,11 +1643,6 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4]
-Overfull \hbox (4.2303pt too wide) in paragraph at lines 253--254
-\T1/lmr/m/n/14.4 angles. Elles se croisent in-t�-rieu-re-ment au pa-ral-l�-lo-g
-ramme en quatre
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
  Make it at least 17.0pt.
@@ -1642,7 +1650,13 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5]
-Overfull \hbox (7.16463pt too wide) in paragraph at lines 258--259
+Overfull \hbox (4.2303pt too wide) in paragraph at lines 254--255
+\T1/lmr/m/n/14.4 angles. Elles se croisent in-t�-rieu-re-ment au pa-ral-l�-lo-g
+ramme en quatre
+ []
+
+
+Overfull \hbox (7.16463pt too wide) in paragraph at lines 259--260
 []\T1/lmr/m/n/14.4 Trouver trois nombres en-tiers cons�-cu-tifs (cons�-cu-tifs 
 : qui se suivent)
  []
@@ -1661,23 +1675,30 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 283.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 283.
- (./Révisions3e.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 283.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 283.
-Package rerunfilecheck Info: File `Révisions3e.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 283.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 284.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 284.
+ (./Révisions3ec.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 284.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 284.
+
+
+Package rerunfilecheck Warning: File `Révisions3ec.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Révisions3ec.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 284.
  ) 
 Here is how much of TeX's memory you used:
- 23894 strings out of 493014
- 408923 string characters out of 6133351
- 577347 words of memory out of 5000000
- 26874 multiletter control sequences out of 15000+600000
- 47130 words of font info for 53 fonts, out of 8000000 for 9000
+ 23929 strings out of 493014
+ 409479 string characters out of 6133351
+ 579243 words of memory out of 5000000
+ 26910 multiletter control sequences out of 15000+600000
+ 47448 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,56p,3244b,504s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,56p,3245b,510s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
 texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2016/t
 exmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2016/texmf-dist/
@@ -1690,11 +1711,11 @@ ve/2016/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2016/tex
 mf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2016/texmf-dist/fon
 ts/type1/public/lm/lmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
 lic/lm/lmri12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lms
-y10.pfb>
-Output written on Révisions3e.pdf (7 pages, 149208 bytes).
+y10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on Révisions3ec.pdf (7 pages, 172315 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
- 46 named destinations out of 1000 (max. 500000)
+ 146 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
+ 47 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
