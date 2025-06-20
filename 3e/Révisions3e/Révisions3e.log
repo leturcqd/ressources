@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.7)  20 JUN 2025 19:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.7)  20 JUN 2025 21:10
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1589,9 +1589,9 @@ LaTeX Font Info:    Try loading font information for T1+lmtt on input line 55.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Overfull \hbox (1.69159pt too wide) in paragraph at lines 55--58
-\T1/lmtt/m/n/14.4 ressources / 3e / R % C3 % A9visions3e / R % C3 % A9visions3e
- . pdf$[]\T1/lmr/m/n/14.4 ) comme une
+Overfull \hbox (34.66203pt too wide) in paragraph at lines 55--58
+[]\T1/lmr/m/n/14.4 Je vous ai ré-digé ces exer-cices ([]$\T1/lmtt/m/n/14.4 http
+s : / / leturcqd . github . io / ressources /
  []
 
 
@@ -1708,7 +1708,7 @@ mf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2016/texmf-dist/fon
 ts/type1/public/lm/lmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
 lic/lm/lmri12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lms
 y10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ReÌvisions3e.pdf (8 pages, 177432 bytes).
+Output written on ReÌvisions3e.pdf (8 pages, 177181 bytes).
 PDF statistics:
  154 PDF objects out of 1000 (max. 8388607)
  129 compressed objects within 2 object streams
