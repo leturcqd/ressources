@@ -1,4 +1,4 @@
-	\documentclass[14pt]{extreport}
+	\documentclass[14pt]{article}
 \usepackage{extsizes}
 	\usepackage[frenchb]{babel}
 	\usepackage[utf8]{inputenc}  
@@ -12,7 +12,12 @@
 	\usepackage{amsthm}
 	\usepackage{varioref}
 	\usepackage[ margin=1in]{geometry}
-	\geometry{a4paper}
+	\geometry{
+ a4paper,
+ total={170mm,277mm},
+ left=20mm,
+ top=20mm,
+ }
 	\usepackage{lmodern}
 	\usepackage{hyperref}
 	\usepackage{array}
@@ -25,6 +30,8 @@
 \setlength{\taillecellule}{2cm}
 \newcolumntype{C}{@{}>{\centering\arraybackslash}p{\taillecellule}@{}}
 
+	\theoremstyle{remark}
+	\newtheorem*{sol}{Solution}
 \renewcommand{\theenumi}{\alph{enumi})}
 \usepackage{pstricks,multido}
 \usepackage{arrayjob}
@@ -51,10 +58,16 @@ cross/.default={1pt}}
 	\date{}
 	\begin{document}
 
-\subsection*{Avant-propos}
-Voici la correction de la feuille d'exercices  disponible ici : \url{http://www.leturcqd.github.io/ressources/3e/R\%C3\%A9visions3e/R\%C3\%A9visions3e.pdf}
-Elle est disponible à tout instant au lien suivant, qui sera mis à jour : \url{http://www.leturcqd.github.io/ressources/3e/R\%C3\%A9visions3e/R\%C3\%A9visions3ec.pdf}
-\subsection*{Révision de calcul} 
+\section*{Avant-propos}
+Voici la correction de la feuille d'exercices  disponible ici : \url{https://leturcqd.github.io/ressources/3e/R\%C3\%A9visions3e/R\%C3\%A9visions3e.pdf}
+Elle est disponible à tout instant au lien suivant, qui sera mis à jour : \url{https://leturcqd.github.io/ressources/3e/R\%C3\%A9visions3e/R\%C3\%A9visions3ec.pdf}
+
+
+Corrigés rédigés dans cette version : \begin{itemize}
+\item Partie \ref{calc}, de 1 à 31
+\item Partie \ref{pbs} de a) à e).
+\end{itemize} 
+\section{Révision de calcul}\label{calc} 
 \begin{itemize}
 \it \begin{eqnarray*}
 \left(-\frac14\right)+\left(-\frac32\right)+\left(+\frac52\right) & = & \frac{-1}4 + \frac{-3\times 2}{2\times2} + \frac{5\times2}{2\times2} \\
@@ -157,7 +170,7 @@ ou, plus malin : \begin{eqnarray*}
 &=& 2,25 + (-13,75)\\
 &=& -11,5\end{eqnarray*}
 \it \begin{eqnarray*}\left[1 - \left(\frac25-\frac43\right)\right] &- &
-\left[ \left(\frac45-1\right) - \left(\frac75+2\right)\right]\\&=& [ 1 - \left(\frac{2\times3}{5\times3}-\frac{4\times5}{3\times5}\right)] - [ \left(\frac45-\frac55\right) - \left(\frac75+\frac{2\times5}5\right)]\\
+\left[ \left(\frac45-1\right) - \left(\frac75+2\right)\right]\\&=& \left[ 1 - \left(\frac{2\times3}{5\times3}-\frac{4\times5}{3\times5}\right)\right] - \left[ \left(\frac45-\frac55\right) - \left(\frac75+\frac{2\times5}5\right)\right]\\
 &=& \left[1 - \left(\frac6{15}-\frac{20}{15}\right)\right] - \left[ \frac{-1}5 - \left(\frac75+\frac{10}5\right)\right]\\
 &=& \left[\frac{15}{15} - \frac{-14}{15}\right] - \left[\frac{-1}5-\frac{17}5\right]\\
 &=& \left[\frac{15}{15}+\frac{14}{15}\right] - \left[\frac{-18}5\right]\\
@@ -208,7 +221,8 @@ Effectuer les produits suivants :
 \it \[\left(-\frac35\right)(+3)\left(-\frac53\right) = 
 \frac{-3 \times 3 \times -5}{5\times 3} = \frac{+3 \times (3\times5)}{3\times5} = 3\]
 \it \[\left(+\frac12\right)\left(-\frac14\right)\left(-\frac48\right) = \frac{1\times -1\times -4}{2\times 4\times 8} = \frac{4}{2\times4\times8} = \frac1{2\times8} = \frac1{16}\]
-\it \[\left(+\frac12\right)\left(-\frac6{11}\right)\left(-\frac78\right)\left(-\frac{11}{15}\right) = \frac{1\times - 6 \times - 7\times -11} {2\times 11 \times 8 \times 15} = \frac{-2\times3\times7\times11}{2\times11\times2^3\times3\times5} = \]
+\it \begin{eqnarray*}\left(+\frac12\right)\left(-\frac6{11}\right)\left(-\frac78\right)\left(-\frac{11}{15}\right)& =& \frac{1\times - 6 \times - 7\times -11} {2\times 11 \times 8 \times 15} \\&=& \frac{-2\times3\times7\times11}{2\times11\times2^3\times3\times5} \\&=&-\frac{7}{2^3\times5}\\&=&-\frac7{40}
+ \end{eqnarray*}
 \it \[\displaystyle(+15):\left(-\frac23\right)= 15 \times \frac{-3}2 = \frac{15\times -3}2 = -\frac{45}2\]
 \it \[\displaystyle(-7,5):\left(-\frac45\right)= +7,5 \times \frac54 = \frac{7,5\times5}4= \frac{37,5}4 = \frac{37,5\times2}{4\times2} = \frac{75}8\]
 \it \[\displaystyle(-1):\left(+\frac34\right) = -1\times \frac43 = -\frac43\]
@@ -321,14 +335,134 @@ Résoudre les équations :
 \it $4x^2-\frac{7x}3=0$. 
 \end{itemize}
 	
-    \subsection*{Problèmes de réflexion plus avancés}
+    \section{Problèmes de réflexion plus avancés}\label{pbs}
 \begin{enumerate}
 \item Quel nombre faut-il ajouter aux deux termes de la fraction $\frac7{13}$ pour qu'elle devienne égale à $\frac23$ ? 
+\begin{sol}
+\textbf{Mise en équation :}
+Notons $x$ le nombre cherché. L'énoncé devient
+\[ \frac{7+x}{13+x}=\frac23.\]
+
+\textbf{Résolution de l'équation :}
+Par égalité des produits en croix, cela équivaut à 
+\[ (7+x)3 = (13+x)2\]
+Par distributivité, on trouve 
+\[ 7\times3+x\times3 = 13\times2+x\times2,\]
+c'est-à-dire \[ 21+3x=26+2x.\]
+On retranche $2x$ aux deux termes : 
+\[21+x = 26\]
+Et on trouve, en retranchant 21 aux deux termes :  \[ x = 26-21 = 5.\]
+
+\textbf{Vérification :} On peut alors vérifier que $\frac{7+5}{13+5} = \frac{12}{18} = \frac{2\times6}{3\times6} = \frac23.$
+\end{sol}
+
+
  \item Quel nombre faut-il retrancher aux deux termes de la fraction $\frac{17}{23}$ pour obtenir une fraction égale à $\frac58$ ? 
- \item Quel nombre faut-il ajouter aux deux termes de la fraction $\frac58$ et retrancher aux deux termes de la fraction $\frac34$ pour obtenir deux fractions égales ? 
+ \begin{sol}
+\textbf{Mise en équation :}
+Notons $x$ le nombre cherché. L'énoncé devient
+\[ \frac{17-x}{23-x}=\frac58.\]
+
+\textbf{Résolution de l'équation :}
+Par égalité des produits en croix, cela équivaut à 
+\[ (17-x)8 = (23-x)5\]
+Par distributivité, on trouve 
+\[ 17\times8-x\times8 = 23\times5-x\times5,\]
+c'est-à-dire \[ 136-8x=115-5x.\]
+On ajoute $8x$ aux deux termes : 
+\begin{eqnarray*}
+136& =& 115-5x+8x\\&=& 115+3x
+\end{eqnarray*} 
+Et on trouve, en retranchant 115 aux deux termes : \begin{eqnarray*}
+136-115 &=& 3x\\
+21 &=& 3x\\
+\frac{21}3&=&x\\
+x&=&7
+\end{eqnarray*}
+
+\textbf{Vérification :} On peut alors vérifier que $\frac{17-7}{23-7} = \frac{10}{16} = \frac{2\times5}{2\times8} = \frac58.$
+\end{sol}
+
+
+
+ \item Quel nombre faut-il ajouter aux deux termes de la fraction $\frac58$ et retrancher aux deux termes de la fraction $\frac34$ pour obtenir deux fractions égales ? \begin{sol}
+\textbf{Mise en équation :}
+Notons $x$ le nombre cherché. L'énoncé devient
+\[ \frac{5+x}{8+x}=\frac{3-x}{4-x}.\]
+
+\textbf{Résolution de l'équation :}
+Par égalité des produits en croix, cela équivaut à 
+\[ (5+x)(4-x)=(8+x)(3-x).\]
+Par distributivité, on trouve 
+\[5\times4 -5x + 4x-x^2 = 8\times3-8x+3x-x^2 \]
+c'est-à-dire \[ 20 -x - x^2 = 24 - 5x - x^2.\]
+On ajoute $x^2$ aux deux termes pour trouver 
+\[ 20 -x = 24 - 5x,\]
+puis on ajoute $5x$ pour trouver \[ 20 -x+5x = 24,\]
+c'est-à-dire \[20+4x=24\]
+Et on trouve, en retranchant 20 aux deux termes,
+\[4x= 24-20,\]
+puis 
+\[4x=4\]
+et donc
+\[x=\frac44 = 1.\]
+
+\textbf{Vérification :} On peut alors vérifier que $\frac{5+1}{8+1} = \frac{6}{9} = \frac{2\times3}{3\times3} = \frac23$ et $\frac{3-1}{4-1} = \frac23$, donc on a bien \[\frac{5+1}{8+1}=\frac{3-1}{4-1}.\]
+\end{sol}
+
+
+
+
+
+
  \item Une personne dispose de deux heures pour effectuer une promenade. Elle part en tramway à la vitesse moyenne de $12$ km à l'heure et revient à pied, à la vitesse moyenne de $4$ km à l'heure. À quelle distance du point de départ devra-t-elle quitter le tramway ? 
- \item Un épicier achète un certain nombre de bouteilles de vin pour $225$ euros. En vendant la bouteille $1,65$ euros, il gagnerait autant que ce qu'il perdrait s'il la vendait $1,35$ euros. Quel est le nombre des bouteilles de vins ? 
+ \begin{sol}
+ \textbf{Mise en équation :} Notons $x$ la distance recherchée en kilomètres. On parcourt donc une fois la distance $x$ à $v_1=12$ km/h, puis une seconde fois la même distance à $v_2=4$ km/h. \\
+ À l'aller, le temps requis est $t_1=\frac{d}{v_1}=\frac{x}{12}$. \\
+ Au retour, le temps requis est $t_2=\frac{d}{v_2}=\frac{x}4$. \\
+ On cherche donc à avoir $t_1+t_2 = 2$ heures, c'est-à-dire : \[\frac{x}{12}+\frac{x}4= 2.\]
+ \textbf{Résolution de l'équation :}
+ On multiplie cette équation par $12$ pour se débarrasser des dénominateurs : 
+ \begin{eqnarray*}
+   12\left(\frac{x}{12}+\frac{x}4\right)&=&12\times2\\
+   12\times\frac{x}{12}+12\times\frac{x}4 &=& 24\\
+   \frac{12}{12}x+\frac{12}4x &=& 24\\
+   x + 3x &=& 24\\
+   4x&=&24
+\end{eqnarray*}
+On divise alors par $4$ pour trouver 
+\[x=24\div4 = 6.\]On doit donc descendre après $6$ kilomètres. \\
+ \textbf{Vérification :} Si on descend après $6$ kilomètres, le trajet aller prendra $\frac{6 \text{ km}}{12 \text{ km/h}} = 0,5$ h et le trajet retour prendra $\frac{6 \text{ km}}{4 \text{ km/h}} = 1,5$ h. Le temps total sera donc $0,5\text{ h} + 1,5\text{ h} = 2\text{ h}$, comme requis.
  
+ \end{sol}
+ \item Un épicier achète un certain nombre de bouteilles de vin pour $225$ euros. En vendant la bouteille $1,65$ euros, il gagnerait autant que ce qu'il perdrait s'il la vendait $1,35$ euros. Quel est le nombre des bouteilles de vins ? 
+ \begin{sol}
+ \textbf{Mise en équation :} On note $N$ le nombre de bouteilles de vin.  \\
+ S'il vendait les bouteilles à $1,65$ euros, il toucherait $N\times1,65= 1,65N$ euros. \\
+ S'il vendait les bouteilles à $1,35$ euros, il toucherait $N\times1,35=1,35N$ euros. \\
+ L'énoncé nous dit donc que les différences $1,65N-225$ et $225-1,35N$ sont identiques, d'où \[1,65N-225=225-1,35N.\]
+ \textbf{Résolution de l'équation :} On ajoute $1,35N$ aux deux termes : 
+ \begin{eqnarray*}
+ 1,65N + 1,35N -225 &=& 225-1,35N+1,35N\\
+ 3N -225 &=& 225
+ \end{eqnarray*}
+ On ajoute alors $225$ aux deux termes : 
+ \begin{eqnarray*}
+ 3N -225+225 &=& 225+225\\
+ 3N &=&450
+ \end{eqnarray*}
+ Et on divise par $3$ :  
+ \begin{eqnarray*}
+ \frac{3N}3 &=&\frac{450}3\\
+ N &=& 150
+ \end{eqnarray*}
+ Il a donc acheté $150$ bouteilles de vin.
+
+\textbf{Vérification :} S'il achète 150 bouteilles de vin, on peut vérifier que le montant total touché s'il vend à $1,65$ euros est de $150\times1,65 = 247,50$ euros. On réalise alors un bénéfice de $247,50-225 = 22,50$ euros.\\ 
+S'il vendait à $1,35$ euros, il toucherait alors 
+$150\times1,35 = 202,50$, ce qui représente une perte de $225-202,50=22,50$ euros. \\
+Le bénéfice dans le premier cas est égal à la perte dans le second ce qui était la condition voulue.
+ \end{sol}
  \item On considère un polygone régulier à $6$ côtés.
  \begin{enumerate}
  \item Réaliser une figure.
