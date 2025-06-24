@@ -65,7 +65,7 @@ Elle est disponible à tout instant au lien suivant, qui sera mis à jour : \url
 
 Corrigés rédigés dans cette version : \begin{itemize}
 \item Partie \ref{calc}, de 1 à 65
-\item Partie \ref{pbs} de a) à e).
+\item Partie \ref{pbs} de a). à e). et q). à u).
 \end{itemize} 
 \section{Révision de calcul}\label{calc} 
 \begin{itemize}
@@ -640,10 +640,91 @@ $[AB]$ est également la médiatrice de $[CD]$. Soit $O$ le point où cette méd
 \item Dans un triangle $ABC$, on trace la hauteur issue de $A$ qui rencontre $(BC)$ en $H$. On suppose $AB^2 = BH \times BC$. Montrer que $ABC$ est rectangle en $A$. 
 \item On considère un quadrilatère $ABCD$. Montrer que les milieux des côtés forment un  parallélogramme.
  \item Trouver trois nombres entiers consécutifs (consécutifs : qui se suivent) dont la somme est égale à $57$. 
+ \begin{sol}
+ \textbf{Mise en équation :} Si on note $x$ le premier des trois nombres, les trois nombres sont $x$, puis $x+1$ et enfin $x+2$. On a donc \[x + (x+1) + (x+2) = 57\]
+ 
+\textbf{Résolution  de l'équation :} On réduit l'expression obtenue qui devient : \[3x+3 = 57\]
+ Puis, en retranchant 3 : 
+ \[3x = 54\]
+ Et, en divisant par 3 : 
+ \[x= 18\]
+ On a donc trouvé que le premier nombre doit être $18$. Les deux autres sont donc $19$ et $20$.\\
+ \textbf{Vérification :} On vérifie la solution : $18$, $19$ et $20$ sont bien trois entiers consécutifs, et leur somme est $18+19+20= 57$, ce qui convient.
+ \end{sol}
  \item La somme de cinq nombres impairs consécutifs est 85. Quels sont ces nombres ? 
+  \begin{sol}
+ \textbf{Mise en équation :} Si on note $x$ le premier des trois nombres, les cinq nombres sont $x$, $x+2$, $x+4$, $x+6$ et $x+8$. On a donc \[x + (x+2) + (x+4) + (x+6) + (x+8) = 85\]
+ 
+\textbf{Résolution  de l'équation :} On réduit l'expression obtenue qui devient \[5x+2+4+6+8 = 85\]
+c'est-à-dire \[5x+20 = 85\]
+ Puis, en retranchant 20 : 
+ \[5x = 65\]
+ Et, en divisant par 5 : 
+ \[x= 13\]
+ On a donc trouvé que le premier nombre doit être $13$. Les quatre autres sont donc $15$, $17$, $19$ et $21$.\\
+ \textbf{Vérification :} On vérifie la solution : $13$, $15$, $17$, $19$ et $21$ sont bien cinq entiers impairs consécutifs, et leur somme est $13+15+17+19+21= 85$, ce qui convient.
+ \end{sol}
  \item Un père a 29 ans ; son fils a 5 ans ; dans combien d'années l'âge du père sera-t-il le triple de l'âge du fils ? 
+ \begin{sol}
+ \textbf{Mise en équation :} Notons $N$ le nombre d'années recherché. Après ce temps, le père a $29+N$ années, et le fils $5+N$ années. La condition demandée s'écrit donc : 
+ \[29+N = 3(5+N)\]
+ 
+\textbf{Résolution  de l'équation :} On dévéloppe pour avoir \[ 29 + N = 3\times5+3N\]
+puis \[29+N = 15+3N\]
+On retranche N des deux côtés : 
+\[29 +N - N = 15 + 3N -N\]
+ce qui donne \[29 = 15+2N\]
+On retranche alors $15$ des deux côtés : 
+\[29-15 = 15+2N-15\]
+ce qui donne \[14 = 2N\]
+Puis, en divisant par 2 : \[7 = N\]
+On doit donc attendre $N=7$ années.\\
+ \textbf{Vérification :} On vérifie la solution : après $7$ années, le père a $29+7=36$ ans, et le fils a $5+7=12$ ans. Comme $36=3\times12$, le père a bien le triple de l'âge de son fils.
+ \end{sol}
  \item Un père a 41 ans ; ses trois enfants sont âgés de 7, 9 et 13 ans. Dans combien d'années l'âge du père sera-t-il égal à la somme des âges de ses enfants ? 
+ \begin{sol}
+ \textbf{Mise en équation :} 
+ Notons $N$ le nombre d'années recherché. Après ce temps, le père a $41+N$ années, et ses fils ont respectivement $7+N$, $9+N$ et $13+N$ années. On veut donc avoir \[41+N= (7+N)+(9+N)+(13+N)\]
+ 
+\textbf{Résolution  de l'équation :} On réduit l'expression obtenue qui devient 
+\[41+N = 7+9+13+N+N+N\]
+donc \[41+N= 29+3N\]
+On retranche alors $N$ des deux côtés pour obtenir 
+\[41+N-N=29+3N-N\]
+c'est-à-dire \[41=29+2N\]
+puis on retranche 29 des deux côtés pour obtenir 
+\[41-29=29+2N-29\]
+c'est-à-dire 
+\[12=2N\]
+puis, en divisant par $2$, on trouve enfin 
+\[6=N\]
+Il faut donc attendre $6$ ans.\\
+ \textbf{Vérification :} On vérifie la solution :
+ après $6$ années, le père aura $41+6=47$ ans, et ses fils auront respectivement $7+6=13$ ans, $9+6 = 15$ ans, et $13+6=19$ ans. La somme des âges filiaux sera donc $13+15+19 =  47$ ans, ce qui est bien l'âge qu'aura le père. 
+ \end{sol}
  \item Trouver un nombre dont la somme des quotients par 5, 7 et 9 soit égale à 429. 
+ \begin{sol}
+ \textbf{Mise en équation :} Notons $x$ ce nombre. Les quotients demandés sont $\frac{x}5$, $\frac{x}7$ et $\frac{x}9$. La condition demandée est donc 
+ \[\frac{x}5+\frac{x}7+\frac{x}9=429\]
+ 
+\textbf{Résolution  de l'équation :} On multiplie toute l'égalité précédente par $5\times7\times9=315$ pour éliminer les dénominateurs : 
+\[315\left(\frac{x}5+\frac{x}7+\frac{x}9\right) = 429\times315\]
+D'où : 
+\[ \frac{315x}5 + \frac{315x}7+\frac{315x}9 = 429\times315\]
+Comme $315=5\times63 = 7\times45=9\times35$, cela devient 
+\[63x+45+35x = 429\times315\]
+puis \[ 143x = 429\times315\]
+et enfin \[x= \frac{429\times315}{143}\]
+Cependant, $429=143\times3$, donc on peut simplifier :
+\[x = \frac{143\times 3\times315}{143}=3\times315=945\]
+Le nombre recherché est donc forcément $945$.\\
+ \textbf{Vérification :} Il reste à vérifier que $945$ est bien solution du problème (on a montré que c'était la seule solution possible, mais pas forcément que c'était une solution). On calcule les quotients de l'énoncé : \begin{itemize}
+ \item Le quotient par $5$ est $945\div5 = 189$. 
+ \item Le quotient par $7$ est $945\div 7 = 135$. 
+ \item Le quotient par $9$ est $945\div 9=105$. 
+ \end{itemize}
+ La somme de ces trois nombres est $189+135+105 = 429$, ce qui est la condition demandée. On a bien \[945\div5+945\div7+945\div9=429\]
+ \end{sol}
  \item Développer les produits suivants : 
  \[ (x-1)(x+1)\]
  \[(x-1)(x^2+x+1)\]
