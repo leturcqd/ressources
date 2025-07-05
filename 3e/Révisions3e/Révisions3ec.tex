@@ -64,7 +64,7 @@ Elle est disponible à tout instant au lien suivant, qui sera mis à jour : \url
 
 
 Corrigés rédigés dans cette version : \begin{itemize}
-\item Partie \ref{calc}, de 1 à 85 et 106 à 108
+\item Partie \ref{calc} : complet.
 \item Partie \ref{pbs} de a). à e). et q). à w).
 \end{itemize} 
 \section{Révision de calcul}\label{calc} 
@@ -783,29 +783,693 @@ et le second membre donne \begin{eqnarray*}
 &=& 58,\end{eqnarray*} ce qui est identique, donc $x=4$ est bien solution de l'équation.
 \end{sol}
 \it $5(x^2-2x-1)+2(3x-2)=5(x+1)^2$.
-\it $(9x+1)(x-2)=(3x+4)(3x-5)$.\end{itemize}
+\begin{sol}
+\textbf{Résolution} : On développe 
+\begin{eqnarray*}
+5x^2-5\times2x-5\times 1 + 2\times 3x-2\times 2 &=& 
+5(x^2+2\times1\times x+1^2)\\
+5x^2 - 10x - 5 + 6x - 4 &=& 5(x^2 + 2x+1)\\
+5x^2 -4x - 9 &=& 5x^2+5\times 2x + 5\times 1\\
+5x^2-4x-9 &=& 5x^2 + 10x + 5
+\end{eqnarray*}
+puis on isole $x$ 
+\begin{eqnarray*}
+5x^2-4x-9 -5x^2 &=& 5x^2+10x+5-5x^2\\
+-4x-9  &=& 10x+5\\
+-4x - 9 - 10x&=& 10x+5-10x\\
+-14x-9 &=& 5 \\
+-14x-9+9&=& 5+9 \\
+-14x&=& 14\\
+x&=& \frac{14}{-14}\\
+x&=&-1,\end{eqnarray*} ce qui montre que la seule solution 
+possible est $x=-1$.
+
+\textbf{Vérification} : On calcule alors les deux membres pour $x=-1$. Le premier membre vaut 
+\begin{eqnarray*} 5(x^2-2x-1)+2(3x-2)&=& 
+5((-1)^2 -2(-1) -1) + 2(3\times(-1)-2) \\
+&=& 5(1+2-1) + 2(-3-2) \\
+&=&5\times 2 + 2\times -5 \\
+&=& 10 -10 \\
+&=&0\end{eqnarray*}
+et le second membre \begin{eqnarray*}
+5(x+1)^2 &=& 5(-1+1)^2 \\
+&=& 5\times (0)^2\\
+&=& 5\times 0 \\
+&=&0\end{eqnarray*}
+ce qui est identique, donc $x=-1$ est bien solution de l'équation.
+\end{sol}
+\it $(9x+1)(x-2)=(3x+4)(3x-5)$.
+\begin{sol}
+\textbf{Résolution} : On développe 
+\begin{eqnarray*}
+9x\times x +9x \times (-2) +1\times x +1\times (-2)
+&=& 3x\times 3x + 3x\times(-5) + 4\times 3x +4\times(-5)\\
+9x^2 -18x +x -2 &=& 9x^2 -15x +12x -20 \\
+9x^2 - 17x -2 &=& 9x^2-3x -20,
+\end{eqnarray*}
+puis on isole $x$ 
+\begin{eqnarray*}
+9x^2-17x-2-9x^2 &=& 9x^2-3x-20 - 9x^2 \\
+-17x-2 &=& -3x-20 \\
+-17x-2 + 3x &=& -3x-20 +3x \\
+-14x - 2 &=& -20 \\
+-14x - 2 + 2 &=& -20 + 2 \\
+-14x &=& -18 \\
+x &=& \frac{-18}{-14} \\
+x&=& \frac{9}7
+\end{eqnarray*} ce qui montre que la seule solution possible est $x=\frac97$. 
+
+\textbf{Vérification} : 
+On calcule alors les deux membres pour $x=\frac97$ : le premier membre donne 
+\begin{eqnarray*} 
+(9x+1)(x-2) &=& \left(9\times\frac97+1\right)\left(\frac97-2\right)\\
+&=& \left(\frac{81}7 + \frac77\right)\left(\frac97-\frac{14}7\right)\\
+&=& \frac{88}7\times \frac{-5}7 \\
+&=& \frac{-88\times 5}{7\times 7} \\
+&=& - \frac{440}{49},
+\end{eqnarray*} et le second membre 
+\begin{eqnarray*}
+(3x+4)(3x-5) &=& 
+\left(3\times\frac97+4\right)\left(3\times\frac97-5\right)\\
+&=& \left(\frac{27}7 + \frac{28}7\right)\left(\frac{27}7-\frac{35}7\right)\\
+&=& \frac{55}7 \times \frac{-8}7 \\
+&=& - \frac{55\times 8}{7\times 7} \\
+&=& - \frac{440}{49},
+\end{eqnarray*} ce qui est identique, donc $x=\frac97$ est bien solution de l'équation.\end{sol}
+\end{itemize}
 Résoudre les équations suivantes (on se ramènera au cas entier en multipliant par un nombre opportun).
 \begin{itemize}
 \it $\frac{x+5}4 - \frac{x-3}6 = \frac{x}3$. 
+\begin{sol}
+\textbf{Résolution :} On commence par éliminer les dénominateurs $4$, $6$ et $3$ en multipliant par un de leurs multiples communs, par exemple $12$ : 
+\begin{eqnarray*} 12\left(\frac{x+5}4 - \frac{x-3}6 \right) &=& 12\times \frac{x}3\\
+\frac{12(x+5)}4 - \frac{12(x-3)}6 &=& \frac{12x}3\\
+\frac{12}4(x+5) - \frac{12}6(x-3) &=& \frac{12}3 x \\
+3(x+5) - 2(x-3) &=& 4x \end{eqnarray*}
+puis on développe 
+\begin{eqnarray*}
+3x+3\times 5 -2x -2\times (-3) &=& 4x\\
+3x+15-2x+6 &=& 4x \\
+x+21 &=& 4x
+\end{eqnarray*}et on isole $x$
+\begin{eqnarray*}
+x+21-4x &= &4x-4x\\
+-3x+21 &=& 0 \\
+-3x+21-21 &=& 0-21\\
+-3x &=& -21 \\
+x&=& \frac{-21}{-3}\\
+x&=& +7\end{eqnarray*}
+ce qui montre que la seule solution possible est $x=+7$. 
+
+\textbf{Vérification} : On calcule alors les deux membres pour $x=7$. Le premier membre vaut 
+\begin{eqnarray*} \frac{x+5}4 - \frac{x-3}6
+&=& \frac{7+5}4 -\frac{7-3}6 \\
+&=& \frac{12}4 - \frac46 \\
+&=& 3 - \frac{2}{3} \\
+&=& \frac93-\frac{2}{3}\\
+&=& \frac73\end{eqnarray*}
+et le second membre vaut 
+\begin{eqnarray*}\frac{x}3&=& \frac73,
+\end{eqnarray*} ce qui est identique, donc $x=7$ est bien solution.
+\end{sol}
 \it $\frac{3x-7}2 + \frac{x+1}3 = -16$. 
+
+\begin{sol}
+\textbf{Résolution :} On commence par éliminer les dénominateurs $2$ et $3$ en multipliant par un de leurs multiples communs, par exemple $6$ : 
+\begin{eqnarray*}
+6\left(\frac{3x-7}2 + \frac{x+1}3\right)&=& 6\times (-16)\\
+\frac{6(3x-7)}2 + \frac{6(x+1)}3 &=& -96\\
+\frac62(3x-7) + \frac63(x+1) &=& -96\\
+3(3x-7) + 2(x+1)&=& -96,
+\end{eqnarray*} puis on développe
+\begin{eqnarray*} 
+3\times 3x-3\times 7 + 2\times x+2\times 1&=& -96\\
+9x - 21 + 2x + 2 &=& -96 \\
+11x -19 &=& -96
+\end{eqnarray*}et on isole $x$
+\begin{eqnarray*}11x-19+19 &=& -96+19 \\
+11x &=& -77\\
+x&=& -\frac{77}{11}\\
+x&=& -7
+\end{eqnarray*}
+ce qui montre que la seule solution possible est $x=-7$. 
+
+\textbf{Vérification} : On calcule alors les deux membres pour $x=-7$. Le premier membre vaut 
+\begin{eqnarray*}\frac{3x-7}2 + \frac{x+1}3 
+&=& {3\times (-7) - 7}2 + \frac{-7+1}3 \\
+&=& {-21-7}2 +\frac{-6}3 \\
+&=& \frac{-28}2 -2 \\
+&=& -14-2\\
+&=&-16
+\end{eqnarray*}
+et le second membre vaut toujours $-16$ ce qui est identique, donc $x=-7$ est bien solution.
+\end{sol}
 \it $x-\frac{x+1}3 = \frac{2x+1}5$. 
+\begin{sol}
+\textbf{Résolution :} On commence par éliminer les dénominateurs $3$ et $5$ en multipliant par un de leurs multiples communs, par exemple $15$ : 
+\begin{eqnarray*}
+15\left(x-\frac{x+1}3\right) &=& 15\times \frac{2x+1}5\\
+15x -\frac{15(x+1)}3 &=& \frac{15(2x+1)}5 \\
+15x - \frac{15}3(x+1)&=& \frac{15}5(2x+1) \\
+15x - 5(x+1) &=& 3(2x+1)
+\end{eqnarray*} puis on développe
+\begin{eqnarray*} 
+15x - 5x-5\times 1 &=& 3\times 2x+3\times 1\\
+10x - 5 &=& 6x+3
+\end{eqnarray*}et on isole $x$
+\begin{eqnarray*}
+10x-5-6x &=& 6x+3-6x \\
+4x-5 &=& 3 \\
+4x-5+5 &=& 3+5 \\
+4x &=&8 \\
+x &=& \frac84\\
+x&=&2
+\end{eqnarray*}
+ce qui montre que la seule solution possible est $x=2$. 
+
+\textbf{Vérification} : On calcule alors les deux membres pour $x=2$. Le premier membre vaut 
+\begin{eqnarray*}x-\frac{x+1}3&=& 2-\frac{2+1}3\\
+&=& 
+2-\frac33 \\&=& 2-1 \\ &=&1
+\end{eqnarray*}
+et le second membre vaut 
+\begin{eqnarray*}\frac{2x+1}5 &=& \frac{2\times 2+1}5 \\
+&=& \frac{4+1}5\\
+&=&\frac55\\
+&=& 1
+\end{eqnarray*} ce qui est identique, donc $x=2$ est bien solution.
+\end{sol}
 \it $\frac{7-3x}{12} + \frac34 = 2(x-2) + \frac{5(5-2x)}6$. 
+\begin{sol}
+\textbf{Résolution :} On commence par éliminer les dénominateurs $12$, $4$ et $6$ en multipliant par un de leurs multiples communs, par exemple $12$ : 
+\begin{eqnarray*}
+12\left(\frac{7-3x}{12} + \frac34\right) &=&12\left(2(x-2) + \frac{5(5-2x)}6\right)\\
+ \frac{12(7-3x)}{12}+\frac{12\times3}4 &=& 12\times2(x-2)
++\frac{12\times5(5-2x)}6\\
+7-3x + 9 &=& 24(x-2) + \frac{60}6(5-2x)\\
+-3x+16 &=& 24(x-2) + 10(5-2x)
+\end{eqnarray*} puis on développe
+\begin{eqnarray*} -3x+16 &=& 24x-24\times 2 + 10\times 5-10\times 2x\\
+-3x+16 &=& 24x-48+50 -20 x \\
+-3x+16 &=& 4x+2 
+\end{eqnarray*}et on isole $x$
+\begin{eqnarray*}
+-3x+16-4x &=& 4x+2-4x \\
+-7x+16 &=& 2 \\
+-7x+16-16 &=& 2-16\\
+-7x &=& -14\\
+x &=& \frac{-14}{-7}\\
+x&=& 2
+\end{eqnarray*}
+ce qui montre que la seule solution possible est $x=2$. 
+
+\textbf{Vérification} : On calcule alors les deux membres pour $x=2$. Le premier membre vaut 
+\begin{eqnarray*}\frac{7-3x}{12} + \frac34&=& 
+\frac{7-3\times 2}{12}+\frac{3\times3}{4\times3}\\
+&=& \frac{7-6}{12}+\frac{9}{12}\\
+&=& \frac{1}{12}+\frac{9}{12} \\
+&=& \frac{10}{12}\\
+&=& \frac56
+\end{eqnarray*}
+et le second membre vaut 
+\begin{eqnarray*}2(x-2)+\frac{5(5-2x)}6 &=& 
+2(2-2) + \frac{5(5-2\times2)}6\\
+&=& 2\times 0 + \frac{5(5-4)}6 \\
+&=& 0 + \frac{5\times 1}6 \\
+&=& \frac56
+\end{eqnarray*} ce qui est identique, donc $x=2$ est bien solution.
+\end{sol}
 \it $\frac{x}5 - \frac{3x-1}6 + \frac{3-x}4 = 0$.
+\begin{sol}
+\textbf{Résolution :} On commence par éliminer les dénominateurs $5$, $6$ et $4$ en multipliant par un de leurs multiples communs, par exemple $60$ : 
+\begin{eqnarray*}
+60\left(\frac{x}5 - \frac{3x-1}6 + \frac{3-x}4 \right)&=& 60\times 0 \\
+\frac{60x}5 - \frac{60(3x-1)}6 + \frac{60(3-x)}4 &=& 0\\ 
+\frac{60}5x - \frac{60}6(3x-1) + \frac{60}4(3-x)&=&0\\
+12x - 10(3x-1) +15(3-x) &=& 0
+\end{eqnarray*} puis on développe
+\begin{eqnarray*} 12x - 10\times 3x-10\times (-1) +15\times 3-15x &=& 0\\
+12x-30x +10 +45 - 15x &=& 0 \\
+(12-30-15)x +55 &=& 0 \\
+-33x +55 &= &0
+\end{eqnarray*}et on isole $x$
+\begin{eqnarray*}-33x+55-55&=& 0-55\\
+-33x&=& -55 \\
+x&=&\frac{-55}{-33}\\
+x&=& \frac{5}3
+\end{eqnarray*}
+ce qui montre que la seule solution possible est $x=\frac53$. 
+
+\textbf{Vérification} : On calcule alors les deux membres pour $x=\frac53$. Le premier membre vaut 
+\begin{eqnarray*}
+\frac{x}5 - \frac{3x-1}6 + \frac{3-x}4 &=& \frac{\frac53}5 
+- \frac{3\times\frac53-1}6+\frac{3-\frac53}4\\
+&=& \frac13 - \frac{5-1}6 + \frac{\frac93-\frac53}4\\
+&=& \frac13 - \frac46 + \frac{\frac43}4 \\
+&=& \frac13- \frac23 + \frac13 \\
+&=& \frac{1-2+1}3\\
+&=&\frac03 \\
+&=&0
+\end{eqnarray*}
+et le second membre vaut toujours $0$ ce qui est identique, donc $x=\frac53$ est bien solution.
+\end{sol}
 \it $\frac{3(x+3)}4 + \frac12 = \frac{5x+9}3 - \frac{7x-9}4$. 
+\begin{sol}
+\textbf{Résolution :} On commence par éliminer les dénominateurs $4$, $2$ et $3$ en multipliant par un de leurs multiples communs, par exemple $12$ : 
+\begin{eqnarray*}12\left(\frac{3(x+3)}4 + \frac12\right)
+&=& 12\left(\frac{5x+9}3 - \frac{7x-9}4 \right)\\
+\frac{12\times3(x+3)}4 + \frac{12}2 
+&=& \frac{12(5x+9)}{3} - \frac{12(7x-9)}{4} \\
+\frac{36}4 (x+3) + 6 &=& \frac{12}3(5x+9)- \frac{12}4(7x-9) \\
+9(x+3) +6 &=& 4(5x+9) - 3(7x-9)
+\end{eqnarray*} puis on développe
+\begin{eqnarray*} 
+9x+9\times 3 +6 &=& 4\times 5x+4\times 9 - 3\times 7x-3\times(-9) \\
+9x + 27 + 6 &=& 20 x +36 -21x + 27\\
+9x + 33 &=& -x + 63
+\end{eqnarray*}et on isole $x$
+\begin{eqnarray*}
+9x + 33 +x&=& -x + 63+x\\
+10x+33 &=& 63 \\
+10x+33-33&=&63-33 \\
+10x&=&30\\
+x&=&\frac{30}{10}\\
+x&=& 3
+\end{eqnarray*}
+ce qui montre que la seule solution possible est $x=3$. 
+
+\textbf{Vérification} : On calcule alors les deux membres pour $x=3$. Le premier membre vaut 
+\begin{eqnarray*}\frac{3(x+3)}4 + \frac12
+&=& \frac{3(3+3)}4 + \frac12\\
+&=& \frac{3\times6}4 + \frac12\\
+&=& \frac{18}4 + \frac12\\
+&=& \frac92+\frac12\\
+&=& \frac{10}2\\
+&=& 5
+\end{eqnarray*}
+et le second membre vaut 
+\begin{eqnarray*}\frac{5x+9}3 - \frac{7x-9}4
+&=& \frac{5\times 3+9}3 - \frac{7\times 3- 9}4 \\
+&=& \frac{15+9}3 - \frac{21-9}4 \\
+&=& \frac{24}3 - \frac{12}4 \\
+&=& 8 - 3 \\
+&=& 5
+\end{eqnarray*} ce qui est identique, donc $x=3$ est bien solution.
+\end{sol}
 \it $\frac{2x-7}5 + \frac{x+11}2 = -4$. 
+\begin{sol}
+\textbf{Résolution :} On commence par éliminer les dénominateurs $5$ et $2$ en multipliant par un de leurs multiples communs, par exemple $10$ : 
+\begin{eqnarray*}10\left(\frac{2x-7}5 + \frac{x+11}2\right) &=& -4\times 10 \\
+\frac{10(2x-7)}5 + \frac{10(x+11)}2 &=& -40 \\
+2(2x-7) + 5(x+11) &=& -40
+\end{eqnarray*} puis on développe
+\begin{eqnarray*} 
+2\times 2x-2\times 7 + 5x+5\times 11 &=& -40\\
+4x- 14 + 5x + 55 &=& -40\\
+9x+41 &=& -40 
+\end{eqnarray*}et on isole $x$
+\begin{eqnarray*}9x+41-41 &=& -40-41 \\
+9x&=&-81 \\
+x&=& -\frac{81}9\\
+x&=& -9
+\end{eqnarray*}
+ce qui montre que la seule solution possible est $x=-9$. 
+
+\textbf{Vérification} : On calcule alors les deux membres pour $x=-9$. Le premier membre vaut 
+\begin{eqnarray*}\frac{2x-7}5 + \frac{x+11}2
+&=& \frac{2\times (-9)-7}5 + \frac{-9+11}2 \\
+&=& \frac{-18-7}5 + \frac22 \\
+&=& \frac{-25}5 + 1 \\
+&=& -5+1\\
+&=& -4
+\end{eqnarray*}
+et le second membre vaut toujours $-4$ ce qui est identique, donc $x=-9$ est bien solution.
+\end{sol}
 \it $\frac{2x-3}3 - \frac{x-3}6 = \frac{4x+3}4 - 17$. 
+\begin{sol}
+\textbf{Résolution :} On commence par éliminer les dénominateurs $3$, $6$ et $4$ en multipliant par un de leurs multiples communs, par exemple $12$ : 
+\begin{eqnarray*}
+12\left(\frac{2x-3}3 - \frac{x-3}6\right)
+&=& 12\left(\frac{4x+3}4 - 17\right)\\
+\frac{12(2x-3)}3 - \frac{12(x-3)}6 
+&=& \frac{12(4x+3)}4 - 12\times 17 \\
+4(2x-3) - 2(x-3) &=& 3(4x+3) - 204
+\end{eqnarray*} puis on développe
+\begin{eqnarray*} 
+4\times 2x-4\times3 - 2x-2 \times(-3) &=& 3\times 4x+3\times 3 - 204\\
+8x - 12 -2x + 6 &=& 12x + 9 - 204\\
+6x - 6 &=& 12x - 195
+\end{eqnarray*}et on isole $x$
+\begin{eqnarray*}
+6x - 6-12x &=& 12x - 195-12x\\
+-6x - 6 &=& -195 \\
+-6x-6+6 &=& -195+6\\
+-6x &=& -189 \\
+x &=& \frac{-189}{-6} \\
+x &=& \frac{63}2
+\end{eqnarray*}
+ce qui montre que la seule solution possible est $x=\frac{63}2$. 
+
+\textbf{Vérification} : On calcule alors les deux membres pour $x=\frac{63}2$. Le premier membre vaut 
+\begin{eqnarray*}\frac{2x-3}3 - \frac{x-3}6
+&=& \frac{2\times\frac{63}2-3}3 - \frac{\frac{63}2-3}6\\
+&=& \frac{63-3}3 - \frac{\frac{63}2-\frac62}6\\
+&=& \frac{60}3 - \frac{\frac{57}2}6\\
+&=& 20 - \frac{57}{12} \\
+&=& 20 - \frac{19\times4}{3\times4}\\
+&=& 20 - \frac{19}4 \\
+&=& \frac{80}4-\frac{19}4 \\
+&=& \frac{61}4
+\end{eqnarray*}
+et le second membre vaut 
+\begin{eqnarray*}
+\frac{4x+3}4 - 17&=& 
+\frac{4\times\frac{63}2+3}4 - 17 \\
+&=& \frac{126+3}4-\frac{68}4 \\
+&=& \frac{129-68}4\\
+&=& \frac{61}4
+\end{eqnarray*} ce qui est identique, donc $x=\frac{63}2$ est bien solution.
+\end{sol}
 \it $\frac{5x-3}4 - \frac{7x-5}9 = \frac{x+19}6$. 
+\begin{sol}
+\textbf{Résolution :} On commence par éliminer les dénominateurs $4$, $6$ et $9$ en multipliant par un de leurs multiples communs, par exemple $36$ : 
+\begin{eqnarray*}
+36\left(\frac{5x-3}4 - \frac{7x-5}9 \right)
+&=& 36\times \frac{x+19}6\\
+\frac{36(5x-3)}4 - \frac{36(7x-5)}9 &=& 
+\frac{36(x+19)}6 \\
+9(5x-3) - 4(7x-5)&=& 6(x+19) 
+\end{eqnarray*} puis on développe
+\begin{eqnarray*} 
+9\times 5x-9\times 3 - 4\times 7x-4\times(-5)&=& 6x+6\times19\\
+45x-27-28x+20 &=& 6x+114\\
+17x -7 &=& 6x +114  
+\end{eqnarray*}et on isole $x$
+\begin{eqnarray*}
+17x -7 -6x&=& 6x +114 -6x \\
+11x-7 &=& 114\\
+11x-7+7 &=& 114+7\\
+11x &=& 121 \\
+x&=& \frac{121}{11} \\
+x&=& 11
+\end{eqnarray*}
+ce qui montre que la seule solution possible est $x=11$. 
+
+\textbf{Vérification} : On calcule alors les deux membres pour $x=$. Le premier membre vaut 
+\begin{eqnarray*}\frac{5x-3}4 - \frac{7x-5}9 
+&=& \frac{5\times 11-3}4 - \frac{7\times 11-5}9 \\
+&=& \frac{55-3}4 - \frac{77-5}9 \\
+&=& \frac{52}4 - \frac{72}9 \\
+&=& 13 - 8 \\
+&=& 5
+\end{eqnarray*}
+et le second membre vaut 
+\begin{eqnarray*}\frac{x+19}6&=&= \frac{11+19}6\\
+&=& \frac{30}6\\
+&=& 5
+\end{eqnarray*} ce qui est identique, donc $x=$ est bien solution.
+\end{sol}
 \it $\frac{5x+1}8-\frac{x-1}3 = \frac{4(2x-3)}9$. 
+\begin{sol}
+\textbf{Résolution :} On commence par éliminer les dénominateurs $3$, $8$ et $9$ en multipliant par un de leurs multiples communs, par exemple $72$ : 
+\begin{eqnarray*}
+72\left(\frac{5x+1}8-\frac{x-1}3 \right)&=&
+72\times \frac{4(2x-3)}9\\
+\frac{72(5x+1)}8 - \frac{72(x-1)}3 &=& 
+\frac{72\times4(2x-3)}9 \\
+9(5x+1)-24(x-1) &=& 8\times4(2x-3)\\
+9(5x+1)-24(x-1)&=& 32(2x-3)
+\end{eqnarray*} puis on développe
+\begin{eqnarray*} 
+9\times 5x+9\times 1-24x-24\times(-1)&=& 32\times 2x-32\times 3\\
+45x+9-24x+24&=& 64x-96\\
+21x+33&=& 64x-96
+\end{eqnarray*}et on isole $x$
+\begin{eqnarray*}
+21x+33-64x&=& 64x-96-64x\\
+-43x+33 &=& -96 \\
+-43x+33-33&=&-96-33\\
+-43x &=& -129 \\
+x &=& \frac{-129}{-43}\\
+x&=& +3
+\end{eqnarray*}
+ce qui montre que la seule solution possible est $x=3$. 
+
+\textbf{Vérification} : On calcule alors les deux membres pour $x=3$. Le premier membre vaut 
+\begin{eqnarray*}\frac{5x+1}8-\frac{x-1}3 &=&
+\frac{5\times3+1}8-\frac{3-1}3\\
+&=&\frac{15+1}8-\frac23\\
+&=& \frac{16}8-\frac23\\
+&=& 2-\frac23\\
+&=& \frac63-\frac23\\
+&=& \frac43
+\end{eqnarray*}
+et le second membre vaut 
+\begin{eqnarray*}\frac{4(2x-3)}9&=&
+\frac{4(2\times3-3)}9 \\
+&=&\frac{4(6-3)}9\\
+&=& \frac{4\times3}{3\times3}\\
+&=&\frac43
+\end{eqnarray*} ce qui est identique, donc $x=3$ est bien solution.
+\end{sol}
 \it $\frac{2x-1}3 - \frac{5x+2}7 = x +13$. 
-\it $\frac{8x+2}5 - \frac{x-11}7 = \frac{5x-3}2 - \frac{3x-1}4$.\end{itemize}
+\begin{sol}
+\textbf{Résolution :} On commence par éliminer les dénominateurs $3$ et $7$ en multipliant par un de leurs multiples communs, par exemple $21$ : 
+\begin{eqnarray*}21\left(
+\frac{2x-1}3 - \frac{5x+2}7 \right)&=&21(x +13)\\
+\frac{21(2x-1)}3 - \frac{21(5x+2)}7 &=& 21(x+13)\\
+7(2x-1) - 3(5x+2) &=& 21(x+13)
+\end{eqnarray*} puis on développe
+\begin{eqnarray*} 
+7\times2x-7\times1 - 3\times 5x-3\times2 &=& 21x+21\times13\\
+14x -7 - 15x - 6 &=& 21x + 273\\
+-x - 13 &=& 21x + 273
+\end{eqnarray*}et on isole $x$
+\begin{eqnarray*}
+-x - 13-21x &=& 21x + 273-21x\\
+-22x - 13 &=& 273 \\
+-22x-13+13 &=& 273+13\\
+-22x&=& 286 \\
+x &=& \frac{286}{-22}\\
+x&=&-13
+\end{eqnarray*}
+ce qui montre que la seule solution possible est $x=-13$. 
+
+\textbf{Vérification} : On calcule alors les deux membres pour $x=-13$. Le premier membre vaut 
+\begin{eqnarray*}\frac{2x-1}3 - \frac{5x+2}7 &=&
+\frac{2\times(-13)-1}3 - \frac{5\times(-13)+2}7\\
+&=&
+\frac{-26-1}3 - \frac{-65+2}7\\
+&=&
+\frac{-27}3 - \frac{-63}7\\
+&=& -9 + 9 \\
+&=&0
+\end{eqnarray*}
+et le second membre vaut 
+\begin{eqnarray*}x +13&=&-13+13\\
+&=&0
+\end{eqnarray*} ce qui est identique, donc $x=-13$ est bien solution.
+\end{sol}
+\it $\frac{8x+2}5 - \frac{x-11}7 = \frac{5x-3}2 - \frac{3x-1}4$.
+\begin{sol}
+\textbf{Résolution :} On commence par éliminer les dénominateurs $5$, $7$, $2$ et $4$ en multipliant par un de leurs multiples communs, par exemple $140$ : 
+\begin{eqnarray*}
+140\left(\frac{8x+2}5 - \frac{x-11}7 \right)
+&=& 140\left(\frac{5x-3}2 - \frac{3x-1}4\right)\\
+\frac{140(8x+2)}5 - \frac{140(x-11)}7 
+&=& \frac{140(5x-3)}2 - \frac{140(3x-1)}4 \\
+28(8x+2) - 20(x-11) &=& 70(5x-3)-35(3x-1)
+\end{eqnarray*} puis on développe
+\begin{eqnarray*} 
+28\times 8x+28\times2 - 20x-20\times(-11) &=& 70\times 5x-70\times 3\\
+&&\text{           }-35\times 3x-35\times (-1)\\
+224x + 56 - 20x + 220 &=& 350x - 210 - 105x + 35 \\
+204x+276 &=& 245x- 175
+\end{eqnarray*}et on isole $x$
+\begin{eqnarray*}
+204x+276 -245x&=& 245x- 175-245x\\
+-41x+276 &=& -175 \\
+-41x+276-276 &=& -175-276 \\
+-41 x &=& -451 \\
+x&=&\frac{-451}{-41} \\
+x&=& 11
+\end{eqnarray*}
+ce qui montre que la seule solution possible est $x=11$. 
+
+\textbf{Vérification} : On calcule alors les deux membres pour $x=$. Le premier membre vaut 
+\begin{eqnarray*}\frac{8x+2}5 - \frac{x-11}7 &=&
+\frac{8\times11+2}5 - \frac{11-11}7\\
+&=&\frac{88+2}5 - \frac07\\
+&=&\frac{90}5-0 \\
+&=& 18
+\end{eqnarray*}
+et le second membre vaut 
+\begin{eqnarray*}\frac{5x-3}2 - \frac{3x-1}4&=&
+\frac{5\times11-3}2-\frac{3\times11-1}4\\
+&=& \frac{55-3}2-\frac{33-1}4 \\
+&=& \frac{52}2-\frac{32}4\\
+&=& 26 - 8 \\
+&=& 18
+\end{eqnarray*} ce qui est identique, donc $x=11$ est bien solution.
+\end{sol}
+\end{itemize}
 Résoudre les équations :
 \begin{itemize}
 \it $(x-1)(x+2)(x-3)=0$. 
+\begin{sol}
+\textbf{Résolution :}
+On est en présence d'une équation produit.Toute solution est solution de l'équation d'une des trois équations $x-1=0$, $x+2=0$, et $x-3=0$. 
+
+D'une part, $x-1=0$ revient à $x-1+1=0+1$, c'est-à-dire $x=1$. 
+
+D'autre part, $x+2=0$ revient à $x=-2$. 
+
+Enfin, $x-3=0$ revient à $x=3$.
+
+On a donc trouvé que les seules solutions possibles sont $x=1$, $x=-2$ et $x=3$. 
+
+
+\textbf{Vérification :} Pour $x=1$, $(x-1)(x+2)(x-3) = (1-1)(1+2)(1-3) = 0(1+2)(1-3) = 0$.
+
+Pour $x=-2$, $(x-1)(x+2)(x-3) = (-2-1)(-2+2)(-2-3) = (-2-1)0(-2-3) = 0$.
+
+Pour $x=3$, $(x-1)(x+2)(x-3) = (3-1)(3+2)(3-3) = (3-1)(3+2)0=0$.
+\end{sol}
+
 \it $(x-3)(x-4)(x-5)=0$. 
+\begin{sol}
+\textbf{Résolution :}
+On est en présence d'une équation produit.Toute solution est solution de l'équation d'une des trois équations $x-3=0$, $x-4=0$, et $x-5=0$. 
+
+D'une part, $x-3=0$ revient à $x=3$
+
+D'autre part, $x-4=0$ revient à $x=4$. 
+
+Enfin, $x-5=0$ revient à $x=5$.
+
+On a donc trouvé que les seules solutions possibles sont $x=3$, $x=4$ et $x=5$. 
+
+
+\textbf{Vérification :} Pour $x=3$, $(x-3)(x-4)(x-5) = (3-3)(3-4)(3-5)=0(3-4)(3-5)= 0$.
+
+Pour $x=4$, $(x-3)(x-4)(x-5) = (4-3)(4-4)(4-5)=(4-3)0(4-5)= 0$.
+
+Pour $x=5$, $(x-3)(x-4)(x-5) = (5-3)(5-4)(5-5)=(5-3)(5-4)0= 0$.
+
+\end{sol}
+
 \it $(2x+1)(x+1)(4x-3) = 0$.
+\begin{sol}
+\textbf{Résolution :}
+On est en présence d'une équation produit.Toute solution est solution de l'équation d'une des trois équations $2x+1=0$, $x+1=0$, et $4x-3=0$. 
+
+D'une part, la première se résout en 
+\begin{eqnarray*}
+2x+1-1 &=& 0-1 \\
+2x &=& -1\\
+x&=& -\frac12
+\end{eqnarray*}
+
+D'autre part, la seconde se résout en 
+\begin{eqnarray*}
+x+1 -1 &=&0-1 \\
+x&=& -1
+\end{eqnarray*}
+
+Enfin,la dernière se résout en 
+\begin{eqnarray*}
+4x-3+3 &=& 0+3\\
+4x &=& 3\\
+x&=& \frac34
+\end{eqnarray*}
+
+On a donc trouvé que les seules solutions possibles sont $x=-\frac12$, $x=-1$ et $x=\frac34$. 
+
+
+\textbf{Vérification :} En exercice. 
+\end{sol}
 \it $(2x+1)(x+4)(3x+1)=0$. 
+\begin{sol}
+\textbf{Résolution :}
+On est en présence d'une équation produit.Toute solution est solution de l'équation d'une des trois équations $2x+1=0$, $x+4=0$, et $3x+1=0$. 
+
+D'une part, la première se résout en 
+\begin{eqnarray*}
+2x+1-1 &=& 0-1 \\
+2x &=& -1\\
+x&=& -\frac12
+\end{eqnarray*}
+
+D'autre part, la seconde se résout en 
+\begin{eqnarray*}
+x+4 -4 &=&0-4 \\
+x&=& -4
+\end{eqnarray*}
+
+Enfin,la dernière se résout en 
+\begin{eqnarray*}
+3x+1-1 &=& 0-1\\
+3x &=& -1\\
+x&=& -\frac13
+\end{eqnarray*}
+
+On a donc trouvé que les seules solutions possibles sont $x=-\frac12$, $x=-4$ et $x=-\frac13$. 
+
+
+\textbf{Vérification :} En exercice. 
+\end{sol}
 \it $x(5x+1)(4x-3)(3x-4)=0$. 
-\it $5x(3x-7)=0$.   
+\begin{sol}
+\textbf{Résolution :}
+On est en présence d'une équation produit.Toute solution est solution de l'équation d'une des quatre équations $x=0$, $5x+1=0$, $4x-3=0$, et $3x-4=0$. 
+
+D'une part, la première a immédiatement comme seule solution $x=0$. 
+
+D'autre part, la seconde se résout en 
+\begin{eqnarray*}
+5x+1 -1 &=&0-1 \\
+5x&=& -1\\
+x&=& -\frac15
+\end{eqnarray*}
+La troisième se résout en 
+\begin{eqnarray*}
+4x-3+3 &=&0+3 \\
+4x&=& 3\\
+x&=& \frac34
+\end{eqnarray*}
+Enfin,la dernière se résout en 
+\begin{eqnarray*}
+3x-4+4 &=& 0+4\\
+3x &=& 4\\
+x&=& \frac43
+\end{eqnarray*}
+
+On a donc trouvé que les seules solutions possibles sont $x=0$, $x=-\frac15$, $x=\frac34$ et $x=\frac43$. 
+
+
+\textbf{Vérification :} En exercice. 
+\end{sol}
+\it $5x(3x-7)=0$.  
+\begin{sol}
+\textbf{Résolution :}
+On est en présence d'une équation produit.Toute solution est solution de l'équation d'une des deux équations $5x=0$ et $3x-7=0$
+
+D'une part, la première se résout en 
+\begin{eqnarray*} 5x &=& 0 \\
+\frac{5x}5 &=& \frac05\\
+x&=&0\end{eqnarray*}
+
+D'autre part, la seconde se résout en 
+\begin{eqnarray*}
+3x-7+7&=&0+7\\
+3x &=& 7\\
+x &=& \frac73
+\end{eqnarray*}
+On a donc trouvé que les seules solutions possibles sont $x=0$ et $x=\frac73$. 
+
+
+\textbf{Vérification :} En exercice. 
+\end{sol} 
 \it $x^2-3x=0$. 
 \begin{sol}
 \textbf{Résolution :}On factorise par $x$ pour trouver \[x(x-3)=0,\]
@@ -837,7 +1501,7 @@ Les deux nombres $0$ et $-\frac85$ sont donc bien solution de l'équation.
 \end{sol}
 \it $4x^2-\frac{7x}3=0$. 
 \begin{sol}
-\textbf{Résolution :}On factorise par $x$ pour trouver \[x(4x-\frac73)=0,\]
+\textbf{Résolution :} On factorise par $x$ pour trouver \[x(4x-\frac73)=0,\]
 qui est une équation produit. Toute solution est solution de l'équation $x=0$, ou de l'équation $4x-\frac73=0$. 
 Cette dernière équation se résout ainsi : 
 \begin{eqnarray*}
