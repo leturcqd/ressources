@@ -65,7 +65,7 @@ Elle est disponible à tout instant au lien suivant, qui sera mis à jour : \url
 
 Corrigés rédigés dans cette version : \begin{itemize}
 \item Partie \ref{calc} : complet.
-\item Partie \ref{pbs} de a). à e). et q). à w).
+\item Partie \ref{pbs} de a). à j). et q). à w).
 \end{itemize} 
 \section{Révision de calcul}\label{calc} 
 \begin{itemize}
@@ -1664,6 +1664,48 @@ Le bénéfice dans le premier cas est égal à la perte dans le second ce qui é
  \item Montrer que tous les triangles ainsi formés ont leurs angles tous égaux à $60^o$. 
  \item En déduire que les angles d'un hexagone régulier mesurent $120$ degrés.
 \end{enumerate}   
+\begin{sol}
+(a) \& (b) Voici la figure demandée aux deux premières questions : 
+\[\begin{tikzpicture}
+\draw(0,0)--(0:3)--(60:3)--(0,0);
+\draw(0,0)--(60:3)--(120:3)--(0,0);
+\draw(0,0)--(120:3)--(180:3)--(0,0);
+\draw(0,0)--(180:3)--(240:3)--(0,0);
+\draw(0,0)--(240:3)--(300:3)--(0,0);
+\draw(0,0)--(300:3)--(360:3)--(0,0);
+\draw (30:.5) node{O};
+\draw(0:3.3) node{A};
+\draw(60:3.3) node{B};
+\draw(120:3.3) node{C};
+\draw(180:3.3) node{D};
+\draw(240:3.3) node{E};
+\draw(300:3.3) node{F};
+\end{tikzpicture}\]
+(c) Par construction, les six triangles $AOB$, $BOC$, $COD$, $DOE$ $EOF$ et $FOA$ sont égaux, et on a $OA=OB=OC=OD=OE=OF$, donc ces six triangles sont isocèles en $O$. Il suffit donc de montrer que $OAB$ a trois angles de $60$ degrés. 
+Les six angles $\widehat{AOB}$, $\widehat{BOC}$, $\widehat{COD}$, $\widehat{DOE}$ $\widehat{EOF}$ et $\widehat{FOA}$ sont de même mesure et consécutivement adjacents. Leur réunion et l'angle complet de $360^o$. On en déduit que \begin{eqnarray*} 
+\widehat{AOB}+\widehat{BOC}+\widehat{COD}+\widehat{DOE}+\widehat{EOF}+\widehat{FOA}&=& 360^o\\
+6\times \widehat{AOB} &=& 360^o\\
+\widehat{AOB} &=& 360^o\div 6 \\
+\widehat{AOB} &=& 60^o\end{eqnarray*}
+Enfin, le triangle $AOB$ est isocèle en $O$, donc ses angles de base $\widehat{ABO}$ et $\widehat{BAO}$ sont de même mesure. Écrivant alors la somme des trois angles de ce triangle, il vient 
+\begin{eqnarray*} 180^o &=& \widehat{AOB} + \widehat{ABO} + \widehat{BAO} \\
+180^o &=& 60^o + \widehat{ABO} + \widehat{ABO} \\
+180^o -60^o &=& 2\times \widehat{ABO}\\
+120^o &=& 2\times \widehat{ABO}\\
+120^o\div 2 &=& \widehat{ABO}\\
+60^o&=& \widehat{ABO}\end{eqnarray*}
+et donc $\widehat{ABO}=\widehat{BAO}=60^o$. 
+
+Le triangle $AOB$ (et donc les cinq autres triangles qui lui sont égaux) a donc trois angles de $60^o$. Ils sont donc d'ailleurs équilatéraux. 
+
+(d) Les six angles de l'hexagone régulier sont égaux, donc il suffit de calculer par exemple $\widehat{ABC}$. Comme $\widehat{ABC}$ est la réunion des angles adjacents $\widehat{ABO}$ et $\widehat{OBC}$, on a 
+\begin{eqnarray*}
+\widehat{ABC} &=& \widehat{ABO} + \widehat{OBC} \\
+&=& 60^o+60^o\\
+&=& 120^o.
+\end{eqnarray*}
+L'angle $\widehat{ABC}$ ainsi que les cinq autres angles de l'hexagone régulier $ABCDEF$ mesure donc $120$ degrés. 
+\end{sol}
 
  \item On considère un polygone régulier à $5$ côtés.
  \begin{enumerate}
@@ -1672,9 +1714,116 @@ Le bénéfice dans le premier cas est égal à la perte dans le second ce qui é
  \item Montrer que tous les triangles isocèles ainsi formés ont leurs angles à la base tous égaux à $54^o$. 
  \item En déduire que les angles d'un pentagone régulier mesurent $108^o$ degrés.
 \end{enumerate}   
+\begin{sol}Voici la figure demandée aux deux premières questions : 
+\[\begin{tikzpicture}
+\draw(0,0)--(0:3)--(72:3)--(0,0);
+\draw(0,0)--(72:3)--(144:3)--(0,0);
+\draw(0,0)--(144:3)--(216:3)--(0,0);
+\draw(0,0)--(216:3)--(288:3)--(0,0);
+\draw(0,0)--(288:3)--(360:3)--(0,0);
+\draw (36:.5) node{O};
+\draw(0:3.3) node{A};
+\draw(72:3.3) node{B};
+\draw(144:3.3) node{C};
+\draw(216:3.3) node{D};
+\draw(288:3.3) node{E};
+\end{tikzpicture}\]
+(c) Par construction, les cinq triangles $AOB$, $BOC$, $COD$, $DOE$ et $EOA$ sont égaux, et on a $OA=OB=OC=OD=OE$, donc ces cinq triangles sont isocèles en $O$. Il suffit donc de calculer les angles de $OAB$. 
+Les cinq angles $\widehat{AOB}$, $\widehat{BOC}$, $\widehat{COD}$, $\widehat{DOE}$ $\widehat{EOA}$ sont de même mesure et consécutivement adjacents. Leur réunion et l'angle complet de $360^o$. On en déduit que \begin{eqnarray*} 
+\widehat{AOB}+\widehat{BOC}+\widehat{COD}+\widehat{DOE}+\widehat{EOA}&=& 360^o\\
+5\times \widehat{AOB} &=& 360^o\\
+\widehat{AOB} &=& 360^o\div 5 \\
+\widehat{AOB} &=& 72^o\end{eqnarray*}
+Enfin, le triangle $AOB$ est isocèle en $O$, donc ses angles de base $\widehat{ABO}$ et $\widehat{BAO}$ sont de même mesure. Écrivant alors la somme des trois angles de ce triangle, il vient 
+\begin{eqnarray*} 180^o &=& \widehat{AOB} + \widehat{ABO} + \widehat{BAO} \\
+180^o &=& 72^o + \widehat{ABO} + \widehat{ABO} \\
+180^o -72^o &=& 2\times \widehat{ABO}\\
+108^o &=& 2\times \widehat{ABO}\\
+108^o\div 2 &=& \widehat{ABO}\\
+54^o&=& \widehat{ABO}\end{eqnarray*}
+et donc $\widehat{ABO}=\widehat{BAO}=54^o$. 
+
+Le triangle $AOB$ (et donc les quatre autres triangles qui lui sont égaux) a donc un angle au sommet de $72^o$ et deux angles de base de $54^o$. 
+
+(d) Les cinq angles du pentagone régulier sont égaux, donc il suffit de calculer par exemple $\widehat{ABC}$. Comme $\widehat{ABC}$ est la réunion des angles adjacents $\widehat{ABO}$ et $\widehat{OBC}$, on a 
+\begin{eqnarray*}
+\widehat{ABC} &=& \widehat{ABO} + \widehat{OBC} \\
+&=& 54^o+64^o\\
+&=& 108^o.
+\end{eqnarray*}
+L'angle $\widehat{ABC}$ ainsi que les quatre autres angles de l'hexagone régulier $ABCDEF$ mesure donc $108$ degrés.
+
+
+\end{sol}
 \item Utiliser les deux exercices précédents pour généraliser à un polygone régulier avec un nombre quelconque $N$ de côtés. On montrera ainsi que les angles d'une telle figure valent tous $\frac{N-2}N\times 180^o$.
+\begin{sol}
+En adaptant les deux exercices précédents, notons $AOB$ le triangle obtenu en joignant un côté $[AB]$ du polygone régulier à $N$ côtés à son centre. Le triangle $AOB$ est isocèle en $O$. 
+
+L'angle $\widehat{AOB}$ mesure un $N$-ème de tour complet, 
+donc $\frac{360^o}N$. 
+
+Enfin, le triangle $AOB$ est isocèle en $O$, donc ses angles de base $\widehat{ABO}$ et $\widehat{BAO}$ sont de même mesure. Écrivant alors la somme des trois angles de ce triangle, il vient 
+\begin{eqnarray*} 180^o &=& \widehat{AOB} + \widehat{ABO} + \widehat{BAO} \\
+180^o &=& \frac{360^o}N + \widehat{ABO} + \widehat{ABO} \\
+180^o -\frac{360^o}N &=& 2\times \widehat{ABO}\\
+180^o -\frac{360^o}N &=& 2\times \widehat{ABO}\\
+\left(180^o -\frac{360^o}N\right)\div 2 &=& \widehat{ABO}\\
+90^o- \frac{180^o}N&=& \widehat{ABO}\\
+\frac{N}N\times90^o- \frac2N\times 90^o &=& \widehat{ABO}\\
+\left(\frac{N}N-\frac2N\right)\times 90^o &=& \widehat{ABO}\\
+\frac{N-2}N\times 90^o &=& \widehat{ABO}
+\end{eqnarray*}
+donc le triangle $AOB$ (ainsi que les $N-1$ autres triangles qui forment ce polygone) a des angles de base de $\frac{N-2}N\times 90^o$. 
+
+Enfin, les angles du polygone mesurent tous comme l'angle
+$\widehat{ABC}$ qui est la réunion des angles adjacents $\widehat{ABO}$ et $\widehat{OBC}$ qui mesurent donc chacun $\frac{N-2}N\times 90^o$. On en déduit que \begin{eqnarray*}
+\widehat{ABC} &=& \widehat{ABO}+\widehat{OBC}\\
+&=& \frac{N-2}N\times 90^o+\frac{N-2}N\times 90^o\\
+&=&  \frac{N-2}N\times(90^o+90^o)\\
+&=& \frac{N-2}N\times 180^o\end{eqnarray*}
+ ce qui était le résultat attendu : les angles d'un polygone régulier à $N$ côtés mesurent tous $\frac{N-2}N\times 180^o$.
+
+En particulier, on se rassure avec les quatre cas particuliers connus : \begin{itemize}
+\item pour $N=3$, on trouve $\frac{3-2}3\times 180^o = \frac13\times180^o = 60^o$, ce qui correspond aux angles d'un triangle équilatéral ;
+\item pour $N=4$, on trouve $\frac{4-2}4\times 180^o = \frac24\times180^o = 90^o$, ce qui correspond aux angles d'un carré;
+\item pour $N=5$, on trouve $\frac{5-2}5\times 180^o = \frac35\times180^o = 108^o$, ce qui correspond aux angles d'un pentagone régulier ;
+\item pour $N=6$, on trouve $\frac{6-2}6\times 180^o = \frac46\times180^o =120^o$, ce qui correspond aux angles d'un hexagone régulier.
+\end{itemize}
+Notons qu'on en tirerait donc après calcul que : \begin{itemize}
+\item l'octogone régulier a des angles de $\frac{8-2}8\times 180^o = 135^o$,
+\item l'ennéagone régulier a des angles de $\frac{9-2}9\times 180^o = 140^o$,
+\item le décagone régulier a des angles de $\frac{10-2}{10}\times180^o = 144^o$
+\end{itemize}
+Attention, certaines valeurs peuvent tomber moins juste : 
+\begin{itemize}
+\item  pour l'heptagone régulier ($N=7$), on trouverait des angles de $\frac{7-2}{7}\times 180^o = \frac57\times 180^o$, qui n'est pas un nombre décimal (son développement décimal est $128,571428~571428~571428~571428\ldots$ degrés).
+\item  pour l'hendécagone régulier ($N=11$), on trouverait des angles de $\frac{11-2}{11}\times 180^o = \frac9{11}\times 180^o$, qui n'est pas un nombre décimal (son développement décimal est $147,272727\ldots$ degrés).
+\end{itemize}
+\end{sol}
 \item On trace deux points $A$ et $B$ et une droite $(d)$ sur une feuille. Expliquer comment construire le cercle passant par $A$ et $B$ dont le centre appartient à $(d)$. Existe-t-il toujours ? Y en a-t-il toujours un seul ?
+\begin{sol}
+Ce problème revient à trouver le centre $O$ d'un tel cercle, le rayon étant alors simplement $OA$. Le centre doit vérifier les deux conditions $OA=OB$ et $O\in(d)$.
+
+La première de ces conditions revient à dire que $O$ appartient à la médiatrice du segment $[AB]$. On cherche donc un point qui appartienne à la fois à $(d)$ et à cette médiatrice. Trois cas de figure se présentent alors : 
+\begin{itemize}
+\item Premier cas : $(d)$ est la médiatrice du segment $[AB]$. À ce moment, tout point de $(d)$ convient et permet de tracer un cercle passant par $A$ et $B$. Il y a donc une infinité de tels cercles. 
+\item Deuxième cas : $(d)$ est parallèle à la médiatrice du segment $[AB]$, il n'y a alors aucun point d'intersection et donc aucun cercle solution du problème. 
+\item Troisième et dernier cas : sinon, $(d)$ coupe la médiatrice de $[AB]$ en un unique point $O$, qui est le centre du seul cercle possible. Dans ce cas, on peut alors construire effectivement le point $O$ en traçant la médiatrice de $[AB]$ à la règle et au compas et en regardant où elle rencontre $(d)$.
+\end{itemize}
+\end{sol}
 \item On place trois points $A$, $B$, $C$ sur une feuille. À quelle condition passe-t-il un cercle par ces trois points ? Comment le construire ? 
+\begin{sol}
+Pour qu'un tel cercle existe, si on note $O$ son centre et $R$ son rayon, il faut et il suffit que $OA=OB=OC=R$. Le point $O$ doit donc être à la même distance des trois sommets. 
+
+Considérons les médiatrices de $[AB]$ et $[AC]$. 
+\begin{itemize}
+\item Si $A$, $B$ et $C$ sont alignés, ces deux droites sont perpendiculaires à la droite passant par ces trois points, donc elles sont parallèles entre elles. Mais alors, comme $OA=OB$, et $OA=OC$, $O$ devrait être sur les deux médiatrices, ce qui est impossible. Aucun cercle ne passe donc par trois points alignés.
+\item Sinon, elles se coupent en un point $O$. Ce point est sur la médiatrice de $[AB]$ donc $OA=OB$, et il est sur la médiatrice de $[AC]$ donc $OA=OC$. On a donc $OA=OB=OC$. En prenant cette distance commune comme rayon, on obtient le cercle voulu. 
+\end{itemize}
+
+On conclut donc qu'un tel cercle existe si et seulement si les trois points ne sont pas alignés. Il est alors unique, et on peut le construire en traçant deux des médiatrices de segments entre nos points et en prenant comme centre leur intersection. 
+
+\end{sol}
 \item On considère un quadrilatère convexe $ABCD$ dans lequel la médiatrice de 
 $[AB]$ est également la médiatrice de $[CD]$. Soit $O$ le point où cette médiatrice coupe la médiatrice de $[BC]$. \begin{enumerate}
 \item Montrer que les quatre points $A$, $B$, $C$ et $D$ sont situés sur un même cercle de centre $O$. 
