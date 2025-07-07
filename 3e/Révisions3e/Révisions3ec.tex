@@ -44,7 +44,8 @@ cross/.default={1pt}}
 	\setcounter{n}{1} 
 	\newcommand{\cm}{\textbf{ cm}}
 	\newcommand\ds\displaystyle
-	\renewcommand{\it}{\item[$ \mathbf{\bullet\ \then}.$]\stepcounter{n} }
+	\renewcommand{\it}{Retour au sommaire : page \ref{init}
+	\subsection{Calcul $ \mathbf{ \then}.$}\label{\then} \stepcounter{n} }
 	\newenvironment{calcul}{\item[$\mathbf{\then}.$] \stepcounter{n}\hfil $\displaystyle  }{.$\hfil   }
 	\pagestyle{fancy}
 	\theoremstyle{plain}
@@ -58,17 +59,19 @@ cross/.default={1pt}}
 	\date{}
 	\begin{document}
 
-\section*{Avant-propos}
+\section{Avant-propos}\label{init}
 Voici la correction de la feuille d'exercices  disponible ici : \url{https://leturcqd.github.io/ressources/3e/R\%C3\%A9visions3e/R\%C3\%A9visions3e.pdf}
 Elle est disponible à tout instant au lien suivant, qui sera mis à jour : \url{https://leturcqd.github.io/ressources/3e/R\%C3\%A9visions3e/R\%C3\%A9visions3ec.pdf}
 
 
 Corrigés rédigés dans cette version : \begin{itemize}
-\item Partie \ref{calc} : complet.
+\item Partie \ref{calc} : complet  
 \item Partie \ref{pbs} de a). à j). et q). à w).
 \end{itemize} 
+
+\tableofcontents
 \section{Révision de calcul}\label{calc} 
-\begin{itemize}
+
 \it \begin{eqnarray*}
 \left(-\frac14\right)+\left(-\frac32\right)+\left(+\frac52\right) & = & \frac{-1}4 + \frac{-3\times 2}{2\times2} + \frac{5\times2}{2\times2} \\
 &=& \frac{-1}4 + \frac{-6}4 + \frac{10}4\\
@@ -178,9 +181,7 @@ ou, plus malin : \begin{eqnarray*}
 &=&\frac{47}{15}
 \end{eqnarray*}
 
-\end{itemize}
 Supprimer les parenthèses et les crochets dans les expressions suivantes : 
-\begin{itemize}
 \it \begin{eqnarray*}(a-b+c) - (d- e - f) + (b-a) &=& 
 a - b + c - d + e + f + b - a \\ 
 &=& a - a - b + b + c - d + e + f \\
@@ -211,10 +212,9 @@ ou :
 &=& 18 -2  - a + a  + b - b \\
 &=& 16	
 \end{eqnarray*}
-\end{itemize}
 
 Effectuer les produits suivants : 
-\begin{itemize}
+
 \it \[(-3)(+7)(-5)(-4) = (- 21) \times (+20) = - 420\]
 \it \[(+1,7)(-2,5)(-3)(-1,9) = (- 4,25)\times (+5,7) = -24,225\]
 \it \[(-1)(+1)(-1)(+1)(-1)(-1) = (-1)^4 = +1\]
@@ -259,9 +259,7 @@ Effectuer les produits suivants :
 \left(\frac{+1}{4^2}\right)^{2}[4]^{3} = \frac1{4^4}4^3
 =4^{-4}4^3=4^{-4+3}=4^{-1}=\frac14
 \]
-\end{itemize}
 Réduire les expressions suivantes: 
-\begin{itemize}
 \it \begin{eqnarray*}
 -\frac32 x + \frac54 x-3x^2+\frac{x}6&-&\frac52 x^2+5+4x^2\\&=& -3x^2-\frac52x^2+4x^2 -\frac32x+\frac54x+\frac16x+5\\
 &=& \left(-3 - \frac52+4\right)x^2 +\left(-\frac32+\frac54+\frac16\right)x+5\\
@@ -319,9 +317,8 @@ Réduire les expressions suivantes:
 &=& 3a^3+\left(\frac{4}{10}+\frac{25}{10}\right)a^2b
 -2ab^2+\frac{7-2}2b^3\\
 &=& 3a^3+\frac{29}{10}a^2b-2ab^2+\frac52b^3\end{eqnarray*}
- 
-\end{itemize}
-Réduire : \begin{itemize}
+  
+Réduire :  
 \it \begin{eqnarray*}(3x-5)&+&[2x-5 - (3x-2y+4) - (4x-3y-9)]\\
 &=& 3x-5 + [ 2x-5 - 3x+2y-4 - 4x+3y+9]\\
 &=& 3x-5 + 2x-5-3x+2y-4-4x+3y+9\\
@@ -340,10 +337,8 @@ Réduire : \begin{itemize}
 &=& x-3x-2y-2y+5-7 - 2x-3+4y -2\\
 &=& x - 3x -2x -2y - 2y +4y +5 - 7 - 3 - 2 \\
 &=& (1-3-2)x+(-2-2+4)y -7\\
-&=& -4x-7\end{eqnarray*}
-\end{itemize}
-Effectuer les produits suivants : 
-\begin{itemize}
+&=& -4x-7\end{eqnarray*} 
+Effectuer les produits suivants :  
 \it \begin{eqnarray*}(3a^2b^3)\left(\frac23ab^5\right)&=& 
 3\times\frac23\times a^2a\times b^3b^5\\
 &=& 2a^3b^8\end{eqnarray*}
@@ -392,10 +387,8 @@ Effectuer les produits suivants :
 \\
 &=& \frac{3^3\times -5}{5^3\times2^2}x^{2\times3}y^3xy\\
 &=& \frac{-3^3}{5^2\times2^2}x^{6+1}y^{3+1}\\
-&=&- \frac{27}{100} x^7y^4\end{eqnarray*}
-\end{itemize}
-Effectuer les produits suivants.
-\begin{itemize}
+&=&- \frac{27}{100} x^7y^4\end{eqnarray*} 
+Effectuer les produits suivants. 
 \it \begin{eqnarray*}(2x-7)(-3x+2)&=& 
 2x\times(-3x)+2x\times2+(-7)\times(-3x)+(-7)\times2\\
 &=& -6x^2+4x+21x-14\\
@@ -464,10 +457,10 @@ Effectuer les produits suivants.
 &=& \frac{35}8x^6 +\frac54x^5 -\left(\frac56+7\right)x^4 \\
 &&+\left(\frac74-2\right)x^3 +\left(\frac43+\frac12\right)x^2-\frac13x\\
 &=& \frac{35}8x^6 +\frac54x^5 - \frac{47}6x^4-\frac14x^3+\frac{11}6x^2-\frac13x
-\end{eqnarray*}
-\end{itemize}
+\end{eqnarray*} 
+
  Calculer les produits suivants : 
-\begin{itemize}
+ 
 \it \begin{eqnarray*}(2x+3)(3x+2)(x-4)&=& (2x\times3x+2x\times 2 +3\times 3x+3\times2)(x-4)\\
 &=& (6x^2+4x+9x+6)(x-4)\\
 &=& (6x^2+13x+6)(x-4)\\
@@ -493,9 +486,9 @@ Effectuer les produits suivants.
 &=& (3x^4-3x^2-x^2+1)\\
 &=& (3x^4-4x^2+1)
 \end{eqnarray*}
-\end{itemize}
+
 Développer et réduire : 
-\begin{itemize}
+
 \it \begin{align*}5(3a^2-4b^3)&-[9(2a^2-b^3)-2(a^2-5b^3)]
 \\
 & = 5\times 3a^2 - 5\times 4b^3 - [9\times 2a^2 -9b^3 -2a^2+-2\times (-5b^3)]\\
@@ -546,9 +539,9 @@ Développer et réduire :
 &= a^2x^4-0abx^2+0b^2-b\\
 &=a^2x^4-b\end{align*}
 
-\end{itemize}
+
 Résoudre les équations suivantes : 
-\begin{itemize}
+
 \it $5(2x-3) - 4(5x-7)=19-2(x+11)$. 
 \begin{sol}
 \textbf{Résolution :}
@@ -746,9 +739,9 @@ x&=&0,
 &=&-15,\end{eqnarray*}
 ce qui est identique, donc $x=0$ est bien solution de l'équation. 
 \end{sol}
-\end{itemize}
+
 Résoudre les équations suivantes (après développement, les termes en $x^2$ ou $x^3$ se simplifient) : 
-\begin{itemize}
+
 \it $(x-1)^2+(x+3)^2= 2(x-2)(x+1)+38$.
 \begin{sol}
 \textbf{Résolution} : On commence par développer : 
@@ -856,9 +849,9 @@ On calcule alors les deux membres pour $x=\frac97$ : le premier membre donne
 &=& - \frac{55\times 8}{7\times 7} \\
 &=& - \frac{440}{49},
 \end{eqnarray*} ce qui est identique, donc $x=\frac97$ est bien solution de l'équation.\end{sol}
-\end{itemize}
+
 Résoudre les équations suivantes (on se ramènera au cas entier en multipliant par un nombre opportun).
-\begin{itemize}
+
 \it $\frac{x+5}4 - \frac{x-3}6 = \frac{x}3$. 
 \begin{sol}
 \textbf{Résolution :} On commence par éliminer les dénominateurs $4$, $6$ et $3$ en multipliant par un de leurs multiples communs, par exemple $12$ : 
@@ -1312,9 +1305,9 @@ et le second membre vaut
 &=& 18
 \end{eqnarray*} ce qui est identique, donc $x=11$ est bien solution.
 \end{sol}
-\end{itemize}
+
 Résoudre les équations :
-\begin{itemize}
+
 \it $(x-1)(x+2)(x-3)=0$. 
 \begin{sol}
 \textbf{Résolution :}
@@ -1527,7 +1520,6 @@ Pour $x=\frac7{12}$, \begin{eqnarray*}4x^2-\frac{7x}3&=&
 
 Les deux nombres $0$ et $\frac7{12}$ sont donc bien solution de l'équation.
 \end{sol}
-\end{itemize}
 	
     \section{Problèmes de réflexion plus avancés}\label{pbs}
 \begin{enumerate}
