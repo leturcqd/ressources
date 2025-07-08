@@ -46,6 +46,9 @@ cross/.default={1pt}}
 	\newcommand\ds\displaystyle
 	\renewcommand{\it}{Retour au sommaire : page \ref{init}
 	\subsection{Calcul $ \mathbf{ \then}.$}\label{\then} \stepcounter{n} }
+	\newcommand{\itt}{Retour au sommaire : page \ref{init}
+	\subsection{Problème $\mathbf{\alph{n}}$}\label{p \then}
+	\stepcounter{n}}
 	\newenvironment{calcul}{\item[$\mathbf{\then}.$] \stepcounter{n}\hfil $\displaystyle  }{.$\hfil   }
 	\pagestyle{fancy}
 	\theoremstyle{plain}
@@ -72,7 +75,8 @@ Corrigés rédigés dans cette version : \begin{itemize}
 \tableofcontents
 \section{Révision de calcul}\label{calc} 
 
-\it \begin{eqnarray*}
+	\subsection{Calcul $ \mathbf{ \then}.$}\label{\then} \stepcounter{n} 
+ \begin{eqnarray*}
 \left(-\frac14\right)+\left(-\frac32\right)+\left(+\frac52\right) & = & \frac{-1}4 + \frac{-3\times 2}{2\times2} + \frac{5\times2}{2\times2} \\
 &=& \frac{-1}4 + \frac{-6}4 + \frac{10}4\\
 &=& \frac{-1-6+10}4\\
@@ -1522,8 +1526,10 @@ Les deux nombres $0$ et $\frac7{12}$ sont donc bien solution de l'équation.
 \end{sol}
 	
     \section{Problèmes de réflexion plus avancés}\label{pbs}
-\begin{enumerate}
-\item Quel nombre faut-il ajouter aux deux termes de la fraction $\frac7{13}$ pour qu'elle devienne égale à $\frac23$ ? 
+    \setcounter{n}{1}
+    
+\itt
+Quel nombre faut-il ajouter aux deux termes de la fraction $\frac7{13}$ pour qu'elle devienne égale à $\frac23$ ? 
 \begin{sol}
 \textbf{Mise en équation :}
 Notons $x$ le nombre cherché. L'énoncé devient
@@ -1543,7 +1549,7 @@ Et on trouve, en retranchant 21 aux deux termes :  \[ x = 26-21 = 5.\]
 \end{sol}
 
 
- \item Quel nombre faut-il retrancher aux deux termes de la fraction $\frac{17}{23}$ pour obtenir une fraction égale à $\frac58$ ? 
+ \itt Quel nombre faut-il retrancher aux deux termes de la fraction $\frac{17}{23}$ pour obtenir une fraction égale à $\frac58$ ? 
  \begin{sol}
 \textbf{Mise en équation :}
 Notons $x$ le nombre cherché. L'énoncé devient
@@ -1571,7 +1577,7 @@ x&=&7
 
 
 
- \item Quel nombre faut-il ajouter aux deux termes de la fraction $\frac58$ et retrancher aux deux termes de la fraction $\frac34$ pour obtenir deux fractions égales ? \begin{sol}
+ \itt Quel nombre faut-il ajouter aux deux termes de la fraction $\frac58$ et retrancher aux deux termes de la fraction $\frac34$ pour obtenir deux fractions égales ? \begin{sol}
 \textbf{Mise en équation :}
 Notons $x$ le nombre cherché. L'énoncé devient
 \[ \frac{5+x}{8+x}=\frac{3-x}{4-x}.\]
@@ -1601,7 +1607,7 @@ et donc
 
 
 
- \item Une personne dispose de deux heures pour effectuer une promenade. Elle part en tramway à la vitesse moyenne de $12$ km à l'heure et revient à pied, à la vitesse moyenne de $4$ km à l'heure. À quelle distance du point de départ devra-t-elle quitter le tramway ? 
+ \itt Une personne dispose de deux heures pour effectuer une promenade. Elle part en tramway à la vitesse moyenne de $12$ km à l'heure et revient à pied, à la vitesse moyenne de $4$ km à l'heure. À quelle distance du point de départ devra-t-elle quitter le tramway ? 
  \begin{sol}
  \textbf{Mise en équation :} Notons $x$ la distance recherchée en kilomètres. On parcourt donc une fois la distance $x$ à $v_1=12$ km/h, puis une seconde fois la même distance à $v_2=4$ km/h. \\
  À l'aller, le temps requis est $t_1=\frac{d}{v_1}=\frac{x}{12}$. \\
@@ -1621,7 +1627,7 @@ On divise alors par $4$ pour trouver
  \textbf{Vérification :} Si on descend après $6$ kilomètres, le trajet aller prendra $\frac{6 \text{ km}}{12 \text{ km/h}} = 0,5$ h et le trajet retour prendra $\frac{6 \text{ km}}{4 \text{ km/h}} = 1,5$ h. Le temps total sera donc $0,5\text{ h} + 1,5\text{ h} = 2\text{ h}$, comme requis.
  
  \end{sol}
- \item Un épicier achète un certain nombre de bouteilles de vin pour $225$ euros. En vendant la bouteille $1,65$ euros, il gagnerait autant que ce qu'il perdrait s'il la vendait $1,35$ euros. Quel est le nombre des bouteilles de vins ? 
+ \itt Un épicier achète un certain nombre de bouteilles de vin pour $225$ euros. En vendant la bouteille $1,65$ euros, il gagnerait autant que ce qu'il perdrait s'il la vendait $1,35$ euros. Quel est le nombre des bouteilles de vins ? 
  \begin{sol}
  \textbf{Mise en équation :} On note $N$ le nombre de bouteilles de vin.  \\
  S'il vendait les bouteilles à $1,65$ euros, il toucherait $N\times1,65= 1,65N$ euros. \\
@@ -1649,7 +1655,7 @@ S'il vendait à $1,35$ euros, il toucherait alors
 $150\times1,35 = 202,50$, ce qui représente une perte de $225-202,50=22,50$ euros. \\
 Le bénéfice dans le premier cas est égal à la perte dans le second ce qui était la condition voulue.
  \end{sol}
- \item On considère un polygone régulier à $6$ côtés.
+ \itt On considère un polygone régulier à $6$ côtés.
  \begin{enumerate}
  \item Réaliser une figure.
  \item Relier tous les sommets au centre $O$. 
@@ -1699,7 +1705,7 @@ Le triangle $AOB$ (et donc les cinq autres triangles qui lui sont égaux) a donc
 L'angle $\widehat{ABC}$ ainsi que les cinq autres angles de l'hexagone régulier $ABCDEF$ mesure donc $120$ degrés. 
 \end{sol}
 
- \item On considère un polygone régulier à $5$ côtés.
+ \itt On considère un polygone régulier à $5$ côtés.
  \begin{enumerate}
  \item Réaliser une figure.
  \item Relier tous les sommets au centre $O$. 
@@ -1747,7 +1753,7 @@ L'angle $\widehat{ABC}$ ainsi que les quatre autres angles de l'hexagone réguli
 
 
 \end{sol}
-\item Utiliser les deux exercices précédents pour généraliser à un polygone régulier avec un nombre quelconque $N$ de côtés. On montrera ainsi que les angles d'une telle figure valent tous $\frac{N-2}N\times 180^o$.
+\itt Utiliser les deux exercices précédents pour généraliser à un polygone régulier avec un nombre quelconque $N$ de côtés. On montrera ainsi que les angles d'une telle figure valent tous $\frac{N-2}N\times 180^o$.
 \begin{sol}
 En adaptant les deux exercices précédents, notons $AOB$ le triangle obtenu en joignant un côté $[AB]$ du polygone régulier à $N$ côtés à son centre. Le triangle $AOB$ est isocèle en $O$. 
 
@@ -1792,7 +1798,7 @@ Attention, certaines valeurs peuvent tomber moins juste :
 \item  pour l'hendécagone régulier ($N=11$), on trouverait des angles de $\frac{11-2}{11}\times 180^o = \frac9{11}\times 180^o$, qui n'est pas un nombre décimal (son développement décimal est $147,272727\ldots$ degrés).
 \end{itemize}
 \end{sol}
-\item On trace deux points $A$ et $B$ et une droite $(d)$ sur une feuille. Expliquer comment construire le cercle passant par $A$ et $B$ dont le centre appartient à $(d)$. Existe-t-il toujours ? Y en a-t-il toujours un seul ?
+\itt On trace deux points $A$ et $B$ et une droite $(d)$ sur une feuille. Expliquer comment construire le cercle passant par $A$ et $B$ dont le centre appartient à $(d)$. Existe-t-il toujours ? Y en a-t-il toujours un seul ?
 \begin{sol}
 Ce problème revient à trouver le centre $O$ d'un tel cercle, le rayon étant alors simplement $OA$. Le centre doit vérifier les deux conditions $OA=OB$ et $O\in(d)$.
 
@@ -1803,7 +1809,7 @@ La première de ces conditions revient à dire que $O$ appartient à la médiatr
 \item Troisième et dernier cas : sinon, $(d)$ coupe la médiatrice de $[AB]$ en un unique point $O$, qui est le centre du seul cercle possible. Dans ce cas, on peut alors construire effectivement le point $O$ en traçant la médiatrice de $[AB]$ à la règle et au compas et en regardant où elle rencontre $(d)$.
 \end{itemize}
 \end{sol}
-\item On place trois points $A$, $B$, $C$ sur une feuille. À quelle condition passe-t-il un cercle par ces trois points ? Comment le construire ? 
+\itt On place trois points $A$, $B$, $C$ sur une feuille. À quelle condition passe-t-il un cercle par ces trois points ? Comment le construire ? 
 \begin{sol}
 Pour qu'un tel cercle existe, si on note $O$ son centre et $R$ son rayon, il faut et il suffit que $OA=OB=OC=R$. Le point $O$ doit donc être à la même distance des trois sommets. 
 
@@ -1816,17 +1822,17 @@ Considérons les médiatrices de $[AB]$ et $[AC]$.
 On conclut donc qu'un tel cercle existe si et seulement si les trois points ne sont pas alignés. Il est alors unique, et on peut le construire en traçant deux des médiatrices de segments entre nos points et en prenant comme centre leur intersection. 
 
 \end{sol}
-\item On considère un quadrilatère convexe $ABCD$ dans lequel la médiatrice de 
+\itt On considère un quadrilatère convexe $ABCD$ dans lequel la médiatrice de 
 $[AB]$ est également la médiatrice de $[CD]$. Soit $O$ le point où cette médiatrice coupe la médiatrice de $[BC]$. \begin{enumerate}
 \item Montrer que les quatre points $A$, $B$, $C$ et $D$ sont situés sur un même cercle de centre $O$. 
 \item Démontrer que les médiatrices de $[AD]$, $[AC]$ et $[BD]$ passent également par $O$. 
 \end{enumerate}
-\item Tracer un parallélogramme $ABCD$, et les bissectrices de ses quatre angles. Elles se croisent intérieurement au parallélogramme en quatre points $E$, $F$, $G$ et $H$. Que dire du quadrilatère $EFGH$ formé ? Le démontrer. 
-\item On trace un triangle $ABC$ et on place les milieux $D$, $E$, $F$ de ses trois côtés. Montrer que le triangle $DEF$ est une réduction du triangle $ABC$ dont on déterminera le coefficient. 
-\item Dans le même contexte que l'exercice précédent, on relie chaque milieu au sommet opposé, et on note $G$ le point d'intersection des trois segments ainsi formés. Montrer que l'homothétie de centre $G$ et de rapport $-2$ envoie chaque sommet du triangle $DEF$ sur un sommet du triangle $ABC$. 
-\item Dans un triangle $ABC$, on trace la hauteur issue de $A$ qui rencontre $(BC)$ en $H$. On suppose $AB^2 = BH \times BC$. Montrer que $ABC$ est rectangle en $A$. 
-\item On considère un quadrilatère $ABCD$. Montrer que les milieux des côtés forment un  parallélogramme.
- \item Trouver trois nombres entiers consécutifs (consécutifs : qui se suivent) dont la somme est égale à $57$. 
+\itt Tracer un parallélogramme $ABCD$, et les bissectrices de ses quatre angles. Elles se croisent intérieurement au parallélogramme en quatre points $E$, $F$, $G$ et $H$. Que dire du quadrilatère $EFGH$ formé ? Le démontrer. 
+\itt On trace un triangle $ABC$ et on place les milieux $D$, $E$, $F$ de ses trois côtés. Montrer que le triangle $DEF$ est une réduction du triangle $ABC$ dont on déterminera le coefficient. 
+\itt Dans le même contexte que l'exercice précédent, on relie chaque milieu au sommet opposé, et on note $G$ le point d'intersection des trois segments ainsi formés. Montrer que l'homothétie de centre $G$ et de rapport $-2$ envoie chaque sommet du triangle $DEF$ sur un sommet du triangle $ABC$. 
+\itt Dans un triangle $ABC$, on trace la hauteur issue de $A$ qui rencontre $(BC)$ en $H$. On suppose $AB^2 = BH \times BC$. Montrer que $ABC$ est rectangle en $A$. 
+\itt On considère un quadrilatère $ABCD$. Montrer que les milieux des côtés forment un  parallélogramme.
+ \itt Trouver trois nombres entiers consécutifs (consécutifs : qui se suivent) dont la somme est égale à $57$. 
  \begin{sol}
  \textbf{Mise en équation :} Si on note $x$ le premier des trois nombres, les trois nombres sont $x$, puis $x+1$ et enfin $x+2$. On a donc \[x + (x+1) + (x+2) = 57\]
  
@@ -1838,7 +1844,7 @@ $[AB]$ est également la médiatrice de $[CD]$. Soit $O$ le point où cette méd
  On a donc trouvé que le premier nombre doit être $18$. Les deux autres sont donc $19$ et $20$.\\
  \textbf{Vérification :} On vérifie la solution : $18$, $19$ et $20$ sont bien trois entiers consécutifs, et leur somme est $18+19+20= 57$, ce qui convient.
  \end{sol}
- \item La somme de cinq nombres impairs consécutifs est 85. Quels sont ces nombres ? 
+ \itt La somme de cinq nombres impairs consécutifs est 85. Quels sont ces nombres ? 
   \begin{sol}
  \textbf{Mise en équation :} Si on note $x$ le premier des trois nombres, les cinq nombres sont $x$, $x+2$, $x+4$, $x+6$ et $x+8$. On a donc \[x + (x+2) + (x+4) + (x+6) + (x+8) = 85\]
  
@@ -1851,7 +1857,7 @@ c'est-à-dire \[5x+20 = 85\]
  On a donc trouvé que le premier nombre doit être $13$. Les quatre autres sont donc $15$, $17$, $19$ et $21$.\\
  \textbf{Vérification :} On vérifie la solution : $13$, $15$, $17$, $19$ et $21$ sont bien cinq entiers impairs consécutifs, et leur somme est $13+15+17+19+21= 85$, ce qui convient.
  \end{sol}
- \item Un père a 29 ans ; son fils a 5 ans ; dans combien d'années l'âge du père sera-t-il le triple de l'âge du fils ? 
+ \itt Un père a 29 ans ; son fils a 5 ans ; dans combien d'années l'âge du père sera-t-il le triple de l'âge du fils ? 
  \begin{sol}
  \textbf{Mise en équation :} Notons $N$ le nombre d'années recherché. Après ce temps, le père a $29+N$ années, et le fils $5+N$ années. La condition demandée s'écrit donc : 
  \[29+N = 3(5+N)\]
@@ -1868,7 +1874,7 @@ Puis, en divisant par 2 : \[7 = N\]
 On doit donc attendre $N=7$ années.\\
  \textbf{Vérification :} On vérifie la solution : après $7$ années, le père a $29+7=36$ ans, et le fils a $5+7=12$ ans. Comme $36=3\times12$, le père a bien le triple de l'âge de son fils.
  \end{sol}
- \item Un père a 41 ans ; ses trois enfants sont âgés de 7, 9 et 13 ans. Dans combien d'années l'âge du père sera-t-il égal à la somme des âges de ses enfants ? 
+ \itt Un père a 41 ans ; ses trois enfants sont âgés de 7, 9 et 13 ans. Dans combien d'années l'âge du père sera-t-il égal à la somme des âges de ses enfants ? 
  \begin{sol}
  \textbf{Mise en équation :} 
  Notons $N$ le nombre d'années recherché. Après ce temps, le père a $41+N$ années, et ses fils ont respectivement $7+N$, $9+N$ et $13+N$ années. On veut donc avoir \[41+N= (7+N)+(9+N)+(13+N)\]
@@ -1889,7 +1895,7 @@ Il faut donc attendre $6$ ans.\\
  \textbf{Vérification :} On vérifie la solution :
  après $6$ années, le père aura $41+6=47$ ans, et ses fils auront respectivement $7+6=13$ ans, $9+6 = 15$ ans, et $13+6=19$ ans. La somme des âges filiaux sera donc $13+15+19 =  47$ ans, ce qui est bien l'âge qu'aura le père. 
  \end{sol}
- \item Trouver un nombre dont la somme des quotients par 5, 7 et 9 soit égale à 429. 
+ \itt Trouver un nombre dont la somme des quotients par 5, 7 et 9 soit égale à 429. 
  \begin{sol}
  \textbf{Mise en équation :} Notons $x$ ce nombre. Les quotients demandés sont $\frac{x}5$, $\frac{x}7$ et $\frac{x}9$. La condition demandée est donc 
  \[\frac{x}5+\frac{x}7+\frac{x}9=429\]
@@ -1912,7 +1918,7 @@ Le nombre recherché est donc forcément $945$.\\
  \end{itemize}
  La somme de ces trois nombres est $189+135+105 = 429$, ce qui est la condition demandée. On a bien \[945\div5+945\div7+945\div9=429\]
  \end{sol}
- \item Développer les produits suivants : 
+ \itt Développer les produits suivants : 
  \[ (x-1)(x+1)\]
  \[(x-1)(x^2+x+1)\]
  \[(x-1)(x^3+x^2+x+1)\]
@@ -1949,7 +1955,7 @@ En général, on en tire :
  \[ x^n+x^{n-1}+\ldots + x^2+x+1 = \frac{x^{n+1}-1}{x-1}\]
 
  \end{sol}
- \item \  [Utiliser l'exercice précédent] Conte classique : un sage demande à un roi de le payer en mettant une pièce sur la première case d'un échiquier, puis deux pièces sur la seconde, puis quatre pièces, et ainsi de suite sur les soixante-quatre cases en doublant à chaque nouvelle case le montant. Déterminer la somme reçue. En utilisant l'approximation $2^{10} \sim 1000$, en donner un ordre de grandeur. 
+ \itt   [Utiliser l'exercice précédent] Conte classique : un sage demande à un roi de le payer en mettant une pièce sur la première case d'un échiquier, puis deux pièces sur la seconde, puis quatre pièces, et ainsi de suite sur les soixante-quatre cases en doublant à chaque nouvelle case le montant. Déterminer la somme reçue. En utilisant l'approximation $2^{10} \sim 1000$, en donner un ordre de grandeur. 
  \begin{sol} 
  La première case continent une pièce, la case 2 contient $2$ pièces, la case 3 contient $2\times2 = 2^2$ pièces, la case 4 contient $2\times 2^2 = 2^3$ pièces. On en déduit successivement que la case numéro $k$ contient $2^{k-1}$ pièces. Le montant total $N$ est alors : 
  \[N=1+2+2^2+2^3+\ldots + 2^63.\]
@@ -1960,9 +1966,9 @@ En général, on en tire :
  
  \textbf{Remarque :} Un calcul exact donnerait $N= 18~446~744~073~709~551~615$. L'erreur commise par notre ordre de grandeur est donc de l'ordre de $13\%$.
  \end{sol}
- \item Un cercle délimite deux régions du plan : l'intérieur et l'extérieur. Deux cercles peuvent en déterminer quatre. S'en convaincre par un dessin. Que dire du nombre maximal de régions délimitées par trois cercles ? Que se passe-t-il pour quatre ? Trouver une formule générale.
- \item Si on coupe un disque par une corde, on délimite deux régions. Une deuxième corde délimite alors quatre régions. Généraliser. 
- \item Un nombre entier $N$ est dit \emph{pratique} si chaque entier entre $1$ et $N$ peut être écrit comme une somme de diviseurs de $N$ (sans répétition). Par exemple, $6$ est pratique car ses diviseurs sont $1$, $2$, $3$ et $6$ et que : 
+ \itt Un cercle délimite deux régions du plan : l'intérieur et l'extérieur. Deux cercles peuvent en déterminer quatre. S'en convaincre par un dessin. Que dire du nombre maximal de régions délimitées par trois cercles ? Que se passe-t-il pour quatre ? Trouver une formule générale.
+ \itt Si on coupe un disque par une corde, on délimite deux régions. Une deuxième corde délimite alors quatre régions. Généraliser. 
+ \itt Un nombre entier $N$ est dit \emph{pratique} si chaque entier entre $1$ et $N$ peut être écrit comme une somme de diviseurs de $N$ (sans répétition). Par exemple, $6$ est pratique car ses diviseurs sont $1$, $2$, $3$ et $6$ et que : 
  \[ 1 = 1\] 
  \[ 2 = 2 \]
  \[ 3 = 1 + 2 \]
@@ -1971,6 +1977,5 @@ En général, on en tire :
  \[ 6 = 6\]
  Déterminer les nombres pratiques jusqu'à $30$. \\
  Montrer que toute puissance de $2$ est pratique (Penser à l'écriture en base $2$). 
-\end{enumerate} 
  
 \end{document}

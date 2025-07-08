@@ -2,39 +2,39 @@
 \contentsline {section}{\numberline {1}Avant-propos}{1}{section.1}
 \contentsline {section}{\numberline {2}R\IeC {\'e}vision de calcul}{4}{section.2}
 \contentsline {subsection}{\numberline {2.1}Calcul $ \mathbf { 1}.$}{4}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Calcul $ \mathbf { 2}.$}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.2}Calcul $ \mathbf { 2}.$}{5}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Calcul $ \mathbf { 3}.$}{5}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Calcul $ \mathbf { 4}.$}{5}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Calcul $ \mathbf { 5}.$}{5}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.4}Calcul $ \mathbf { 4}.$}{6}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Calcul $ \mathbf { 5}.$}{6}{subsection.2.5}
 \contentsline {subsection}{\numberline {2.6}Calcul $ \mathbf { 6}.$}{6}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Calcul $ \mathbf { 7}.$}{6}{subsection.2.7}
-\contentsline {subsection}{\numberline {2.8}Calcul $ \mathbf { 8}.$}{6}{subsection.2.8}
-\contentsline {subsection}{\numberline {2.9}Calcul $ \mathbf { 9}.$}{6}{subsection.2.9}
+\contentsline {subsection}{\numberline {2.7}Calcul $ \mathbf { 7}.$}{7}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.8}Calcul $ \mathbf { 8}.$}{7}{subsection.2.8}
+\contentsline {subsection}{\numberline {2.9}Calcul $ \mathbf { 9}.$}{7}{subsection.2.9}
 \contentsline {subsection}{\numberline {2.10}Calcul $ \mathbf { 10}.$}{7}{subsection.2.10}
-\contentsline {subsection}{\numberline {2.11}Calcul $ \mathbf { 11}.$}{7}{subsection.2.11}
-\contentsline {subsection}{\numberline {2.12}Calcul $ \mathbf { 12}.$}{7}{subsection.2.12}
+\contentsline {subsection}{\numberline {2.11}Calcul $ \mathbf { 11}.$}{8}{subsection.2.11}
+\contentsline {subsection}{\numberline {2.12}Calcul $ \mathbf { 12}.$}{8}{subsection.2.12}
 \contentsline {subsection}{\numberline {2.13}Calcul $ \mathbf { 13}.$}{8}{subsection.2.13}
-\contentsline {subsection}{\numberline {2.14}Calcul $ \mathbf { 14}.$}{8}{subsection.2.14}
-\contentsline {subsection}{\numberline {2.15}Calcul $ \mathbf { 15}.$}{8}{subsection.2.15}
-\contentsline {subsection}{\numberline {2.16}Calcul $ \mathbf { 16}.$}{8}{subsection.2.16}
+\contentsline {subsection}{\numberline {2.14}Calcul $ \mathbf { 14}.$}{9}{subsection.2.14}
+\contentsline {subsection}{\numberline {2.15}Calcul $ \mathbf { 15}.$}{9}{subsection.2.15}
+\contentsline {subsection}{\numberline {2.16}Calcul $ \mathbf { 16}.$}{9}{subsection.2.16}
 \contentsline {subsection}{\numberline {2.17}Calcul $ \mathbf { 17}.$}{9}{subsection.2.17}
-\contentsline {subsection}{\numberline {2.18}Calcul $ \mathbf { 18}.$}{9}{subsection.2.18}
-\contentsline {subsection}{\numberline {2.19}Calcul $ \mathbf { 19}.$}{9}{subsection.2.19}
+\contentsline {subsection}{\numberline {2.18}Calcul $ \mathbf { 18}.$}{10}{subsection.2.18}
+\contentsline {subsection}{\numberline {2.19}Calcul $ \mathbf { 19}.$}{10}{subsection.2.19}
 \contentsline {subsection}{\numberline {2.20}Calcul $ \mathbf { 20}.$}{10}{subsection.2.20}
-\contentsline {subsection}{\numberline {2.21}Calcul $ \mathbf { 21}.$}{10}{subsection.2.21}
+\contentsline {subsection}{\numberline {2.21}Calcul $ \mathbf { 21}.$}{11}{subsection.2.21}
 \contentsline {subsection}{\numberline {2.22}Calcul $ \mathbf { 22}.$}{11}{subsection.2.22}
 \contentsline {subsection}{\numberline {2.23}Calcul $ \mathbf { 23}.$}{11}{subsection.2.23}
-\contentsline {subsection}{\numberline {2.24}Calcul $ \mathbf { 24}.$}{11}{subsection.2.24}
-\contentsline {subsection}{\numberline {2.25}Calcul $ \mathbf { 25}.$}{11}{subsection.2.25}
-\contentsline {subsection}{\numberline {2.26}Calcul $ \mathbf { 26}.$}{11}{subsection.2.26}
+\contentsline {subsection}{\numberline {2.24}Calcul $ \mathbf { 24}.$}{12}{subsection.2.24}
+\contentsline {subsection}{\numberline {2.25}Calcul $ \mathbf { 25}.$}{12}{subsection.2.25}
+\contentsline {subsection}{\numberline {2.26}Calcul $ \mathbf { 26}.$}{12}{subsection.2.26}
 \contentsline {subsection}{\numberline {2.27}Calcul $ \mathbf { 27}.$}{12}{subsection.2.27}
 \contentsline {subsection}{\numberline {2.28}Calcul $ \mathbf { 28}.$}{12}{subsection.2.28}
-\contentsline {subsection}{\numberline {2.29}Calcul $ \mathbf { 29}.$}{12}{subsection.2.29}
-\contentsline {subsection}{\numberline {2.30}Calcul $ \mathbf { 30}.$}{12}{subsection.2.30}
+\contentsline {subsection}{\numberline {2.29}Calcul $ \mathbf { 29}.$}{13}{subsection.2.29}
+\contentsline {subsection}{\numberline {2.30}Calcul $ \mathbf { 30}.$}{13}{subsection.2.30}
 \contentsline {subsection}{\numberline {2.31}Calcul $ \mathbf { 31}.$}{13}{subsection.2.31}
 \contentsline {subsection}{\numberline {2.32}Calcul $ \mathbf { 32}.$}{13}{subsection.2.32}
-\contentsline {subsection}{\numberline {2.33}Calcul $ \mathbf { 33}.$}{13}{subsection.2.33}
-\contentsline {subsection}{\numberline {2.34}Calcul $ \mathbf { 34}.$}{13}{subsection.2.34}
+\contentsline {subsection}{\numberline {2.33}Calcul $ \mathbf { 33}.$}{14}{subsection.2.33}
+\contentsline {subsection}{\numberline {2.34}Calcul $ \mathbf { 34}.$}{14}{subsection.2.34}
 \contentsline {subsection}{\numberline {2.35}Calcul $ \mathbf { 35}.$}{14}{subsection.2.35}
 \contentsline {subsection}{\numberline {2.36}Calcul $ \mathbf { 36}.$}{14}{subsection.2.36}
 \contentsline {subsection}{\numberline {2.37}Calcul $ \mathbf { 37}.$}{14}{subsection.2.37}
@@ -110,3 +110,29 @@
 \contentsline {subsection}{\numberline {2.107}Calcul $ \mathbf { 107}.$}{58}{subsection.2.107}
 \contentsline {subsection}{\numberline {2.108}Calcul $ \mathbf { 108}.$}{58}{subsection.2.108}
 \contentsline {section}{\numberline {3}Probl\IeC {\`e}mes de r\IeC {\'e}flexion plus avanc\IeC {\'e}s}{59}{section.3}
+\contentsline {subsection}{\numberline {3.1}Probl\IeC {\`e}me $\mathbf {a}$}{59}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Probl\IeC {\`e}me $\mathbf {b}$}{60}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Probl\IeC {\`e}me $\mathbf {c}$}{61}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Probl\IeC {\`e}me $\mathbf {d}$}{62}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Probl\IeC {\`e}me $\mathbf {e}$}{63}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Probl\IeC {\`e}me $\mathbf {f}$}{64}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Probl\IeC {\`e}me $\mathbf {g}$}{65}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Probl\IeC {\`e}me $\mathbf {h}$}{67}{subsection.3.8}
+\contentsline {subsection}{\numberline {3.9}Probl\IeC {\`e}me $\mathbf {i}$}{68}{subsection.3.9}
+\contentsline {subsection}{\numberline {3.10}Probl\IeC {\`e}me $\mathbf {j}$}{69}{subsection.3.10}
+\contentsline {subsection}{\numberline {3.11}Probl\IeC {\`e}me $\mathbf {k}$}{70}{subsection.3.11}
+\contentsline {subsection}{\numberline {3.12}Probl\IeC {\`e}me $\mathbf {l}$}{70}{subsection.3.12}
+\contentsline {subsection}{\numberline {3.13}Probl\IeC {\`e}me $\mathbf {m}$}{70}{subsection.3.13}
+\contentsline {subsection}{\numberline {3.14}Probl\IeC {\`e}me $\mathbf {n}$}{70}{subsection.3.14}
+\contentsline {subsection}{\numberline {3.15}Probl\IeC {\`e}me $\mathbf {o}$}{70}{subsection.3.15}
+\contentsline {subsection}{\numberline {3.16}Probl\IeC {\`e}me $\mathbf {p}$}{70}{subsection.3.16}
+\contentsline {subsection}{\numberline {3.17}Probl\IeC {\`e}me $\mathbf {q}$}{71}{subsection.3.17}
+\contentsline {subsection}{\numberline {3.18}Probl\IeC {\`e}me $\mathbf {r}$}{71}{subsection.3.18}
+\contentsline {subsection}{\numberline {3.19}Probl\IeC {\`e}me $\mathbf {s}$}{72}{subsection.3.19}
+\contentsline {subsection}{\numberline {3.20}Probl\IeC {\`e}me $\mathbf {t}$}{73}{subsection.3.20}
+\contentsline {subsection}{\numberline {3.21}Probl\IeC {\`e}me $\mathbf {u}$}{74}{subsection.3.21}
+\contentsline {subsection}{\numberline {3.22}Probl\IeC {\`e}me $\mathbf {v}$}{75}{subsection.3.22}
+\contentsline {subsection}{\numberline {3.23}Probl\IeC {\`e}me $\mathbf {w}$}{76}{subsection.3.23}
+\contentsline {subsection}{\numberline {3.24}Probl\IeC {\`e}me $\mathbf {x}$}{76}{subsection.3.24}
+\contentsline {subsection}{\numberline {3.25}Probl\IeC {\`e}me $\mathbf {y}$}{76}{subsection.3.25}
+\contentsline {subsection}{\numberline {3.26}Probl\IeC {\`e}me $\mathbf {z}$}{76}{subsection.3.26}
