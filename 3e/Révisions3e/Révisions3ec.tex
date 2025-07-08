@@ -69,7 +69,7 @@ Elle est disponible à tout instant au lien suivant, qui sera mis à jour : \url
 
 Corrigés rédigés dans cette version : \begin{itemize}
 \item Partie \ref{calc} : complet  
-\item Partie \ref{pbs} de a). à j). et q). à w).
+\item Partie \ref{pbs} de a). à k). et q). à w).
 \end{itemize} 
 
 \tableofcontents
@@ -1827,6 +1827,20 @@ $[AB]$ est également la médiatrice de $[CD]$. Soit $O$ le point où cette méd
 \item Montrer que les quatre points $A$, $B$, $C$ et $D$ sont situés sur un même cercle de centre $O$. 
 \item Démontrer que les médiatrices de $[AD]$, $[AC]$ et $[BD]$ passent également par $O$. 
 \end{enumerate}
+\begin{sol}
+\begin{enumerate}
+\item On sait que $O$ appartient à la médiatrice de $[AB]$. Or, cette médiatrice est l'ensemble des points équidistants de $A$ et $B$, donc $OA=OB$. 
+
+De même, comme $O$ appartient à la médiatrice de $[CD]$ (qui est la même droite que la précédente), $OC=OD$. 
+
+De plus, comme $O$ appartient à la médiatrice de $[BC]$, $OB=OC$.
+
+On a donc bien $OA=OB=OC=OD$, ce qui garantit que $O$ est à la même distance des quatre sommets. Le cercle de centre $O$ et de rayon $OA$ passe donc par $A$, $B$, $C$ et $D$. 
+\item Étant donné que $OA=OD$, $O$ est à la même distance des deux extrémités de $[AD]$. Or, un point équidistant des extrémités d'un segment est sur sa médiatrice, donc $O$ appartient à la médiatrice de $[AD]$. 
+
+On procède de même pour le reste de la question en remarquant que $OA=OC$ et que $OB=OD$. 
+\end{enumerate}
+\end{sol}
 \itt Tracer un parallélogramme $ABCD$, et les bissectrices de ses quatre angles. Elles se croisent intérieurement au parallélogramme en quatre points $E$, $F$, $G$ et $H$. Que dire du quadrilatère $EFGH$ formé ? Le démontrer. 
 \itt On trace un triangle $ABC$ et on place les milieux $D$, $E$, $F$ de ses trois côtés. Montrer que le triangle $DEF$ est une réduction du triangle $ABC$ dont on déterminera le coefficient. 
 \itt Dans le même contexte que l'exercice précédent, on relie chaque milieu au sommet opposé, et on note $G$ le point d'intersection des trois segments ainsi formés. Montrer que l'homothétie de centre $G$ et de rapport $-2$ envoie chaque sommet du triangle $DEF$ sur un sommet du triangle $ABC$. 
