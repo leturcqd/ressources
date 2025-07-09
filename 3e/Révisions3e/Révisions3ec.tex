@@ -1842,10 +1842,160 @@ On procède de même pour le reste de la question en remarquant que $OA=OC$ et q
 \end{enumerate}
 \end{sol}
 \itt Tracer un parallélogramme $ABCD$, et les bissectrices de ses quatre angles. Elles se croisent intérieurement au parallélogramme en quatre points $E$, $F$, $G$ et $H$. Que dire du quadrilatère $EFGH$ formé ? Le démontrer. 
+\begin{sol}
+On peut illustrer le problème avec la figure suivante : 
+
+\begin{figure}[H]\center
+\begin{tikzpicture}
+\draw(0,0) -- (120:2) -- ++(3,0) -- (3,0)--(0,0);
+\draw[dashed] (0,0) --(60:3) (120:2) -- ++(-30:3)
+(120:2) ++(3,0) -- ++(-120:3) (3,0) -- ++(150:3);
+\draw (0,0) ++(-.25,0) node{A} (120:2) ++(-.25,0) node{B};
+\draw (3.25,0) node{D} ++ (120:2) node {C};
+\draw (.21,.9) node{E} ++ (.3,.4) node{F};
+\draw (1.4, -.4) ++(.21,.9) node{H} ++ (.3,.4) node{G};
+\end{tikzpicture}
+\end{figure}
+
+Montrons donc que le quadrilatère central $EFGH$ est un rectangle. On veut montrer que les quatre angles sont droits. On peut se contenter de montrer que l'angle $\widehat{FEH}$ est droit, les arguments étant identiques pour les trois autres angles.
+
+On sait que $ABCD$ est un parallélogramme, donc les angles $\widehat{ABC}$ et $\widehat{DAB}$ sont supplémentaires.\footnote{Propriété classique des parallélogrammes. Sinon, cela se redémontre avec les angles alternes-internes.} : 
+\[ \widehat{ABC}+\widehat{DAB}=180^o\]
+On sait que $[BE)$ est la bissectrice de $\widehat{ABC}$, donc $\widehat{ABE}= \frac12\times \widehat{ABC}$. 
+
+De même, comme $[AE)$ est la bissectrice de $\widehat{DAB}$, on a $\widehat{EAB} =\frac12\times \widehat{DAB}$.
+
+De plus, la somme des angles du triangle $ABE$ est $180$ degrés, donc 
+ \[\widehat{AEB}= 180^o-\widehat{EAB}-\widehat{ABE}\]
+ Enfin, $\widehat{FEH}$ et $\widehat{AEB}$ sont opposés par le sommet donc égaux.
+ 
+On a donc \begin{eqnarray*}
+\widehat{FEH} &=& \widehat{AEB}\\
+&=& 180^o-\widehat{EAB}-\widehat{ABE}\\
+&=& 180^o - \frac12\times \widehat{DAB}- \frac12\times\widehat{ABC}\\
+&=& 180^0-\frac12\times(\widehat{DAB}+\widehat{ABC}) \\
+&=& 180^o - \frac12 \times 180^o\\
+&=& 180^o- 90^o\\
+&=& 90^o\end{eqnarray*} ce qui montre que l'angle $\widehat{FEH}$ est droit. On procéderait de même pour montrer que les trois autres angles de $EFGH$ sont également droits. C'est donc un rectangle.
+\end{sol}
 \itt On trace un triangle $ABC$ et on place les milieux $D$, $E$, $F$ de ses trois côtés. Montrer que le triangle $DEF$ est une réduction du triangle $ABC$ dont on déterminera le coefficient. 
+\begin{sol}
+Illustrons par la figure suivante : 
+\begin{figure}[H]\center
+\begin{tikzpicture}
+\draw(0,0) -- (4, 0) -- (3, 4) --(0,0) ;
+\draw (-.25, -.25) node{A} (4.25, -.25) node{B} (3.25, 4.25) node{C};
+\draw(2,0) -- (1.5, 2) -- (3.5, 2) --(2,0);
+\draw(1.15, 2) node{B'} (3.85, 2) node{A'} (2,-.25) node{C'};
+\end{tikzpicture}
+\end{figure}
+
+Par définition les points $A'$, $B'$ et $C'$ sont les milieux respectifs de $[BC]$, $[AC]$ et $[AB]$. 
+
+On sait que : \begin{itemize}
+\item $B'$ appartient à $[AC]$,
+\item $A'$ appartient à $[BC]$, 
+\item D'une part, $\frac{CB'}{CA} = \frac12$ car $B'$ est le milieu de $[AC]$. 
+D'autre part, $\frac{CA'}{CB} = \frac12$ car $A'$ est le milieu de $[BC]$.
+\end{itemize}
+D'après la réciproque du théorème de Thalès, on a donc $(A'B')//(AB)$.
+
+On peut alors appliquer le théorème de Thalès, qui montre que $\frac{A'B'}{AB}=\frac{CA'}{CB}=\frac{CB'}{CA}$. Ces deux derniers rapports valant $\frac12$, on a donc $\frac{A'B'}{AB}=\frac12$, et la longueur $A'B'$ est la moitié de la longueur $AB$. 
+
+On montrerait avec les mêmes arguments que $A'C'$ est la moitié de $AC$ et que $B'C'$ est la moitié de $BC$. Il s'ensuit que le triangle $A'B'C'$ a des longueurs qui sont les moitiés des longueurs de $ABC$. Ces deux triangles sont donc semblables avec coefficient de similitude $\frac12$.
+\end{sol}
+
 \itt Dans le même contexte que l'exercice précédent, on relie chaque milieu au sommet opposé, et on note $G$ le point d'intersection des trois segments ainsi formés. Montrer que l'homothétie de centre $G$ et de rapport $-2$ envoie chaque sommet du triangle $DEF$ sur un sommet du triangle $ABC$. 
-\itt Dans un triangle $ABC$, on trace la hauteur issue de $A$ qui rencontre $(BC)$ en $H$. On suppose $AB^2 = BH \times BC$. Montrer que $ABC$ est rectangle en $A$. 
+
+\begin{sol}
+On enrichit la figure de l'exercice précédent : 
+Illustrons par la figure suivante : 
+\begin{figure}[H]\center
+\begin{tikzpicture}
+\draw(0,0) -- (4, 0) -- (3, 4) --(0,0) ;
+\draw (-.25, -.25) node{A} (4.25, -.25) node{B} (3.25, 4.25) node{C};
+\draw(2,0) -- (1.5, 2) -- (3.5, 2) --(2,0);
+\draw(1.15, 2) node{B'} (3.85, 2) node{A'} (2,-.25) node{C'};
+\draw[dashed] (0,0)-- (3.5,2) (2,0)--(3,4) (1.5,2)--(4,0);
+\draw (2.58, 1.3) node{G};
+\end{tikzpicture}
+\end{figure}
+On admet que les trois médianes $[AA']$, $[BB']$ et $[CC']$ sont concourantes en un point $G$, et que ce point est situé aux deux tiers de chaque médiane de telle sorte que $BG= 2B'G$, $AG=2A'G$ et $CG=2C'G$. C'est exactement dire que l'homothétie de centre $G$ et de rapport $-2$ envoie $A'B'C'$ sur $ABC$, ou, de manière équivalente, que celle de centre $G$ et de rapport $-\frac12$ envoie $ABC$ sur $A'B'C'$. 
+
+Évidemment toute la difficulté est dans le résultat ici admis, dont on peut trouver une démonstration ici à partir de la page 15 : \url{https://leturcqd.github.io/ressources/5e/Cours/G\%C3\%A9om\%C3\%A9trie\%20du\%20triangle.pdf#page=15} 
+\end{sol}
+\itt Dans un triangle $ABC$, on trace la hauteur issue de $A$ qui rencontre\footnote{Attention, la hauteur coupe le segment, c'est une vraie hypothèse : si elle rencontrait $(BC)$ hors du segment, le résultat serait faux !} $[BC]$ en $H$. On suppose $AB^2 = BH \times BC$. Montrer que $ABC$ est rectangle en $A$.
+
+\begin{sol}
+
+Posons la figure suivante, où l'angle en $H$ est droit : 
+\begin{figure}[H]
+\center
+\begin{tikzpicture}
+\draw (0,0) -- (5,0) -- (53:3)-- (0,0);
+\draw (53:3) -- (1.8,0);
+\draw (-.25,-.25) node{B} (1.8, -.3) node{H} (5.25, -.25) node{C} (53:3) ++ (.25, .15) node{A};
+\end{tikzpicture}
+\end{figure}
+Comme on sait que l'angle en $H$ est droit, on peut écrire le théorème de Pythagore dans les deux triangles rectangles $AHB$ et $AHC$, ce qui donne : 
+\[ AH^2+BH^2 = AB^2 \]
+et \[AH^2+CH^2=AC^2\]
+
+On veut montrer que le triangle $ABC$ est rectangle. Étant donné les outils disponibles, le seul moyen raisonnable est d'obtenir la relation de Pythagore $AC^2+AB^2 = BC^2$ astucieusement. 
+
+Comme $H\in[BC]$, on a $BC= BH+CH$, et \[BC^2 = (BH+CH)^2 = BH^2+2\times BH\times CH + CH^2.\]
+Mais \begin{eqnarray*} BH\times CH &=& BH \times (BC-BH)\\
+&=& BH\times BC - BH\times BH\\
+&=& AB^2 - BH^2 \text{         car $AB^2=BH\times BC$} \\
+&=& AH^2\end{eqnarray*}
+
+Donc \[BC^2 = BH^2 + 2\times AH^2 + CH^2\]
+D'autre part, \begin{eqnarray*} AB^2+AC^2 &=& AH^2+BH^2 + AH^2+CH^2\\
+2AH^2+BH^2+CH^2 \\
+&=& BH^2 + 2\times AH^2 + CH^2
+\end{eqnarray*}
+Donc $AB^2+AC^2 = BC^2$. D'après la réciproque du théorème de Pythagore, le triangle $ABC$ est donc rectangle en $A$. 
+\end{sol}
+
+ 
 \itt On considère un quadrilatère $ABCD$. Montrer que les milieux des côtés forment un  parallélogramme.
+\begin{sol}
+Commençons avec la figure suivante : 
+
+\begin{figure}[H]
+\center
+\begin{tikzpicture}
+\draw (0,0) -- (8, 0) -- (8, 2) -- (2, 4) -- (0,0);
+\draw(4,0) -- (8,1) -- (5,3) -- (1,2)--(4,0);
+\draw (-.25, -.25) node{A} (4, -.35) node{I} 
+(8.25, -.25) node{B} (8.35, 1) node{J} (8.25, 2.25) node{C} (5.25, 3.25) node{K} (1.75, 4.25) node{D}
+(.75, 2.1) node{L} ;
+\draw[dashed] (0,0) -- (8,2) (2,4) -- (8,0);
+\end{tikzpicture}
+\end{figure}
+Montrons que $(IJ) //(KL)$. Pour ce faire, on va montrer séparément que $(IJ)$ et $(KL)$ sont parallèles à la diagonale $(AC)$. 
+
+On applique la réciproque du théorème de Thalès dans le triangle ABC. On sait que : \begin{itemize}
+\item $I$ appartient à $[AB]$;
+\item $J$ appartient à $[BC]$;
+\item D'une part, comme $I$ est le milieu de $[AB]$, $\frac{BI}{BA}=\frac12$. 
+
+D'autre part, comme $J$ est le milieu de $[BC]$, $\frac{BJ}{BC}=\frac12$.
+
+Donc $\frac{BI}{BA} = \frac{BJ}{BC}$. 
+\end{itemize}
+D'après la réciproque du théorème de Thalès, les droites $(IJ)$ et $(AC)$ sont donc parallèles. 
+
+De la même manière, en utilisant le triangle $ACD$, on montre à l'aide de la réciproque du théorème de Thalès que $(LK)$ et $(AC)$ sont parallèles. 
+
+Enfin, on sait que les droites $(IJ)$ et $(LK)$ sont parallèles à la même droite $(AC)$, donc elles sont parallèles entre elles. 
+
+De la même manière, à l'aide des triangles $ABD$ et $BDC$, on montrerait que $(IL)$ et $(JK)$ sont toutes deux parallèles à $(BD)$ et sont donc parallèles entre elles. 
+
+Le quadrilatère $IJKL$ a ses côtés opposés parallèles, c'est donc un parallélogramme. 
+
+\end{sol}
+
  \itt Trouver trois nombres entiers consécutifs (consécutifs : qui se suivent) dont la somme est égale à $57$. 
  \begin{sol}
  \textbf{Mise en équation :} Si on note $x$ le premier des trois nombres, les trois nombres sont $x$, puis $x+1$ et enfin $x+2$. On a donc \[x + (x+1) + (x+2) = 57\]
