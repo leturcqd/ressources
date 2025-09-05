@@ -1,0 +1,569 @@
+\documentclass[14 pt]{extarticle}
+
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{numprint}
+	\usepackage{varioref}
+	\usepackage{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	 \usepackage{fancyhdr}
+	 \newcommand{\np}{\numprint}
+	 \renewcommand\it\item
+\renewcommand{\theenumi}{\alph{enumi})}
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{} 
+	\fancyhead[L]{Automatismes}
+	\fancyhead[R]{Calcul littéral}\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+	
+	
+	\title{Chapitre 2-  Calcul littéral}
+	\date{}
+	\begin{document}
+
+\begin{center}{\Large Automatismes : Calcul numérique}\\ 
+ \end{center}
+  \emph{L'objectif des exercices suivants est de travailler vos automatismes. Il est bon de les travailler dès que les méthodes associées auront été vues, et régulièrement ensuite. Pour ce faire, on peut suggérer trois temps : \begin{itemize}
+  \item Faire les exercices à l'aide du cours (\textbf{N'utilisez pas votre calculatrice pour manipuler les lettres, elle ne le fait pas !}).
+  \item Faire les exercices sans aucune aide.
+  \end{itemize}
+  Les \textbf{automatismes} ne nécessitent à aucun moment de la réflexion ou de l'initiative, mais uniquement d'avoir appris les méthodes jusqu'à ce qu'elles soient naturelles. Si vous êtes à l'aise en mathématiques, cela doit donc se faire rapidement et \textbf{sans erreur d'inattention} ; si vous avez des difficultés, ce sont les choses sur lesquelles vous pourrez montrer que vous avez appris sérieusement les méthodes de cours. Il va donc de soi que la notation peut légitimement être là-dessus binaire (tous les points ou rien). \\
+    Ce sont également ces automatismes qui seront les plus discriminants dans l'enseignement scientifique\footnote{scientifique, donc pas uniquement les mathématiques.} de lycée où on ne passera pas de nouveau du temps à vous réexpliquer les règles de signes dans un produit ou comment additionner deux fractions. 
+  } 
+  
+  
+  \part{Calcul numérique (Révisions de 4e)}
+  \subsection*{Exercice 1 - Calcul de sommes algébriques avec les nombres relatifs}
+  
+  Calculer : 
+  \begin{enumerate}
+  \it $12 -15$
+  \it $-12 - 10$
+  \it $-10+ 12$
+  \it $-10-5$
+  \it $19-8$
+  \it $-9 - 15$
+  \it $-16 + 9$
+  \it $-9 + (-16)$
+  \it $-4 - (-2)$
+  \it $5 - (-3)$
+  \it $-(-3) + 5$
+  \it $-(-1) - (-3)$
+  \it $-(-6) - 5$
+  \it $5 + 4 - 8 - 1 + 4 -2 $
+  \it $-3 - 5 - 1 + 9$
+  \it $17 - 12 + 13 - 18$
+  \it $14- (5-2 - (4-9))$
+  \it $-(12-15) + (3-4) - (5-(-9))$
+  \end{enumerate}
+  
+  
+  
+  \subsection*{Exercice 1bis - Calcul de produits et quotients avec les nombres relatifs}
+  
+  Calculer : \begin{enumerate}
+  \it $12 \times -3$
+  \it $-3 \times 4 $
+  \it $-5 \times -2$
+  \it $-(5 \times (-4))$
+  \it $3\times 4 - 5$
+  \it $-3 \times -2 + 6 \times -4$
+  \it $-4 - 5 \times 2$
+  \it $8\div(-4)$
+  \it $-9\div3$
+  \it $(-15)\div(-5)$
+  \it $18\div(-2)$
+  \it $-45\div5$
+  \it $(-119)\div(-7)$
+  \it $4 - 10 \div (-2)$
+  \it $3\times (-4) - (-4) \div 2$
+  \it $(15 \div (-3) - 2)\times (5- 8)$
+  \end{enumerate}
+  
+  \subsection*{Exercice 2 - Calcul de somme algébriques avec les fractions}
+  Calculer : 
+  \begin{enumerate}
+  \item $\displaystyle\frac34 + \frac14$
+  \item $\displaystyle\frac32 + \frac52 + \frac72$
+  \it $\displaystyle-\frac13 + \frac23 + \frac53$
+  \it $\displaystyle\frac49 - \frac29 - \frac{-4}9$
+  \it $\displaystyle\frac23 - \frac{10}3 - \frac{1}3$
+  \it $\displaystyle\frac12 + \frac13$
+  \it $\displaystyle-\frac14 + \frac12$
+  \it $\displaystyle\frac1{10} - \frac35$
+  \it $\displaystyle\frac2{10} - \frac12 - \frac15$
+  \it $\displaystyle\frac2{15} - \frac3{10} - \frac16$
+  \end{enumerate}
+  \subsection*{Exercice 2bis - Calcul de produits et quotients avec les fractions}
+    Calculer : 
+  \begin{enumerate}
+  \item $\displaystyle\frac34 \times \frac14$
+  \item $\displaystyle\frac32 \times\frac72$
+  \it $\displaystyle-\frac13 \times \frac23 $
+  \it $\displaystyle\frac49 \div \frac29 $
+  \it $\displaystyle\frac23 \div \frac54$
+  \it $\displaystyle\frac12 \times \frac13\div \frac14$
+  \it $\displaystyle-\frac14 \div  \frac12 \times \frac35$
+  \it $\displaystyle\frac1{10} - \frac12\times \frac35$
+  \it $\displaystyle\frac2{10}\div\frac15 - \frac12 \times \frac15$
+  \it $\displaystyle\frac2{15}\div 3 - \frac3{10} \times - \frac16$
+  \it $\displaystyle3\times \frac{-3}4$
+  \it $\displaystyle2\div \frac13$
+  \it $\displaystyle\frac16\div2$
+  \it $\displaystyle\frac{\frac12}{\frac13}$
+  \it $\displaystyle\frac{7}{\frac58}$
+  \it $\displaystyle\frac{\frac65}{-12}$
+  \end{enumerate}
+  
+  \subsection*{Exercice 3 - Calcul avec les puissances}
+  Calculer :
+  \begin{enumerate}\item $2^3$
+  \item $3^2$
+  \it $5^3$
+  \it $2^6$ 
+  \it $8^2$
+  \it $10^5\times 3^2$
+  \it $(-3)^2$
+  \it $(-4)^3$
+  \it $(-2)^3\div3^2$
+  \it $\left(\frac13\right)^3$
+  \it $\left(\frac34\right)^3$
+  \it $\left(\frac45\right)^2$
+  \it $\left(\frac67\right)^3$
+  \it $\left(\frac92\right)^2$
+  \item $3^{-3}$
+  \item $4^{-2}$
+  \it $5^{-3}$
+  \it $2^{-6}$ 
+  \it $10^{-10}$
+  \it $(-8)^{-2}$
+  \it $10^{-5}\times 3^2$
+  \it $(-3)^{-3}$
+  \it $(-4)^{-2}$
+  \it $(-2)^3\div3^2$
+  \it $\left(\frac13\right)^{-3}$
+  \it $\left(\frac34\right)^{-2}$
+  \item[aa).] $\left( \frac45 \right)^{-3}$
+  \item[ab).] $\left(\frac67\right)^{-3}$
+  \item[ac).] $\left(\frac92\right)^{-2}$
+  
+  \end{enumerate}
+  
+  \subsection*{Exercice 4 - Écriture scientifique}
+  
+  Écrire sous forme scientifique les nombres suivants : 
+  \begin{enumerate}
+  \it $\np{1343,23}$
+  \it $\np{103258202}$
+  \it $\np{3298,204}$
+  \it $\np{0,813429}$
+  \it $\np{954316372,135}$
+  \it $\np{0,00034254}$
+  \it $\np{2350000}$
+  \it $\np{2353,129}$
+  \it $\np{9431425,86502335}$
+  \it $\np{259,235}$
+  \it $\np{9,9154}$
+  \it $\np{0,2532}$
+  \it $\np{9324}$
+  \it $\np{3253}$
+  \it $2,34 \times 10^5 \times 4,12 \times 10^{-2}$
+  \it $432,12 \times 10^{-1} \times 142,1 \times 10^{-9}$
+  \it $10^{-1}+10^{-2}$
+  \it $2\times 10^3 + 3 \times 10^1$
+  \end{enumerate}
+  
+\newpage
+  \part{Arithmétique}
+  
+  \subsection*{Exercice 1 : Divisions euclidiennes}
+
+
+Calculer les divisions euclidiennes de 
+\begin{enumerate}
+\item 34 par 3 ;
+\item 1242 par 4 ;
+\item 145~352 par 7 ;
+\item 4~124 par 9 ;
+\item 1~431 par 11 ;
+\item 142~543 par 17 ;
+\item 124~122~653 par 100 ;
+\item 864~273~835 par 50  ;
+\item 12~314~184 par 2000.
+\end{enumerate}
+
+
+  \subsection*{Exercice 2 : Divisibilité}
+Vérifier si \begin{enumerate}
+\item 2 divise 523, si 2 divise 930 ;
+\item 3 divise 142, si 3 divise 852 ;
+\item 5 divise 754~135, si 5 divise 12~124 ;
+\item 4 divise 14~532, si 4 divise 94~121 ;
+\item 6 divise 124~141, si 6 divise 25~122 ;
+\item 7 divise 934 ;
+\item 9 divise 712~872 ;
+\item 10 divise 124~532 ;
+\item 11 divise 121, si 11 divise 5445, si 11 divise 182~837.
+\end{enumerate}
+
+
+
+  \subsection*{Exercice 4 : Vérification de primalité}
+Dire si les nombres suivants sont premiers, en détaillant votre réponse. 
+\begin{enumerate}
+\item 13 ;
+\item 21 ;
+\item 27 ; 
+\item 29 ; 
+\item 43 ; 
+\item 51 ; 
+\item 56 ;
+\item 59 ; 
+\item 71 ;
+\item 77 ; 
+\item 91 ;
+\item 97
+\item 111 ; 
+\item 121 ; 
+\item 385 ; 
+\item 401 ; 
+\item 719 ; 
+\item 912 ; 
+\item 963 ; 
+\item 991. 
+\end{enumerate}
+
+  \subsection*{Exercice 4 : Décomposition en facteurs premiers}
+  Décomposer en facteurs premiers les nombres suivants : 
+  \begin{enumerate}
+  
+ \item $108$. 
+ \item $144$. 
+ \item $2~520$. 
+ \item $8~000$. 
+ \item $84$. 
+ \item $250$. 
+ \item $864$. 
+ \item $5~740$. 
+ \item $176$.
+ \item $294$. 
+ \item $7~920$. 
+ \item $1~053$. 
+  \end{enumerate}
+  
+  \subsection*{Exercice 5 : Recherche de diviseurs }
+  
+  Faire la liste des diviseurs des nombres suivants : 
+  
+   \begin{enumerate}
+ \item $79$. 
+ \item $107$. 
+ \item $143$. 
+ \item $173$. 
+ \item $83$. 
+ \item $149$. 
+ \item $181$. 
+ \item $221$. 
+ \item $89$. 
+ \item $167$. 
+ \item $187$. 
+ \item $241$. 
+ \item $97$. 
+ \item $179$. 
+ \item $193$. 
+ \item  $283$. 
+ \end{enumerate}
+  
+  \subsection*{Exercice 6 : Problèmes de partage}
+  
+  Avec les quantités suivantes d'objets de différents types, on veut faire des paquets identiques sans laisser de reste. Donner le nombre maximum de paquet et la composition des paquets. 
+  \begin{enumerate}
+  
+ \item $168$ et $360$. 
+ \item $252$ et $684$. 
+ \item $336$ et $462$. 
+ \item $1~840$ et $1~260$. 
+ \item $18~150$ et $23~850$. 
+ \item $33~390$ et $58~800$. 
+ \item $315$, $819$ et $924$. 
+ \item $252$, $693$ et $945$. 
+ \item $2~520$, $3~150$ et $4~410$. 
+ \item $7~560$, $10~080$ et $12~096$. 
+  \end{enumerate}
+  
+\newpage
+  \part{Calcul littéral}
+  
+    
+  \subsection*{Exercice 1 - Évaluer une expression littérale}
+  Calculez la valeur numérique des expressions suivantes : 
+\begin{enumerate}
+\item $7a - 4$ pour $a=3$, $a= -2$, $a=\frac94$.
+\it $a(a+1)$ pour $a=1$, $a=-3$, $a=\frac32$.
+\it $(2a+1)(a-2)$ pour $a=6$, $a=-1$ et $a=\frac45$.
+\it $3a^2-2a+5$ pour $a =  +4$, $a=-2$, et $a=-1$.
+\it $3x^2-5x+7$ pour $x =  +3$, $x=+5$, et $x=-3$.
+\it $4x^3-12x^2-4x+7$ pour $a =  +5$, $a=-3$, et $a=\frac12$.
+\it $\frac{7x^2}2- \frac{8x-6}3 + \frac{3x+7}4$ pour $a =  +3$, $-2$, et $+5$.
+\it $\frac{7-3x}{12}+\frac{2(x-2)}3 +\frac54$ pour $a =  +4$, $+2$, et $-3$.
+\end{enumerate}
+  \subsection*{Exercice 2 - Additionner des expressions homogènes en factorisant}
+  
+Réduire les sommes suivantes : 
+\begin{enumerate}
+\it $3a-a + 4a$
+\it $41b+ 3b - 7b$
+\it $7ac - 42ac + 12 ac$
+\it $30 ab^2 - 12 ab^2 - ab^2 - 72ab^2$
+\it $\frac23ax-\frac12ax+\frac34ax-\frac56ax$.
+\it $-\frac35a^2bx+\frac14a^2bx-\frac72a^2bx+\frac1{10}a^2bx$.
+\it $-\frac47a^2b^3x+\frac52a^2b^3x-\frac54a^2b^3x$.
+\it $\frac34a^2b^3x^4y-\frac23a^2b^3x^4y+\frac14a^2b^3x^4y$. 
+\it $-\frac32 x + \frac54 x-3x^2+\frac{x}6-\frac52 x^2+5+4x^2$.
+
+\end{enumerate}
+  \subsection*{Exercice 3 - Multiplier deux expressions littérales simples}
+  Effectuer les produits suivants : 
+\begin{enumerate}
+\it $ab \times ab^2$
+\it $(-abc) \times (2bc)$
+\it $(-3ac)(-2a^2)$
+\it $(3a^2b^3)\left(\frac23ab^5\right)$.
+\it $\left(\frac45a^3b^2c\right)\left(-\frac34abc^4\right)$. 
+\it $\left(\frac47a^2xy^3\right)\left(-\frac52a^3y^4\right)$.
+\it $\left(-\frac34x^2y\right)\left(+\frac35a^3y^5\right)$.
+\it $\left(\frac94a^4x^2y^3\right)\left(-\frac43ax^2\right)$. 
+\it $\left(\frac{14}3a^2b^3x\right)\left(-\frac67a^2b^5\right)$. 
+\it $\left(-\frac72ax^2y\right)\left(-\frac8{15}b^3xy^2\right)\left(\frac5{21}abx^3\right)$.
+\it $\left(\frac5{12}a^4b^2x\right)\left(-\frac27ax^2y^3\right)\left(-\frac{14}5b^2xy^4\right)$. 
+\end{enumerate}
+  
+  \subsection*{Exercice 4 - Réduire une somme algébrique}
+  
+\begin{enumerate}
+\it $3a + 4b + 12b -19a$
+\it $-8a + b - b^2 + a$
+\it $7x^2 + 4x - 3 - 12x + 53 + 12x^2 - 1$
+\it $12ac + 41a - 32 ca + 12 c - 4 a$
+\it $\frac32 x^2+xy+y^2-2xy+\frac{x^2}3-\frac32x^2$.
+\it $4a^2-\frac23a-\frac35a^2+\frac13a-5a-\frac2{15}a^2$.
+\it $3x^2+\frac45 - \frac53x - 2x^2 -\frac35x^3 + 4 - 2 x^2 + 7x$. 
+\it $4x^2 - \frac72 + \frac35x - \frac52x^2 + \frac43 x^3 - 5 + \frac32 x^3 + 7 - 2x$. 
+\it $\frac25 a^2b + 3a^3 -4ab^2 + \frac52 a^2b + \frac72b^3 - b^3 + 2ab^2$. 
+\end{enumerate}
+  
+  
+  \subsection*{Exercice 5 - Gestion des signes}
+ Simplifier les expressions suivantes : 
+  \begin{enumerate}
+  \it $-(x+1)$ 
+  \it $-(4-x)$
+  \it $-(-x+7)$
+  \it $-(-3x-3)$
+  \it $x+4 - (x+2)$
+  \it $x+4 - x+2$
+  \it $x+4 - (x+2) - x + 2$
+  \it $x+2-(x+2)$ 
+  \it $x+2-x+2$
+  \it $x+1 - x - 1 $
+  \it $-(x+1) - x - 1$ 
+  \it $7x+4- (3x+1) + (x+2)$
+  \end{enumerate}
+  
+  
+  \subsection*{Exercice 6 - Distributivité simple}
+  
+Développer et réduire les expressions suivantes : 
+  \begin{enumerate}
+  \it $4(x+1)$ 
+  \it $-5(4-x)$
+  \it $x(-x+7)$
+  \it $2x(-3x-3)$
+  \it $3(x+4) - (x+2)$
+  \it $(x+4) -5( x+1)$
+  \it $5(x+4) - 3(x+2) - 2x + 2$
+  \it $-3(x+5)-4(x+2)$ 
+  \it $x+4(2-x)+2$
+  \it $x+x(1 - x) - 2x(x+1) $
+  \it $-(x+1)x - x - 1$ 
+  \it $7(x+4)- (3x+1) + x(x+2)$
+  \end{enumerate}
+  \subsection*{Exercice 7 - Factorisation}
+  Factoriser les expressions suivantes : 
+  \begin{enumerate}
+  \it $4xy + 12x$
+  \it $15ac + 3ab + 6a$
+  \it $15ac + 3ab + 6a+ 7a^2$
+  \it $15ab + 3ab + 6ab^2+ 7a^2b$
+  \it $3x+xy - 5xz$
+  \it $10xy + 20yz$
+  \it $x^2 + x$
+  \it $2(x+1) + 3(x+1) + x(x+1)$
+  \it $(x+1)(x+3)+(x+3)(2x-1)$
+  \it $(x+1)(x+2) + (x+2)(x+3)$
+  \it $(x+5)(2x+5) - (x+5)(4x+2)$
+  \it $(x+1)^2 - 3x(x+1)$
+  \end{enumerate}
+  
+  \subsection*{Exercice 8 - Distributivité double}  \begin{enumerate}
+  \it $(x+2)(2x+2)$
+  \it $(x-3)(3x-1)$
+  \it $(x+5)(-x+7)$
+  \it $(4x-1)(-3x-5)$
+  \it $(-x-5)(12x+1)$
+\it $(2x-3y)(4x-2)$.
+\it $(2a+3b)(-4a+6b)$.
+
+
+\it $(-4x+1)(y-3)$. 
+\it $(-2a+3b)(a-b)$. 
+\it $(-3y-2+5)(x^2-y)$.
+\it $(4a^3+ab)(a^2-b)$.
+\it $(5xy+3x)(2x-y)$.
+\it $(-3xy-2y)(x+5)$.
+  \end{enumerate}
+  
+  \subsection*{Exercice 9 (Pour se préparer à la Seconde) - Distributivité générale }
+  \begin{enumerate}
+\it $(-4x+3y+1)(y-3)$. 
+\it $(-2a+3b-5)(a-b)$. 
+\it $(2x^3-3y-2+5)(x^2-y)$.
+\it $(4a^3-5b^4+ab)(a^2-b)$.
+\it $(5xy+3x-2y)(2x-y)$.
+\it $(-3xy+4x-2y)(x+5)$.
+\it $(14a^2b+5a^2-b)(a^2-2b)$.
+\it $(7a^3b-4b^2+2a^3)(2a^3+4b^2)$. 
+  \end{enumerate}
+  \newpage
+  \part{Résolution d'équations}
+  
+  
+  \subsection*{Exercice 1 - Équations à une opération}
+  Résoudre : 
+  \begin{enumerate}
+  \it $x+2 = 5$
+  \it $3x = 9$
+  \it $-2x = 43$
+  \it $-3 x = -9$
+  \it $\frac12 x = 8$ 
+  \it $\frac29 x = - \frac83$
+  \it $x+ \frac12 = \frac 34$
+  \it $x - \frac53 = \frac13$ 
+  \it $ x \div \frac45 = 2 $
+  \it $x\div 3 = \frac43$
+  \it $-4 x = \frac12$
+  \it $ \frac54  + x = 3$
+  \it $\frac3x = 4$
+  \it $-5 = \frac2x$
+  \it $\frac{x}4 = \frac12$
+  \end{enumerate}
+  
+  \subsection*{Exercice 2 - Équations à deux opérations successives}
+  
+  Résoudre :
+  \begin{enumerate}
+  \it $3x+2 = 5$
+  \it $3x-4 = 9$
+  \it $-2(x-3) = 43$
+  \it $-3(x+5) = -9$
+  \it $\frac1{2+x} = 8$ 
+  \it $\frac{5+ x}9 = - \frac83$
+  \it $\frac{x}4+ \frac12 = \frac 34$
+  \it $\frac{3}{7+x} = \frac13$ 
+  \it $ x \div \frac45 -12 = 2 $
+  \it $(x-\frac12)\div 3 = \frac43$
+  \it $-4 x + \frac23 = \frac12$
+  \it $ \frac54  + \frac3x = 3$
+  \it $\frac3x + 7 = 4$
+  \it $-5 = \frac2x + 6$
+  \it $\frac{x}4 + \frac14 = \frac12$
+  \end{enumerate}
+  
+  
+  \subsection*{Exercice 3 - Équations de degré 1 à coefficients entiers}
+  Résoudre : 
+  \begin{enumerate}
+\it $2x-3=19 $
+\it $4x + 7 = 51$
+\it $-x + 12 = 43$
+\it $5x - 23 = 77$
+\it $3x+ 5 = 2x + 9$
+\it $-3x + 12 = x$
+\it $5x - 4 = 3x +2$
+\it $12x - 25 = 3x +11$
+\it $ 4 + 5(4+x) = 7(x+3) - 7$
+\it $x + 3(x+1) = 23$
+\it $3x + 2 = 5x + 7$
+\it $-61 x + 2 = 39x - 12$
+  \end{enumerate}
+  
+  \subsection*{Exercice 4 - Équations de degré 1 à coefficients fractionnaires}
+  \begin{enumerate}
+  \it $\frac{3+x}5 = 3$
+  \it $\frac{-3x+4}{10} = 12$
+  \it $\frac{7x+4}{6} = \frac{2x+1}{4}$
+\it $\frac52x+3 - \frac{7x}4 = x + \frac94$. 
+\it $\frac{3x}7 - \frac{2x}{15} + 3 = \frac{x}3+\frac{13}3$.
+\it $x+\frac12-\frac{x}6 = 16 - \frac{2x}9 + \frac13$. 
+\it $\frac{7x}4-2-\frac{x}2=\frac{2x}{13}-\frac{85}{52}$. 
+\it $\frac{2x}3+4 -\frac{2x}5 = \frac{x}2-\frac{x}3+3,5$. 
+\it $\frac{x}6-1=\frac{x}4-\frac{x}3-1$. 
+  \end{enumerate}
+  
+  \subsection*{Exercice 5 - Équations se ramenant à du degré 1 après simplification}
+  Résoudre :\begin{enumerate}
+  \it $x^2+ 4x - 5 = x^2 - 2x + 3$
+\it $(x-1)^2+(x+3)^2= 2(x-2)(x+1)+38$.
+\it $5(x^2-2x-1)+2(3x-2)=5(x+1)^2$.
+\it $(9x+1)(x-2)=(3x+4)(3x-5)$.
+\it $7(3-2x)-5x(2x-1)=(5x+3)(3-2x)$. 
+\it $(3x-1)^2-(2x+3)^2+7 = (2x+1)(2x-1) + x(x+7)$.
+  \end{enumerate}
+  \subsection*{Exercice 6 - Équations produit nul}
+  Résoudre : \begin{enumerate}
+  \it $(x+2)(x-3) = 0$
+  \it $(x+2)(3x-1)=0$
+  \it $(2x+3)(9x-1)=0$
+  \it $x(x-1)(x-2)=0$
+  \it $(x-1)(x+2)(x-3)=0$. 
+\it $(x-3)(x-4)(x-5)=0$. 
+\it $(2x+1)(x+1)(4x-3) = 0$.
+\it $(2x+1)(x+4)(3x+1)=0$. 
+\it $x(5x+1)(4x-3)(3x-4)=0$. 
+\it $5x(3x-7)=0$.   
+  \end{enumerate}
+ 
+  \subsection*{Exercice 7 - Équations se ramenant à un produit nul après simplification}
+  Résoudre en faisant apparaître un produit nul : 
+  \begin{enumerate}
+\it $x^2-3x=0$. 
+\it $5x^2+8x=0$. 
+\it $x(x+1) + 2(x+1) = 0$
+\it $(3x+1)(x+4) + (3x+1)(3x+2) =0$
+\it $(4x+1)(2x-1)-(4x+1)(8x+1)=0$
+\it $(x+2)x +2(x+2)=0$
+\it $x(x+3) = x(3x+1)$
+\it $2x(x-1) = 2x(2x+2)$
+\it $(x+1)(x-4) = (x+1)(3x-2)$
+
+  \end{enumerate}
+  
+  
+  
+ 	\end{document}

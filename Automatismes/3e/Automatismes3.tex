@@ -1,0 +1,162 @@
+\documentclass[14 pt]{extarticle}
+
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	 \usepackage{fancyhdr}
+	 \renewcommand\it\item
+\renewcommand{\theenumi}{\alph{enumi})}
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{} 
+	\fancyhead[L]{Automatismes}
+	\fancyhead[R]{Équations}\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+	
+	
+	\title{Chapitre 3-  Équations}
+	\date{}
+	\begin{document}
+
+\begin{center}{\Large Automatismes : Équations}\\ 
+ \end{center}
+  \emph{L'objectif des exercices suivants est de travailler vos automatismes. Il est bon de les travailler dès que les méthodes associées auront été vues, et régulièrement ensuite. Pour ce faire, on peut suggérer trois temps : \begin{itemize}
+  \item Faire les exercices à l'aide du cours (\textbf{N'utilisez pas votre calculatrice pour manipuler les lettres, elle ne le fait pas !}).
+  \item Faire les exercices sans aucune aide.
+  \end{itemize}
+  Les \textbf{automatismes} ne nécessitent à aucun moment de la réflexion ou de l'initiative, mais uniquement de la méthode. Si vous êtes à l'aise en mathématiques, cela doit donc se faire rapidement et \textbf{sans erreur d'inattention} ; si vous avez des difficultés, ce sont les choses sur lesquelles vous pourrez montrer que vous avez appris sérieusement les méthodes de cours. Il va donc de soi que la notation sera là-dessus binaire : une bonne application de la méthode donne tous les points, la moindre erreur n'en donne aucun. 
+  } 
+  
+  \subsection*{Exercice 1 - Équations à une opération}
+  Résoudre : 
+  \begin{enumerate}
+  \it $x+2 = 5$
+  \it $3x = 9$
+  \it $-2x = 43$
+  \it $-3 x = -9$
+  \it $\frac12 x = 8$ 
+  \it $\frac29 x = - \frac83$
+  \it $x+ \frac12 = \frac 34$
+  \it $x - \frac53 = \frac13$ 
+  \it $ x \div \frac45 = 2 $
+  \it $x\div 3 = \frac43$
+  \it $-4 x = \frac12$
+  \it $ \frac54  + x = 3$
+  \it $\frac3x = 4$
+  \it $-5 = \frac2x$
+  \it $\frac{x}4 = \frac12$
+  \end{enumerate}
+  
+  \subsection*{Exercice 2 - Équations à deux opérations successives}
+  
+  Résoudre :
+  \begin{enumerate}
+  \it $3x+2 = 5$
+  \it $3x-4 = 9$
+  \it $-2(x-3) = 43$
+  \it $-3(x+5) = -9$
+  \it $\frac1{2+x} = 8$ 
+  \it $\frac{5+ x}9 = - \frac83$
+  \it $\frac{x}4+ \frac12 = \frac 34$
+  \it $\frac{3}{7+x} = \frac13$ 
+  \it $ x \div \frac45 -12 = 2 $
+  \it $(x-\frac12)\div 3 = \frac43$
+  \it $-4 x + \frac23 = \frac12$
+  \it $ \frac54  + \frac3x = 3$
+  \it $\frac3x + 7 = 4$
+  \it $-5 = \frac2x + 6$
+  \it $\frac{x}4 + \frac14 = \frac12$
+  \end{enumerate}
+  
+  
+  \subsection*{Exercice 3 - Équations de degré 1 à coefficients entiers}
+  Résoudre : 
+  \begin{enumerate}
+\it $2x-3=19 $
+\it $4x + 7 = 51$
+\it $-x + 12 = 43$
+\it $5x - 23 = 77$
+\it $3x+ 5 = 2x + 9$
+\it $-3x + 12 = x$
+\it $5x - 4 = 3x +2$
+\it $12x - 25 = 3x +11$
+\it $ 4 + 5(4+x) = 7(x+3) - 7$
+\it $x + 3(x+1) = 23$
+\it $3x + 2 = 5x + 7$
+\it $-61 x + 2 = 39x - 12$
+  \end{enumerate}
+  
+  \subsection*{Exercice 4 - Équations de degré 1 à coefficients fractionnaires}
+  \begin{enumerate}
+  \it $\frac{3+x}5 = 3$
+  \it $\frac{-3x+4}{10} = 12$
+  \it $\frac{7x+4}{6} = \frac{2x+1}{4}$
+\it $\frac52x+3 - \frac{7x}4 = x + \frac94$. 
+\it $\frac{3x}7 - \frac{2x}{15} + 3 = \frac{x}3+\frac{13}3$.
+\it $x+\frac12-\frac{x}6 = 16 - \frac{2x}9 + \frac13$. 
+\it $\frac{7x}4-2-\frac{x}2=\frac{2x}{13}-\frac{85}{52}$. 
+\it $\frac{2x}3+4 -\frac{2x}5 = \frac{x}2-\frac{x}3+3,5$. 
+\it $\frac{x}6-1=\frac{x}4-\frac{x}3-1$. 
+  \end{enumerate}
+  
+  \subsection*{Exercice 5 - Équations se ramenant à du degré 1 après simplification}
+  Résoudre :\begin{enumerate}
+  \it $x^2+ 4x - 5 = x^2 - 2x + 3$
+\it $(x-1)^2+(x+3)^2= 2(x-2)(x+1)+38$.
+\it $5(x^2-2x-1)+2(3x-2)=5(x+1)^2$.
+\it $(9x+1)(x-2)=(3x+4)(3x-5)$.
+\it $7(3-2x)-5x(2x-1)=(5x+3)(3-2x)$. 
+\it $(3x-1)^2-(2x+3)^2+7 = (2x+1)(2x-1) + x(x+7)$.
+  \end{enumerate}
+  \subsection*{Exercice 6 - Équations produit nul}
+  Résoudre : \begin{enumerate}
+  \it $(x+2)(x-3) = 0$
+  \it $(x+2)(3x-1)=0$
+  \it $(2x+3)(9x-1)=0$
+  \it $x(x-1)(x-2)=0$
+  \it $(x-1)(x+2)(x-3)=0$. 
+\it $(x-3)(x-4)(x-5)=0$. 
+\it $(2x+1)(x+1)(4x-3) = 0$.
+\it $(2x+1)(x+4)(3x+1)=0$. 
+\it $x(5x+1)(4x-3)(3x-4)=0$. 
+\it $5x(3x-7)=0$.   
+  \end{enumerate}
+ 
+  \subsection*{Exercice 7 - Équations se ramenant à un produit nul après simplification}
+  Résoudre en faisant apparaître un produit nul : 
+  \begin{enumerate}
+\it $x^2-3x=0$. 
+\it $5x^2+8x=0$. 
+\it $x(x+1) + 2(x+1) = 0$
+\it $(3x+1)(x+4) + (3x+1)(3x+2) =0$
+\it $(4x+1)(2x-1)-(4x+1)(8x+1)=0$
+\it $(x+2)x +2(x+2)=0$
+\it $x(x+3) = x(3x+1)$
+\it $2x(x-1) = 2x(2x+2)$
+\it $(x+1)(x-4) = (x+1)(3x-2)$
+
+  \end{enumerate}
+  
+  
+  
+  
+  
+  
+ 	\end{document}

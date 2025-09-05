@@ -1,0 +1,195 @@
+\documentclass[14 pt]{extarticle}
+
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{numprint}
+	\usepackage{varioref}
+	\usepackage{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	 \usepackage{fancyhdr}
+	 \newcommand{\np}{\numprint}
+	 \renewcommand\it\item
+\renewcommand{\theenumi}{\alph{enumi})}
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{} 
+	\fancyhead[L]{Automatismes}
+	\fancyhead[R]{Calcul littéral}\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+	
+	
+	\title{Chapitre 2-  Calcul littéral}
+	\date{}
+	\begin{document}
+
+\begin{center}{\Large Automatismes : Calcul numérique}\\ 
+ \end{center}
+  \emph{L'objectif des exercices suivants est de travailler vos automatismes. Il est bon de les travailler dès que les méthodes associées auront été vues, et régulièrement ensuite. Pour ce faire, on peut suggérer trois temps : \begin{itemize}
+  \item Faire les exercices à l'aide du cours (\textbf{N'utilisez pas votre calculatrice pour manipuler les lettres, elle ne le fait pas !}).
+  \item Faire les exercices sans aucune aide.
+  \end{itemize}
+  Les \textbf{automatismes} ne nécessitent à aucun moment de la réflexion ou de l'initiative, mais uniquement de la méthode. Si vous êtes à l'aise en mathématiques, cela doit donc se faire rapidement et \textbf{sans erreur d'inattention} ; si vous avez des difficultés, ce sont les choses sur lesquelles vous pourrez montrer que vous avez appris sérieusement les méthodes de cours. Il va donc de soi que la notation sera là-dessus binaire : une bonne application de la méthode donne tous les points, la moindre erreur n'en donne aucun. 
+  } 
+  
+  
+  \subsection*{Exercice 1 - Calcul de sommes algébriques avec les nombres relatifs}
+  
+  Calculer : 
+  \begin{enumerate}
+  \it $12 -15$
+  \it $-12 - 10$
+  \it $-10+ 12$
+  \it $-10-5$
+  \it $19-8$
+  \it $-9 - 15$
+  \it $-16 + 9$
+  \it $-9 + (-16)$
+  \it $-4 - (-2)$
+  \it $5 - (-3)$
+  \it $-(-3) + 5$
+  \it $-(-1) - (-3)$
+  \it $-(-6) - 5$
+  \it $5 + 4 - 8 - 1 + 4 -2 $
+  \it $-3 - 5 - 1 + 9$
+  \it $17 - 12 + 13 - 18$
+  \it $14- (5-2 - (4-9))$
+  \it $-(12-15) + (3-4) - (5-(-9))$
+  \end{enumerate}
+  
+  
+  
+  \subsection*{Exercice 1bis - Calcul de produits et quotients avec les nombres relatifs}
+  
+  Calculer : \begin{enumerate}
+  \it $12 \times -3$
+  \it $-3 \times 4 $
+  \it $-5 \times -2$
+  \it $-(5 \times (-4))$
+  \it $3\times 4 - 5$
+  \it $-3 \times -2 + 6 \times -4$
+  \it $-4 - 5 \times 2$
+  \it $8\div(-4)$
+  \it $-9\div3$
+  \it $(-15)\div(-5)$
+  \it $18\div(-2)$
+  \it $-45\div5$
+  \it $(-119)\div(-7)$
+  \it $4 - 10 \div (-2)$
+  \it $3\times (-4) - (-4) \div 2$
+  \it $(15 \div (-3) - 2)\times (5- 8)$
+  \end{enumerate}
+  
+  \subsection*{Exercice 2 - Calcul de somme algébriques avec les fractions}
+  Calculer : 
+  \begin{enumerate}
+  \item $\displaystyle\frac34 + \frac14$
+  \item $\displaystyle\frac32 + \frac52 + \frac72$
+  \it $\displaystyle-\frac13 + \frac23 + \frac53$
+  \it $\displaystyle\frac49 - \frac29 - \frac{-4}9$
+  \it $\displaystyle\frac23 - \frac{10}3 - \frac{1}3$
+  \it $\displaystyle\frac12 + \frac13$
+  \it $\displaystyle-\frac14 + \frac12$
+  \it $\displaystyle\frac1{10} - \frac35$
+  \it $\displaystyle\frac2{10} - \frac12 - \frac15$
+  \it $\displaystyle\frac2{15} - \frac3{10} - \frac16$
+  \end{enumerate}
+  \subsection*{Exercice 2bis - Calcul de produits et quotients avec les fractions}
+    Calculer : 
+  \begin{enumerate}
+  \item $\displaystyle\frac34 \times \frac14$
+  \item $\displaystyle\frac32 \times\frac72$
+  \it $\displaystyle-\frac13 \times \frac23 $
+  \it $\displaystyle\frac49 \div \frac29 $
+  \it $\displaystyle\frac23 \div \frac54$
+  \it $\displaystyle\frac12 \times \frac13\div \frac14$
+  \it $\displaystyle-\frac14 \div  \frac12 \times \frac35$
+  \it $\displaystyle\frac1{10} - \frac12\times \frac35$
+  \it $\displaystyle\frac2{10}\div\frac15 - \frac12 \times \frac15$
+  \it $\displaystyle\frac2{15}\div 3 - \frac3{10} \times - \frac16$
+  \it $\displaystyle3\times \frac{-3}4$
+  \it $\displaystyle2\div \frac13$
+  \it $\displaystyle\frac16\div2$
+  \it $\displaystyle\frac{\frac12}{\frac13}$
+  \it $\displaystyle\frac{7}{\frac58}$
+  \it $\displaystyle\frac{\frac65}{-12}$
+  \end{enumerate}
+  
+  \subsection*{Exercice 3 - Calcul avec les puissances}
+  Calculer :
+  \begin{enumerate}\item $2^3$
+  \item $3^2$
+  \it $5^3$
+  \it $2^6$ 
+  \it $8^2$
+  \it $10^5\times 3^2$
+  \it $(-3)^2$
+  \it $(-4)^3$
+  \it $(-2)^3\div3^2$
+  \it $\left(\frac13\right)^3$
+  \it $\left(\frac34\right)^3$
+  \it $\left(\frac45\right)^2$
+  \it $\left(\frac67\right)^3$
+  \it $\left(\frac92\right)^2$
+  \item $3^{-3}$
+  \item $4^{-2}$
+  \it $5^{-3}$
+  \it $2^{-6}$ 
+  \it $10^{-10}$
+  \it $(-8)^{-2}$
+  \it $10^{-5}\times 3^2$
+  \it $(-3)^{-3}$
+  \it $(-4)^{-2}$
+  \it $(-2)^3\div3^2$
+  \it $\left(\frac13\right)^{-3}$
+  \it $\left(\frac34\right)^{-2}$
+  \item[aa).] $\left( \frac45 \right)^{-3}$
+  \item[ab).] $\left(\frac67\right)^{-3}$
+  \item[ac).] $\left(\frac92\right)^{-2}$
+  
+  \end{enumerate}
+  
+  \subsection*{Exercice 4 - Écriture scientifique}
+  
+  Écrire sous forme scientifique les nombres suivants : 
+  \begin{enumerate}
+  \it $\np{1343,23}$
+  \it $\np{103258202}$
+  \it $\np{3298,204}$
+  \it $\np{0,813429}$
+  \it $\np{954316372,135}$
+  \it $\np{0,00034254}$
+  \it $\np{2350000}$
+  \it $\np{2353,129}$
+  \it $\np{9431425,86502335}$
+  \it $\np{259,235}$
+  \it $\np{9,9154}$
+  \it $\np{0,2532}$
+  \it $\np{9324}$
+  \it $\np{3253}$
+  \it $2,34 \times 10^5 \times 4,12 \times 10^{-2}$
+  \it $432,12 \times 10^{-1} \times 142,1 \times 10^{-9}$
+  \it $10^{-1}+10^{-2}$
+  \it $2\times 10^3 + 3 \times 10^1$
+  \end{enumerate}
+  
+  
+  
+  
+  
+  
+ 	\end{document}

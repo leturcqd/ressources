@@ -1,0 +1,179 @@
+\documentclass[14 pt]{extarticle}
+
+	\usepackage[frenchb]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz} 
+	\usepackage{amsthm}
+	\usepackage{numprint}
+	\usepackage{varioref}
+	\usepackage{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	 \usepackage{fancyhdr}
+	 \newcommand{\np}{\numprint}
+	 \newcounter{question}
+	 \renewcommand\it{\item[\textbf{\thequestion}).] \stepcounter{question}}
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{} 
+	\fancyhead[L]{}
+	\fancyhead[R]{\today}\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+\newcounter{choixa}
+\newcounter{choixb}	
+\newcounter{choixc}	
+\newcounter{choixd}	
+\newcounter{choixe}	
+\newcounter{choixf}	
+\newcounter{choixg}	
+\newcounter{choixh}	
+\newcounter{choixi}	
+\newcounter{choixj}	
+\newcounter{choixk}	
+\newcounter{choixl}	
+\newcounter{choixm}	
+\newcounter{choixn}	
+\newcounter{choixo}	
+\newcounter{choixp}	
+\newcounter{choixq}
+\newcounter{choixr}
+\newcounter{choixs}	
+\newcounter{choixt}	
+%arithmétique	
+\newcounter{choixu}		
+\newcounter{choixv}		
+\newcounter{choixw}		
+\newcounter{choixx}		
+\newcounter{choixy}		
+\newcounter{choixz}		
+\newcounter{choixba}		
+\newcounter{choixbb}		
+%calcul littéral
+
+\newcounter{choixbc}	
+\newcounter{choixbd}
+\newcounter{choixbe}	
+\newcounter{choixbf}	
+\newcounter{choixbg}		
+\newcounter{choixbh}		
+\newcounter{choixbi}		
+\newcounter{choixbj}		
+\newcounter{choixbk}		
+\newcounter{choixbl}		
+\newcounter{choixbm}		
+\newcounter{choixbn}		
+\newcounter{choixbo}		
+\newcounter{choixbp}		
+\newcounter{choixbq}		
+\newcounter{choixbr}			
+\newcounter{choixbs}			
+\newcounter{choixbt}			
+\newcounter{choixbu}			
+\newcounter{choixbv}			
+\newcounter{choixbw}			
+\newcounter{choixbx}				
+\newcounter{choixby}			
+\newcounter{choixbz}			
+\newcounter{choixca}			
+\newcounter{choixcb}			
+\newcounter{choixcc}			
+\newcounter{choixcd}			
+\newcounter{choixce}			
+\newcounter{choixcf}			
+\newcounter{choixcg}		
+	
+\newcommand\germe[9]{
+\setcounter{choixa}{#1}  % entre 1 et 4
+\setcounter{choixb}{#2} % entre 1 et 4
+\setcounter{choixc}{#3} % entre 1 et 5
+\setcounter{choixd}{#4} % entre 1 et 3
+\setcounter{choixe}{#5} % entre 1 et 3
+\setcounter{choixf}{#6} % entre 1 et 9
+\setcounter{choixg}{#7} % entre 1 et 6
+\setcounter{choixh}{#8} % entre 1 et 9
+\setcounter{choixi}{#9}} % entre 1 et 3
+\newcommand\germeb[9]{
+\setcounter{choixj}{#1} % entre 1 et 2
+\setcounter{choixk}{#2} % entre 1 et 4
+\setcounter{choixl}{#3} % entre 1 et 4
+\setcounter{choixm}{#4} % entre 1 et 2
+\setcounter{choixn}{#5} % entre 1 et 5
+\setcounter{choixo}{#6} % entre 1 et 3
+\setcounter{choixp}{#7} % entre 1 et 5
+\setcounter{choixq}{#8} % entre 1 et 8
+\setcounter{choixr}{#9}} % entre 1 et 5
+\newcommand\germec[2]{
+\setcounter{choixs}{#1} % entre 1 et 9
+\setcounter{choixt}{#2} % entre 1 et 4
+}
+
+\newcommand{\germed}[8]{
+\setcounter{choixu}{#1} % entre 1 et 5
+\setcounter{choixv}{#2} % entre 1 et 4
+\setcounter{choixw}{#3} % entre 1 et 3
+\setcounter{choixx}{#4} % entre 1 et 9
+\setcounter{choixy}{#5} % entre 1 et 6
+\setcounter{choixz}{#6} % entre 1 et 6
+\setcounter{choixba}{#7} % entre 1 et 3
+\setcounter{choixbb}{#8} % entre 1 et 5
+	}
+	
+	
+\newcommand{\germee}[9]{
+\setcounter{choixbc}{#1} % entre 1 et 4
+\setcounter{choixbd}{#2} % entre 1 et 4
+\setcounter{choixbe}{#3} % entre 1 et 4
+\setcounter{choixbf}{#4} % entre 1 et 4
+\setcounter{choixbg}{#5} % entre 1 et 4
+\setcounter{choixbh}{#6} % entre 1 et 5
+\setcounter{choixbi}{#7} % entre 1 et 4
+\setcounter{choixbj}{#8} % entre 1 et 7
+\setcounter{choixbk}{#9} % entre 1 et 4
+	}
+	
+\newcommand{\germef}[9]{
+\setcounter{choixbl}{#1} % entre 1 et 5
+\setcounter{choixbm}{#2} % entre 1 et 3
+\setcounter{choixbn}{#3} % entre 1 et 4
+\setcounter{choixbo}{#4} % entre 1 et 3
+\setcounter{choixbp}{#5} % entre 1 et 4
+\setcounter{choixbq}{#6} % entre 1 et 7
+\setcounter{choixbr}{#7} % entre 1 et 6
+\setcounter{choixbs}{#8} % entre 1 et 4
+\setcounter{choixbt}{#9} % entre 1 et 4
+	}
+	
+	
+\newcommand{\germeg}[9]{
+\setcounter{choixbu}{#1} % entre 1 et 4
+\setcounter{choixbv}{#2} % entre 1 et 4
+\setcounter{choixbw}{#3} % entre 1 et 4
+\setcounter{choixbx}{#4} % entre 1 et 5
+\setcounter{choixby}{#5} % entre 1 et 6
+\setcounter{choixbz}{#6} % entre 1 et 4
+\setcounter{choixca}{#7} % entre 1 et 4
+\setcounter{choixcb}{#8} % entre 1 et 4
+\setcounter{choixcc}{#9} % entre 1 et 3
+	}
+	
+	
+\newcommand{\germeh}[4]{
+\setcounter{choixcd}{#1} % entre 1 et 3
+\setcounter{choixce}{#2} % entre 1 et 3
+\setcounter{choixcf}{#3} % entre 1 et 6
+\setcounter{choixcg}{#4} % entre 1 et 3
+	}
+	\title{Contrôle}
+	\date{}
+	\begin{document}
