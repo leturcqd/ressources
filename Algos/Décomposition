@@ -31,3 +31,14 @@ def liste_premiers(a, b):
         if diviseur == quotient :
             print(n)
         n=n+1
+
+
+
+def test_primalite(n) : 
+	d=2
+	while n % d != 0 and d*d <=n :
+		d = d + 1
+	if n % d == 0 : 
+		print("pas premier, car :" + str(d) + "x" +str(n//d) + "=" + str(n)) 
+	else : 
+		print("premier")
