@@ -13,21 +13,24 @@
 	\usepackage{varioref}
 	\usepackage{geometry}
 	\geometry{a4paper}
+	\usepackage{multicol}
 	\usepackage{lmodern}
 	\usepackage{hyperref}
 	\usepackage{array}
 	 \usepackage{fancyhdr}
 	 \renewcommand\it\item
 \renewcommand{\theenumi}{\alph{enumi})}
-	\pagestyle{fancy}
+	\pagestyle{plain}
 	\theoremstyle{plain}
 	\fancyfoot[C]{} 
 	\fancyhead[L]{Automatismes}
 	\fancyhead[R]{Calcul littéral}\geometry{
  a4paper,
- total={170mm,257mm},
- left=20mm,
- top=20mm,
+ total={210mm,257mm},
+ left=10mm,
+ top=10mm,
+ right = 10mm,
+ bottom = 10mm
  }
 	
 	
@@ -61,6 +64,7 @@
   
 Réduire les sommes suivantes : 
 \begin{enumerate}
+  \begin{multicols}{2}
 \it $3a-a + 4a$
 \it $41b+ 3b - 7b$
 \it $7ac - 42ac + 12 ac$
@@ -70,11 +74,12 @@ Réduire les sommes suivantes :
 \it $-\frac47a^2b^3x+\frac52a^2b^3x-\frac54a^2b^3x$.
 \it $\frac34a^2b^3x^4y-\frac23a^2b^3x^4y+\frac14a^2b^3x^4y$. 
 \it $-\frac32 x + \frac54 x-3x^2+\frac{x}6-\frac52 x^2+5+4x^2$.
-
+\end{multicols}
 \end{enumerate}
   \subsection*{Exercice 3 - Multiplier deux expressions littérales simples}
   Effectuer les produits suivants : 
 \begin{enumerate}
+  \begin{multicols}{2}
 \it $ab \times ab^2$
 \it $(-abc) \times (2bc)$
 \it $(-3ac)(-2a^2)$
@@ -86,6 +91,7 @@ Réduire les sommes suivantes :
 \it $\left(\frac{14}3a^2b^3x\right)\left(-\frac67a^2b^5\right)$. 
 \it $\left(-\frac72ax^2y\right)\left(-\frac8{15}b^3xy^2\right)\left(\frac5{21}abx^3\right)$.
 \it $\left(\frac5{12}a^4b^2x\right)\left(-\frac27ax^2y^3\right)\left(-\frac{14}5b^2xy^4\right)$. 
+\end{multicols}
 \end{enumerate}
   
   \subsection*{Exercice 4 - Réduire une somme algébrique}
@@ -106,6 +112,7 @@ Réduire les sommes suivantes :
   \subsection*{Exercice 5 - Gestion des signes}
  Simplifier les expressions suivantes : 
   \begin{enumerate}
+  \begin{multicols}{2}
   \it $-(x+1)$ 
   \it $-(4-x)$
   \it $-(-x+7)$
@@ -118,6 +125,7 @@ Réduire les sommes suivantes :
   \it $x+1 - x - 1 $
   \it $-(x+1) - x - 1$ 
   \it $7x+4- (3x+1) + (x+2)$
+  \end{multicols}
   \end{enumerate}
   
   
@@ -125,6 +133,7 @@ Réduire les sommes suivantes :
   
 Développer et réduire les expressions suivantes : 
   \begin{enumerate}
+  \begin{multicols}{2}
   \it $4(x+1)$ 
   \it $-5(4-x)$
   \it $x(-x+7)$
@@ -137,10 +146,12 @@ Développer et réduire les expressions suivantes :
   \it $x+x(1 - x) - 2x(x+1) $
   \it $-(x+1)x - x - 1$ 
   \it $7(x+4)- (3x+1) + x(x+2)$
+  \end{multicols}
   \end{enumerate}
   \subsection*{Exercice 7 - Factorisation}
   Factoriser les expressions suivantes : 
   \begin{enumerate}
+  \begin{multicols}{2}
   \it $4xy + 12x$
   \it $15ac + 3ab + 6a$
   \it $15ac + 3ab + 6a+ 7a^2$
@@ -153,9 +164,11 @@ Développer et réduire les expressions suivantes :
   \it $(x+1)(x+2) + (x+2)(x+3)$
   \it $(x+5)(2x+5) - (x+5)(4x+2)$
   \it $(x+1)^2 - 3x(x+1)$
+  \end{multicols}
   \end{enumerate}
   
   \subsection*{Exercice 8 - Distributivité double}  \begin{enumerate}
+  \begin{multicols}{2}
   \it $(x+2)(2x+2)$
   \it $(x-3)(3x-1)$
   \it $(x+5)(-x+7)$
@@ -171,10 +184,12 @@ Développer et réduire les expressions suivantes :
 \it $(4a^3+ab)(a^2-b)$.
 \it $(5xy+3x)(2x-y)$.
 \it $(-3xy-2y)(x+5)$.
+\end{multicols}
   \end{enumerate}
   
   \subsection*{Exercice 9 (Pour se préparer à la Seconde) - Distributivité générale }
   \begin{enumerate}
+  \begin{multicols}{2}
 \it $(-4x+3y+1)(y-3)$. 
 \it $(-2a+3b-5)(a-b)$. 
 \it $(2x^3-3y-2+5)(x^2-y)$.
@@ -183,5 +198,6 @@ Développer et réduire les expressions suivantes :
 \it $(-3xy+4x-2y)(x+5)$.
 \it $(14a^2b+5a^2-b)(a^2-2b)$.
 \it $(7a^3b-4b^2+2a^3)(2a^3+4b^2)$. 
+\end{multicols}
   \end{enumerate}
  	\end{document}
