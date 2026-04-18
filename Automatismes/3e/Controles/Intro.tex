@@ -1,6 +1,6 @@
 \documentclass[14 pt]{extarticle}
 
-	\usepackage[frenchb]{babel}
+	\usepackage[french]{babel}
 	\usepackage[utf8]{inputenc}  
 	\usepackage[T1]{fontenc}
 	\usepackage{amssymb}
@@ -91,7 +91,12 @@
 \newcounter{choixcd}			
 \newcounter{choixce}			
 \newcounter{choixcf}			
-\newcounter{choixcg}		
+\newcounter{choixcg}			
+\newcounter{choixva}		
+\newcounter{choixvb}		
+\newcounter{choixvc}		
+\newcounter{choixvd}		
+\newcounter{choixve}		
 	
 \newcommand\germe[9]{
 \setcounter{choixa}{#1}  % entre 1 et 4
@@ -173,6 +178,15 @@
 \setcounter{choixce}{#2} % entre 1 et 3
 \setcounter{choixcf}{#3} % entre 1 et 6
 \setcounter{choixcg}{#4} % entre 1 et 3
+	}
+	
+	
+\newcommand{\germev}[5]{
+\setcounter{choixva}{#1} % entre 1 et 4
+\setcounter{choixvb}{#2} % entre 1 et 4
+\setcounter{choixvc}{#3} % entre 1 et 4
+\setcounter{choixvd}{#4} % entre 1 et 4
+\setcounter{choixve}{#5} % entre 1 et 4
 	}
 	\title{Contrôle}
 	\date{}

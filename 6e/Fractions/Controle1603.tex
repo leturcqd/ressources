@@ -1,0 +1,164 @@
+\documentclass[14 pt]{extarticle}
+
+	\usepackage[french]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+\usetikzlibrary{arrows.meta}
+	\usepackage{varioref}
+	\usepackage{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	 \usepackage{fancyhdr}
+	 \usepackage{float}
+\renewcommand{\theenumi}{\alph{enumi})}
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{} 
+	\fancyhead[L]{Contrôle}
+	\fancyhead[R]{16 mars 2026}\geometry{
+ a4paper,
+ total={190mm,257mm},
+ left=10mm,
+ top=20mm,
+ }
+	
+	
+	\title{Contrôle Chapitre 7}
+	\date{}
+	\begin{document}
+
+\begin{center}{\Large Contrôle Chapitre 7}\\  
+\textbf{On détaillera toujours les calculs.}
+ \end{center}
+ 
+
+\subsection*{Exercice 1 (3 points)}
+Calculer :
+\begin{enumerate}
+\item trois quarts de $28$. 
+\item $\frac{7}{12}$ de $144$.
+\end{enumerate}
+\subsection*{Exercice 2 (2 points)}
+\begin{enumerate}
+\item Écrire comme un nombre mixte la fraction $\frac{113}{4}$.
+\item Écrire comme une seule fraction le nombre mixte $13+ \frac23$.
+\end{enumerate}
+\subsection*{Exercice 3 (5 points)}
+\begin{enumerate}
+\item Trouver l'écriture décimale de $\frac{5}8$. 
+\item Exprimer la fraction précédente comme un pourcentage.
+\item Donner une valeur approchée au centième de $\frac{13}7$. 
+\item Donner une valeur approchée au centième de $\frac{4}{39}$. Exprimer également le résultat en pourcentage.
+\end{enumerate}
+
+\subsection*{Exercice 4 (4 points)}
+Sur la demi-droite graduée suivante : 
+
+\begin{tikzpicture}[scale = .9]
+\draw[-{Latex[length=5mm, width=3mm]}](0,0)--(20,0); 
+\foreach \x in {1, 2,..., 19}{
+\draw (\x, -.2)--(\x, +.2);
+}
+\foreach \x in {0, 9, 18}{
+\draw (\x, -.4)--(\x, +.4);
+
+\draw (\x, -.7) node{\pgfmathparse{\x/9}\pgfmathprintnumber[fixed,precision=0]{\pgfmathresult}};
+} 
+\foreach \x in {2,  5, 13}{
+\draw (\x, 0) -- ++ (45:.3);
+\draw (\x, 0) --++ (135:.3);
+\draw (\x, 0) --++ (-135:.3);
+\draw (\x, 0) --++ (-45:.3);}
+\draw (2, .7) node{A};
+\draw (5, .7) node{B};
+\draw (13, .7) node{C};
+\end{tikzpicture}
+\begin{enumerate}
+\item Placer les points $D\left(\frac59\right)$, $E\left(\frac{17}9\right)$, $F\left(\frac13\right)$ et $G\left(\frac{16}{24}\right)$.
+\item Donner les abscisses des points $A$, $B$ et $C$.
+\end{enumerate}  
+
+\subsection*{Exercice 5 (6 points)}
+ 
+
+\begin{enumerate}
+\item Écrire une fraction égale à $\frac34$ ayant $48$ comme dénominateur.
+\item Écrire une fraction égale à $\frac46$ ayant $21$ comme dénominateur.
+\item Les fractions $\frac{12}{31}$ et $\frac{9}{20}$ sont-elles égales ?
+\item Simplifier le plus possible la fraction $\frac{210}{315}$.
+\item Les fractions $\frac{188}{292}$ et $\frac{24}{36}$ sont-elles égales ?
+\end{enumerate}
+\newpage
+
+\begin{center}{\Large Contrôle Chapitre 7}\\ 
+\textbf{On détaillera toujours les calculs.}
+ \end{center}
+ 
+
+\subsection*{Exercice 1 (3 points)}
+Calculer :
+\begin{enumerate}
+\item trois quarts de $24$. 
+\item $\frac{5}{12}$ de $132$.
+\end{enumerate}
+\subsection*{Exercice 2 (2 points)}
+\begin{enumerate}
+\item Écrire comme un nombre mixte la fraction $\frac{83}{4}$.
+\item Écrire comme une seule fraction le nombre mixte $11+ \frac13$.
+\end{enumerate}
+\subsection*{Exercice 3 (5 points)}
+\begin{enumerate}
+\item Trouver l'écriture décimale de $\frac{3}8$. 
+\item Exprimer la fraction précédente comme un pourcentage.
+\item Donner une valeur approchée au centième de $\frac{11}7$. 
+\item Donner une valeur approchée au centième de $\frac{2}{39}$. Exprimer également le résultat en pourcentage.
+\end{enumerate}
+
+\subsection*{Exercice 4 (4 points)}
+Sur la demi-droite graduée suivante : 
+
+\begin{tikzpicture}[scale = .9]
+\draw[-{Latex[length=5mm, width=3mm]}](0,0)--(20,0); 
+\foreach \x in {1, 2,..., 19}{
+\draw (\x, -.2)--(\x, +.2);
+}
+\foreach \x in {0, 9, 18}{
+\draw (\x, -.4)--(\x, +.4);
+
+\draw (\x, -.7) node{\pgfmathparse{\x/9}\pgfmathprintnumber[fixed,precision=0]{\pgfmathresult}};
+} 
+\foreach \x in {3, 6, 13}{
+\draw (\x, 0) -- ++ (45:.3);
+\draw (\x, 0) --++ (135:.3);
+\draw (\x, 0) --++ (-135:.3);
+\draw (\x, 0) --++ (-45:.3);}
+\draw (3, .7) node{A};
+\draw (6, .7) node{B};
+\draw (13, .7) node{C};
+\end{tikzpicture}
+\begin{enumerate}
+\item Placer les points $D\left(\frac49\right)$, $E\left(\frac{16}9\right)$, $F\left(\frac23\right)$ et $G\left(\frac{10}{15}\right)$.
+\item Donner les abscisses des points $A$, $B$ et $C$.
+\end{enumerate}  
+
+\subsection*{Exercice 5 (6 points)}
+ 
+
+\begin{enumerate}
+\item Écrire une fraction égale à $\frac34$ ayant $48$ comme dénominateur.
+\item Écrire une fraction égale à $\frac46$ ayant $21$ comme dénominateur.
+\item Les fractions $\frac{12}{31}$ et $\frac{9}{20}$ sont-elles égales ?
+\item Simplifier le plus possible la fraction $\frac{210}{525}$.
+\item Les fractions $\frac{182}{273}$ et $\frac{26}{39}$ sont-elles égales ?
+\end{enumerate}
+
+ 	\end{document}
