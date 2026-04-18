@@ -1,0 +1,338 @@
+% @see : https://coopmaths.fr/alea/?uuid=dnb_2026_01_sujet0va_3&alea=fjpu&uuid=dnb_2024_09_metropole_4&alea=dhH9&uuid=dnb_2022_09_polynesie_4&alea=fEGA&v=eleve&pdfParam=eyJ0aXRsZSI6IiIsInJlZmVyZW5jZSI6IiIsInN1YnRpdGxlIjoiIiwic3R5bGUiOiJDb29wbWF0aHMiLCJmb250T3B0aW9uIjoiU3RhbmRhcmRGb250IiwidGFpbGxlRm9udE9wdGlvbiI6MTIsImR5c1RhaWxsZUZvbnRPcHRpb24iOjE0LCJjb3JyZWN0aW9uT3B0aW9uIjoiQXZlY0NvcnJlY3Rpb24iLCJxcmNvZGVPcHRpb24iOiJTYW5zUXJjb2RlIiwidHlwZUZpY2hlIjoiRmljaGUiLCJkdXJhdGlvbkNhbk9wdGlvbiI6IjkgbWluIiwidGl0bGVPcHRpb24iOiJTYW5zVGl0cmUiLCJuYlZlcnNpb25zIjoxLCJleG9zIjp7fX0\%3D
+\documentclass[a4paper,12pt,fleqn]{memoir}
+\setlrmarginsandblock{.5cm}{.5cm}{*}
+\setulmarginsandblock{.5cm}{.5cm}{*}
+ \usepackage{auto-pst-pdf}
+%%% COULEURS %%%
+\usepackage[table,svgnames]{xcolor}
+\definecolor{nombres}{cmyk}{0,.8,.95,0}
+\definecolor{gestion}{cmyk}{.75,1,.11,.12}
+\definecolor{gestionbis}{cmyk}{.75,1,.11,.12}
+\definecolor{grandeurs}{cmyk}{.02,.44,1,0}
+\definecolor{geo}{cmyk}{.62,.1,0,0}
+\definecolor{algo}{cmyk}{.69,.02,.36,0}
+\definecolor{correction}{cmyk}{.63,.23,.93,.06}
+% Couleur des filets des tableaux
+
+\usepackage[most]{tcolorbox} % Supprimé à cause de conflits avec ProfCollege
+\tcbuselibrary{documentation}
+
+%%%%%%%% Modification paramétrage pour footnotes
+% Le paquet semble déjà appelé en amont, curieux qu'il n'y ait pas eu de clash
+% avec l'appel ci-dessous mais seulement quand j'ai essayé de l'inclure avec l'option lualatex
+
+% \usepackage{hyperref}
+% Parametrages
+\hypersetup{
+    colorlinks=true,% On active la couleur pour les liens. Couleur par défaut rouge
+    linkcolor=black,% On définit la couleur pour les liens internes
+    % filecolor=magenta,% On définit la couleur pour les liens vers les fichiers locaux      
+    urlcolor=black,% On définit la couleur pour les liens vers des sites web
+    % pdftitle={Puissance Quatre},% On définit un titre pour le document pdf
+    % pdfpagemode=FullScreen,% On fixe l'affichage par défaut à plein écran
+    }
+% Pour avoir les numérotations arabic y compris dans les environnements tcolorbox
+\renewcommand{\thempfootnote}{\arabic{mpfootnote}}
+%%%%%%%%
+
+\usepackage{multicol} 
+\usepackage{calc}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{tabularx}
+%\usepackage{tablvar}
+
+\setlength{\parindent}{0mm}
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\labelenumi}{\textbf{\theenumi{}.}}
+\renewcommand{\labelenumii}{\textbf{\theenumii{}.}}
+\setlength{\fboxsep}{3mm}
+ 
+
+\setlength{\premulticols}{0pt}
+
+\newcounter{ExoMA}
+
+\newlength{\parindentMA}%
+\setlength{\parindentMA}{\parindent} 
+
+\usepackage{simplekv}
+ 
+
+\usepackage{fancyhdr}
+\fancyhead[C]{}
+\fancyfoot{}
+
+\def\bla{}
+ 
+ 
+
+
+%%% MISE EN PAGE %%%
+
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{setspace}
+  \usepackage{eurosym}
+\usepackage{pgf}%
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{babel,arrows, arrows.meta,calc,fit,patterns,plotmarks,shapes.geometric,shapes.misc,shapes.symbols,shapes.arrows,shapes.callouts, shapes.multipart, shapes.gates.logic.US,shapes.gates.logic.IEC, er, automata,backgrounds,chains,topaths,trees,petri,mindmap,matrix, calendar, folding,fadings,through,positioning,scopes,decorations.fractals,decorations.shapes,decorations.text,decorations.pathmorphing,decorations.pathreplacing,decorations.footprints,decorations.markings,shadows}
+
+\spaceskip=2\fontdimen2\font plus 3\fontdimen3\font minus3\fontdimen4\font\relax %Pour doubler l'espace entre les mots
+ 
+ 
+  
+
+\usepackage[french]{babel}
+% loadPackagesFromContent
+\usepackage{pstricks}
+\usepackage{pst-plot}
+\usepackage{multido}
+\usepackage{pst-fun}
+\newcommand{\e}{\mathrm{e}}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{etoolbox}
+\newbool{dys}
+\setbool{dys}{false}          
+\ifbool{dys}{
+% POLICE DYS
+% ===== VARIABLE =====
+\def\FontChoisie{Fira} % valeurs possibles : Fira, lmodern, tgheros
+\newcommand{\choiceFontsDys}[1]{
+\ifstrequal{#1}{Fira}{%
+  % Fira Sans + Fira Math
+  % Description : Fira Sans est une police moderne, et Fira Math est une version mathématique compatible qui maintient le style sans-serif.
+  % Utilisation : Fonctionne bien avec XeLaTeX et LuaLaTeX.
+  \usepackage{fontspec}
+  \setmainfont{Fira Sans}
+  \setsansfont{Fira Sans}
+  \usepackage{unicode-math}
+  \setmathfont{Fira Math}
+}{}
+\ifstrequal{#1}{lmodern}{%
+  % Latin Modern Sans
+  % Description : Une version sans-serif de la célèbre police Latin Modern, qui est compatible avec mathastext.
+  % Utilisation : Fonctionne avec pdfLaTeX, XeLaTeX et LuaLaTeX.
+  \usepackage{lmodern}
+  \renewcommand{\familydefault}{\sfdefault}
+  \usepackage{mathastext}
+}{}
+\ifstrequal{#1}{tgheros}{%
+  % TeX Gyre Heros + mathastext
+  % Description : TeX Gyre Heros est une alternative à Helvetica, et le package mathastext permet d'utiliser la même police pour les mathématiques.
+  % Utilisation : Fonctionne avec pdfLaTeX, XeLaTeX, ou LuaLaTeX.
+  \usepackage{tgheros}
+  \renewcommand{\familydefault}{\sfdefault}
+  \usepackage{mathastext}
+}{}
+}
+% Fira ou lmodern ou tgheros
+\choiceFontsDys{\FontChoisie}
+
+%\usepackage{unicode-math}
+%\usepackage{fontspec}
+%\setmainfont{TeX Gyre Schola}
+%\setsansfont{TeX Gyre Schola}
+%\setmathfont{TeX Gyre Schola Math}
+%\setmainfont{OpenDyslexic}[Scale=1.0]
+%\setsansfont{OpenDyslexic}[Scale=1.0]
+%\setmathfont{OpenDyslexic}[Scale=1.0,range=up/{Latin,latin,num}]
+\usepackage[fontsize=14]{scrextend}
+\usepackage{setspace}
+\setstretch{1.7}
+% Une valeur d'environ 1.2 à 1.7 est souvent recommandée. Cela permet d'augmenter l'espace entre les lignes tout en offrant un léger espacement entre les mots.
+\setlength{\spaceskip}{1.2em}  
+% Une valeur d'environ 1.2em à 1.5em est couramment conseillée. Cela crée un espace plus ample entre les mots, ce qui peut aider à réduire la fatigue visuelle et à améliorer la fluidité de la lecture.
+}{
+% POLICE STANDARD
+\usepackage[T1]{fontenc} 
+\usepackage[scaled=1]{helvet}
+\usepackage[fontsize=13]{scrextend}
+}
+\begin{document}
+\pagestyle{empty}
+\begin{center}{\textbf{{\Huge \center Contrôle chapitres 7 et 8}\\
+On prendra soin de rédiger correctement. Calculatrice autorisée.}.}\end{center}
+\subsection*{Exercice 1 }
+\bigskip
+
+Calculer les longueurs des segments $[OQ]$ et $[PQ]$. Justifier.\\\begin{minipage}{0.5\linewidth}
+    \begin{tikzpicture}[baseline,baseline=(current bounding box.north),scale = 0.5]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-5.425584151765601,-5.8307452837322575) rectangle (1.0843027789744277,3.2682301564275855);
+    	\draw[color={black}] (0,0)--(-4.133172,-4.75467)--(-4.586307,2.230648)--cycle;
+	\draw[color={black},line width = 4] (-0.6560590289905075,-0.7547095802227717) arc (-131:-205.94:1) ;
+	\draw[color={black}] (-3.5427187565487404,-4.075431733202968) arc (49:93.71000000000001:0.9) ;
+	\draw[color={black}] (-3.411506950750639,-3.9244898171584133) arc (49:93.71000000000001:1.1) ;
+	\draw[color={black}] (-4.528046659450559,1.33253540016608) arc (-86.29:-25.940000000000005:0.9) ;
+	\draw[color={black}] (-4.5215733024536675,1.2327451418780548) arc (-86.29:-25.940000000000005:1) ;
+	\draw[color={black}] (-4.515099945456776,1.1329548835900294) arc (-86.29:-25.940000000000005:1.1) ;
+	\draw[opacity=1] (-1.6892311512087128,-2.705364692196985) node[anchor = center, rotate=48.99999999999997] {\normalsize \color{black}$6{,}3\text{ cm}$};
+	\draw[opacity=1] (-2.0744624828036122,1.5649617910480342) node[anchor = center, rotate=-25.936955432503858] {\normalsize \color{black}$5{,}1\text{ cm}$};
+	\draw[opacity=1] (-4.858690668971515,-1.294378100307033) node[anchor = center, rotate=-86.28844439152228] {\normalsize \color{black}$7\text{ cm}$};
+	\draw [color={black}] (0.484303,0.140191) node[anchor = center,scale=1, rotate = 0] {H};
+	\draw [color={black}] (-4.282403,-5.230745) node[anchor = center,scale=1, rotate = 0] {I};
+	\draw [color={black}] (-4.825584,2.66823) node[anchor = center,scale=1, rotate = 0] {G};
+
+\end{tikzpicture}\\    \end{minipage}
+    \begin{minipage}{0.5\linewidth}
+    \begin{tikzpicture}[baseline,baseline=(current bounding box.north),scale = 0.5]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-6.121023983721285,-9.045586017185652) rectangle (5.412267502706067,6.850919763179667);
+    	\draw[color={black}] (4.350658,-4.558399)--(-2.876405,5.762916)--(-5.23804,-8.036456)--cycle;
+	\draw[color={black},line width = 4] (3.777081229755626,-3.7392473368136585) arc (125:199.94:1) ;
+	\draw[color={black}] (-2.3601866392005637,5.025679537078555) arc (-55:-99.71000000000001:0.9) ;
+	\draw[color={black}] (-2.2454713519303544,4.861849128220757) arc (-55:-99.71000000000001:1.1) ;
+	\draw[color={black}] (-5.0862205398579015,-7.149353647681883) arc (80.29:19.940000000000005:0.9) ;
+	\draw[color={black}] (-5.069351722240028,-7.050786700929055) arc (80.29:19.940000000000005:1) ;
+	\draw[color={black}] (-5.052482904622154,-6.952219754176227) arc (80.29:19.940000000000005:1.1) ;
+	\draw[opacity=1] (1.1467021392395795,0.8890467160935217) node[anchor = center, rotate=-55.00000000000002] {\normalsize \color{black}$18{,}9\text{ cm}$};
+	\draw [color={black}] (4.812268,-4.746254) node[anchor = center,scale=1, rotate = 0] {O};
+	\draw [color={black}] (-2.974841,6.25092) node[anchor = center,scale=1, rotate = 0] {P};
+	\draw [color={black}] (-5.521024,-8.445586) node[anchor = center,scale=1, rotate = 0] {Q};
+
+\end{tikzpicture}\\    \end{minipage}
+ 
+
+
+
+
+\subsection*{Exercice 2 - D'après Métropole 2025}
+
+\begin{minipage}{0.45\linewidth}
+\begin{itemize}[label=$\bullet~$]
+\item ABC un triangle rectangle en B ;
+\item les points B, E et C sont alignés ainsi que
+les points A, D, F et C ;
+\item les droites (BD) et (EF) sont parallèles :
+\item AB = 10 cm, BC = 7,5 cm, BE = 3 cm,
+
+BD = 6 cm et CF = 2,7 cm.
+\end{itemize}
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+\psset{unit=0.9cm}
+\begin{pspicture}(-0.5,-0.5)(8.5,6.5)
+%\psgrid
+\pspolygon(0,0)(7.8,0)(0,5.8)
+\psline(2.78,3.75)
+\psline(0,2.4)(1.63,4.6)
+\uput[d](7.8,0){A}\uput[dl](0,0){B}\uput[ul](0,5.8){C}\uput[ur](2.78,3.75){D}
+\uput[l](0,2.4){E}\uput[ur](1.63,4.6){F}
+\psframe(0.3,0.3)
+\end{pspicture}
+\end{minipage}
+
+
+\medskip
+
+\begin{enumerate}
+\item
+	\begin{enumerate}
+		\item Montrer que CE $= 4 ,5$ cm.
+		\item Démontrer que la longueur EF est égale à $3,6$ cm.
+	\end{enumerate}
+\item Démontrer que le triangle CEF est rectangle en F.
+\item  Les triangles ABC et CEF sont-ils semblables ? 
+\end{enumerate}
+ 
+\subsection*{Exercice 3 - CRPE 2025}
+ 
+Un musée propose trois formules de visites guidées pour des classes durant l'année scolaire. 
+
+\medskip
+\fbox{
+\begin{minipage}{\linewidth}
+Formule A : 45~\euro{} par visite de classe. 
+
+Formule B : Abonnement annuel de 90~\euro{} par école auquel s'ajoute un montant de 25~\euro{}~50 par visite de classe de l'école. 
+
+Formule C : Abonnement annuel d'un montant de 300~\euro{} qui permet autant de visites que le souhaite l'école.	
+\end{minipage}
+}
+
+\medskip
+\begin{enumerate}
+	\item Une école est composée de quatre classes.
+	\begin{enumerate}
+		\item Si chaque classe effectue une visite, quelle formule est la plus avantageuse ? 
+		\item Si chaque classe effectue deux visites, quelle formule est la plus avantageuse ?
+	\end{enumerate}
+	\item On note $x$ le nombre de visites effectuées par une classe. Pour cette classe, on note $f(x)$ le prix avec la formule $A$, $g(x)$ le prix avec la formule B, et $h(x)$ le prix avec la formule $C$. Donner une expression littérale des fonctions $f$, $g$ et $h$ en fonction de $x$.
+	\item Sur la représentation ci-dessous, associer à chacune des fonctions $f$, $g$ et $h$ la représentation qui lui convient.  
+	
+	\begin{tikzpicture}
+\begin{axis}[
+    axis lines = left,
+    xmin=0, xmax=12,
+    ymin=0, ymax=320,
+    xtick={0,2,...,12},
+    ytick={0,50,...,300},
+    grid=major,
+    width=16cm,
+    height=15cm,
+    legend pos=north west
+    ]
+
+\addplot [
+    domain=0:12, 
+    samples=100, 
+    color=blue,    
+    mark=o,
+    mark size = 4pt,
+    mark repeat = 7 pt,
+    thick
+    ]
+    {45*x};
+    \addlegendentry{$(d_1)$}
+
+\addplot [
+    domain=0:12, 
+    samples=100, 
+    thick, 
+    mark =square*, mark repeat = 7, mark size = 2 pt,
+    ]
+    {90+25.5*x};
+    \addlegendentry{$(d_2)$}
+
+\addplot [
+    domain=0:12, 
+    samples=100, 
+    color=red,
+    thick
+    ]
+    {300};
+    \addlegendentry{$(d_3)$}
+
+\end{axis}
+\end{tikzpicture}
+\item Déterminer graphiquement le nombre de visites de classe à partir duquel la formule B est plus économique que la formule A.
+	\item À partir de combien de visites de classe la formule C est-elle plus économique que la formule~B ? Vérifier par le calcul.
+
+	\item L'équipe pédagogique de l'école de quatre classes décide d'organiser deux visites par classe. Elle choisit la formule la plus avantageuse et bénéficie d'une subvention de 15~\% du prix à payer de la part de la mairie. Quel montant l'école doit-elle prévoir pour payer le reste ?
+\end{enumerate}
+
+
+
+\end{document}

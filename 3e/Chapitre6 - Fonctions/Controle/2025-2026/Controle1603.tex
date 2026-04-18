@@ -1,0 +1,308 @@
+% @see : https://coopmaths.fr/alea/?uuid=dnb_2026_01_sujet0va_3&alea=fjpu&uuid=dnb_2024_09_metropole_4&alea=dhH9&uuid=dnb_2022_09_polynesie_4&alea=fEGA&v=eleve&pdfParam=eyJ0aXRsZSI6IiIsInJlZmVyZW5jZSI6IiIsInN1YnRpdGxlIjoiIiwic3R5bGUiOiJDb29wbWF0aHMiLCJmb250T3B0aW9uIjoiU3RhbmRhcmRGb250IiwidGFpbGxlRm9udE9wdGlvbiI6MTIsImR5c1RhaWxsZUZvbnRPcHRpb24iOjE0LCJjb3JyZWN0aW9uT3B0aW9uIjoiQXZlY0NvcnJlY3Rpb24iLCJxcmNvZGVPcHRpb24iOiJTYW5zUXJjb2RlIiwidHlwZUZpY2hlIjoiRmljaGUiLCJkdXJhdGlvbkNhbk9wdGlvbiI6IjkgbWluIiwidGl0bGVPcHRpb24iOiJTYW5zVGl0cmUiLCJuYlZlcnNpb25zIjoxLCJleG9zIjp7fX0\%3D
+\documentclass[a4paper,12pt,fleqn]{memoir}
+\setlrmarginsandblock{.5cm}{.5cm}{*}
+\setulmarginsandblock{.5cm}{.5cm}{*}
+ \usepackage{auto-pst-pdf}
+%%% COULEURS %%%
+\usepackage[table,svgnames]{xcolor}
+\definecolor{nombres}{cmyk}{0,.8,.95,0}
+\definecolor{gestion}{cmyk}{.75,1,.11,.12}
+\definecolor{gestionbis}{cmyk}{.75,1,.11,.12}
+\definecolor{grandeurs}{cmyk}{.02,.44,1,0}
+\definecolor{geo}{cmyk}{.62,.1,0,0}
+\definecolor{algo}{cmyk}{.69,.02,.36,0}
+\definecolor{correction}{cmyk}{.63,.23,.93,.06}
+% Couleur des filets des tableaux
+
+\usepackage[most]{tcolorbox} % Supprimé à cause de conflits avec ProfCollege
+\tcbuselibrary{documentation}
+
+%%%%%%%% Modification paramétrage pour footnotes
+% Le paquet semble déjà appelé en amont, curieux qu'il n'y ait pas eu de clash
+% avec l'appel ci-dessous mais seulement quand j'ai essayé de l'inclure avec l'option lualatex
+
+% \usepackage{hyperref}
+% Parametrages
+\hypersetup{
+    colorlinks=true,% On active la couleur pour les liens. Couleur par défaut rouge
+    linkcolor=black,% On définit la couleur pour les liens internes
+    % filecolor=magenta,% On définit la couleur pour les liens vers les fichiers locaux      
+    urlcolor=black,% On définit la couleur pour les liens vers des sites web
+    % pdftitle={Puissance Quatre},% On définit un titre pour le document pdf
+    % pdfpagemode=FullScreen,% On fixe l'affichage par défaut à plein écran
+    }
+% Pour avoir les numérotations arabic y compris dans les environnements tcolorbox
+\renewcommand{\thempfootnote}{\arabic{mpfootnote}}
+%%%%%%%%
+
+\usepackage{multicol} 
+\usepackage{calc}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{tabularx}
+%\usepackage{tablvar}
+
+\setlength{\parindent}{0mm}
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\labelenumi}{\textbf{\theenumi{}.}}
+\renewcommand{\labelenumii}{\textbf{\theenumii{}.}}
+\setlength{\fboxsep}{3mm}
+ 
+
+\setlength{\premulticols}{0pt}
+
+\newcounter{ExoMA}
+
+\newlength{\parindentMA}%
+\setlength{\parindentMA}{\parindent} 
+
+\usepackage{simplekv}
+ 
+
+\usepackage{fancyhdr}
+\fancyhead[C]{}
+\fancyfoot{}
+
+\def\bla{}
+ 
+ 
+
+
+%%% MISE EN PAGE %%%
+
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{setspace}
+\usepackage{pgf}%
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{babel,arrows, arrows.meta,calc,fit,patterns,plotmarks,shapes.geometric,shapes.misc,shapes.symbols,shapes.arrows,shapes.callouts, shapes.multipart, shapes.gates.logic.US,shapes.gates.logic.IEC, er, automata,backgrounds,chains,topaths,trees,petri,mindmap,matrix, calendar, folding,fadings,through,positioning,scopes,decorations.fractals,decorations.shapes,decorations.text,decorations.pathmorphing,decorations.pathreplacing,decorations.footprints,decorations.markings,shadows}
+
+\spaceskip=2\fontdimen2\font plus 3\fontdimen3\font minus3\fontdimen4\font\relax %Pour doubler l'espace entre les mots
+ 
+ 
+  
+
+\usepackage[french]{babel}
+% loadPackagesFromContent
+\usepackage{pstricks}
+\usepackage{pst-plot}
+\usepackage{multido}
+\usepackage{pst-fun}
+\newcommand{\e}{\mathrm{e}}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{etoolbox}
+\newbool{dys}
+\setbool{dys}{false}          
+\ifbool{dys}{
+% POLICE DYS
+% ===== VARIABLE =====
+\def\FontChoisie{Fira} % valeurs possibles : Fira, lmodern, tgheros
+\newcommand{\choiceFontsDys}[1]{
+\ifstrequal{#1}{Fira}{%
+  % Fira Sans + Fira Math
+  % Description : Fira Sans est une police moderne, et Fira Math est une version mathématique compatible qui maintient le style sans-serif.
+  % Utilisation : Fonctionne bien avec XeLaTeX et LuaLaTeX.
+  \usepackage{fontspec}
+  \setmainfont{Fira Sans}
+  \setsansfont{Fira Sans}
+  \usepackage{unicode-math}
+  \setmathfont{Fira Math}
+}{}
+\ifstrequal{#1}{lmodern}{%
+  % Latin Modern Sans
+  % Description : Une version sans-serif de la célèbre police Latin Modern, qui est compatible avec mathastext.
+  % Utilisation : Fonctionne avec pdfLaTeX, XeLaTeX et LuaLaTeX.
+  \usepackage{lmodern}
+  \renewcommand{\familydefault}{\sfdefault}
+  \usepackage{mathastext}
+}{}
+\ifstrequal{#1}{tgheros}{%
+  % TeX Gyre Heros + mathastext
+  % Description : TeX Gyre Heros est une alternative à Helvetica, et le package mathastext permet d'utiliser la même police pour les mathématiques.
+  % Utilisation : Fonctionne avec pdfLaTeX, XeLaTeX, ou LuaLaTeX.
+  \usepackage{tgheros}
+  \renewcommand{\familydefault}{\sfdefault}
+  \usepackage{mathastext}
+}{}
+}
+% Fira ou lmodern ou tgheros
+\choiceFontsDys{\FontChoisie}
+
+%\usepackage{unicode-math}
+%\usepackage{fontspec}
+%\setmainfont{TeX Gyre Schola}
+%\setsansfont{TeX Gyre Schola}
+%\setmathfont{TeX Gyre Schola Math}
+%\setmainfont{OpenDyslexic}[Scale=1.0]
+%\setsansfont{OpenDyslexic}[Scale=1.0]
+%\setmathfont{OpenDyslexic}[Scale=1.0,range=up/{Latin,latin,num}]
+\usepackage[fontsize=14]{scrextend}
+\usepackage{setspace}
+\setstretch{1.7}
+% Une valeur d'environ 1.2 à 1.7 est souvent recommandée. Cela permet d'augmenter l'espace entre les lignes tout en offrant un léger espacement entre les mots.
+\setlength{\spaceskip}{1.2em}  
+% Une valeur d'environ 1.2em à 1.5em est couramment conseillée. Cela crée un espace plus ample entre les mots, ce qui peut aider à réduire la fatigue visuelle et à améliorer la fluidité de la lecture.
+}{
+% POLICE STANDARD
+\usepackage[T1]{fontenc} 
+\usepackage[scaled=1]{helvet}
+\usepackage[fontsize=12]{scrextend}
+}
+\begin{document}
+\pagestyle{empty}
+% @see : https://coopmaths.fr/alea?uuid=dnb_2026_01_sujet0va_3
+\subsection*{Exercice 1 : DNB Janvier 2026 Sujet 0 Version A}
+On considère les fonctions $f$ et $g$ suivantes :
+\[\begin{array}{l l}
+f \,: &x \longmapsto 4x + 3\\
+g \,:&x \longmapsto 6x
+\end{array}\]
+Leurs représentations graphiques $(d_1)$ et $(d_2)$ sont tracées ci-dessous :
+\begin{enumerate}
+\item Parmi ces deux fonctions, laquelle représente une situation de proportionnalité ?
+\item Calculer l'image de 0 par la fonction $g$.
+\item Déterminer l'antécédent de $0$ par la fonction $f$.
+
+\begin{center}
+\psset{xunit=1.7cm,yunit=0.325cm,arrowsize=2pt 3,comma}
+\begin{pspicture*}(-1.5,-1.9)(5.5,20)
+\multido{\n=-1.5+0.5}{16}{\psline[linewidth=0.25pt](\n,-1.9)(\n,20)}
+\multido{\n=-0+2}{11}{\psline[linewidth=0.25pt](-1.5,\n)(5.5,\n)}
+\psaxes[linewidth=1.25pt,Dx=0.5,Dy=2,labelFontSize=\scriptstyle]{->}(0,0)(-1.5,-1.9)(5.5,20)
+\psplot[plotpoints=800,linewidth=1.25pt,linecolor=red]{-1.5}{4.5}{x 4 mul 3 add}
+\psplot[plotpoints=800,linewidth=1.25pt,linecolor=blue]{-1.5}{4.5}{x 6 mul}
+\uput[ul](3,18){\blue $(d_1)$}\uput[dr](3.75,18){\red $(d_2)$}
+\end{pspicture*}
+\end{center}
+
+\item Associer à chaque droite la fonction qu'elle représente. Justifier la réponse.
+\item Déterminer graphiquement les coordonnées du point d'intersection des droites $(d_1)$ et $(d_2)$.
+\end{enumerate}
+
+\bigskip
+
+ 
+
+\subsection*{Exercice 2 : DNB Septembre 2024 Métropole}{}
+
+On considère la fonction $f$ définie par 
+\[f(x) = x^2 + 10x + 16.\]
+\begin{enumerate}
+\item Vérifier par le calcul que l'image de 6 par la fonction $f$ est $112$.
+\item On utilise un tableur afin de calculer les images des entiers compris entre $-4$ et 4 par la
+fonction $f$.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|c|*{10}{>{\centering \arraybackslash}X|}}\hline
+&A&B&C&D&E&F&G&H&I&J\\ \hline
+1&$x$&$-4$&$-3$&$-2$&$-1$&0&1&2&3&4\\ \hline
+2&$f(x)$&$-8$&$-5$&0&7&16&27&40&55&72\\ \hline
+\end{tabularx}
+\end{center}
+
+	\begin{enumerate}
+		\item Parmi les 4 formules ci-dessous, recopier celle qui a été saisie dans la cellule B2, puis
+étirée vers la droite afin de calculer les images des nombres donnés par la fonction $f$.
+
+\begin{footnotesize}
+\fbox{=B1*B1+10*B1+16}\, \fbox{=A1*A1+10*A1+16}\, \fbox{$=(-4)*(-4)+10*(-4)+16$} \, \fbox{$=x*x+10*x+16$}
+\end{footnotesize}
+		\item En utilisant le tableau, déterminer un antécédent de $0$. 
+	\end{enumerate}
+\item
+	\begin{enumerate}
+		\item Démontrer que $f(x)$ peut s'écrire $(x + 2)(x + 8)$.
+		\item En déduire un autre antécédent de 0 par la fonction $f$.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+
+
+% @see : https://coopmaths.fr/alea?uuid=dnb_2022_09_polynesie_4
+\subsection*{Exercice 3 : DNB Septembre 2022 Polynésie}{}
+
+
+\medskip
+
+\begin{enumerate}
+\item Voici un tableau de valeurs d'une fonction $f$ :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|*{8}{>{\centering \arraybackslash}X|}}\hline
+$x$		&$-2$	&$-1$	&0	&1		& 3		& 4		& 5\\ \hline
+$f(x)$	&5 		&3 		&1 	&$-1$ 	&$-5$	& $-7$	& $-9$\\ \hline
+\end{tabularx}
+\end{center}
+
+	\begin{enumerate}
+		\item Quelle est l'image de $3$ par la fonction $f$ ?
+		\item Donner un nombre qui a pour image $5$ par la fonction $f$.
+		\item Donner un antécédent de $1$ par la fonction $f$.
+	\end{enumerate}
+\item On considère le programme de calcul suivant:
+\begin{center}
+\begin{tabular}{|l|}\hline
+Choisir un nombre\\
+Ajouter 1\\
+Calculer le carré du résultat\\ \hline
+\end{tabular}
+\end{center}
+	\begin{enumerate}
+		\item Quel résultat obtient-on en choisissant $1$ comme nombre de départ? Et en choisissant $- 2$ comme nombre de départ?
+		\item On note $x$ le nombre choisi au départ et on appelle $g$ la fonction qui à $x$ fait correspondre le résultat obtenu avec le programme de calcul.
+		
+Exprimer $g(x)$ en fonction de $x$.
+	\end{enumerate}
+\item La fonction $h$ est définie par $h(x) = 2x^2 - 3$.
+	\begin{enumerate}
+		\item Quelle est l'image de $3$ par la fonction $h$ ?
+		\item Quelle est l'image de $-4$ par la fonction $h$ ?
+		\item Donner un antécédent de $5$ par la fonction $h$. En existe-t-il un autre ?
+	\end{enumerate}	
+\item On donne les trois représentations graphiques suivantes qui correspondent chacune à une des fonctions $f$, $g$ et $h$ citées dans les questions précédentes.
+
+Associer à chaque courbe la fonction qui lui correspond, en expliquant la réponse.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{3}{>{\centering \arraybackslash}X}}
+\psset{unit=5mm,arrowsize=2pt 3}
+\begin{pspicture*}(-4,-5)(4,6)
+\rput(0,5.5){Représentation \no 1}
+\psaxes[labelsep=1mm,labelFontSize=\scriptstyle,linewidth=1pt,ticksize=-2pt 2pt, showorigin=false]{->}(0,0)(-4,-4.9)(4,5)
+\psplot[plotpoints=1000,linewidth=1.25pt]{-2}{5}{1 2 x mul sub}
+\uput[dl](0,0){\footnotesize{0}}
+\end{pspicture*} &
+\psset{xunit=5mm,yunit=2.5mm,arrowsize=2pt 3}
+\begin{pspicture*}(-4,-4.5)(4,18.2)
+\rput(0,17){Représentation \no 2}
+\psaxes[labelsep=1mm,labelFontSize=\scriptstyle,linewidth=1pt,ticksize=-2pt 2pt, showorigin=false,Dy=2]{->}(0,0)(-4,-4)(4,16)
+\psplot[plotpoints=1000,linewidth=1.25pt]{-3.1}{3.1}{x dup mul 2 mul 3 sub}
+\uput[dl](0,0){\footnotesize{0}}
+\end{pspicture*}&
+\psset{xunit=4.4mm,,yunit=5mm,arrowsize=2pt 3}
+\begin{pspicture*}(-5,-1.5)(3,11)
+\rput(-1,10.5){Représentation \no 3}
+\psaxes[labelsep=1mm,labelFontSize=\scriptstyle,linewidth=1pt,ticksize=-2pt 2pt, showorigin=false,Dx=2, subticks=1]{->}(0,0)(-5,-1.5)(3,10)
+\psplot[plotpoints=1000,linewidth=1.25pt]{-4.1}{2.1}{1  x add  dup mul}
+\uput[dl](0,0){\footnotesize{0}}
+\end{pspicture*}\\
+\end{tabularx}
+\end{center}
+
+\end{enumerate}
+
+\bigskip
+
+
+
+ 
+
+ 
+\end{document}
+
+% Local Variables:
+% TeX-engine: luatex
+% End:
