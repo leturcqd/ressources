@@ -1,0 +1,85 @@
+	\documentclass[14pt]{extreport}
+\usepackage{extsizes}
+	\usepackage[french]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage[ margin=0.6in]{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	\usepackage{float}
+	\usepackage{easytable}
+	 \usepackage{fancyhdr}\usepackage{longtable}
+	 \usetikzlibrary{shapes.misc}
+	 \newcommand\ang[1]{$#1{}^o$}
+\newlength{\taillecellule}
+\setlength{\taillecellule}{2cm}
+\newcolumntype{C}{@{}>{\centering\arraybackslash}p{\taillecellule}@{}}
+ 
+
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{\empty} 
+	\fancyhead[L]{Interrogation chapitre 8}
+	\fancyhead[R]{3 juin 2024}
+	
+	
+	\title{Interrogation chapitre 7}
+	\date{}
+	
+	
+	\begin{document}
+ \subsection*{Exercice 1 : 4 points}
+Calculez, en détaillant les étapes sur votre copie : 
+
+\begin{enumerate}
+\item $2 - (-3) + 5 \times  2$
+\item $ -2 + 3 \times 4$
+\item $((5 - 4) \times 2 + 3 )\times 7 - 4$
+\item $-2 - (3 - 1)$.
+\end{enumerate}
+
+\subsection*{Exercice 2 : 4 points}
+Évaluez les expressions suivantes en la valeur indiquée : 
+\begin{enumerate}
+\item L'expression $x+5 - 1 $ en $x=9$
+\item L'expression $(x+5)\times 3$ en $x=-1$.
+\item L'expression $3x-2$ en $x=7$.
+\item L'expression $3(x-1)+4x$ en $x=+2$.
+\end{enumerate}
+
+\subsection*{Exercice 3 (1+2+1+1+1+1= 7 points)}
+
+On considère la figure ci-dessous, où $D$ est le milieu de $[AB]$, $E$ le milieu de $[AC]$ et où $G'$ est le symétrique de $G$ par rapport à $D$.
+\begin{enumerate}
+\item Montrer que $D$ est le milieu de $[GG']$. 
+\item En déduire la nature de $GBG'C$. 
+\item En déduire que $(GB)//(CG')$. 
+\item À l'aide du théorème des milieux, montrer que $G$ est le milieu de $[AG']$. 
+\item En déduire que $AG'= 4\times GD$
+\item Montrer que $AD= 3\times GD$. (On a montré que les médianes d'un triangle se coupent à un tiers de leurs longueurs).
+\end{enumerate}
+
+\includegraphics[scale=.5]{Exo3}
+
+\subsection*{Exercice 4 (2 + 1 + 2 = 5 points)} % 7,5 pts
+On considère un parallélogramme $ABCD$, et on note $O$ l'intersection des diagonales $[AC]$ et $[BD]$. On place sur la diagonale $[AC]$ les points $I$ et $J$ la coupant en trois parties égales : $AI=IJ=JC$.  On suppose $AB = 8$ cm, $AC = 6$ cm et $BC = 4$ cm.
+
+\includegraphics[scale=.45]{Exo4}
+\begin{enumerate} 
+\item Calculer les longueurs $OA$ et $OC$, en détaillant votre raisonnement.
+\item En déduire les longueurs $OI$ et $OJ$.
+\item En déduire que $IBJD$ est un parallélogramme.  
+\item [Bonus 4.] Montrer que les triangles $AID$ et $BJC$ sont égaux (On pourra utiliser que deux triangles qui ont les mêmes longueurs sont égaux).
+\end{enumerate}
+\end{document}
+

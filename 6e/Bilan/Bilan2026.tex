@@ -1,0 +1,94 @@
+	\documentclass[14pt]{extreport}
+\usepackage{extsizes}
+	\usepackage[french]{babel}
+	\usepackage[utf8]{inputenc}  
+	\usepackage[T1]{fontenc}
+	\usepackage{amssymb}
+	\usepackage[mathscr]{euscript}
+	\usepackage{stmaryrd}
+	\usepackage{amsmath}
+	\usepackage{tikz}
+	\usepackage[all,cmtip]{xy}
+	\usepackage{amsthm}
+	\usepackage{varioref}
+	\usepackage[ margin=.75in]{geometry}
+	\geometry{a4paper}
+	\usepackage{lmodern}
+	\usepackage{hyperref}
+	\usepackage{array}
+	\usepackage{float}
+	\usepackage{easytable}
+	 \usepackage{fancyhdr}\usepackage{longtable}
+	 \usetikzlibrary{shapes.misc}
+	 \newcommand\ang[1]{$#1{}^o$}
+\newlength{\taillecellule}
+\setlength{\taillecellule}{2cm}
+\newcolumntype{C}{@{}>{\centering\arraybackslash}p{\taillecellule}@{}}
+
+\renewcommand{\theenumi}{\alph{enumi})}
+\usepackage{pstricks,multido}
+\usepackage{arrayjob}
+\usepackage{calc,xlop}
+\tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
+%default radius will be 1pt. 
+cross/.default={1pt}}
+
+	\pagestyle{fancy}
+	\theoremstyle{plain}
+	\fancyfoot[C]{\empty} 
+	\fancyhead[L]{Nom, prénom : }
+	\fancyhead[R]{4 mai 2026}
+	
+	
+	
+	\title{Contrôle de rentrée}
+	\date{}
+	\begin{document}
+
+
+
+\subsection*{Exercice 1 : Calculs (10 points)}  % 4 points
+
+\begin{enumerate}
+\item[1.]
+Posez et effectuez les calculs suivants : 
+\begin{enumerate}
+\item $12,34+9,17=$
+\item $712,4+3,07=$
+\item $14,92-3,5=$
+\item $17,13-8,04=$
+\item $4\times 7,04=$
+\item $2,15\times 3,4=$
+\item La division euclidienne de $127$ par $7$ (on veut le quotient et le reste). 
+\item L'écriture décimale de $\frac{13}8$.
+\end{enumerate} 
+\item[2.] 
+Donner la valeur approchée de $12,349$ au dixième, puis au centième. 
+\item[3.] Simplifier au maximum la fraction $\frac{54}{60}$.
+\end{enumerate} 
+\subsection*{Exercice 2 : Vocabulaire de géométrie (3 points)}
+
+\begin{enumerate}
+\item Sur la figure suivante, tracez les objets $[AD]$, $(BC]$, et $(CD)$. 
+\item Sur votre copie, pour chacun des trois traits, indiquez sa nature (droite, demi-droite, segment), et son nom mathématique (à partir des lettres de la figure). 
+\end{enumerate}
+\[\includegraphics[scale=.45]{Fig1}\]
+     \subsection*{Exercice 3 (3 points)}
+    À partir de la figure ci-dessous, recopier et compléter : 
+    \begin{enumerate}
+    \item $(d) \ldots (d')$
+    \item $(d) \ldots (\Delta)$
+    \item $A\ldots (d)$
+    \end{enumerate}
+\[\includegraphics[scale=.45]{Fig2}\]
+    
+    \subsection*{Exercice 4}
+  On considère la figure suivante, où toutes les longueurs sont indiquées en centimètres : 
+\[\includegraphics[scale=.45]{Fig3}\]
+\begin{enumerate}
+\item Déterminer le périmètre du triangle $CDE$.
+\item Calculer l'angle $\widehat{IJH}$. 
+\item Calculer une valeur approchée au millimètre du périmètre du cercle de centre $F$ passant par $G$.
+\end{enumerate}
+ 
+\end{document}
